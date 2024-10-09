@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_security_feature"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.techglock.health.app.security.ui.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_signUpStep1Fragment"
+            app:destination="@+id/signUpStep1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_main_activity"
+            app:destination="@id/splash_activity" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpStep1Fragment"
+        android:name="com.techglock.health.app.security.ui.SignUpStep1Fragment"
+        tools:layout="@layout/fragment_sign_up_step1">
+
+        <action
+            android:id="@+id/action_signUpStep1Fragment_to_signUpStep2Fragment"
+            app:destination="@id/signUpStep2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_signUpStep1Fragment_to_loginFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/loginFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpStep2Fragment"
+        android:name="com.techglock.health.app.security.ui.SignUpStep2Fragment"
+        tools:layout="@layout/fragment_sign_up_step2">
+
+        <action
+            android:id="@+id/action_signUpStep2Fragment_to_signUpStep3Fragment"
+            app:destination="@id/signUpStep3Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_signUpStep2Fragment_to_signUpStep1Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/signUpStep1Fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpStep3Fragment"
+        android:name="com.techglock.health.app.security.ui.SignUpStep3Fragment"
+        tools:layout="@layout/fragment_sign_up_step3">
+
+        <action
+            android:id="@+id/action_signUpStep3Fragment_to_signUpStep4Fragment"
+            app:destination="@id/signUpStep4Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_signUpStep3Fragment_to_signUpStep2Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/signUpStep2Fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpStep4Fragment"
+        android:name="com.techglock.health.app.security.ui.SignUpStep4Fragment"
+        tools:layout="@layout/fragment_sign_up_step4">
+
+        <action
+            android:id="@+id/action_signUpStep4Fragment_to_main_activity"
+            app:destination="@id/splash_activity" />
+
+        <action
+            android:id="@+id/action_signUpStep4Fragment_to_signUpStep3Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/signUpStep3Fragment" />
+
+    </fragment>
+
+    <activity
+        android:id="@+id/splash_activity"
+        android:name="com.techglock.health.app.security.ui.SplashScreenActivity"
+        tools:layout="@layout/activity_splash_screen" />
+
+</navigation>

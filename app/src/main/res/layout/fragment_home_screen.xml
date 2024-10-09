@@ -1,0 +1,1991 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_5sdp"
+    android:paddingEnd="@dimen/_5sdp">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtUserName"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:text="@string/HI"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtWelcomeText"
+                            style="@style/VivantDescription"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="@string/WELCOME_TO_YOU_MATTER"
+                            android:textSize="@dimen/_11sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/txtUserName"
+                            app:layout_constraintTop_toBottomOf="@+id/txtUserName"/>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_feed_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtUserName">
+
+                <!--            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/img_feed_update"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:src="@drawable/img_aktivo_score"
+                                android:padding="@dimen/_1sdp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/txt_feed_update"
+                                app:layout_constraintBottom_toBottomOf="@+id/txt_feed_update"/>-->
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/img_feed_update"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_feed_update"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_feed_update"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/announcement" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_feed_update"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_feed_update"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_badge_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingStart="@dimen/_7sdp"
+                android:paddingEnd="@dimen/_7sdp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_feed_update">
+
+                <ProgressBar
+                    android:id="@+id/progress_badge"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_badge_progress"
+                    android:scaleY="0.38"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_badge_contender"
+                    android:layout_width="@dimen/_21sdp"
+                    android:layout_height="@dimen/_21sdp"
+                    android:src="@drawable/img_badge_contender"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_badge"
+                    app:layout_constraintStart_toStartOf="@+id/progress_badge"
+                    app:layout_constraintTop_toTopOf="@+id/progress_badge" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_badge_challenger"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/img_badge_challenger"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_badge"
+                    app:layout_constraintEnd_toStartOf="@+id/img_badge_achiever"
+                    app:layout_constraintStart_toEndOf="@+id/img_badge_contender"
+                    app:layout_constraintTop_toTopOf="@+id/progress_badge" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_badge_achiever"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginEnd="-2dp"
+                    android:src="@drawable/img_badge_achiever"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_badge"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_badge"
+                    app:layout_constraintTop_toTopOf="@+id/progress_badge" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_badge_contender"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:text="@string/BADGE_CONTENDER"
+                    android:textColor="@color/mid_gray"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/img_badge_contender"
+                    app:layout_constraintStart_toStartOf="@+id/img_badge_contender"
+                    app:layout_constraintTop_toBottomOf="@+id/img_badge_contender" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_badge_challenger"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:text="@string/BADGE_CHALLENGER"
+                    android:textColor="@color/mid_gray"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/img_badge_challenger"
+                    app:layout_constraintStart_toStartOf="@+id/img_badge_challenger"
+                    app:layout_constraintTop_toBottomOf="@+id/img_badge_challenger" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_badge_achiever"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:text="@string/BADGE_ACHIEVER"
+                    android:textColor="@color/mid_gray"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/img_badge_achiever"
+                    app:layout_constraintStart_toStartOf="@+id/img_badge_achiever"
+                    app:layout_constraintTop_toBottomOf="@+id/img_badge_achiever" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_aktivo_labs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_badge_progress">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_aktivo_labs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_11sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_aktivo_labs__title"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/BUILD_YOUR_PATH_TO_WELLNESS"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_aktivo_labs_desc"
+                        style="@style/VivantDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/POWERED_BY_AKTIVO"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_aktivo_labs__title"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_aktivo_labs__title" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_aktivo_view_details"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text="@string/VIEW_DETAILS"
+                        android:textColor="@color/color_primary"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_aktivo_score"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:cardElevation="@dimen/card_elevation"
+                        app:layout_constraintEnd_toStartOf="@+id/layout_aktivo_parameters"
+                        app:layout_constraintHorizontal_weight="0.35"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_aktivo_labs__title"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_aktivo_labs_desc">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/layout_aktivo_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_aktivo_score"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:visibility="visible">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/img_aktivo_score"
+                                android:layout_width="@dimen/_16sdp"
+                                android:layout_height="@dimen/_16sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_2sdp"
+                                android:src="@drawable/img_aktivo_score"
+                                android:tint="@color/white"
+                                app:layout_constraintBottom_toBottomOf="@+id/lbl_aktivo_score"
+                                app:layout_constraintEnd_toStartOf="@+id/lbl_aktivo_score"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/lbl_aktivo_score" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/lbl_aktivo_score"
+                                style="@style/VivantDescription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:gravity="center"
+                                android:text="@string/AKTIVO_SCORE"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                app:layout_constraintStart_toEndOf="@+id/img_aktivo_score"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txt_aktivo_score"
+                                style="@style/VivantTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:text="--"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/lbl_aktivo_score" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/layout_aktivo_score_shimmer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shimmer_duration="500">
+
+                            <include layout="@layout/layout_aktivo_labs_shimmer1" />
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_mind_score"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:cardElevation="@dimen/card_elevation"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/card_aktivo_score"
+                        app:layout_constraintStart_toStartOf="@+id/card_aktivo_score"
+                        app:layout_constraintTop_toBottomOf="@+id/card_aktivo_score">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/layout_mind_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_mind_score"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:visibility="visible">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/img_mind_score"
+                                android:layout_width="@dimen/_16sdp"
+                                android:layout_height="@dimen/_16sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_1sdp"
+                                android:src="@drawable/img_mind_score"
+                                android:tint="@color/white"
+                                app:layout_constraintBottom_toBottomOf="@+id/lbl_mind_score"
+                                app:layout_constraintEnd_toStartOf="@+id/lbl_mind_score"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/lbl_mind_score" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/lbl_mind_score"
+                                style="@style/VivantDescription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:gravity="center"
+                                android:text="@string/MIND_SCORE"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                app:layout_constraintStart_toEndOf="@+id/img_mind_score"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txt_mind_score"
+                                style="@style/VivantTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:text="--"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/lbl_mind_score" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/layout_mind_score_shimmer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shimmer_duration="500">
+
+                            <include layout="@layout/layout_aktivo_labs_shimmer2" />
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_aktivo_parameters"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/card_mind_score"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_weight="0.65"
+                        app:layout_constraintStart_toEndOf="@+id/card_aktivo_score"
+                        app:layout_constraintTop_toTopOf="@+id/card_aktivo_score">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/layout_rv_aktivo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.techglock.health.app.home.views.AktivoParameterView
+                                android:id="@+id/view_steps"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                app:layout_constraintEnd_toStartOf="@+id/view_sleep"
+                                app:layout_constraintHorizontal_weight="0.3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.techglock.health.app.home.views.AktivoParameterView
+                                android:id="@+id/view_sleep"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toStartOf="@+id/view_exercise"
+                                app:layout_constraintHorizontal_weight="0.4"
+                                app:layout_constraintStart_toEndOf="@+id/view_steps"
+                                app:layout_constraintTop_toTopOf="@+id/view_steps" />
+
+                            <com.techglock.health.app.home.views.AktivoParameterView
+                                android:id="@+id/view_exercise"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_weight="0.4"
+                                app:layout_constraintStart_toEndOf="@+id/view_sleep"
+                                app:layout_constraintTop_toTopOf="@+id/view_steps" />
+
+                            <com.techglock.health.app.home.views.AktivoParameterView
+                                android:id="@+id/view_sedentary"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/view_light_activity"
+                                app:layout_constraintHorizontal_weight="0.5"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <com.techglock.health.app.home.views.AktivoParameterView
+                                android:id="@+id/view_light_activity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="@+id/view_sedentary"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_weight="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/view_sedentary" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/layout_aktivo_shimmer"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shimmer_duration="500">
+
+                            <include layout="@layout/layout_aktivo_parameter_shimmer" />
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_challenges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_aktivo_labs">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_challenges"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/CHALLENGES"
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_challenges_arrow"
+                    style="@style/CustomArrowNavigation"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_challenges" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/layout_challenges_shimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_challenges_arrow"
+                    app:shimmer_duration="500">
+
+                    <include layout="@layout/layout_challenges_shimmer" />
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_challenges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_challenges_arrow">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/slidingViewPagerChallenges"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/challenges_banner_height" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:id="@+id/slider_dots_challenges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card_challenges" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_challenges">
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/layout_dashboard_banner_shimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shimmer_duration="500">
+
+                    <include layout="@layout/layout_dashboard_banner_shimmer" />
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_dashboard_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="@style/Widget.Material3.LinearProgressIndicator"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:max="100"
+                        android:progressDrawable="@drawable/custom_progress"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:cardElevation="@dimen/card_elevation"
+                        app:layout_constraintBottom_toTopOf="@+id/slider_dots"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.viewpager2.widget.ViewPager2
+                                android:id="@+id/slidingViewPager"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <LinearLayout
+                        android:id="@+id/slider_dots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_banner" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- <androidx.cardview.widget.CardView
+                 android:id="@+id/card_consult_therapist"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 app:cardCornerRadius="@dimen/card_corner_radius"
+                 app:cardElevation="@dimen/card_elevation"
+                 android:layout_marginTop="@dimen/_7sdp"
+                 android:visibility="gone"
+                 android:layout_marginStart="@dimen/_5sdp"
+                 android:layout_marginEnd="@dimen/_5sdp"
+                 app:layout_constraintEnd_toStartOf="@+id/card_hra"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toBottomOf="@+id/layout_banner">
+
+                 <androidx.constraintlayout.widget.ConstraintLayout
+                     android:id="@+id/layout_consult_therapist"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/bg_consult_therapist"
+                     android:foreground="?android:attr/selectableItemBackground">
+
+                     <androidx.appcompat.widget.AppCompatTextView
+                         android:id="@+id/lbl_consult_therapist"
+                         style="@style/VivantTitle"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/CONSULT_THERAPIST"
+                         android:textSize="@dimen/_11sdp"
+                         android:textColor="@color/white"
+                         android:layout_marginTop="@dimen/_9sdp"
+                         android:layout_marginStart="@dimen/_12sdp"
+                         android:layout_marginEnd="@dimen/_10sdp"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintTop_toTopOf="parent"/>
+
+                     <androidx.appcompat.widget.AppCompatTextView
+                         android:id="@+id/lbl_consult_therapist_desc"
+                         style="@style/VivantTitle"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="@string/GET_STARTED"
+                         android:textSize="@dimen/_9sdp"
+                         android:textColor="@color/white"
+                         android:background="@drawable/btn_border"
+                         android:padding="@dimen/_7sdp"
+                         android:layout_marginTop="@dimen/_7sdp"
+                         android:layout_marginBottom="@dimen/_10sdp"
+                         app:layout_constraintBottom_toBottomOf="parent"
+                         app:layout_constraintTop_toBottomOf="@+id/lbl_consult_therapist"
+                         app:layout_constraintStart_toStartOf="@+id/lbl_consult_therapist" />
+
+                     &lt;!&ndash;                    <androidx.appcompat.widget.AppCompatImageView
+                                             android:id="@+id/img_next_consult_therapist"
+                                             android:layout_width="@dimen/_17sdp"
+                                             android:layout_height="@dimen/_17sdp"
+                                             android:src="@drawable/ic_forward"
+                                             android:tint="@color/textViewColor"
+                                             android:layout_marginStart="@dimen/_7sdp"
+                                             app:layout_constraintTop_toTopOf="@+id/lbl_consult_therapist_desc"
+                                             app:layout_constraintBottom_toBottomOf="@+id/lbl_consult_therapist_desc"
+                                             app:layout_constraintStart_toEndOf="@+id/lbl_consult_therapist_desc"/>&ndash;&gt;
+
+                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+             </androidx.cardview.widget.CardView>-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_leadership_experinces"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintBottom_toBottomOf="@+id/card_hra"
+                app:layout_constraintEnd_toStartOf="@+id/card_hra"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/card_hra">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_leadership_experinces"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_consult_therapist"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_leadership_experinces"
+                        style="@style/VivantTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text="@string/LEADERSHIP_EXPERIENCES"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_leadership_experinces_desc"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/btn_border"
+                        android:padding="@dimen/_7sdp"
+                        android:text="@string/EXPLORE"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_leadership_experinces" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_next_consult_therapist"
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:src="@drawable/ic_forward"
+                        android:tint="@color/textViewColor"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/lbl_leadership_experinces_desc"
+                        app:layout_constraintStart_toEndOf="@+id/lbl_leadership_experinces_desc"
+                        app:layout_constraintTop_toTopOf="@+id/lbl_leadership_experinces_desc" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_hra"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/card_leadership_experinces"
+                app:layout_constraintTop_toBottomOf="@+id/layout_banner">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_hra_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_hra"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_hra_title"
+                        style="@style/VivantTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text="@string/HRA_NOT_GIVEN"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_hra_desc"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/btn_border"
+                        android:padding="@dimen/_7sdp"
+                        android:text="@string/GET_STARTED"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_hra_title"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_hra_title" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_hra_given"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_hra"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="gone">
+
+                    <at.grabner.circleprogress.CircleProgressView
+                        android:id="@+id/hra_progress_bar"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+                        android:layout_margin="@dimen/_8sdp"
+                        app:animateProgress="true"
+                        app:cpv_autoTextSize="true"
+                        app:cpv_barColor="@color/red"
+                        app:cpv_barStrokeCap="Round"
+                        app:cpv_barWidth="@dimen/_2sdp"
+                        app:cpv_fillColor="@color/transparent"
+                        app:cpv_innerContourColor="@color/transparent"
+
+                        app:cpv_maxValue="100"
+                        app:cpv_outerContourSize="0dp"
+                        app:cpv_rimColor="@color/white"
+                        app:cpv_rimWidth="@dimen/_2sdp"
+                        app:cpv_seekMode="true"
+                        app:cpv_spinColor="@color/highlight_blue"
+                        app:cpv_textMode="Text"
+                        app:cpv_value="0"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_hra_score"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="-- %"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/hra_progress_bar"
+                        app:layout_constraintEnd_toEndOf="@+id/hra_progress_bar"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="@+id/hra_progress_bar"
+                        app:layout_constraintTop_toTopOf="@+id/hra_progress_bar" />
+
+                    <!--           <androidx.appcompat.widget.AppCompatTextView
+                                   android:id="@+id/txt_hra_observation"
+                                   style="@style/VivantTitle"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Healthy"
+                                   android:textSize="@dimen/_11sdp"
+                                   android:gravity="center"
+                                   android:layout_marginTop="@dimen/_7sdp"
+                                   app:layout_constraintStart_toStartOf="parent"
+                                   app:layout_constraintEnd_toEndOf="parent"
+                                   app:layout_constraintTop_toTopOf="parent"/>-->
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_hra_status_desc"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:text="@string/HRA_GIVEN"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_hra_view_details"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/btn_border"
+                        android:padding="@dimen/_7sdp"
+                        android:text="@string/VIEW_DETAILS"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_hra_status_desc"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_hra_status_desc" />
+
+                    <!--                    <androidx.appcompat.widget.AppCompatImageView
+                                            android:id="@+id/img_next_hra_given"
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:src="@drawable/ic_forward"
+                                            android:tint="@color/textViewColor"
+                                            android:layout_marginStart="@dimen/_7sdp"
+                                            app:layout_constraintTop_toTopOf="@+id/lbl_hra_view_details"
+                                            app:layout_constraintBottom_toBottomOf="@+id/lbl_hra_view_details"
+                                            app:layout_constraintStart_toEndOf="@+id/lbl_hra_view_details"/>-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_hra">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_invite_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_refer"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_invite_title"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/INVITE_TITLE"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_invite_desc"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:text="@string/INVITE_DESC"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_invite_title"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_invite_title" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_get_rewarded"
+                        style="@style/CustomButton"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginStart="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="@dimen/_4sdp"
+                        android:text="@string/GET_REWARDED"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_invite_desc" />
+
+                    <!--                    <androidx.appcompat.widget.AppCompatImageView
+                                            android:id="@+id/img_refer"
+                                            android:layout_width="@dimen/_90sdp"
+                                            android:layout_height="@dimen/_90sdp"
+                                            android:src="@drawable/img_refer_new"
+                                            android:layout_marginEnd="@dimen/_10sdp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_smit_fit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/card_hra"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_hra">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_smit_fit_title"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/WHAT_ARE_YOU_LOOKING_FOR"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_smit_fit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_smit_fit_title"
+                    app:spanCount="3"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_smit_fit" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/poweredBySmitFitTV"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/POWERED_BY_SMIT_FIT"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rv_smit_fit" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_live_sessions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_7sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_smit_fit">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_live_sessions"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/CURATED_FOR_YOU"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/layout_live_sessions_shimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:shimmer_duration="500"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_live_sessions">
+
+                    <include layout="@layout/layout_live_session_shimmer" />
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_live_sessions"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_195sdp"
+                    android:visibility="visible"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_live_session"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_live_sessions" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_salt_mpt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/card_salt_videos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_live_sessions">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_salt_mpt_not_given"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_salt_tilte"
+                        style="@style/VivantTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text="@string/MPT_TITLE"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_salt_desc"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="@string/MPT_DESC"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/lbl_salt_tilte"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_salt_tilte"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_salt_tilte" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_start_mpt_test"
+                        style="@style/CustomButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/GET_STARTED"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_salt_desc"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_salt_desc" />
+
+                    <!--                    <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/saltPoweredByTV"
+                                            style="@style/VivantDescription"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/POWERED_BY_SALT"
+                                            android:textSize="@dimen/_9sdp"
+                                            android:textStyle="bold"
+                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:layout_marginBottom="@dimen/_8sdp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent" />-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_salt_mpt_given"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_cohort"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_mpt_tilte" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_mpt_tilte"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:minLines="2"
+                        android:text="@string/YOUR_MONEY_PERSONALITY"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintEnd_toStartOf="@+id/img_mpt_share"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_cohort_title"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:minLines="2"
+                        android:text="---"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_cohort"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_cohort"
+                        app:layout_constraintTop_toTopOf="@+id/img_cohort" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_mpt_view_result"
+                        style="@style/CustomButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/VIEW_RESULT"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_mpt_tilte"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_cohort_title" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_mpt_share"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:tint="@color/selector_image_color"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/img_rec_share" />
+
+                    <!--                    <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/saltGivenMptPoweredByTV"
+                                            style="@style/VivantDescription"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_3sdp"
+                                            android:layout_marginEnd="@dimen/_5sdp"
+                                            android:text="@string/POWERED_BY_SALT"
+                                            android:textSize="@dimen/_9sdp"
+                                            android:textStyle="bold"
+                                            android:padding="@dimen/_5sdp"
+                                            android:layout_marginBottom="@dimen/_5sdp"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent" />-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_salt_videos"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintBottom_toBottomOf="@+id/card_salt_mpt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/card_salt_mpt"
+                app:layout_constraintTop_toTopOf="@+id/card_salt_mpt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_salt_videos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_salt_videos"
+                        style="@style/VivantTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text="@string/SALT_VIDEOS_TITLE"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_salt_videos_desc"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="@string/SALT_VIDEOS_DESC"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/lbl_salt_videos"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_salt_videos"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_salt_videos" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_salt_videos"
+                        style="@style/CustomButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/EXPLORE"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_salt_videos" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/poweredBySaltTV"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:text="@string/POWERED_BY_SALT"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_salt_videos" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_investometers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/poweredBySaltTV">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_investometers"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:text="@string/INVESTOMETERS"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_nimeya_calculators"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_investometers"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_nimeya_calculator" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_nimeya_powered_by2"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:text="@string/POWERED_BY_NIMEYA"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_nimeya_calculators" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_nimeya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_investometers">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_nimeya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_nimeya_tilte"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/NIMEYA_TITLE"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_nimeya_desc"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/NIMEYA_DESC"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_nimeya_tilte"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_nimeya_tilte" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_view_details_nimeya"
+                        style="@style/CustomButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="@dimen/_1sdp"
+                        android:text="@string/VIEW_DETAILS"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_nimeya_desc" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_nimeya_powered_by"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:text="@string/POWERED_BY_NIMEYA"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_investometers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/card_nimeya"
+                        app:layout_constraintTop_toBottomOf="@+id/card_nimeya">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_investometers"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/INVESTOMETERS"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_nimeya_calculators"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_100sdp"
+                            android:visibility="visible"
+                            tools:itemCount="3"
+                            tools:listitem="@layout/item_nimeya_calculator"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lbl_investometers"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_nimeya_powered_by2"
+                            style="@style/VivantDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/POWERED_BY_NIMEYA"
+                            android:textSize="@dimen/_9sdp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            app:layout_constraintTop_toBottomOf="@+id/rv_nimeya_calculators"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_financial_calculators"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_nimeya">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_financial_calculators"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/FINANCIAL_WELLNESS_CALCULATORS"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_financial_calculators"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_95sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_financial_calculators"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_financial_calculators"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_financial_calculator" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/poweredByNvestTV"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/POWERED_BY_NVEST"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_financial_calculators" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_wellfie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_financial_calculators">
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/layout_scan_vitals_shimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shimmer_duration="500">
+
+                    <include layout="@layout/layout_wellfie_shimmer" />
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_scan_vitals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="@dimen/card_elevation"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_scan_vitals"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_scan_vitals"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_scan_vitals"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/SCAN_YOUR_VITALS"
+                            android:textSize="@dimen/_13sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_scan_vitals_desc"
+                            style="@style/VivantDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:text="@string/SCAN_YOUR_VITALS_DESC"
+                            android:textSize="@dimen/_11sdp"
+                            app:layout_constraintStart_toStartOf="@+id/lbl_scan_vitals"
+                            app:layout_constraintTop_toBottomOf="@+id/lbl_scan_vitals" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_scan"
+                            style="@style/CustomButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_13sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="@dimen/_1sdp"
+                            android:text="@string/SCAN_NOW"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lbl_scan_vitals_desc" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/poweredByWellfieTV"
+                            style="@style/VivantDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/POWERED_BY_WELLFIE"
+                            android:textSize="@dimen/_9sdp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_scan_vitals_previous"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_last_updated"
+                            style="@style/VivantDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_17sdp"
+                            android:text="@string/LAST_SCANNED"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintEnd_toStartOf="@+id/txt_last_updated"
+                            app:layout_constraintStart_toEndOf="@+id/img_scan_vitals_given"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_last_updated"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="-- --- ----"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/lbl_last_updated"
+                            app:layout_constraintStart_toEndOf="@+id/lbl_last_updated"
+                            app:layout_constraintTop_toTopOf="@+id/lbl_last_updated" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_scan_vitals_given"
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_scan_vitals_given"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_oxygen_level"
+                            style="@style/VivantDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:text="@string/OXYGEN_LEVEL"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="@+id/lbl_last_updated"
+                            app:layout_constraintTop_toBottomOf="@+id/lbl_last_updated" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_oxygen_level"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="---"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/lbl_oxygen_level"
+                            app:layout_constraintStart_toEndOf="@+id/lbl_oxygen_level"
+                            app:layout_constraintTop_toTopOf="@+id/lbl_oxygen_level" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_stress_level"
+                            style="@style/VivantDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:text="@string/STRESS_LEVEL"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="@+id/lbl_oxygen_level"
+                            app:layout_constraintTop_toBottomOf="@+id/lbl_oxygen_level" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_stress_level"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="---"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/lbl_stress_level"
+                            app:layout_constraintStart_toEndOf="@+id/lbl_stress_level"
+                            app:layout_constraintTop_toTopOf="@+id/lbl_stress_level" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_rescan"
+                            style="@style/CustomButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:text="@string/RESCAN_YOUR_VITALS"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintStart_toStartOf="@+id/lbl_stress_level"
+                            app:layout_constraintTop_toBottomOf="@+id/lbl_stress_level" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:background="@color/vivant_disabled"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/img_scan_vitals_given" />
+
+                        <com.techglock.health.app.common.view.ExpandedHeightListView
+                            android:id="@+id/rv_scan_vitals"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/img_scan_vitals_given"
+                            app:spanCount="2"
+                            tools:itemCount="4"
+                            tools:listitem="@layout/item_wellfie_dashboard" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/poweredByWellfieRescanTV"
+                            style="@style/VivantDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/POWERED_BY_WELLFIE"
+                            android:textSize="@dimen/_9sdp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/rv_scan_vitals" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_health_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_live_sessions">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_health_library"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/HEALTH_LIBRARY"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_health_library_desc"
+                    style="@style/VivantDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/READ_LATEST_ARTICLES"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_health_library"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_health_library" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgBlogsArrow"
+                    style="@style/CustomArrowNavigation"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lbl_health_library_desc"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_health_library" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/layout_shimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/rv_blogs"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_health_library_desc"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_health_library_desc"
+                    app:shimmer_duration="500">
+
+                    <include layout="@layout/layout_blogs_shimmer" />
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_blogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_health_library_desc"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_shimmer"
+                    tools:listitem="@layout/item_blog_dashboard" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_hi"
+        style="@style/HRAImageView"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:src="@drawable/img_submitted"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.techglock.health.app.hra.views.HTMLTextView
+        android:id="@+id/lbl_intro_msg"
+        style="@style/HRAQuestion"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:text="@string/QUESTION_LAST"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_hi" />
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_View_report"
+        style="@style/CustomButton"
+        android:layout_width="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/VIEW_REPORT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_intro_msg"
+        app:layout_constraintStart_toStartOf="@+id/lbl_intro_msg" />
+
+    <!--
+         <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_View_report"
+                style="@style/HRACustomButton"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/default_16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/btn_round_fill_hra"
+                android:text="@string/VIEW_REPORT"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

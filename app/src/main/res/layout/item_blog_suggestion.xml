@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="?selectableItemBackgroundBorderless">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_blog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_button_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_blog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_105sdp"
+            android:layout_margin="@dimen/_1sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:tint="@color/colorPrimary"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/img_blog"
+            app:layout_constraintTop_toBottomOf="@+id/img_blog"
+            app:srcCompat="@drawable/img_calender2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_blog_date"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/img_blog"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/img_blog" />
+
+        <com.techglock.health.app.common.view.ArcTextView
+            android:id="@+id/txt_blog_title"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textSize="@dimen/_10sdp"
+            app:isTemplate="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/img_blog"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/img_blog" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_blog_desciption"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:alpha="0.88"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/vivant_charcoal_grey"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/txt_blog_title"
+            app:layout_constraintStart_toStartOf="@+id/txt_blog_title"
+            app:layout_constraintTop_toBottomOf="@+id/txt_blog_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

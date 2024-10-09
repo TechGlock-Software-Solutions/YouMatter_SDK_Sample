@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_heart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/indicator_diabetes_risk"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            app:animateProgress="true"
+            app:cpv_autoTextSize="true"
+            app:cpv_barColor="@color/colorPrimary"
+            app:cpv_barStrokeCap="Round"
+            app:cpv_barWidth="@dimen/_14sdp"
+            app:cpv_fillColor="@color/white"
+            app:cpv_innerContourColor="#F5F5F5"
+            app:cpv_maxValue="100"
+            app:cpv_outerContourSize="0dp"
+            app:cpv_rimColor="@color/vivant_light_grey"
+            app:cpv_rimWidth="@dimen/_15sdp"
+            app:cpv_seekMode="true"
+            app:cpv_spinColor="@color/highlight_blue"
+            app:cpv_textMode="Text"
+            app:cpv_value="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_score"
+            style="@style/VivantTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="--"
+            android:textSize="@dimen/_25sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/indicator_diabetes_risk"
+            app:layout_constraintEnd_toEndOf="@+id/indicator_diabetes_risk"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/indicator_diabetes_risk"
+            app:layout_constraintTop_toTopOf="@+id/indicator_diabetes_risk" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_observation"
+            style="@style/VivantTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="--"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/indicator_diabetes_risk" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_risk_ranges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_heart"
+        app:layout_constraintStart_toStartOf="@+id/layout_heart"
+        app:layout_constraintTop_toBottomOf="@+id/layout_heart">
+
+        <com.techglock.health.app.common.view.RiskRangesView
+            android:id="@+id/layout_not_nomophobic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
+            app:layout_constraintEnd_toStartOf="@+id/layout_mild_nomophobic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.techglock.health.app.common.view.RiskRangesView
+            android:id="@+id/layout_mild_nomophobic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layout_not_nomophobic"
+            app:layout_constraintTop_toTopOf="@+id/layout_not_nomophobic" />
+
+        <com.techglock.health.app.common.view.RiskRangesView
+            android:id="@+id/layout_moderate_nomophobic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            app:layout_constraintEnd_toStartOf="@+id/layout_severe_nomophobic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_not_nomophobic" />
+
+        <com.techglock.health.app.common.view.RiskRangesView
+            android:id="@+id/layout_severe_nomophobic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layout_moderate_nomophobic"
+            app:layout_constraintTop_toTopOf="@+id/layout_moderate_nomophobic" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_dib_probability"
+        style="@style/ToolsQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_risk_ranges"
+        app:layout_constraintStart_toStartOf="@+id/layout_risk_ranges"
+        app:layout_constraintTop_toBottomOf="@+id/layout_risk_ranges" />
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_view_report_diabetes"
+        style="@style/CustomButton"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text="@string/VIEW_DETAILED_REPORT"
+        app:layout_constraintBottom_toTopOf="@+id/btn_restart_diabetes"
+        app:layout_constraintEnd_toEndOf="@+id/btn_restart_diabetes"
+        app:layout_constraintStart_toStartOf="@+id/btn_restart_diabetes" />
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_restart_diabetes"
+        style="@style/CustomButton"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:text="@string/RESTART_ASSESSMENT"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

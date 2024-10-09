@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="@color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:background="@drawable/btn_border_disabled"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_close_input">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_close"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_close"
+                app:tint="@color/textViewColor" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_name"
+                style="@style/VivantDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:text="Name"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_close" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_edt_name"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_name"
+                app:layout_constraintStart_toStartOf="@+id/lbl_name"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_name"
+                    style="@style/MyEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_relation"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="Relation"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_name"
+                app:layout_constraintStart_toStartOf="@+id/lbl_name"
+                app:layout_constraintTop_toBottomOf="@+id/til_edt_name" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tab_relation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/border_button_white"
+                android:padding="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_name"
+                app:layout_constraintStart_toStartOf="@+id/lbl_name"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_relation">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_model_spinner_relation"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:text=""
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_drop_down_relation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_drop_down_relation"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/img_down"
+                    android:tint="@color/vivant_icon_warm_grey"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_model_spinner_relation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_model_spinner_relation" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_relation"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_10sdp"
+                android:background="@color/green"
+                android:dropDownSelector="@color/vivant_pale_grey"
+                android:spinnerMode="dropdown"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@id/tab_relation"
+                app:layout_constraintStart_toStartOf="@id/tab_relation"
+                app:layout_constraintTop_toBottomOf="@id/tab_relation" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_dob"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="Date of Birth"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_name"
+                app:layout_constraintStart_toStartOf="@+id/lbl_name"
+                app:layout_constraintTop_toBottomOf="@+id/tab_relation" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/border_button_white"
+                android:padding="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_name"
+                app:layout_constraintStart_toStartOf="@+id/lbl_name"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_dob">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_date"
+                    style="@style/VivantDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/img_dropdown"
+                    app:layout_constraintStart_toEndOf="@+id/img_calender"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_calender"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/img_calender_new"
+                    android:tint="@color/vivant_icon_warm_grey"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_date" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_dropdown"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/img_down"
+                    android:tint="@color/vivant_icon_warm_grey"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_date" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_is_dependent"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="Is Dependent"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_name"
+                app:layout_constraintStart_toStartOf="@+id/lbl_name"
+                app:layout_constraintTop_toBottomOf="@+id/layout_date" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tab_is_dependent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/border_button_white"
+                android:padding="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_name"
+                app:layout_constraintStart_toStartOf="@+id/lbl_name"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_is_dependent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_model_spinner_is_dependent"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:text=""
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_drop_down_is_dependent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_drop_down_is_dependent"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/img_down"
+                    android:tint="@color/vivant_icon_warm_grey"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_model_spinner_is_dependent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_model_spinner_is_dependent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_is_dependent"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_10sdp"
+                android:background="@color/green"
+                android:dropDownSelector="@color/vivant_pale_grey"
+                android:spinnerMode="dropdown"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@id/tab_is_dependent"
+                app:layout_constraintStart_toStartOf="@id/tab_is_dependent"
+                app:layout_constraintTop_toBottomOf="@id/tab_is_dependent" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_name"
+                app:layout_constraintStart_toStartOf="@+id/lbl_name"
+                app:layout_constraintTop_toBottomOf="@+id/tab_is_dependent">
+
+                <com.techglock.health.app.common.view.ArcButton
+                    android:id="@+id/btn_cancel"
+                    style="@style/CustomButtonLeft"
+                    android:layout_width="match_parent"
+                    android:text="Cancel"
+                    app:isLeftButton="true"
+                    app:isTemplate="true" />
+
+                <com.techglock.health.app.common.view.ArcButton
+                    android:id="@+id/btn_add_edit"
+                    style="@style/CustomButtonRight"
+                    android:layout_width="match_parent"
+                    android:text="Add"
+                    app:isTemplate="true" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--<androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add_edit"
+                style="@style/CustomButton"
+                android:visibility="visible"
+                android:layout_width="0dp"
+                android:text="@string/ADD"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/lbl_name"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_name"
+                app:layout_constraintTop_toBottomOf="@+id/tab_is_dependent"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

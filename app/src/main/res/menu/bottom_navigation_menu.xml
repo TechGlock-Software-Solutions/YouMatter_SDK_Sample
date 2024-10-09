@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/page_1"
+        android:enabled="true"
+        android:icon="@drawable/ic_svg_home_tab"
+        android:title="@string/HOME"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/page_2"
+        android:enabled="true"
+        android:icon="@drawable/ic_svg_track_tab"
+        android:title="@string/TRACK"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/page_5"
+        android:enabled="true"
+        android:icon="@drawable/ic_svg_policy_tab"
+        android:title="@string/YOUR_POLICY"
+        app:showAsAction="ifRoom" />
+
+    <!--    <item
+            android:id="@+id/page_3"
+            android:enabled="true"
+            android:icon="@drawable/img_tab_wellness"
+            android:title="@string/MENTAL_WELLNESS"
+            app:showAsAction="ifRoom"/>-->
+    <item
+        android:id="@+id/page_4"
+        android:enabled="true"
+        android:icon="@drawable/ic_svg_profile_tab"
+        android:title="@string/PROFILE"
+        app:showAsAction="ifRoom" />
+
+</menu>

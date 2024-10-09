@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:visibility="gone"
+        app:title=""
+        app:titleTextColor="@color/background_color">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBackArrow"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/img_back" />
+
+    <com.techglock.health.app.common.view.ArcTextView
+        android:id="@+id/toolbar_title"
+        style="@style/ToolbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:gravity="center|center_horizontal"
+        android:singleLine="true"
+        android:text=""
+        app:isPrimary="true"
+        app:isTemplate="true" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_gravity="bottom"
+        android:background="@color/background_color" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_vivant_logo"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/app_logo_small"
+        android:visibility="gone" />
+
+</FrameLayout>

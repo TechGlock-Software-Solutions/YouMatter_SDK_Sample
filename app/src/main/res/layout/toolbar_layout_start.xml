@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_toolbar_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        app:title=""
+        app:titleTextColor="@color/colorPrimary">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.techglock.health.app.common.view.ArcTextView
+        android:id="@+id/toolbar_title"
+        style="@style/ToolbarTitleStart"
+        android:text="" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_vivant_logo_white"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/app_logo_small"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/track_paramter_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.techglock.health.app.track_parameter.ui.TrackParameterHomeFragment"
+        tools:layout="@layout/fragment_track_parameter_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_selectProfileFragment"
+            app:destination="@id/selectProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_updateFragment"
+            app:destination="@id/updateParameterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="profileCode"
+                android:defaultValue="BMI"
+                app:argType="string" />
+            <argument
+                android:name="showAllProfile"
+                android:defaultValue="true"
+                app:argType="string" />
+
+        </action>
+
+        <action
+            android:id="@+id/action_homeFragment_to_dashboardFragment"
+            app:destination="@id/trackDashboardFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_currentHistoryFragment"
+            app:destination="@id/currentHistoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectProfileFragment"
+        android:name="com.techglock.health.app.track_parameter.ui.SelectParameterFragment"
+        tools:layout="@layout/select_parameter_fragment">
+
+        <action
+            android:id="@+id/action_selectProfileFragment_to_updateParameterFragment"
+            app:destination="@id/updateParameterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="profileCode"
+                android:defaultValue="BMI"
+                app:argType="string" />
+            <argument
+                android:name="showAllProfile"
+                android:defaultValue="false"
+                app:argType="string" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/updateParameterFragment"
+        android:name="com.techglock.health.app.track_parameter.ui.UpdateParameterFragment"
+        tools:layout="@layout/rev_update_parameter_fragment">
+
+        <argument
+            android:name="profileCode"
+            app:argType="string" />
+        <argument
+            android:name="showAllProfile"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_updateParameterFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"
+            app:popUpTo="@+id/medicineHome"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/trackDashboardFragment"
+        android:name="com.techglock.health.app.track_parameter.ui.TrackDashboardFragment"
+        tools:layout="@layout/fragment_tack_dashboard">
+
+        <argument
+            android:name="screen"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_CurrentFragment"
+            app:destination="@id/currentHistoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            tools:layout="@layout/fragment_tack_dashboard">
+
+            <argument
+                android:name="profileCode"
+                android:defaultValue="BMI"
+                app:argType="string" />
+
+            <argument
+                android:name="profileName"
+                android:defaultValue="BMI"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/currentHistoryFragment"
+        android:name="com.techglock.health.app.track_parameter.ui.CurrentParameterFragment"
+        tools:layout="@layout/fragment_tack_dashboard">
+
+        <argument
+            android:name="profileCode"
+            app:argType="string" />
+        <argument
+            android:name="profileName"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_currentParam_to_updateParameterFragment"
+            app:destination="@id/updateParameterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+
+            <argument
+                android:name="profileCode"
+                android:defaultValue="BMI"
+                app:argType="string" />
+            <argument
+                android:name="showAllProfile"
+                android:defaultValue="false"
+                app:argType="string" />
+
+        </action>
+
+        <action
+            android:id="@+id/action_currentParam_to_detailHistoryFragment"
+            app:destination="@id/detailHistoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+
+        </action>
+
+    </fragment>
+
+    <!--    <fragment
+            android:id="@+id/currentHistoryFragment"
+            android:name="com.caressa.allizhealth.app.track_parameter.ui.CurrentParameterFragment"
+            android:label="Parameter History"
+            tools:layout="@layout/fragment_current_param">
+
+            <argument
+                android:name="profileCode"
+                app:argType="string" />
+            <argument
+                android:name="profileName"
+                app:argType="string" />
+
+            <action
+                android:id="@+id/action_historyFragment_to_detailHistoryFragment"
+                app:destination="@id/detailHistoryFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+
+            <action
+                android:id="@+id/action_historyFragment_to_updateParameterFragment"
+                app:destination="@id/updateParameterFrag"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right">
+                <argument
+                    android:name="profileCode"
+                    android:defaultValue="BMI"
+                    app:argType="string" />
+                <argument
+                    android:name="showAllProfile"
+                    android:defaultValue="true"
+                    app:argType="string" />
+
+            </action>
+
+        </fragment>-->
+
+    <fragment
+        android:id="@+id/detailHistoryFragment"
+        android:name="com.techglock.health.app.track_parameter.ui.DetailHistoryFragment"
+        tools:layout="@layout/fragment_parameters_detail_history">
+
+    </fragment>
+
+    <!--    <fragment
+            android:id="@+id/currentHistoryFragment"
+            android:name="com.caressa.allizhealth.app.track_parameter.ui.CurrentParameterFragment"
+            android:label="@string/TITLE_TRACK_HEALTH_PARAMETERS"
+            tools:layout="@layout/fragment_tack_dashboard">
+
+            <argument
+                android:name="profileCode"
+                app:argType="string" />
+            <argument
+                android:name="profileName"
+                app:argType="string" />
+
+            <action
+                android:id="@+id/action_currentParam_to_updateParameterFragment"
+                app:destination="@id/updateParameterFrag"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right">
+                <argument
+                    android:name="profileCode"
+                    android:defaultValue="BMI"
+                    app:argType="string" />
+                <argument
+                    android:name="showAllProfile"
+                    android:defaultValue="false"
+                    app:argType="string" />
+            </action>
+
+            <action
+                android:id="@+id/action_currentParam_to_detailHistoryFragment"
+                app:destination="@id/detailHistoryFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right">
+
+            </action>
+
+        </fragment>-->
+
+</navigation>

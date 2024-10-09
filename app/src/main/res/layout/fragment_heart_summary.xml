@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?><!--    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">-->
+
+<!--        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SeekArc="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--                <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/layout_heart_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabInlineLabel="true"
+                        app:tabMode="fixed"
+                        android:background="@color/transparent"
+                        app:tabBackground="@color/white"
+                        app:tabTextAppearance="@style/TabLayout"
+                        app:tabTextColor="@color/textViewColor"
+                        app:tabSelectedTextColor="@color/colorPrimary"
+                        app:tabIndicatorColor="@color/colorPrimary"
+                        app:tabIndicatorHeight="@dimen/tabIndicatorHeight"
+                        android:paddingTop="@dimen/_5sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/layout_heart_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabBackground="@drawable/tab_bg_selector"
+        app:tabIndicatorColor="@color/transparent"
+        app:tabIndicatorGravity="bottom"
+        app:tabInlineLabel="true"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/TabLayout"
+        app:tabTextColor="@color/tab_text">
+
+        <com.google.android.material.tabs.TabItem
+            style="@style/VivantTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/HEART_AGE" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/HEART_RISK" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_heart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/layout_heart_tab"
+        app:layout_constraintStart_toStartOf="@+id/layout_heart_tab"
+        app:layout_constraintTop_toBottomOf="@+id/layout_heart_tab">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_heart_age_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:id="@+id/indicator_heart_age"
+                android:layout_width="@dimen/_175sdp"
+                android:layout_height="@dimen/_175sdp"
+                app:animateProgress="true"
+                app:cpv_autoTextSize="true"
+                app:cpv_barColor="@color/colorPrimary"
+                app:cpv_barStrokeCap="Round"
+                app:cpv_barWidth="@dimen/_11sdp"
+                app:cpv_fillColor="@color/transparent"
+                app:cpv_innerContourColor="#F5F5F5"
+                app:cpv_maxValue="100"
+                app:cpv_outerContourSize="0dp"
+                app:cpv_rimColor="@color/vivant_light_grey"
+                app:cpv_rimWidth="@dimen/_11sdp"
+                app:cpv_seekMode="true"
+                app:cpv_spinColor="@color/highlight_blue"
+                app:cpv_textMode="Text"
+                app:cpv_value="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:id="@+id/indicator_your_age"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                app:animateProgress="true"
+                app:cpv_autoTextSize="true"
+                app:cpv_barColor="@color/colorPrimary"
+                app:cpv_barStrokeCap="Round"
+                app:cpv_barWidth="@dimen/_11sdp"
+                app:cpv_fillColor="@color/white"
+                app:cpv_innerContourColor="#F5F5F5"
+                app:cpv_maxValue="100"
+                app:cpv_outerContourSize="0dp"
+                app:cpv_rimColor="@color/vivant_light_grey"
+                app:cpv_rimWidth="@dimen/_11sdp"
+                app:cpv_seekMode="true"
+                app:cpv_spinColor="@color/highlight_blue"
+                app:cpv_textMode="Text"
+                app:cpv_value="0"
+                app:layout_constraintBottom_toBottomOf="@+id/indicator_heart_age"
+                app:layout_constraintEnd_toEndOf="@+id/indicator_heart_age"
+                app:layout_constraintStart_toStartOf="@+id/indicator_heart_age"
+                app:layout_constraintTop_toTopOf="@+id/indicator_heart_age" />
+
+            <!--                        <com.caressa.allizhealth.app.common.view.SeekArc
+                                        android:id="@+id/indicator_heart_age"
+                                        android:layout_width="@dimen/_175sdp"
+                                        android:layout_height="@dimen/_175sdp"
+                                        android:layout_gravity="center"
+                                        SeekArc:progress="70"
+                                        app:max="100"
+                                        SeekArc:rotation="360"
+                                        app:arcWidth="@dimen/_6sdp"
+                                        app:progressWidth="@dimen/_6sdp"
+                                        app:progressColor="@color/highlight_blue"
+                                        app:arcColor="@color/light_gray"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:touchInside="false"
+                                        android:padding="@dimen/_10sdp"/>
+
+                                    <com.caressa.allizhealth.app.common.view.SeekArc
+                                        android:id="@+id/indicator_your_age"
+                                        android:layout_width="@dimen/_145sdp"
+                                        android:layout_height="@dimen/_145sdp"
+                                        android:layout_gravity="center"
+                                        SeekArc:progress="80"
+                                        app:max="100"
+                                        SeekArc:rotation="360"
+                                        app:progressWidth="@dimen/_6sdp"
+                                        app:arcWidth="@dimen/_6sdp"
+                                        app:arcColor="@color/light_gray"
+                                        app:progressColor="@color/dark_gold"
+                                        app:touchInside="false"
+                                        android:padding="@dimen/_10sdp"
+                                        app:layout_constraintBottom_toBottomOf="@+id/indicator_heart_age"
+                                        app:layout_constraintEnd_toEndOf="@+id/indicator_heart_age"
+                                        app:layout_constraintStart_toStartOf="@+id/indicator_heart_age"
+                                        app:layout_constraintTop_toTopOf="@+id/indicator_heart_age"/>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_heart_age_detail"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="@color/white"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/indicator_heart_age"
+                app:layout_constraintEnd_toEndOf="@+id/indicator_heart_age"
+                app:layout_constraintStart_toStartOf="@+id/indicator_heart_age"
+                app:layout_constraintTop_toTopOf="@+id/indicator_heart_age">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/heart_years"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_age_heart"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textSize="@dimen/_27sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_age_heart_yrs"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/YRS"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/txt_age_heart"
+                        app:layout_constraintStart_toStartOf="@+id/txt_age_heart"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_age_heart" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_age_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="@+id/indicator_heart_age"
+                app:layout_constraintStart_toStartOf="@+id/indicator_heart_age"
+                app:layout_constraintTop_toBottomOf="@+id/indicator_heart_age">
+
+                <com.techglock.health.app.common.view.RiskRangesView
+                    android:id="@+id/layout_your_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/layout_heart_age"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.techglock.health.app.common.view.RiskRangesView
+                    android:id="@+id/layout_heart_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/layout_your_age"
+                    app:layout_constraintTop_toTopOf="@+id/layout_your_age" />
+
+                <!--                            <androidx.constraintlayout.widget.ConstraintLayout
+                                                android:id="@+id/high"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                app:layout_constraintHorizontal_weight="0.5"
+                                                android:background="@drawable/border_button_white"
+                                                android:layout_marginEnd="@dimen/_4sdp"
+                                                app:layout_constraintEnd_toStartOf="@+id/moderate"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent">
+
+                                                <View
+                                                    android:id="@+id/view1"
+                                                    android:layout_width="@dimen/_6sdp"
+                                                    android:layout_height="@dimen/_15sdp"
+                                                    android:layout_marginStart="@dimen/_20sdp"
+                                                    android:layout_marginEnd="@dimen/_8sdp"
+                                                    android:background="@drawable/btn_fill_pressed"
+                                                    android:backgroundTint="@color/dark_gold"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="@+id/txt_your_age"
+                                                    app:layout_constraintBottom_toBottomOf="@+id/lbl_your_age"/>
+
+                                                <androidx.appcompat.widget.AppCompatTextView
+                                                    android:id="@+id/txt_your_age"
+                                                    style="@style/VivantTitle"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="&#45;&#45; Years"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:layout_marginTop="@dimen/_7sdp"
+                                                    android:layout_marginStart="@dimen/_12sdp"
+                                                    app:layout_constraintStart_toEndOf="@+id/view1"
+                                                    app:layout_constraintTop_toTopOf="parent"/>
+
+                                                <androidx.appcompat.widget.AppCompatTextView
+                                                    android:id="@+id/lbl_your_age"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:text="@string/YOUR_AGE"
+                                                    android:textSize="@dimen/_10sdp"
+                                                    android:textColor="@color/dark_gray"
+                                                    android:layout_marginBottom="@dimen/_7sdp"
+                                                    app:layout_constraintBottom_toBottomOf="parent"
+                                                    app:layout_constraintStart_toStartOf="@+id/txt_your_age"
+                                                    app:layout_constraintTop_toBottomOf="@+id/txt_your_age"/>
+
+                                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                            <androidx.constraintlayout.widget.ConstraintLayout
+                                                android:id="@+id/moderate"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                app:layout_constraintHorizontal_weight="0.5"
+                                                android:layout_marginStart="@dimen/_4sdp"
+                                                android:background="@drawable/border_button_white"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintStart_toEndOf="@+id/high"
+                                                app:layout_constraintTop_toTopOf="parent">
+
+                                                <View
+                                                    android:id="@+id/view2"
+                                                    android:layout_width="@dimen/_6sdp"
+                                                    android:layout_height="@dimen/_15sdp"
+                                                    android:layout_marginStart="@dimen/_20sdp"
+                                                    android:layout_marginEnd="@dimen/_8sdp"
+                                                    android:background="@drawable/btn_fill_pressed"
+                                                    android:backgroundTint="@color/highlight_blue"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="@+id/txt_heart_age"
+                                                    app:layout_constraintBottom_toBottomOf="@+id/lbl_heart_age"/>
+
+                                                <androidx.appcompat.widget.AppCompatTextView
+                                                    android:id="@+id/txt_heart_age"
+                                                    style="@style/VivantTitle"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="&#45;&#45; Years"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:layout_marginTop="@dimen/_7sdp"
+                                                    android:layout_marginStart="@dimen/_12sdp"
+                                                    app:layout_constraintStart_toEndOf="@+id/view2"
+                                                    app:layout_constraintTop_toTopOf="parent"/>
+
+                                                <androidx.appcompat.widget.AppCompatTextView
+                                                    android:id="@+id/lbl_heart_age"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:text="@string/HEART_AGE"
+                                                    android:textSize="@dimen/_10sdp"
+                                                    android:textColor="@color/dark_gray"
+                                                    android:layout_marginBottom="@dimen/_7sdp"
+                                                    app:layout_constraintBottom_toBottomOf="parent"
+                                                    app:layout_constraintStart_toStartOf="@+id/txt_heart_age"
+                                                    app:layout_constraintTop_toBottomOf="@+id/txt_heart_age"/>
+
+                                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_heart_risk_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:id="@+id/indicator_heart_risk"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                app:animateProgress="true"
+                app:cpv_autoTextSize="true"
+                app:cpv_barColor="@color/colorPrimary"
+                app:cpv_barStrokeCap="Round"
+                app:cpv_barWidth="@dimen/_14sdp"
+                app:cpv_fillColor="@color/white"
+                app:cpv_innerContourColor="#F5F5F5"
+                app:cpv_maxValue="100"
+                app:cpv_outerContourSize="0dp"
+                app:cpv_rimColor="@color/vivant_light_grey"
+                app:cpv_rimWidth="@dimen/_15sdp"
+                app:cpv_seekMode="true"
+                app:cpv_spinColor="@color/highlight_blue"
+                app:cpv_textMode="Text"
+                app:cpv_value="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_risk_percent"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="--"
+                android:textSize="@dimen/_25sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/indicator_heart_risk"
+                app:layout_constraintEnd_toEndOf="@+id/indicator_heart_risk"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="@+id/indicator_heart_risk"
+                app:layout_constraintTop_toTopOf="@+id/indicator_heart_risk" />
+
+            <!--                        <com.caressa.allizhealth.app.common.view.SeekArc
+                                        android:id="@+id/indicator_heart_risk"
+                                        android:layout_width="@dimen/_152sdp"
+                                        android:layout_height="@dimen/_152sdp"
+                                        android:layout_gravity="center"
+                                        SeekArc:progress="0"
+                                        app:max="30"
+                                        SeekArc:rotation="180"
+                                        SeekArc:startAngle="30"
+                                        SeekArc:sweepAngle="300"
+                                        app:progressColor="@color/colorPrimary"
+                                        app:arcColor="@color/light_gray"
+                                        app:arcWidth="@dimen/_6sdp"
+                                        app:progressWidth="@dimen/_6sdp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:touchInside="false"
+                                        android:padding="20dp"/>
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:id="@+id/layout_heart_risk_detail"
+                                        android:layout_width="@dimen/_115sdp"
+                                        android:layout_height="@dimen/_115sdp"
+                                        android:background="@drawable/circle_bg"
+                                        android:backgroundTint="@color/white"
+                                        android:visibility="visible"
+                                        app:layout_constraintBottom_toBottomOf="@+id/indicator_heart_risk"
+                                        app:layout_constraintEnd_toEndOf="@+id/indicator_heart_risk"
+                                        app:layout_constraintStart_toStartOf="@+id/indicator_heart_risk"
+                                        app:layout_constraintTop_toTopOf="@+id/indicator_heart_risk">
+
+                                        <androidx.appcompat.widget.AppCompatTextView
+                                            android:id="@+id/txt_risk_percent"
+                                            style="@style/VivantTitle"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text=" &#45;&#45; "
+                                            android:textSize="@dimen/_25sdp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_risk"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text=" -- "
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/indicator_heart_risk" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_heart_age_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/layout_heart_tab"
+        app:layout_constraintStart_toStartOf="@+id/layout_heart_tab"
+        app:layout_constraintTop_toBottomOf="@+id/layout_heart_tab">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart_heart_age"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:padding="@dimen/_10sdp"
+            SeekArc:layout_constraintBottom_toBottomOf="parent"
+            SeekArc:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart_heart_risk"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:padding="@dimen/_10sdp"
+            android:visibility="invisible"
+            SeekArc:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_summary_msg"
+        style="@style/ToolsQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:alpha="0.77"
+        android:gravity="center"
+        android:text="@string/HEART_AGE_SUMMARY_TEXT"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_heart"
+        app:layout_constraintStart_toStartOf="@+id/layout_heart"
+        app:layout_constraintTop_toBottomOf="@+id/layout_heart" />
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_recalculate"
+        style="@style/CustomButton"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/RECALCULATE"
+        app:layout_constraintBottom_toTopOf="@+id/btn_view_report"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_summary_msg"
+        app:layout_constraintStart_toStartOf="@+id/lbl_summary_msg" />
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_view_report"
+        style="@style/CustomButton"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:text="@string/VIEW_DETAILED_REPORT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_recalculate"
+        app:layout_constraintStart_toStartOf="@+id/btn_recalculate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--        </androidx.core.widget.NestedScrollView>-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="flFlow" format="boolean" />
+        <attr name="flChildSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+        </attr>
+        <attr name="flMinChildSpacing" format="dimension" />
+        <attr name="flChildSpacingForLastRow" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+            <enum name="align" value="-65537" />
+        </attr>
+        <attr name="flRowSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+        </attr>
+        <attr name="flRtl" format="boolean" />
+        <attr name="flMaxRows" format="integer" />
+        <attr name="flRowVerticalGravity" format="enum">
+            <enum name="auto" value="-65536" />
+            <enum name="top" value="0x30" />
+            <enum name="center" value="0x10" />
+            <enum name="bottom" value="0x50" />
+        </attr>
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekArc">
+        <attr name="thumb" format="reference" />
+        <attr name="thumbOffset" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="arcWidth" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="rotation" format="integer" />
+        <attr name="startAngle" format="integer" />
+        <attr name="sweepAngle" format="integer" />
+        <attr name="arcColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="roundEdges" format="boolean" />
+        <attr name="touchInside" format="boolean" />
+        <attr name="clockwise" format="boolean" />
+        <attr name="enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekArcTheme">
+        <attr name="seekArcStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLinearLayout">
+        <attr name="expandDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTemplate">
+        <attr name="isTemplate" format="boolean" />
+        <attr name="isCalculator" format="boolean" />
+        <attr name="isPrimary" format="boolean" />
+        <attr name="isLeftButton" format="boolean" />
+        <attr name="isRound" format="boolean" />
+        <attr name="isBackground" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="color_tick" format="color" />
+        <attr name="color_checked" format="color" />
+        <attr name="color_unchecked" format="color" />
+        <attr name="color_unchecked_stroke" format="color" />
+    </declare-styleable>
+
+    <!-- waveview -->
+    <declare-styleable name="WaveView">
+        <attr name="waveBgColor" format="color" />
+        <attr name="waveProgressColor" format="color" />
+        <attr name="waveMax" format="integer" />
+        <attr name="waveProgress" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PinViewTheme">
+        <attr name="pinViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PinView">
+        <attr name="itemCount" format="integer" />
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemRadius" format="dimension" />
+        <attr name="itemSpacing" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="itemViewType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="line" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="android:cursorVisible" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="reference|color" />
+        <attr name="android:itemBackground" />
+        <attr name="hideLineWhenFilled" format="boolean" />
+    </declare-styleable>
+
+
+    <attr name="sv_speedometerColor" format="color" />
+    <attr name="sv_speedometerBackColor" format="color" />
+    <attr name="sv_centerCircleColor" format="color" />
+    <attr name="sv_centerCircleRadius" format="dimension" />
+
+    <attr name="sv_speedBackgroundColor" format="color" />
+    <attr name="sv_withEffects" format="boolean" />
+
+    <attr name="sv_orientation" format="enum">
+        <enum name="HORIZONTAL" value="0" />
+        <enum name="VERTICAL" value="1" />
+    </attr>
+
+    <attr name="sv_sectionStyle" format="enum">
+        <enum name="ROUND" value="0" />
+        <enum name="BUTT" value="1" />
+    </attr>
+
+    <attr name="sv_image" format="reference" />
+
+    <declare-styleable name="Gauge">
+        <attr name="sv_speedometerWidth" format="dimension" />
+        <attr name="sv_textColor" format="color" />
+        <attr name="sv_speedTextColor" format="color" />
+        <attr name="sv_unitTextColor" format="color" />
+        <attr name="sv_withTremble" format="boolean" />
+        <attr name="sv_speedTextSize" format="dimension" />
+        <attr name="sv_textSize" format="dimension" />
+        <attr name="sv_unit" format="string" />
+
+        <attr name="sv_unitTextSize" format="dimension" />
+        <attr name="sv_trembleDegree" format="float" />
+        <attr name="sv_trembleDuration" format="integer" />
+        <attr name="sv_textRightToLeft" format="boolean" />
+
+        <attr name="sv_minSpeed" format="float" />
+        <attr name="sv_maxSpeed" format="float" />
+        <attr name="sv_noOfSections" format="integer" />
+        <attr name="sv_reverseSections" format="boolean" />
+
+        <attr name="sv_accelerate" format="float" />
+        <attr name="sv_decelerate" format="float" />
+
+        <attr name="sv_speedTextTypeface" format="string" />
+        <attr name="sv_textTypeface" format="string" />
+
+        <attr name="sv_speedTextPosition" format="enum">
+            <enum name="TOP_LEFT" value="0" />
+            <enum name="TOP_CENTER" value="1" />
+            <enum name="TOP_RIGHT" value="2" />
+            <enum name="LEFT" value="3" />
+            <enum name="CENTER" value="4" />
+            <enum name="RIGHT" value="5" />
+            <enum name="BOTTOM_LEFT" value="6" />
+            <enum name="BOTTOM_CENTER" value="7" />
+            <enum name="BOTTOM_RIGHT" value="8" />
+        </attr>
+        <attr name="sv_unitUnderSpeedText" format="boolean" />
+        <attr name="sv_unitSpeedInterval" format="dimension" />
+        <attr name="sv_speedTextPadding" format="dimension" />
+        <attr name="sv_speedTextFormat" format="enum">
+            <enum name="INTEGER" value="0" />
+            <enum name="FLOAT" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="Speedometer" parent="Gauge">
+        <attr name="sv_indicatorColor" format="color" />
+        <attr name="sv_withIndicatorLight" format="boolean" />
+        <attr name="sv_indicatorLightColor" format="color" />
+        <attr name="sv_backgroundCircleColor" format="color" />
+
+        <attr name="sv_startDegree" format="integer" />
+        <attr name="sv_endDegree" format="integer" />
+
+        <attr name="sv_indicatorWidth" format="dimension" />
+
+        <attr name="sv_marksNumber" format="integer" />
+        <attr name="sv_marksPadding" format="dimension" />
+        <attr name="sv_markHeight" format="dimension" />
+        <attr name="sv_markWidth" format="dimension" />
+        <attr name="sv_markColor" format="color" />
+        <attr name="sv_markStyle" format="enum">
+            <enum name="ROUND" value="0" />
+            <enum name="BUTT" value="1" />
+        </attr>
+
+        <attr name="sv_indicator" format="enum">
+            <enum name="NoIndicator" value="0" />
+            <enum name="NormalIndicator" value="1" />
+            <enum name="NormalSmallIndicator" value="2" />
+            <enum name="TriangleIndicator" value="3" />
+            <enum name="SpindleIndicator" value="4" />
+            <enum name="LineIndicator" value="5" />
+            <enum name="HalfLineIndicator" value="6" />
+            <enum name="QuarterLineIndicator" value="7" />
+            <enum name="KiteIndicator" value="8" />
+            <enum name="NeedleIndicator" value="9" />
+        </attr>
+
+        <attr name="sv_speedometerMode" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="LEFT" value="1" />
+            <enum name="TOP" value="2" />
+            <enum name="RIGHT" value="3" />
+            <enum name="BOTTOM" value="4" />
+            <enum name="TOP_LEFT" value="5" />
+            <enum name="TOP_RIGHT" value="6" />
+            <enum name="BOTTOM_RIGHT" value="7" />
+            <enum name="BOTTOM_LEFT" value="8" />
+        </attr>
+
+        <attr name="sv_cutPadding" format="dimension" />
+
+        <attr name="sv_tickNumber" format="integer" />
+        <attr name="sv_tickRotation" format="boolean" />
+        <attr name="sv_tickPadding" format="dimension" />
+        <attr name="sv_tickTextFormat" format="enum">
+            <enum name="INTEGER" value="0" />
+            <enum name="FLOAT" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SpeedView" parent="Speedometer">
+        <attr name="sv_centerCircleColor" />
+        <attr name="sv_centerCircleRadius" />
+        <attr name="sv_sectionStyle" />
+    </declare-styleable>
+
+    <declare-styleable name="DeluxeSpeedView" parent="Speedometer">
+        <attr name="sv_centerCircleColor" />
+        <attr name="sv_centerCircleRadius" />
+        <attr name="sv_speedBackgroundColor" />
+        <attr name="sv_sectionStyle" />
+        <attr name="sv_withEffects" />
+    </declare-styleable>
+
+    <declare-styleable name="AwesomeSpeedometer" parent="Speedometer">
+        <attr name="sv_speedometerColor" />
+        <attr name="sv_trianglesColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RaySpeedometer" parent="Speedometer">
+        <attr name="sv_speedBackgroundColor" />
+        <attr name="sv_withEffects" />
+        <attr name="sv_rayColor" format="color" />
+        <attr name="sv_degreeBetweenMark" format="integer" />
+        <attr name="sv_rayMarkWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PointerSpeedometer" parent="Speedometer">
+        <attr name="sv_centerCircleColor" />
+        <attr name="sv_centerCircleRadius" />
+        <attr name="sv_speedometerColor" />
+        <attr name="sv_pointerColor" format="color" />
+        <attr name="sv_withPointer" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TubeSpeedometer" parent="Speedometer">
+        <attr name="sv_speedometerBackColor" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageSpeedometer" parent="Speedometer">
+        <attr name="sv_image" />
+    </declare-styleable>
+
+    <declare-styleable name="LinearGauge" parent="Gauge">
+        <attr name="sv_orientation" />
+        <attr name="sv_speedometerColor" />
+        <attr name="sv_speedometerBackColor" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageLinearGauge" parent="LinearGauge">
+        <attr name="sv_speedometerBackColor" />
+        <attr name="sv_image" />
+    </declare-styleable>
+
+
+    <!--start fitness tracker -->
+    <declare-styleable name="CircularProgressBar">
+        <attr name="maximum" format="float" />
+        <attr name="progressC" format="float" />
+        <attr name="animateProgress" format="boolean" />
+        <attr name="progressAnimationDuration" format="integer" />
+        <attr name="foregroundStrokeColor" format="color" />
+        <attr name="foregroundStrokeWidth" format="dimension" />
+        <attr name="drawBackgroundStroke" format="boolean" />
+        <attr name="backgroundStrokeColor" format="color" />
+        <attr name="backgroundStrokeWidth" format="dimension" />
+        <attr name="startAngleProgress" format="float" />
+        <attr name="indeterminate" format="boolean" />
+        <attr name="indeterminateMinimumAngle" format="float" />
+        <attr name="indeterminateSweepAnimationDuration" format="integer" />
+        <attr name="indeterminateRotationAnimationDuration" format="integer" />
+        <attr name="foregroundStrokeCap" format="enum">
+            <enum name="butt" value="0" />
+            <enum name="round" value="1" />
+            <enum name="square" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!--end fitness tracker-->
+
+
+</resources>

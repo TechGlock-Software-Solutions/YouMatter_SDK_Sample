@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolBarView"
+        layout="@layout/toolbar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_assessment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:id="@+id/indicator_progress"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_280sdp"
+                app:animateProgress="true"
+                app:cpv_autoTextSize="true"
+                app:cpv_barColor="@color/state_success"
+                app:cpv_barStrokeCap="Round"
+                app:cpv_barWidth="@dimen/_9sdp"
+                app:cpv_fillColor="@color/white"
+                app:cpv_innerContourColor="#F5F5F5"
+                app:cpv_maxValue="100"
+                app:cpv_outerContourSize="0dp"
+                app:cpv_rimColor="@color/vivantInactive"
+                app:cpv_rimWidth="@dimen/_10sdp"
+                app:cpv_seekMode="true"
+                app:cpv_spinColor="@color/highlight_blue"
+                app:cpv_textMode="Text"
+                app:cpv_value="0"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view2"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_260sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:elevation="@dimen/_10sdp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardCornerRadius="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--<com.rppg.library.common.camera.RppgCameraView
+                    android:id="@+id/camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:ovelayAnalysingColor="#FFFFFF"
+                    app:ovelayProcessingColor="#00FF00"
+                    app:overlayType="delauney" />-->
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--            <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_assessment"
+                        android:layout_width="@dimen/_265sdp"
+                        android:layout_height="@dimen/_267sdp"
+                        android:src="@drawable/img_face_mask_layer"
+                        app:layout_constraintBottom_toBottomOf="@id/layout_assessment"
+                        app:layout_constraintEnd_toEndOf="@id/layout_assessment"
+                        app:layout_constraintStart_toStartOf="@id/layout_assessment"
+                        app:layout_constraintTop_toTopOf="@id/layout_assessment"/>-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_assessment"
+            android:layout_width="@dimen/_265sdp"
+            android:layout_height="@dimen/_270sdp"
+            android:src="@drawable/img_face_mask_layer"
+            app:layout_constraintBottom_toBottomOf="@id/layout_assessment"
+            app:layout_constraintEnd_toEndOf="@id/layout_assessment"
+            app:layout_constraintStart_toStartOf="@id/layout_assessment"
+            app:layout_constraintTop_toTopOf="@id/layout_assessment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/bg_progress_bar"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/curved_prpgress_bar"
+        android:progressTint="@color/colorPrimary"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/layout_camera"
+        app:layout_constraintStart_toStartOf="@+id/layout_camera"
+        app:layout_constraintTop_toBottomOf="@+id/layout_camera" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_info"
+        style="@style/VivantTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="@string/WELLFIE_INSTRUCTION"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_camera"
+        app:layout_constraintStart_toStartOf="@+id/layout_camera"
+        app:layout_constraintTop_toBottomOf="@+id/layout_camera" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_info">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/timer_tv"
+            style="@style/VivantTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:textSize="@dimen/_22sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_sec"
+            style="@style/VivantTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="@string/SEC"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/timer_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_error"
+        style="@style/VivantTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:gravity="center"
+        android:minLines="3"
+        android:text=""
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/control"
+        app:layout_constraintEnd_toEndOf="@+id/layout_camera"
+        app:layout_constraintStart_toStartOf="@+id/layout_camera"
+        app:layout_constraintTop_toBottomOf="@+id/layout_time" />
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/control"
+        style="@style/CustomButton"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/START"
+        android:visibility="visible"
+        app:isTemplate="true"
+        app:layout_constraintBottom_toTopOf="@+id/txt_disclaimer"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_info"
+        app:layout_constraintStart_toStartOf="@+id/lbl_info" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="@string/LEARN_MORE"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_powered_by"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_powered_by"
+        style="@style/VivantTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="@string/POWERED_BY_WELLFIE"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

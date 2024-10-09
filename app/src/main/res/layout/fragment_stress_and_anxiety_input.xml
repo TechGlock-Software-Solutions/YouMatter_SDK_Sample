@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_progress"
+        style="@style/VivantTitle"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:text="---"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/indicator_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:max="21"
+        android:progress="0"
+        android:progressDrawable="@drawable/steps_bg_progress"
+        android:scaleY="0.35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_progress" />
+
+    <!--        <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/indicator_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"
+                android:max="21"
+                android:progressDrawable="@drawable/seekbar_drawable_progress"
+                android:progressTint="@color/highlight_blue"
+                android:progressBackgroundTint="@color/white"
+                android:thumb="@color/background_color"
+                android:thumbTint="@color/transparent"
+                android:maxHeight="@dimen/_2sdp"
+                android:scaleY="3"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicator_progress">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_question"
+            style="@style/VivantTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:gravity="start|center_vertical"
+            android:minLines="3"
+            android:text=" - - "
+            android:textColor="@color/textViewColor"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutOptions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_question"
+            app:layout_constraintStart_toStartOf="@+id/txt_question"
+            app:layout_constraintTop_toBottomOf="@+id/txt_question">
+
+            <RadioGroup
+                android:id="@+id/rg_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/rb_never"
+                    style="@style/CustomRadioButtonNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="NEVER"
+                    android:text="@string/NEVER"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioButton
+                    android:id="@+id/rb_sometimes"
+                    style="@style/CustomRadioButtonNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="SOMETIMES"
+                    android:text="@string/SOMETIMES"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioButton
+                    android:id="@+id/rb_often"
+                    style="@style/CustomRadioButtonNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="OFTEN"
+                    android:text="@string/OFTEN"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioButton
+                    android:id="@+id/rb_always"
+                    style="@style/CustomRadioButtonNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="ALMOSTALWAYS"
+                    android:text="@string/ALMOST_ALWAYS"
+                    android:textSize="@dimen/_14sdp" />
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_back"
+        style="@style/VivantTitle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:background="@color/transparent"
+        android:drawableStart="@drawable/ic_chevron_left"
+        android:drawableTint="@color/textViewColor"
+        android:gravity="center"
+        android:text="@string/PREVIOUS"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finish"
+        app:layout_constraintEnd_toStartOf="@+id/btn_next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_next"
+        style="@style/VivantTitle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@color/transparent"
+        android:drawableEnd="@drawable/ic_chevron_right"
+        android:drawableTint="@color/textViewColor"
+        android:gravity="center"
+        android:text="@string/NEXT"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_finish"
+        style="@style/CustomButton"
+        android:layout_width="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text="@string/FINISH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_next"
+        app:layout_constraintStart_toStartOf="@+id/btn_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

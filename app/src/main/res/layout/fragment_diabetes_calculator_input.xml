@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_14sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_14sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/VivantTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/PROFILE_PARAMETERS"
+                    android:textSize="@dimen/_14sdp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    style="@style/layoutStyle"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_age_group"
+                        style="@style/VivantTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/SELECT_YOUR_AGE_GROUP"
+                        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_age_group">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtAgeGroup"
+                            style="@style/VivantTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:drawableEnd="@drawable/ic_down_arrow"
+                            android:drawableTint="@color/colorPrimary"
+                            android:text="@string/UNDER_35_YEARS"
+                            android:textSize="@dimen/_13sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/vivantInactive"
+                            app:layout_constraintEnd_toEndOf="@+id/txtAgeGroup"
+                            app:layout_constraintStart_toStartOf="@+id/txtAgeGroup"
+                            app:layout_constraintTop_toBottomOf="@+id/txtAgeGroup" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/sp_age_group"
+                            style="@style/spinnerStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:dropDownSelector="@color/textViewColor"
+                            android:spinnerMode="dropdown"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    style="@style/layoutStyle"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_gender"
+                        style="@style/VivantTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/GENDER"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_gender">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtGender"
+                            style="@style/VivantTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableEnd="@drawable/ic_down_arrow"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:drawableTint="@color/colorPrimary"
+                            android:tag="Male"
+                            android:text="@string/MALE"
+                            android:textSize="@dimen/_13sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/vivantInactive"
+                            app:layout_constraintEnd_toEndOf="@+id/txtGender"
+                            app:layout_constraintStart_toStartOf="@+id/txtGender"
+                            app:layout_constraintTop_toBottomOf="@+id/txtGender" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinnerGender"
+                            style="@style/spinnerStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:dropDownSelector="@color/vivant_pale_grey"
+                            android:gravity="end"
+                            android:spinnerMode="dropdown"
+                            android:tag="GENDER"
+                            android:visibility="invisible"
+                            app:layout_constraintEnd_toEndOf="@+id/txtGender"
+                            app:layout_constraintStart_toStartOf="@+id/txtGender"
+                            app:layout_constraintTop_toBottomOf="@+id/txtGender" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    style="@style/layoutStyle"
+                    android:visibility="visible"
+                    android:weightSum="10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text="@string/QUES_DIABETES_1"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_checked_Origin"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:tag="NO"
+                            android:text="@string/NO"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/sw_origin"
+                            app:layout_constraintEnd_toStartOf="@+id/sw_origin"
+                            app:layout_constraintTop_toTopOf="@+id/sw_origin" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/sw_origin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:checked="false"
+                            android:thumb="@drawable/thumb_selector"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:track="@drawable/track_selector" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutStyle"
+                    android:visibility="visible"
+                    android:weightSum="10">
+
+                    <TextView
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text="@string/QUES_DIABETES_2"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_checked_Diabetes"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:text="@string/NO"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/sw_diabetes"
+                            app:layout_constraintEnd_toStartOf="@+id/sw_diabetes"
+                            app:layout_constraintTop_toTopOf="@+id/sw_diabetes" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/sw_diabetes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:checked="false"
+                            android:thumb="@drawable/thumb_selector"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:track="@drawable/track_selector" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutStyle"
+                    android:weightSum="10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text="@string/QUES_DIABETES_3"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_checked_bloodSugar"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:tag="No"
+                            android:text="@string/NO"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/sw_bloodSugar"
+                            app:layout_constraintEnd_toStartOf="@+id/sw_bloodSugar"
+                            app:layout_constraintTop_toTopOf="@+id/sw_bloodSugar" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/sw_bloodSugar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:checked="false"
+                            android:thumb="@drawable/thumb_selector"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:track="@drawable/track_selector" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutStyle"
+                    android:weightSum="10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text="@string/QUES_DIABETES_4"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_checked_bp_medication"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:tag="No"
+                            android:text="@string/NO"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/sw_bp_medication"
+                            app:layout_constraintEnd_toStartOf="@+id/sw_bp_medication"
+                            app:layout_constraintTop_toTopOf="@+id/sw_bp_medication" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/sw_bp_medication"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:checked="false"
+                            android:thumb="@drawable/thumb_selector"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:track="@drawable/track_selector" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutStyle"
+                    android:weightSum="10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text="@string/QUES_DIABETES_5"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_checked_smoke"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:tag="No"
+                            android:text="@string/NO"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/sw_smoke"
+                            app:layout_constraintEnd_toStartOf="@+id/sw_smoke"
+                            app:layout_constraintTop_toTopOf="@+id/sw_smoke" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/sw_smoke"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:checked="false"
+                            android:thumb="@drawable/thumb_selector"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:track="@drawable/track_selector" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutStyle"
+                    android:weightSum="10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text="@string/QUES_DIABETES_6"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_checked_fruits"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:tag="No"
+                            android:text="@string/NO"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/sw_fruits"
+                            app:layout_constraintEnd_toStartOf="@+id/sw_fruits"
+                            app:layout_constraintTop_toTopOf="@+id/sw_fruits" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/sw_fruits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:checked="false"
+                            android:thumb="@drawable/thumb_selector"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:track="@drawable/track_selector" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutStyle"
+                    android:weightSum="10">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="7"
+                        android:text="@string/QUES_DIABETES_7"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_checked_exercise"
+                            style="@style/VivantTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:tag="No"
+                            android:text="@string/NO"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/sw_exercise"
+                            app:layout_constraintEnd_toStartOf="@+id/sw_exercise"
+                            app:layout_constraintTop_toTopOf="@+id/sw_exercise" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/sw_exercise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:checked="false"
+                            android:thumb="@drawable/thumb_selector"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:track="@drawable/track_selector" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/VivantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:text="@string/MEASUREMENT_PARAMETERS"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/param_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                tools:listitem="@layout/item_mesurement_parameter" />
+
+            <com.techglock.health.app.common.view.ArcButton
+                android:id="@+id/btn_calculate_diabetes"
+                style="@style/CustomButton"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="@string/CALCULATE" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--        <com.caressa.allizhealth.app.common.view.ArcButton
+                android:id="@+id/btn_calculate_diabetes"
+                style="@style/CustomButton"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="@string/CALCULATE"
+                app:isTemplate="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

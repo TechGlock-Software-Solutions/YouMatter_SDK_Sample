@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/_5sdp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/VivantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/REPORT"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_heart_age_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_heart"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:tint="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img_tools_heart_age"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_heart_age"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/HEART_AGE"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_heart"
+                    app:layout_constraintStart_toEndOf="@+id/img_heart"
+                    app:layout_constraintTop_toTopOf="@+id/img_heart" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_heart_age"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="1dp"
+                    android:text=" --  "
+                    android:textColor="@color/vivant_marigold"
+                    android:textSize="@dimen/_22sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lbl_heart_age"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_heart_age_unit"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_heart_age" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_heart_age_unit"
+                    style="@style/VivantDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/YEARS"
+                    android:textColor="@color/vivant_marigold"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_heart_age"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_heart_age" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/bar_chart_heart_age"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:padding="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_heart">
+
+                </com.github.mikephil.charting.charts.BarChart>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_heart_age_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/layout_heart_age_data"
+                app:layout_constraintStart_toStartOf="@+id/layout_heart_age_data"
+                app:layout_constraintTop_toBottomOf="@+id/layout_heart_age_data">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_recommendation_title"
+                    style="@style/VivantTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_recommendation_description"
+                    style="@style/ToolsQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:lineSpacingExtra="@dimen/_1sdp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="@+id/txt_recommendation_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_recommendation_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_recommendation_title" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@color/vivantInactive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_heart_age_note" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_heart_risk_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_heart_risk"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:tint="@color/colorPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img_heart_risk"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_heart_risk"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/HEART_RISK"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_heart_risk"
+                    app:layout_constraintStart_toEndOf="@+id/img_heart_risk"
+                    app:layout_constraintTop_toTopOf="@+id/img_heart_risk" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_heart_risk"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:text=" --  "
+                    android:textColor="@color/vivant_nasty_green"
+                    android:textSize="@dimen/_22sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lbl_heart_risk"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_heart_risk_unit"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_heart_risk" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_heart_risk_unit"
+                    style="@style/VivantDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="%"
+                    android:textColor="@color/vivant_nasty_green"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_heart_risk"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_heart_risk" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/bar_chart_heart_risk"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:padding="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_heart_risk">
+
+                </com.github.mikephil.charting.charts.BarChart>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_description"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/DESCRIPTION"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintStart_toStartOf="@+id/layout_heart_risk_data"
+                app:layout_constraintTop_toBottomOf="@+id/layout_heart_risk_data" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_risk1"
+                    style="@style/ToolsQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/YOU_ARE_UNDER" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_risk2"
+                    style="@style/ToolsQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text=" - - "
+                    android:textColor="@color/vivant_nasty_green" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_heart_risk_data_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/heartRiskRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/param_report_item_view" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@color/vivantInactive"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_heart_age_note" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_heart_age_parameter_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/paramListRecyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/heart_risk_data_item" />
+
+            </LinearLayout>
+
+            <com.techglock.health.app.common.view.ArcButton
+                android:id="@+id/btn_restart"
+                style="@style/CustomButton"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="0dp"
+                android:text="@string/RESTART_ASSESSMENT"
+                android:visibility="gone"
+                app:isTemplate="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_risk1" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

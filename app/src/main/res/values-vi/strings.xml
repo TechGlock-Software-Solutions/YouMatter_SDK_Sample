@@ -1,0 +1,1715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">You Matter</string>
+
+    <string name="SAVE">Lưu</string>
+    <string name="SUBMIT">Nộp</string>
+    <string name="RESTART">Khởi động lại</string>
+    <string name="SEND">Gửi</string>
+    <string name="FINISH">Hoàn thành</string>
+    <string name="THATS_ALL">Đó là tất cả</string>
+    <string name="DONE">Xong</string>
+    <string name="NEXT">Tiếp theo</string>
+    <string name="PREVIOUS">Trước</string>
+    <string name="OK">VÂNG</string>
+    <string name="AND">và</string>
+    <string name="OR">Hoặc</string>
+    <string name="CONFIRM">Xác nhận</string>
+    <string name="PROCEED">Tiếp tục</string>
+    <string name="VERIFY">Xác minh</string>
+    <string name="SELECT">Lựa chọn</string>
+    <string name="SELECT_DATE">Chọn ngày</string>
+    <string name="CLOSE">Đóng</string>
+    <string name="CANCEL">Hủy</string>
+    <string name="EXIT">Lối ra</string>
+    <string name="BACK">Mặt sau</string>
+    <string name="START">Bắt đầu</string>
+    <string name="STOP">Dừng lại</string>
+    <string name="CONTINUE">Tiếp tục</string>
+    <string name="CALCULATE">Tính toán</string>
+    <string name="RECALCULATE">Tính toán lại</string>
+    <string name="DELETE">Xóa</string>
+    <string name="UPDATE">Cập nhật</string>
+    <string name="EDIT">Chỉnh sửa</string>
+    <string name="DOWNLOAD">Tải xuống</string>
+    <string name="DOWNLOADS">Tải xuống</string>
+    <string name="SHARE">Chia sẻ</string>
+    <string name="VIEW">Quan sát</string>
+    <string name="ADD">Thêm vào</string>
+    <string name="TAKE">Lấy</string>
+    <string name="ENABLED">Đã bật</string>
+    <string name="DISABLED">Tàn tật</string>
+    <string name="ALERT">Báo động</string>
+    <string name="VIEW_MORE">Xem thêm</string>
+    <string name="REPORT">Báo cáo</string>
+    <string name="DESCRIPTION">Miêu tả</string>
+    <string name="RECOMMENDATIONS">Khuyến nghị</string>
+    <string name="SKIP">Bỏ qua</string>
+    <string name="VALUE">Giá trị</string>
+    <string name="OBSERVATION">Quan sát</string>
+    <string name="REFRESH">Làm mới</string>
+    <string name="CATEGORY">Loại</string>
+    <string name="DOSE">Liều lượng</string>
+    <string name="TIME">Thời gian</string>
+    <string name="SEND_OTP">Nhận OTP</string>
+    <string name="RESEND_OTP">Gửi lại OTP</string>
+    <string name="RESEND">Gửi lại</string>
+    <string name="NO_THANKS">Không, cám ơn</string>
+    <string name="DEAR_USER">Thân gửi Người dùng</string>
+    <string name="MEDICINE_REMINDER">Nhắc nhở thuốc</string>
+    <string name="ALL">Tất cả</string>
+    <string name="IS">Là</string>
+    <string name="DASHBOARD">Bảng điều khiển</string>
+    <string name="HISTORY">Lịch sử</string>
+    <string name="DIGITIZE">Số hóa</string>
+    <string name="YES">Có</string>
+    <string name="NO">Không</string>
+    <string name="NONE">Không có</string>
+    <string name="MALE">Nam</string>
+    <string name="FEMALE">Nữ</string>
+    <string name="OTHER">Khác</string>
+    <string name="NAME">Tên</string>
+    <string name="CONTACT">Tiếp xúc</string>
+    <string name="GENDER">Giới tính</string>
+    <string name="PHONE">Điện thoại</string>
+    <string name="PHONE_NUMBER">Số điện thoại</string>
+    <string name="NUMBER">Số</string>
+    <string name="ALTERNATE_NUMBER">Số khác</string>
+    <string name="EMAIL">E-mail</string>
+    <string name="EMAIL_ADDRESS">Địa chỉ email</string>
+    <string name="ALTERNATE_EMAIL_ADDRESS">Địa chỉ Email khác</string>
+    <string name="ADDRESS">Địa chỉ nhà</string>
+    <string name="LOGIN">Đăng nhập</string>
+    <string name="PASSWORD">Mật khẩu</string>
+    <string name="AGE">Tuổi</string>
+    <string name="BIRTH_DATE">Ngày sinh</string>
+    <string name="DATE_OF_BIRTH">Ngày sinh</string>
+    <string name="MOBILE_NUMBER">Số điện thoại di động</string>
+    <string name="DATE">Ngày</string>
+    <string name="DAY">Ngày</string>
+    <string name="WEEK">Tuần</string>
+    <string name="MONTH">Tháng</string>
+    <string name="YEAR">Năm</string>
+    <string name="YEARS">Năm</string>
+    <string name="FOR">Vì</string>
+    <string name="FROM">Từ</string>
+    <string name="TO">đến</string>
+    <string name="ONLY">Chỉ một</string>
+    <string name="SEC">Sec</string>
+    <string name="TODAY">Hôm nay</string>
+    <string name="WEEKLY">Hàng tuần</string>
+    <string name="MONTHLY">Hàng tháng</string>
+    <string name="YEARLY">Hàng năm</string>
+    <string name="SESSION">Phiên họp</string>
+    <string name="MYSELF">Riêng tôi</string>
+    <string name="MEMBER">Thành viên</string>
+    <string name="MEMBERS">Các thành viên</string>
+    <string name="LOGOUT">Đăng xuất</string>
+    <string name="LOGOUT_APPLICATION">Đăng xuất ứng dụng</string>
+    <string name="ALLOW_PERMISSIONS">Cho phép quyền</string>
+    <string name="ADD_MORE">Bổ sung thêm</string>
+    <string name="TERMS_AND_CONDITIONS">Điều khoản &amp; Điều kiện</string>
+    <string name="PRIVACY_POLICY">Chính sách bảo mật</string>
+    <string name="VERSION">Phiên bản</string>
+    <string name="DISCLAIMER">Tuyên bố từ chối trách nhiệm</string>
+
+    <string name="SELECT_LANGUAGE">Chọn ngôn ngữ</string>
+    <string name="CHOOSE_APP_LANGUAGE">Chọn ngôn ngữ ứng dụng</string>
+    <string name="CHOOSE_APP_LANGUAGE_DESC">Bạn có thể chọn ngôn ngữ ứng dụng theo\ntùy chọn của mình</string>
+
+    <string name="RECORDS_EMPTY">Hồ sơ trống</string>
+    <string name="RECORDS_EMPTY_DESC">Thêm Bản ghi và nó sẽ hiển thị ở đây</string>
+    <string name="BIOMETRIC_AUTHENTICATION">Xác thực sinh trắc học</string>
+    <string name="BIOMETRIC_AUTHENTICATION_DESC">Nhập khóa màn hình điện thoại Dấu vân tay,\n Hình mở khóa, mã PIN hoặc Mật khẩu</string>
+    <string name="CONSULT_WITH_THERAPIST">Tham khảo ý kiến của chuyên gia sức khỏe tâm thần</string>
+
+    <string name="SELF">Bản thân</string>
+    <string name="FATHER">Cha</string>
+    <string name="MOTHER">Mẹ</string>
+    <string name="SON">Con trai</string>
+    <string name="DAUGHTER">Con gái</string>
+    <string name="BROTHER">Anh/em trai</string>
+    <string name="SISTER">Chị/em gái</string>
+    <string name="WIFE">Vợ</string>
+    <string name="HUSBAND">Chồng</string>
+    <string name="SPOUSE">Vợ (Chồng)</string>
+    <string name="GRAND_FATHER">Ông nội</string>
+    <string name="GRAND_MOTHER">Bà nội</string>
+
+    <string name="JANUARY">Tháng 1</string>
+    <string name="FEBRUARY">Tháng 2</string>
+    <string name="MARCH">Tháng 3</string>
+    <string name="APRIL">Tháng 4</string>
+    <string name="MAY">Tháng 5</string>
+    <string name="JUNE">Tháng 6</string>
+    <string name="JULY">Tháng 7</string>
+    <string name="AUGUST">Tháng 8</string>
+    <string name="SEPTEMBER">Tháng 9</string>
+    <string name="OCTOBER">Tháng 10</string>
+    <string name="NOVEMBER">Tháng 11</string>
+    <string name="DECEMBER">Tháng 12</string>
+
+    <string name="MON">Thứ hai</string>
+    <string name="TUE">Thứ ba</string>
+    <string name="WED">Thứ Tư</string>
+    <string name="THU">Thứ năm</string>
+    <string name="FRI">Thứ sáu</string>
+    <string name="SAT">Thứ bảy</string>
+    <string name="SUN">Chủ nhật</string>
+
+    <string name="YR">Năm</string>
+    <string name="YRS">Năm</string>
+    <string name="DAYS">Ngày</string>
+    <string name="MONTHS">Tháng</string>
+
+    <string name="LANGUAGE">Ngôn ngữ</string>
+    <string name="ENGLISH">Tiếng Anh</string>
+    <string name="HINDI">Tiếng Hindi</string>
+    <string name="LANGUAGE_API_SUCCESS_MSG">Tùy chọn ngôn ngữ được lưu trữ thành công</string>
+
+    <string name="BADGE_CONTENDER">Đối thủ</string>
+    <string name="BADGE_CHALLENGER">Người thách đấu</string>
+    <string name="BADGE_ACHIEVER">người thành đạt</string>
+
+    <string name="HEIGHT">Chiều cao</string>
+    <string name="WEIGHT">Cân Nặng</string>
+    <string name="BMI">BMI</string>
+    <string name="DURATION">Khoảng thời gian</string>
+    <string name="WAIST">Vòng eo</string>
+    <string name="SYSTOLIC">Tâm thu</string>
+    <string name="DIASTOLIC">Tâm trương</string>
+    <string name="BLOOD_PRESSURE">Huyết áp</string>
+    <string name="BP">Huyết Áp</string>
+    <string name="FEET_INCH">Feet/inch</string>
+
+    <string name="LOW">Thấp</string>
+    <string name="HIGH">Cao</string>
+    <string name="HIGH_NORMAL">Cao bình thường</string>
+
+    <string name="BOUNDRY_LOW_RISK">Nguy cơ thấp</string>
+    <string name="BOUNDRY_HIGH_RISK">Rủi ro cao</string>
+
+    <string name="ABNORMAL">Bất thường</string>
+    <string name="DIABETIC">Bệnh tiểu đường</string>
+    <string name="EARLY_DIABETIC">Tiểu đường sớm</string>
+    <string name="VERY_HIGH">Rất cao</string>
+    <string name="VERY_LOW">Rất thấp</string>
+    <string name="MILDLY_HIGH">Cao nhẹ</string>
+    <string name="MILDLY_LOW">Thấp nhẹ</string>
+    <string name="BORDERLINE_HIGH">Đường biên giới Cao</string>
+    <string name="BETTER">Tốt hơn</string>
+    <string name="NEAR_OPTIMAL">Gần tối ưu</string>
+    <string name="MODERATE_LOW">Thấp vừa phải</string>
+    <string name="MODERATE_HIGH">Cao vừa phải</string>
+    <string name="MILD_LOW">Thấp nhẹ</string>
+    <string name="MILD_HIGH">Cao nhẹ</string>
+    <string name="AVERAGE_RISK">Nguy cơ trung bình</string>
+    <string name="DESIRABLE">Mong muốn</string>
+    <string name="BEST">Tốt nhất</string>
+    <string name="OPTIMAL">Tối ưu</string>
+    <string name="GOOD">Tốt</string>
+
+    <string name="PRE_HYPERTENSION">Tăng huyết áp</string>
+    <string name="HYPERTENSION_STAGE_1">Tăng huyết áp- Giai đoạn 1</string>
+    <string name="HYPERTENSION_STAGE_2">Tăng huyết áp- Giai đoạn 2</string>
+    <string name="HYPERTENSION_CRITICAL">Tăng huyết áp- Nguy hiểm</string>
+
+    <string name="UNDERWEIGHT">Thiếu cân</string>
+    <string name="OVERWEIGHT">Thừa cân</string>
+    <string name="OBESE">Béo phì</string>
+    <string name="PRE_OBESE">Tiền béo phì</string>
+    <string name="OBESE_LEVEL_1">Béo phì cấp độ 1</string>
+    <string name="OBESE_LEVEL_2">Béo phì cấp độ 2</string>
+    <string name="OBESE_LEVEL_3">Béo phì cấp độ 3</string>
+
+    <string name="SWITCH_PROFILE">Chuyển hồ sơ</string>
+    <string name="PICK_YOUR_HEIGHT">Chọn chiều cao của bạn</string>
+    <string name="PICK_YOUR_WEIGHT">Chọn cân nặng của bạn</string>
+    <string name="PICK_YOUR_WAIST">Chọn vòng eo của bạn</string>
+    <string name="ENTER_WEIGHT">Nhập cân nặng của bạn</string>
+    <string name="ENTER_HEIGHT">Nhập chiều cao của bạn</string>
+    <string name="ENTER_YOUR_WAIST_SIZE">Nhập kích thước vòng eo của bạn</string>
+
+    <!--HRA-->
+    <string name="TAKE_YOUR_HRA">Tham gia HRA của bạn</string>
+    <string name="COMPLETE_YOUR_HRA">Hoàn thành HRA của bạn</string>
+    <string name="HIGH_RISK">Rủi ro cao</string>
+    <string name="MODERATE_RISK">Rủi ro vừa phải</string>
+    <string name="AT_RISK">Có rủi ro</string>
+    <string name="NEEDS_IMPROVEMENT">Cần cải thiện</string>
+    <string name="NEED_IMPROVEMENT">Cần cải thiện</string>
+    <string name="HEALTHY">Khỏe mạnh</string>
+    <string name="OPTIMUM">"Tối ưu "</string>
+    <!--HRA-->
+
+    <string name="DIET_PLAN">Kế hoạch ăn kiêng</string>
+    <string name="FITNESS_PLAN">Kế hoạch thể dục</string>
+    <string name="DOCTOR_PRESCRIPTION">"Đơn thuốc của bác sĩ "</string>
+    <string name="PATHOLOGY_REPORT">Báo cáo bệnh lý</string>
+    <string name="PATHOLOGY_LAB_REPORT">Báo cáo Phòng thí nghiệm Bệnh lý</string>
+    <string name="RECEIPT">Biên nhận</string>
+    <string name="HOSPITAL_REPORT">Báo cáo bệnh viện</string>
+    <string name="OTHER_DOCUMENT">Tài liệu khác</string>
+    <string name="HRA_REPORT">Báo cáo HRA</string>
+
+    <string name="VIEW_PROFILE_PHOTO">Xem ảnh hồ sơ</string>
+    <string name="OPEN_GALLERY">Mở thư viện</string>
+    <string name="TAKE_PHOTO">Chụp hình</string>
+    <string name="REMOVE_PHOTO">Gỡ bỏ hình</string>
+    <string name="GALLERY">Bộ sưu tập</string>
+    <string name="PHOTO">Ảnh</string>
+    <string name="REMOVE">Di dời</string>
+
+    <string name="ADDITIONAL_NOTES">Ghi chú bổ sung</string>
+    <string name="HINT_NOTES">Viết ghi chú bổ sung (Tùy chọn)</string>
+    <string name="NOTE">Ghi chú</string>
+
+    <string name="PERMISSION_REQUIRED">Yêu cầu quyền</string>
+    <string name="PERMISSIONS_REQUIRED">Yêu cầu quyền</string>
+    <string name="SELECT_RECORDS">Chọn hồ sơ</string>
+    <string name="SELECT_APP">Chọn ứng dụng</string>
+    <string name="SELECT_PROFILE_PHOTO">Chọn ảnh hồ sơ</string>
+    <string name="SELECT_AN_IMAGE">Chọn một hình ảnh</string>
+    <string name="SELECT_A_FILE">Chọn một tập tin</string>
+    <string name="SELECT_A_FILE_TO_UPLOAD">Chọn một tệp để tải lên</string>
+    <string name="NEED_WEBVIEW_PERMISSION">Cần có quyền lưu trữ, máy ảnh và âm thanh để tiếp tục</string>
+    <string name="NEED_STORAGE_PERMISSION">Để lưu trữ và đọc tệp, chúng tôi cần quyền lưu trữ</string>
+    <string name="NEED_CAMERA_PERMISSION">Chúng tôi cần sự cho phép của máy ảnh để nhấp vào snap và tải lên</string>
+
+    <string name="NEED_CAMERA_PERMISSION_WELLFIE">Để tiếp tục với Wellfie, chúng tôi cần có sự cho phép của Camera</string>
+    <string name="NEED_NOTIFICATION_PERMISSION">Để gửi thông báo, chúng tôi cần có quyền thông báo</string>
+    <string name="NEED_HEART_RATE_PERMISSION">1)Để theo dõi dữ liệu nhịp tim của bạn,\nchúng tôi cần có quyền của Google Fit Heart Rate.</string>
+    <string name="NEED_SLEEP_PERMISSION">2)Để theo dõi dữ liệu giấc ngủ của bạn, chúng tôi cần có quyền của Google Fit Sleep.</string>
+    <string name="NEED_PHYSICAL_PERMISSION">3)Để theo dõi hoạt động của bạn, chúng tôi cần có quyền Hoạt động thể chất.</string>
+
+    <string name="ERROR_GOOGLE_FIT_PERMISSION">Tất cả các quyền phù hợp với Google đều bị từ chối</string>
+    <string name="ERROR_PHYSICAL_ACTIVITY_PERMISSION">Quyền hoạt động thể chất bị từ chối</string>
+    <string name="ERROR_STORAGE_PERMISSION">Cần có quyền lưu trữ để tiếp tục</string>
+    <string name="ERROR_CAMERA_PERMISSION">Cần sự cho phép của máy ảnh để tiếp tục</string>
+    <string name="ERROR_NOTIFICATION_PERMISSION">Cần có quyền thông báo để gửi thông báo</string>
+    <string name="MSG_NOTIFICATION_PERMISSION">Đã cấp quyền thông báo</string>
+    <string name="MSG_VERIFICATION_CODE_SENT">Mã xác minh đã được gửi đến Email / Số điện thoại đã Đăng ký của bạn</string>
+
+    <string name="OTP_VERIFICATION">Xác minh OTP</string>
+    <string name="OTP_VERIFICATION_DESC">Vui lòng nhập OTP được gửi đến\nsố điện thoại di động đã đăng ký của bạn</string>
+
+    <string name="AN_ERROR_HAPPENED">Đã xảy ra lỗi, vui lòng thử lại!</string>
+    <string name="UNEXPECTED_ERROR">Đã xảy ra lỗi không mong muốn, vui lòng thử lại.</string>
+    <string name="UNABLE_TO_CONNECT">Không thể kết nối, vui lòng thử lại.</string>
+    <string name="SESSION_EXPIRED">Phiên của bạn đã hết hạn, vui lòng thử lại.</string>
+
+    <!--App Message-->
+    <string name="API_RETRY_ERROR">Xin hãy thử lại!</string>
+    <string name="MSG_API_DEFAULT_ERROR">Có gì đó không ổn đã xảy ra!</string>
+    <string name="SOME_ERROR">Đã xảy ra một số lỗi!</string>
+    <string name="NO_INTERNET_CONNECTION">Không có kết nối Internet</string>
+
+    <string name="NO_DATA">Không có dữ liệu</string>
+    <string name="NO_DATA_AVAILABLE">Không có dữ liệu</string>
+    <string name="NO_HISTORY_AVAILABLE">Không có lịch sử</string>
+    <string name="PASSWORD_CHANGED">Mật khẩu đã được thay đổi</string>
+    <string name="PASSWORD_CHANGED_SUCCESS">Mật khẩu của bạn đã được thay đổi \\ nThành công</string>
+    <string name="GO_TO_APP">Quay lại ứng dụng của tôi</string>
+    <string name="PLEASE_WAIT">Vui lòng chờ</string>
+    <string name="LOADING">Đang tải</string>
+    <string name="ERROR_GENERAL">Không thể kết nối, vui lòng thử lại</string>
+    <string name="AWW_SNAP">Ồ! Ngon ơ!</string>
+    <string name="PRESS_AGAIN_TO_EXIT">Nhấn một lần nữa để thoát</string>
+    <string name="SOMETHING_WENT_WRONG">Đã xảy ra sự cố</string>
+    <string name="MSG_SESSION_EXPIRED">Có vẻ như phiên của bạn đã hết hạn, vui lòng đăng nhập lại.</string>
+    <string name="ERROR_INTERNET_UNAVAILABLE">Có vẻ như bạn đang ngoại tuyến. Vui lòng kiểm tra kết nối internet của bạn và thử lại</string>
+    <string name="MSG_OTP">Mã OTP đã được gửi đến số điện thoại di động đã đăng ký của bạn, vui lòng đợi trong khi chúng tôi truy xuất</string>
+
+    <!--Error Msg-->
+    <string name="VALIDATE_OTP">Vui lòng nhập mã OTP hợp lệ</string>
+    <string name="VALIDATE_USER_ID">Vui lòng nhập ID người dùng hợp lệ</string>
+    <string name="VALIDATE_PASSWORD">Vui lòng nhập mật khẩu hợp lệ</string>
+    <string name="VALIDATE_NEW_PASSWORD">Vui lòng nhập mật khẩu mới hợp lệ</string>
+    <string name="VALIDATE_CONFIRM_PASSWORD">Vui lòng nhập mật khẩu xác nhận hợp lệ</string>
+    <string name="VALIDATE_EMPTY_OLD_PASSWORD">Vui lòng nhập mật khẩu cũ</string>
+    <string name="VALIDATE_EMPTY_NEW_PASSWORD">Vui lòng nhập mật khẩu mới</string>
+    <string name="VALIDATE_EMPTY_CONFIRM_PASSWORD">Vui lòng nhập xác nhận mật khẩu</string>
+
+    <string name="ERROR_PASSWORD_SHOULD_BE_MINIMUM_6_CHARACTERS">Mật khẩu phải có tối thiểu 6 ký tự</string>
+    <string name="ERROR_NEW_PASSWORD_MUST_BE_DIFFERENT_FROM_OLD_PASSWORD">Mật khẩu mới phải khác với mật khẩu cũ</string>
+    <string name="ERROR_PASSWORD_DOES_NOT_MATCH">Mật khẩu không đúng</string>
+    <string name="ERROR_PASSWORD_DOES_NOT_MATCH_REQUIREMENTS">Mật khẩu không phù hợp với Yêu cầu</string>
+    <string name="ERROR_PASSWORD_CONFIRM_DOES_NOT_MATCH">Mật khẩu và mật khẩu xác nhận không khớp</string>
+
+    <string name="PASSWORD_CRITERIA">Tiêu chí đặt mật khẩu</string>
+    <string name="PASSWORD_CRITERIA_DESC1">Độ dài mật khẩu phải tối thiểu 8 ký tự</string>
+    <string name="PASSWORD_CRITERIA_DESC2">Ký tự mật khẩu phải bao gồm :</string>
+    <string name="PASSWORD_CRITERIA_DESC3">Tối thiểu một chữ hoa</string>
+    <string name="PASSWORD_CRITERIA_DESC4">Tối thiểu một chữ thường</string>
+    <string name="PASSWORD_CRITERIA_DESC5">Tối thiểu một số</string>
+    <string name="PASSWORD_CRITERIA_DESC6">Tối thiểu một ký tự đặc biệt</string>
+    <string name="PASSWORD_CRITERIA_DESC7">Tên người dùng không được giống với Mật khẩu</string>
+
+    <string name="VALUE_SHOULD_BE_BETWEEN">Giá trị phải ở giữa</string>
+    <string name="PLEASE_ENTER_VALUE">Vui lòng nhập giá trị</string>
+    <string name="PLEASE_SELECT_OPTION">Vui lòng chọn tùy chọn</string>
+    <string name="PLEASE_SELECT_HEIGHT">Vui lòng chọn chiều cao</string>
+    <string name="PLEASE_SELECT_WEIGHT">Vui lòng chọn trọng lượng</string>
+    <string name="PLEASE_INSERT_SYSTOLIC_BP_VALUE">Vui lòng nhập giá trị huyết áp tâm thu</string>
+    <string name="PLEASE_INSERT_DIASTOLIC_BP_VALUE">Vui lòng nhập giá trị huyết áp tâm trương</string>
+    <string name="DIASTOLIC_VALUE_SHOULD_BE_LESS_THAN_SYSTOLIC_VALUE">Giá trị tâm trương phải nhỏ hơn giá trị tâm thu</string>
+    <string name="SYSTOLIC_BP_SHOULD_NOT_LESS_THAN_DIASTOLIC_BP">Giá trị tâm trương phải nhỏ hơn giá trị tâm thu</string>
+    <string name="PLEASE_INSERT_SYSTOLIC_BP_VALUE_BETWEEN_10_TO_300">Vui lòng nhập giá trị huyết áp tâm thu từ 10 đến 350</string>
+    <string name="PLEASE_INSERT_DIASTOLIC_BP_VALUE_BETWEEN_0_TO_150">Vui lòng nhập giá trị huyết áp tâm trương từ 0 đến 150</string>
+
+    <string name="PLEASE_FILL_DETAILS">Vui lòng điền thông tin chi tiết</string>
+    <string name="VALIDATE_AGE">Tuổi phải trên 18 tuổi</string>
+    <string name="VALIDATE_DATE_OF_BIRTH">Vui lòng nhập ngày sinh hợp lệ</string>
+    <string name="VALIDATE_USERNAME">Vui lòng nhập tên người dùng hợp lệ</string>
+    <string name="VALIDATE_GENDER">Vui lòng chọn giới tính</string>
+    <string name="VALIDATE_EMAIL">Vui lòng nhập email hợp lệ</string>
+    <string name="VALIDATE_EMAIL_MUST_INCLUDE">Email phải bao gồm @</string>
+    <string name="VALIDATE_PHONE">Xin nhập số điện thoại hợp lệ</string>
+    <string name="VALIDATE_DIFFERENT_PHONE">Vui lòng nhập số điện thoại khác</string>
+    <string name="VALIDATE_DIFFERENT_EMAIL">Vui lòng nhập địa chỉ email khác</string>
+    <string name="VALIDATE_MESSAGE">Vui lòng viết một cái gì đó trong tin nhắn</string>
+    <string name="VALIDATE_VERIFICATION_CODE">Vui lòng nhập mã xác minh hợp lệ</string>
+    <string name="VALIDATE_EMAIL_PHONE">Vui lòng nhập Email / điện thoại hợp lệ</string>
+    <string name="VALIDATE_SAME_PHONE">Vui lòng nhập một số mới</string>
+    <string name="ERROR_MOBILE_ALREADY_REGISTERED">Số này đã được đăng ký với chúng tôi</string>
+    <string name="VALIDATE_NAME">Vui lòng nhập tên hợp lệ</string>
+    <string name="ERROR_UNABLE_VERIFY_OTP">Không thể xác minh OTP được cung cấp, vui lòng thử lại</string>
+    <string name="ERROR_FILE_NOT_EXIST">Tệp không tồn tại trong hệ thống</string>
+    <string name="ERROR_NO_APPLICATION_TO_VIEW_PDF">Không có ứng dụng nào có sẵn để xem PDF</string>
+    <string name="ERROR_FILE_SIZE_LESS_THEN_5MB">Kích thước tệp phải nhỏ hơn 5MB</string>
+    <string name="ERROR_UNABLE_TO_READ_FILE">Không thể đọc tệp, vui lòng thử lại</string>
+    <string name="ERROR_FILES_NOT_ACCEPTED">tTệp không được chấp nhận</string>
+    <string name="ERROR_UNABLE_TO_OPEN_FILE">Không thể mở tập tin</string>
+    <string name="ERROR_FILE_DOES_NOT_EXIST">Tập tin không tồn tại</string>
+    <string name="ERROR_VALIDATE_OTP">Vui lòng nhập OTP hợp lệ.</string>
+    <string name="ERROR_INVALID_OTP">Vui lòng nhập Mã xác minh hợp lệ được gửi đến Email / Số điện thoại của bạn</string>
+    <string name="ERROR_UNABLE_TO_DOWNLOAD">Không thể tải xuống</string>
+    <!--Error Msg-->
+
+    <string name="HRA_SUMMARY">Tóm tắt HRA</string>
+    <string name="HEALTH_LIBRARY">Thư viện sức khỏe</string>
+    <string name="RELATED_BLOGS">Blog liên quan</string>
+    <string name="WELLNESS_SCORE_SUBTITLE_TEXT">Tình trạng sức khỏe dựa trên \ n câu trả lời của bạn cho bảng câu hỏi.</string>
+
+    <string name="DASH_3">---</string>
+    <string name="INDIAN_RUPEE">\u20B9</string>
+    <string name="RS">\u20A8</string>
+
+    <!--Start Blog module-->
+    <string name="NO_BLOG">Không có blog nào</string>
+    <string name="SEARCH_ARTICLES">Tìm kiếm bài viết</string>
+    <string name="SHARE_ARTICLE">Chia sẻ bài viết</string>
+    <!--End Blog Module -->
+
+    <!--Start Fitness Tracker -->
+    <string name="SWITCH_ACCOUNT">Chuyển tài khoản</string>
+    <string name="STEPS">Các bước</string>
+    <string name="GOAL">Mục Tiêu</string>
+    <string name="CALORIES">Lượng calo</string>
+    <string name="DISTANCE">Khoảng cách</string>
+    <string name="ACTIVE_TIME">Thời gian hoạt động</string>
+    <string name="MY_GOAL">Mục tiêu của tôi</string>
+
+    <string name="JOINED_ON">Joined On :</string>
+    <string name="AVG_STEPS">Avg Steps</string>
+    <string name="AVG_DISTANCE">Avg Distance</string>
+    <string name="AVG_CALORIES">Avg Calories</string>
+
+    <string name="MSG_GOALS_UPDATED">Đã cập nhật mục tiêu thành công</string>
+    <string name="FORCE_SYNC_CONFORMATION">Bạn có chắc chắn muốn chuyển sang một tài khoản Google Fit khác không? Xin lưu ý rằng dữ liệu thể dục và phần thưởng của bạn sẽ được tính dựa trên tài khoản Google Fit đã chọn kể từ ngày được chọn. Dữ liệu thể chất trong quá khứ và phần thưởng của bạn sẽ không thay đổi.</string>
+    <string name="MSG_SAME_GOOGLE_ACCOUNT">Vui lòng chọn một Tài khoản Google khác</string>
+    <string name="ERROR_ENTER_VALUE_IN_30_10000">Vui lòng nhập giá trị từ 30 đến 10000</string>
+    <string name="ERROR_ENTER_STEPS">Vui lòng nhập các bước</string>
+    <string name="NO_FITNESS_DATA">Dữ liệu thể dục không có sẵn</string>
+
+    <string name="TITLE_ACTIVITY_TRACKER">Trình theo dõi hoạt động thể chất</string>
+    <string name="YOUR_DAILY_GOAL">Mục tiêu hàng ngày của bạn</string>
+    <string name="CHANGE_DAILY_GOAL">Thay đổi mục tiêu hàng ngày</string>
+    <string name="THIS_WEEK">Tuần này</string>
+    <string name="LAST_WEEK">Tuần trước</string>
+    <string name="GOAL_REACHED">Đã đạt được mục tiêu :</string>
+    <!--End Fitness Tracker-->
+
+    <!--Start Home Module-->
+    <string name="POWERED_BY_SUD_LIFE">Được cung cấp bởi SUD Life</string>
+    <string name="HOME">Trang chính</string>
+    <string name="HOME2">Trang chính</string>
+    <string name="TRACK">Theo dõi</string>
+    <string name="YOUR_POLICY">Chính sách của bạn</string>
+    <string name="PROFILE">Hồ sơ</string>
+    <string name="SETTINGS">Cài đặt</string>
+    <string name="HOW_IT_WORKS">Làm thế nào nó hoạt động</string>
+
+    <string name="HI">CHÀO</string>
+    <string name="WELCOME_TO_YOU_MATTER">Chào mừng đến với You Matter</string>>
+
+    <string name="CHALLENGES">Thử thách</string>
+    <string name="ENROLLED">Đã đăng ký!</string>
+    <string name="ENROLL_NOW">Đăng ký ngay!</string>
+    <string name="DAYS_LEFT">Số ngày còn lại</string>
+    <string name="MARATHON_MSG">Việc đăng ký chính thức được MỞ cho You Matter Half Marathon - Phiên bản thứ 2. Nhấn vào đây để đăng ký.</string>
+
+    <string name="BUILD_YOUR_PATH_TO_WELLNESS">Xây dựng con đường\nđến với sức khỏe của bạn</string>
+    <string name="POWERED_BY_AKTIVO">Được cung cấp bởi Aktivo</string>
+    <string name="AKTIVO_SCORE">Điểm hoạt động</string>
+    <string name="MIND_SCORE">Điểm tâm trí</string>
+    <string name="SLEEP">Ngủ</string>
+    <string name="SEDENTARY">Ít vận động</string>
+    <string name="LIGHT_ACTIVITY">Hoạt động nhẹ</string>
+    <string name="CHECK_NOW">Kiểm tra ngay</string>
+
+    <string name="SCAN_YOUR_VITALS">Quét chỉ số sức sống của bạn</string>
+    <string name="SCAN_YOUR_VITALS_DESC">Quét các chỉ số sức khỏe của bạn để nhận báo cáo nhanh\nvề sức khỏe tổng thể của bạn.\nĐược cung cấp bởi WellFie</string>
+    <string name="POWERED_BY_WELLFIE">Được cung cấp bởi WellFie</string>
+    <string name="SCAN_NOW">Quét ngay bây giờ</string>
+    <string name="RESCAN_YOUR_VITALS">Quét lại sức sống của bạn</string>
+    <string name="LAST_SCANNED">Lần quét cuối cùng : </string>
+    <string name="OXYGEN_LEVEL">Mức oxy  : </string>
+    <string name="STRESS_LEVEL">Mức độ căng thẳng  : </string>
+    <string name="HEART_RATE">Nhịp tim</string>
+    <string name="BREATHING_RATE">Nhịp thở</string>
+    <string name="BLOOD_OXYGEN">Oxy trong máu</string>
+    <string name="CURRENT_VITALS">Sức sống hiện tại của bạn</string>
+    <string name="PAST_VITALS">Sức sống trước đây của bạn</string>
+    <string name="LAST_UPDATED">Cập nhật mới nhất</string>
+    <string name="WELLFIE_INSTRUCTION">Giữ khuôn mặt của bạn cố định và gần với máy ảnh, Chỉ số sức sống của bạn sẽ được tự động tính toán sau</string>
+    <string name="BEGIN_WELLFIE_MSG">Trước khi chúng ta bắt đầu, vui lòng cập nhật Chi tiết Chiều cao và Cân nặng của bạn</string>
+    <string name="LEARN_MORE">Tìm hiểu thêm</string>
+    <string name="WELLFIE_DISCLAIMER_LABEL">Các kết quả kiểm tra ở đây chỉ nhằm mục đích cung cấp thông tin.</string>
+    <string name="WELLFIE_DISCLAIMER1">WellFie Test hoàn toàn nhằm mục đích cung cấp thông tin và nâng cao sức khỏe nói chung. Kết quả đo phụ thuộc vào các điều kiện thử nghiệm như khả năng quay video của camera, ánh sáng trên khuôn mặt, độ trễ mạng và chuyển động của thiết bị chạy thử nghiệm. Và kết quả đo được cung cấp cho bạn không được coi là lời khuyên y tế hoặc để chẩn đoán, điều trị, chữa trị hoặc ngăn ngừa bất kỳ bệnh tật, bệnh tật hoặc thương tích nào. Nếu bạn có bất kỳ câu hỏi nào liên quan đến sức khỏe, vui lòng gọi điện hoặc gặp bác sĩ lâm sàng hoặc các chuyên gia y tế khác.</string>
+    <string name="WELLFIE_DISCLAIMER2">Bằng cách sử dụng ứng dụng này, bạn được coi là đồng ý với tuyên bố từ chối trách nhiệm Mục đích của WellFie Test này và đồng ý bồi thường cho chúng tôi khỏi bất kỳ hậu quả nào khác.</string>
+    <string name="WELLFIE_HRA_TITLE">Điều hướng đến HRA</string>
+    <string name="WELLFIE_HRA_MSG1">Để hiểu rõ hơn về sức khỏe, chúng tôi khuyên bạn nên đưa ra Đánh giá rủi ro sức khỏe (HRA)</string>
+    <string name="WELLFIE_HRA_MSG2">Bạn có muốn bắt đầu ngay bây giờ không?</string>
+
+    <string name="STATUS_CALIBRATING">Phân tích tín hiệu…</string>
+    <string name="STATUS_NOISE_DURING_EXECUTION">Phát hiện tình trạng không ổn định, cố gắng điều chỉnh lại</string>
+    <string name="STATUS_RECALIBRATING">Đang hiệu chỉnh lại… Vui lòng đợi</string>
+    <string name="STATUS_NO_FACE">Không phát hiện được khuôn mặt nào, Yêu cầu bạn quay mặt vào camera</string>
+    <string name="STATUS_FACE_LOST">Bị mất mặt, Yêu cầu bạn quay mặt vào camera</string>
+    <string name="STATUS_BRIGHT_LIGHT_ISSUE">Giao thoa ánh sáng mạnh… vui lòng kiểm tra xem có bất kỳ Ánh sáng nền nào phía sau khuôn mặt của bạn không; điều chỉnh</string>
+    <string name="STATUS_UNKNOWN">Trạng thái không xác định..vui lòng thử lại</string>
+    <string name="STATUS_SUCCESS">Tất cả các thông số có thể được tính toán</string>
+    <string name="STATUS_MOVING_WARNING">Làm ơn ngừng di chuyển</string>
+
+    <string name="CONSULT_THERAPIST">Tham khảo ý kiến của chuyên gia sức khỏe tâm thần</string>
+    <string name="GET_STARTED">Bắt đầu</string>
+
+    <string name="LEADERSHIP_EXPERIENCES">Kinh nghiệm\nlãnh đạo</string>
+    <string name="EXPLORE">Khám phá</string>
+
+    <string name="HRA_NOT_GIVEN">Thực hiện đánh giá rủi ro sức khỏe</string>
+    <string name="HRA_GIVEN">Điểm sức khỏe của bạn</string>
+    <string name="HRA_NOT_GIVEN_MSG">Xin chào bạn, cách tốt nhất để cải thiện sức khỏe là xác định nó. Hoàn thành HRA của bạn để có được những hiểu biết sâu sắc hơn về sức khỏe.</string>
+    <string name="VIEW_DETAILS">Xem chi tiết</string>
+
+    <string name="INVITE_TITLE">Tham khảo. Phần thưởng. Lặp lại.</string>
+    <string name="INVITE_DESC">Mời bạn bè, kiếm phần thưởng\nvà tiếp tục chu kỳ!</string>
+    <string name="GET_REWARDED">Nhận khen thưởng</string>
+
+    <string name="REFER_SUBJECT">Tham gia YouMatter</string>
+    <string name="REFER_A_FRIEND">Tham khảo một người bạn</string>
+    <string name="REFER_MSG1">Này đằng kia</string>
+    <string name="REFER_MSG2">muốn bạn tham gia You Matter ! 🙋‍♀️</string>
+    <string name="REFER_MSG3">You Matter là một ứng dụng chăm sóc sức khỏe &amp; ứng dụng chăm sóc sức khỏe giúp bạn chăm sóc cơ thể và tinh thần 💪🧠</string>
+    <string name="REFER_MSG4">Với You Matter, bạn có thể</string>
+    <string name="REFER_MSG5">Theo dõi điểm số sức khỏe của bạn 🤩</string>
+    <string name="REFER_MSG6">Nhận các đề xuất được cá nhân hóa và mục tiêu sức khỏe 🎯</string>
+    <string name="REFER_MSG7">Cạnh tranh với bạn bè của bạn và tham gia vào các thử thách thể lực khác nhau 🏃🏻🏃🏻‍♀</string>
+    <string name="REFER_MSG8">Và thực hiện quét khuôn mặt trong 1 phút 🕵️‍♀️ để nhận được chỉ số sức sống của bạn ngay lập tức 😮</string>
+    <string name="REFER_MSG9">Giống như có huấn luyện viên sức khỏe cá nhân của riêng bạn trong túi!📱</string>
+    <string name="REFER_MSG10">Tải ứng dụng ⬇️</string>
+    <string name="REFER_MSG11">và bắt đầu chăm sóc bản thân ngay hôm nay! 😊</string>
+    <string name="REFER_MSG12">Tải xuống ứng dụng để biết về bạn ⬇️</string>
+
+    <string name="REFER_MPT_MSG1">Tôi là một</string>
+    <string name="REFER_MPT_MSG2">Bạn có biết không, bây giờ bạn cũng có thể tìm thấy Tính cách tiền bạc của mình với Câu đố về tính cách tiền bạc của You Matter.</string>
+
+    <string name="YOUR_MONEY_PERSONALITY">Tính cách tiền bạc của bạn</string>
+    <!--    <string name="MONEY_PERSONALITY_TEST">Kiểm tra tính cách tiền bạc</string>-->
+    <string name="MPT_TITLE">Bạn có biết tính cách tiền bạc của mình không?</string>
+    <string name="MPT_DESC">Hãy làm bài kiểm tra về tiền của chúng tôi và chúng tôi sẽ cho bạn biết</string>
+    <string name="POWERED_BY_SALT">Cung cấp bởi muối</string>
+    <string name="VIEW_RESULT">Xem kết quả</string>
+    <string name="SALT_VIDEOS_TITLE">Lời khuyên chuyên gia</string>
+    <string name="SALT_VIDEOS_DESC">Quan điểm của chuyên gia về sức khỏe tài chính</string>
+
+    <string name="NIMEYA_TITLE">Financial Articles</string>
+    <string name="NIMEYA_DESC">Stay updated about the financial world &amp; learn about multiple investment options through FinTalk &amp; FinStat</string>
+    <string name="POWERED_BY_NIMEYA">Powered by Nimeya</string>
+    <string name="INVESTOMETERS">Investometers</string>
+    <string name="RISKO_METER">RISKO\METER</string>
+    <string name="PROTECTO_METER">PROTECTO\METER</string>
+    <string name="RETIRO_METER">RETIRO\METER</string>
+    <string name="RISKO_METER_DESC">Check your Risk Tolerance Level</string>
+    <string name="PROTECTO_METER_DESC">Check Adequacy of your Insurance Cover</string>
+    <string name="RETIRO_METER_DESC">How far away from reaching your retirement income</string>
+
+    <string name="WHAT_ARE_YOU_LOOKING_FOR">Bạn đang tìm kiếm cái gì?</string>
+    <string name="MEDITATION">Thiền</string>
+    <string name="YOGA">Yoga</string>
+    <string name="EXERCISE">Bài tập</string>
+    <string name="POWERED_BY_SMIT_FIT">Được cung cấp bởi Smit Fit</string>
+
+    <string name="CURATED_FOR_YOU">Tuyển chọn cho bạn</string>
+    <string name="ON_GOING">Đang đi</string>
+    <string name="JOIN_NOW">Tham gia ngay</string>
+    <string name="PLEASE_JOIN_THE_SESSION_ON">Hãy tham gia phiên họp ngày</string>
+
+    <string name="FINANCIAL_WELLNESS_CALCULATORS">Máy tính sức khỏe tài chính</string>
+    <string name="EDUCATION">Giáo dục</string>
+    <string name="MARRIAGE">Kết hôn</string>
+    <string name="WEALTH">Sự giàu có</string>
+    <string name="RETIREMENT">Sự nghỉ hưu</string>
+    <string name="HUMAN_VALUE">Giá trị con người</string>
+    <string name="POWERED_BY_NVEST">Được cung cấp bởi Nvest</string>
+
+    <string name="HYDRATION_TRACKER">Trình theo dõi hydrat hóa</string>
+    <string name="HYDRATION_TRACKER_DESC">Đăng nhập và theo dõi lượng nước uống của bạn</string>
+    <string name="VITAL_PARAMETERS">Các thông số quan trọng</string>
+    <string name="VITAL_PARAMETERS_DESC">Ghi lại các dấu hiệu sức khỏe quan trọng nhất của bạn và theo dõi tiến trình theo thời gian.</string>
+    <string name="MEDICATION_TRACKER">Trình theo dõi thuốc</string>
+    <string name="MEDICATION_DESCRIPTION">Không bao giờ quên một loại thuốc khác; với các thông báo và hướng dẫn kịp thời, luôn luôn đi đúng hướng để điều trị.</string>
+    <string name="MY_HEALTH_RECORDS">Hồ sơ sức khỏe của tôi</string>
+    <string name="HEALTH_RECORDS_DESC">Tải lên, theo dõi &amp; Chia sẻ Hồ sơ sức khỏe của bạn. Đồng thời số hóa các Báo cáo phòng thí nghiệm bệnh lý của bạn.</string>
+    <string name="TOOLS_AND_CALCULATORS">Các thông số quan trọng</string>
+    <string name="TOOLS_AND_CALCULATORS_DESC">Có được cái nhìn sâu sắc hơn về sức khỏe của bạn</string>
+    <string name="READ_LATEST_ARTICLES">Đọc các bài báo mới nhất</string>
+
+    <string name="TRACKER_HEART_AGE">Máy tính tuổi tim</string>
+    <string name="TRACKER_DIABETES">Bệnh tiểu đường Máy tính</string>
+    <string name="TRACKER_HYPERTENSION">Tăng huyết áp Máy tính</string>
+    <string name="TRACKER_STRESS_ANXIETY">Căng thẳng &amp; Lo lắng Máy tính</string>
+    <string name="TRACKER_SMART_PHONE">Điện thoại thông minh Nghiện</string>
+    <string name="TRACKER_DUE_DATE">Ngày dự sinh Máy tính</string>
+
+    <string name="TRACKER_DESC_HEART_AGE">Tim của bạn có trẻ như bạn đang có?</string>
+    <string name="TRACKER_DESC_DIABETES">Biết nguy cơ mắc bệnh tiểu đường của bạn</string>
+    <string name="TRACKER_DESC_HYPERTENSION">Biết huyết áp của bạn</string>
+    <string name="TRACKER_DESC_STRESS_ANXIETY">Bạn có đang cảm thấy căng thẳng không?</string>
+    <string name="TRACKER_DESC_SMART_PHONE">Bạn nghiện điện thoại thông minh?</string>
+    <string name="TRACKER_DESC_DUE_DATE">Biết ngày dự sinh của bạn</string>
+
+    <string name="DELETE_ACCOUNT">Xóa tài khoản</string>
+    <string name="DELETE_ACCOUNT_TITLE">Bạn có chắc rằng bạn muốn xóa tài khoản của bạn?</string>
+    <string name="DELETE_ACCOUNT_CONFIRMATION">Xin lưu ý rằng tất cả dữ liệu cá nhân và dữ liệu sức khỏe của bạn được liên kết với ứng dụng này sẽ bị xóa vĩnh viễn.\nTài khoản của bạn sẽ bị xóa hoàn toàn khỏi hệ thống trong vòng 72 giờ. Trong thời gian chờ đợi, bạn vẫn có thể truy cập ứng dụng và bạn sẽ được thông báo sau khi quá trình xóa tài khoản của bạn hoàn tất.\nNếu muốn truy cập lại các tính năng của ứng dụng trong tương lai, bạn có thể tự đăng ký lại.</string>
+    <string name="DELETE_ACCOUNT_SUCCESS">Tài khoản của bạn đã được xóa thành công</string>
+
+    <string name="RE_LOGIN">ĐănMật khẩu cũg nhập lại</string>
+    <string name="CHANGE_PASSWORD">Đổi mật khẩu</string>
+    <string name="CHANGE_PASSWORD_DESC">Mật khẩu mới của bạn phải khác \n với mật khẩu đã sử dụng trước đó</string>
+    <string name="OLD_PASSWORD">Mật khẩu cũ</string>
+    <string name="NEW_PASSWORD">Mật khẩu mới</string>
+    <string name="CONFIRM_PASSWORD">Xác nhận mật khẩu</string>
+
+    <!--SUD Customer Service Strings-->
+    <string name="TITLE_POLICY_DASHBOARD">Chế độ xem chính sách</string>
+    <string name="TITLE_POLICY_DETAILS">Chi tiết chính sách</string>
+    <string name="TITLE_PREMIUM_RECEIPT">Biên lai trả phí</string>
+
+    <string name="PREMIUM_RECEIPT">Biên lai trả phí</string>
+    <string name="POLICY_DOCUMENT">Tài liệu chính sách</string>
+    <string name="KNOW_YOUR_POLICY">Biết chính sách của bạn</string>
+    <string name="PAY_YOUR_PREMIUM">Thanh toán phí bảo hiểm của bạn</string>
+    <string name="DOWNLOAD_RECEIPT">Tải xuống Biên lai</string>
+    <string name="BUY_POLICY">Chính sách mua hàng</string>
+
+    <string name="POLICY_BANNER_CONSENT_MSG">Tôi ủy quyền cho SUD Life và các đại diện của SUD Life liên hệ với tôi qua Cuộc gọi, Email, SMS hoặc WhatsApp. Sự đồng ý này ghi đè đăng ký của tôi theo DNC / NDNC.</string>
+    <string name="LINK_SUD_POLICY_WITH_NUMBER">Liên kết Chính sách nhân thọ SUD của bạn với\nSố di động của bạn</string>
+    <string name="CUSTOMER_CARE">Chăm sóc khách hàng :-</string>
+    <string name="CUSTOMER_CARE_NO">1800 266 8833</string>
+    <string name="EMAIL_ID">Email ID :- </string>
+    <string name="CUSTOMER_CARE_EMAIL">customercare@sudlife.in</string>
+    <string name="ERROR_WHATS_NOT_INSTALLED">Ứng dụng Whats chưa được cài đặt trên thiết bị của bạn</string>
+
+    <string name="POLICY_AUTHENTICATION_TITLE">Xác minh di động</string>
+    <string name="POLICY_AUTHENTICATION_DESC">Để tiếp tục truy cập các dịch vụ chính sách, số điện thoại di động của bạn sẽ được xác minh\nđược liên kết với Chính sách nhân thọ SUD của bạn.</string>
+    <string name="PMJJBY_TITLE">Pradhan Mantri Jeevan Jyoti Bima Yojana(PMJJBY)</string>
+    <string name="PMJJBY_DESC">Truy cập Chính sách PMJJBY của bạn được liên kết với số điện thoại di động đã đăng ký của bạn</string>
+    <string name="GROUP_COI_TITLE">Bảo hiểm có kỳ hạn của Tập đoàn Nhân thọ SUD</string>
+    <string name="GROUP_COI_DESC">Truy cập Chính sách bảo hiểm có kỳ hạn của SUD Life Group được liên kết với số điện thoại di động đã đăng ký của bạn</string>
+    <string name="CREDIT_LIFE_TITLE">Chính sách cuộc sống tín dụng</string>
+    <string name="CREDIT_LIFE_DESC">Truy cập Chính sách cuộc sống tín dụng được liên kết với số điện thoại di động đã đăng ký của bạn</string>
+    <string name="CREDIT_LIFE_DIALOG_TITLE">Vui lòng chọn bất kỳ số nào bên dưới\nvà nhập giá trị của nó được liên kết\nvới Chính sách Tuổi thọ Tín dụng của bạn</string>
+
+    <string name="LOAN_ACCOUNT_NUMBER">Số tài khoản vay</string>
+    <string name="MEMBERSHIP_NUMBER">Mã số thành viên</string>
+    <string name="COI_NUMBER">Số COI</string>
+
+    <string name="POLICIES">Chính sách</string>
+    <string name="NEXT_RENEWAL">Gia hạn tiếp theo  :</string>
+    <string name="POLICY_HOLDER">Người giữ hợp đồng  :</string>
+    <string name="POLICY_NO">Chính sách số  :</string>
+    <string name="RISK_COMMENCEMENT_DATE">Ngày bắt đầu rủi ro  :</string>
+    <string name="SUM_ASSURED">Số tiền bảo hiểm  :</string>
+    <string name="POLICY_TYPE">Loại chính sách  :</string>
+    <string name="POLICY_TERM">Thời hạn chính sách  :</string>
+    <string name="PREMIUM_PAYING_TERM">Thời hạn đóng phí bảo hiểm  :</string>
+    <string name="MATURITY_DATE">Ngày đáo hạn  :</string>
+    <string name="NEXT_PREMIUM_DUE_DATE">Ngay đao hạn tiêp theo  :</string>
+    <string name="PREMIUM_FREQUENCY">Đặc biệt/Tần suất :</string>
+    <string name="FREQUENCY_OF_PREMIUM">Tần suất trả phí  :</string>
+    <string name="FUND_DETAILS">Chi tiết quỹ</string>
+    <string name="TOTAL_FUND_VALUE">Tổng giá trị quỹ  :</string>
+    <string name="FUND_VALUE">Giá trị quỹ  :</string>
+    <string name="UNITS_ALLOCATED">Đơn vị được phân bổ  :</string>
+    <string name="NAV">NAV  :</string>
+    <string name="NAV_DATE">Ngày NAV  :</string>
+
+    <string name="RECEIPT_ID">ID biên nhận</string>
+    <string name="RECEIPT_DATE">Ngày nhận</string>
+    <string name="BNFY_NAME">Tên bạn</string>
+    <string name="PRODUCT_UIN_CODE">Mã UIN sản phẩm</string>
+    <string name="APPLICATION_NUMBER">Sô hiệu đăng ki</string>
+    <string name="CURRENT_BILL_CHANNEL_DESCRIPTION">Mô tả kênh hóa đơn hiện tại</string>
+    <string name="BASE_PREMIUM_CGST_AMOUNT">Số tiền CGST Phí bảo hiểm Cơ bản</string>
+    <string name="BASE_PREMIUM_SGST_AMOUNT">Số tiền SGST Phí bảo hiểm Cơ bản</string>
+    <string name="BASE_PREMIUM_IGST_AMOUNT">Số tiền IGST Phí bảo hiểm Cơ bản</string>
+    <string name="COVR_SI">CovrSI</string>
+    <string name="TOTAL_PREMIUM">Tổng phí bảo hiểm</string>
+    <string name="CONTRACT_TYPE_DESCRIPTION">Loại hợp đồng Mô tả</string>
+    <string name="CURRENT_BILL_FREQUENCY">Tần suất hóa đơn hiện tại</string>
+    <string name="COVER_PREMIUM_TERM">Thời hạn bảo hiểm phí bảo hiểm</string>
+    <string name="PMJJBY_PASSWORD_FORMAT1">Xin lưu ý rằng chính sách được mua từ</string>
+    <string name="PMJJBY_PASSWORD_FORMAT2">Ngân hàng Ấn Độ hoặc Ngân hàng Liên minh Ấn Độ</string>
+    <string name="PMJJBY_PASSWORD_FORMAT3">chỉ có thể được tải xuống.</string>
+    <string name="PMJJBY_PASSWORD_FORMAT4">Ngoài ra, tài liệu còn được bảo vệ bằng mật khẩu và mật khẩu để mở tài liệu là ngày sinh của người dùng ở định dạng ddmmyyyy. tức là nếu ngày sinh của bạn là 19 tháng 5 năm 2000 thì mật khẩu sẽ là 19052000.</string>
+    <string name="PMJJBY_ERROR">Không có chính sách PMMJJBY nào được tìm thấy trên số điện thoại di động đã đăng ký của bạn. Vui lòng đến chi nhánh ngân hàng gần nhất để được hỗ trợ thêm.</string>
+    <string name="GROUP_COI_ERROR">Không có Chính sách bảo hiểm có kỳ hạn của SUD Life Group trên số điện thoại di động đã đăng ký của bạn. Vui lòng đến chi nhánh ngân hàng gần nhất để được hỗ trợ thêm.</string>
+    <string name="KYP_PASSWORD_FORMAT">Tài liệu này được bảo vệ bằng mật khẩu và mật khẩu để mở tài liệu là ngày sinh của người dùng ở định dạng ddmmyyyy. tức là nếu ngày sinh của bạn là 19 tháng 5 năm 2000 thì mật khẩu sẽ là 19052000..</string>
+
+    <string name="POLICY_MOBILE_NUMBER">Chính sách Số điện thoại di động</string>
+    <string name="CHANGE_POLICY_MOBILE_NUMBER">Chính sách chuyển đổi số điện thoại di động</string>
+    <string name="CALL_CUSTOMER_CARE">Gọi chăm sóc khách hàng</string>
+    <string name="WHATSAPP_CHATBOT">Chatbot WhatsApp</string>
+    <!--SUD Customer Service Strings-->
+
+    <string name="TITLE_MY_PROFILE">Hồ sơ của tôi</string>
+    <string name="TITLE_YOUR_PROFILE">Hồ sơ của bạn</string>
+    <string name="TITLE_EDIT_PROFILE">Chỉnh sửa hồ sơ</string>
+    <string name="TITLE_FAMILY_MEMBERS">Thành viên gia đình</string>
+    <string name="TITLE_EDIT_DETAILS">Chỉnh sửa thành viên gia đình</string>
+    <string name="TITLE_SELECT_RELATION">Chọn mối quan hệ</string>
+    <string name="TITLE_ADD_FAMILY_MEMBER">Thêm thành viên gia đình</string>
+    <string name="FAMILY_MEMBERS">Thành viên gia đình</string>
+    <string name="ADD_NEW_FAMILY_MEMBER">Thêm thành viên gia đình mới</string>
+
+    <string name="DELETE_FAMILY_MEMBER">Xóa thành viên</string>
+    <string name="REMOVE_PROFILE_PHOTO">Xóa ảnh hồ sơ</string>
+    <string name="ADD_NEW_MEMBER">Thêm một thành viên gia đình mới</string>
+    <string name="NO_RELATIVES">Không tìm thấy người thân</string>
+    <string name="MEMBER_ADDED">Đã thêm thành viên gia đình thành công</string>
+    <string name="MEMBER_DELETED">Hồ sơ đã được xóa thành công</string>
+    <string name="PROFILE_UPDATED">Hồ sơ được cập nhật thành công</string>
+    <string name="PROFILE_PHOTO_UPDATED">Đã cập nhật ảnh hồ sơ thành công</string>
+    <string name="PROFILE_PHOTO_REMOVED">Đã xóa ảnh hồ sơ thành công</string>
+    <string name="ERROR_PROFILE_PHOTO">Không thể xóa ảnh hồ sơ</string>
+    <string name="MOBILE_UPDATED">Đã cập nhật số điện thoại di động thành công</string>
+    <string name="MSG_REMOVE_PROFILE_PHOTO_CONFORMATION">Bạn có chắc chắn muốn Xóa Ảnh Hồ sơ không?</string>
+
+    <string name="MSG_DELETE_MEMBER_CONFIRMATION">Bạn có chắc chắn muốn xóa thành viên gia đình đã chọn khỏi danh sách không?</string>
+    <string name="MSG_LOGOUT_CONFORMATION">Bạn có chắc chắn muốn đăng xuất khỏi ứng dụng không?</string>
+    <string name="MSG_SWITCH_PROFILE_CONFIRMATION1">Bạn muốn xem hồ sơ sức khỏe của</string>
+    <string name="MSG_SWITCH_PROFILE_CONFIRMATION2">Bấm xác nhận để tiếp tục</string>
+    <string name="MSG_ALREADY_ADDED">Bạn đã thêm</string>
+    <string name="ERROR_INVALID_OLD_PASSWORD">Mật khẩu cũ không hợp lệ</string>
+    <string name="ERROR_PARENTS_AGE">Tuổi của cha mẹ phải lớn hơn tuổi của bạn</string>
+    <string name="ERROR_KIDS_AGE">Tuổi của trẻ em phải nhỏ hơn tuổi của bạn</string>
+    <string name="ERROR__GP_AGE">Tuổi của ông bà ngoại phải lớn hơn tuổi của bạn</string>
+    <string name="ERROR_AGE_NOT_LESS_THAN_18">Tuổi không được dưới 18 tuổi</string>
+    <string name="ERROR_SELECT_RELATION_FIRST">Vui lòng chọn mỗi quan hệ trước</string>
+    <string name="ERROR_PLEASE_ENTER_FEEDBACK_TO_SUBMIT">Vui lòng nhập phản hồi để gửi</string>
+    <string name="ERROR_DOB_UNAVAILABLE">Không thể lưu thông tin hồ sơ vì tuổi của người dùng đã đăng nhập không khả dụng</string>
+
+    <string name="SWITCH_FAMILY_MEMBER">Chuyển đổi thành viên gia đình</string>
+    <string name="SELECT_FAMILY_MEMBER_AS_ACTIVE_USER">Chọn thành viên gia đình làm người dùng hoạt động:</string>
+    <string name="WHICH_FAMILY_MEMBER_YOU_WANT_TO_ADD">Bạn muốn thêm thành viên gia đình nào?</string>
+    <string name="SWITCH_TO">Chuyển sang</string>
+
+    <string name="NAME_MANDATORY">* Tên</string>
+    <string name="GENDER_MANDATORY">* Giới tính</string>
+    <string name="DATE_OF_BIRTH_MANDATORY">* Ngày sinh</string>
+    <string name="NUMBER_MANDATORY">* Số</string>
+    <string name="EMAIL_ADDRESS_MANDATORY">* Địa chỉ email</string>
+
+    <!--Navigation Options-->
+    <string name="NAVIGATION_DRAWER_OPEN">Mở ngăn điều hướng</string>
+    <string name="NAVIGATION_DRAWER_CLOSE">Đóng ngăn điều hướng</string>
+    <!--Navigation Options-->
+    <string name="EXIT_MES">Nhấn thêm một lần nữa để thoát khỏi ứng dụng</string>
+
+    <string name="TUTORIAL_AKTIVO_SCORE">Aktivo Score</string>
+    <string name="TUTORIAL_AKTIVO_SCORE_DESC">Get your Physical activity score based on your daily Steps, Sleep, Exercise, Sedentary &amp; Light Activity</string>
+    <string name="TUTORIAL_MIND_SCORE">Mind Score</string>
+    <string name="TUTORIAL_MIND_SCORE_DESC">Get your mental wellness score by answering some simple questions related to your mental health.</string>
+    <string name="TUTORIAL_CHALLENGE">Challenge</string>
+    <string name="TUTORIAL_CHALLENGE_DESC">Participate in challenge and compete against other members on the leaderboard.</string>
+    <string name="TUTORIAL_CONSULT_THERAPIST">Consult with Mental Health Professional</string>
+    <string name="TUTORIAL_CONSULT_THERAPIST_DESC">Consult with our team of experts for any of your mental wellness related queries.</string>
+    <string name="TUTORIAL_HRA">Health Risk Assessment</string>
+    <string name="TUTORIAL_HRA_DESC">Get your wellness score, answer simple questions about your lifestyle and get a comprehensive wellness score.</string>
+    <string name="TUTORIAL_SALT_MPT">Money Personality Test</string>
+    <string name="TUTORIAL_SALT_MPT_DESC">Want to know more about your financial personality? Taake this simple money personality test and check.</string>
+    <string name="TUTORIAL_SMIT_FIT">What are you looking for?</string>
+    <string name="TUTORIAL_SMIT_FIT_DESC">Get rich content related to Meditation, Yoga &amp; Exercise.</string>
+    <string name="TUTORIAL_LIVE_SESSIONS">Live Health Sessions</string>
+    <string name="TUTORIAL_LIVE_SESSIONS_DESC">Join our live health sessions related to Meditation, Yoga &amp; Exercise.</string>
+    <string name="TUTORIAL_INVESTOMETERS">Investometers</string>
+    <string name="TUTORIAL_INVESTOMETERS_DESC">- Check your risk tolerance level\n- Check your life &amp; health insurance gap\n- Check how far away you are from reaching your retirement income</string>
+    <string name="TUTORIAL_NVEST_CALCULATORS">@string/FINANCIAL_WELLNESS_CALCULATORS</string>
+    <string name="TUTORIAL_NVEST_CALCULATORS_DESC">Want to understand regarding your financial goals? Check out these utility calculators to know more.</string>
+    <string name="TUTORIAL_WELLFIE">Scan your vitals</string>
+    <string name="TUTORIAL_WELLFIE_DESC">Our advanced facial scan helps you to get quick overview of your current vital parameters like BP, SP02, Stress level and BMI.</string>
+    <string name="TUTORIAL_SETTINGS">@string/SETTINGS</string>
+    <string name="TUTORIAL_SETTINGS_DESC">- Switch Policy Mobile Number\n- Call Customer Care\n- WhatsApp Chatbot</string>
+    <string name="TUTORIAL_POLICIES">@string/POLICIES</string>
+    <string name="TUTORIAL_POLICIES_DESC">Get access to the policies attached to your registered mobile number &amp; their servicing features. You can also check policies for different mobile number by changing it from the settings options above.</string>
+    <string name="TUTORIAL_DOWNLOADS">@string/DOWNLOADS</string>
+    <string name="TUTORIAL_DOWNLOADS_DESC">- Download Pradhan Mantri Jeevan Jyoti Bima Yojana(PMJJBY) Policy linked to your registered mobile number\n- Download SUD Life Group Term Insurance Policy linked to your registered mobile number</string>
+    <string name="SHARE_WITH_FRIENDS">Share with friends</string>
+    <string name="SHARE_MESSAGE_FOR_CENTURION_BANNER">Hey,Have you checked out this amazing new plan? SUD Life Centurion 🏏 Invest now for a secured tomorrow. 💰 One-time premium and get up to 7.2% returns* after 100 months. Check it out now! 🌟 </string>
+    <string name="SHARE_MESSAGE_FOR_SMART_HEALTH_PRODUCT_BANNER">Hey, Have you checked out this amazing new plan? SUD Life Smart Healthcare.\nA plan that provides health insurance protection against major &amp; minor conditions of critical illness.\nCheck it out now! 🌟</string>
+    <string name="SHARE_MESSAGE_FOR_BANNER_GENERAL">Hey, Have you checked out this amazing new plan? Check it out now! 🌟</string>
+    <string name="CLICK_HERE_TO_KNOW_MORE">Click Here To Know More</string>
+    <string name="FITNESS_TRACKER">Fitness Tracker</string>
+    <string name="DISCLAIMER_CENTURION_BANNER">By submitting my details, I override my NDNC registration and authorize Star Union Dai-ichi Life Insurance and its representatives to contact me through call, SMS, WhatsApp or E-mail.</string>
+    <string name="TRACK_FITNESS_DATA_STEPS_EXERCISE_SLEEP_OPTIMIZE_WELL_BEING_GOALS">Track fitness data: steps, exercise, sleep; optimize well-being goals.</string>
+    <!--End Home Module -->
+
+    <!--Start Hra Module -->
+    <string name="HRA">HRA</string>
+    <string name="TITLE_HRA">Đánh giá rủi ro sức khỏe</string>
+    <string name="I_DONT_REMEMBER">Tôi không biết / nhớ</string>
+    <string name="RESTART_HRA">Khởi động lại HRA</string>
+    <string name="DOWNLOAD_REPORT">Tải báo cáo xuống</string>
+    <string name="BEFORE_WE_BEGIN">Trước khi chúng tôi bắt đầu</string>
+
+    <string name="WELCOME_TO_HRA">Chào mừng đến với Đánh giá rủi ro sức khỏe</string>
+    <string name="WELCOME_TO_HRA_desc">Tóm tắt tình trạng sức khỏe toàn diện dựa trên câu trả lời của bạn cho bảng câu hỏi.</string>
+    <string name="CHECKOUT_YOUR_WELLNESS">Kiểm tra sức khỏe của bạn</string>
+    <string name="CHECKOUT_YOUR_WELLNESS_desc">Nhận điểm số sức khỏe của bạn, Tóm tắt Rủi ro Sức khỏe và Đề xuất Kiểm tra Phòng thí nghiệm được Đề xuất.</string>
+
+    <string name="YOUR_WELNESS_SCORE">Điểm sức khỏe của bạn</string>
+    <string name="WELLNESS_SCORE">Điểm sức khỏe</string>
+    <string name="RISK_SUMMARY">Tóm tắt rủi ro</string>
+    <string name="RECOMMENDED_LAB_TESTS">Các bài kiểm tra phòng thí nghiệm được đề xuất</string>
+    <string name="FREQUENCY">Tính thường xuyên</string>
+    <string name="COMMON_TEST_CHECK_UPS">Kiểm tra thông thường/Kiểm tra sức khỏe</string>
+    <string name="TEST_CHECK_UPS_SUGGESTED_BY_DOCTOR">Kiểm tra / Kiểm tra sức khỏe do Bác sĩ Đề xuất</string>
+
+    <string name="HRA_RANGE_HIGH_RISK">0 – 15</string>
+    <string name="HRA_RANGE_MODERATE_RISK">16 – 45</string>
+    <string name="HRA_RANGE_HEALTHY">46 – 85</string>
+    <string name="HRA_RANGE_OPTIMUM">86 – 100</string>
+
+    <string name="YOUR_BMI">BMI của bạn</string>
+    <string name="YOUR_BP_IS">Chỉ số huyết áp của bạn</string>
+    <string name="YOUR_BS_IS">Mức đường huyết của bạn là</string>
+    <string name="YOUR_CL_IS">Mức Cholesterol của bạn là</string>
+
+    <string name="PLEASE_SELECT_ALL_THAT_APPLY">Vui lòng chọn tất cả những gì phù hợp &amp; Bấm tiếp</string>
+    <string name="SWITCH_PROFILE_DESC">Để cung cấp HRA cho Thành viên gia đình, Hồ sơ của bạn sẽ được chuyển sang Thành viên gia đình tương ứng đó</string>
+    <string name="START_HRA">Bắt đầu đánh giá</string>
+    <string name="TAKE_HRA">Tham gia HRA</string>
+    <string name="SKIP_FOR_NOW">Bỏ qua bây giờ</string>
+    <string name="ADD_FAMILY_MEMBER">Thêm thành viên gia đình</string>
+    <string name="VIEW_REPORT">Xem báo cáo</string>
+
+    <string name="OTHERS">Khác</string>
+
+    <string name="RANDOM_BLOOD_SUGAR">Máu ngẫu nhiên Đường</string>
+    <string name="FASTING_BLOOD_SUGAR">Máu lúc nhịn ăn Đường</string>
+    <string name="POST_MEAL_BLOOD_SUGAR">Máu sau bữa ăn Đường</string>
+    <string name="HBA1C">HbA1c</string>
+
+    <string name="RANDOM_BS">Máu ngẫu nhiên \n Đường</string>
+    <string name="FASTING_BS">Máu lúc nhịn ăn \n Đường</string>
+    <string name="POST_MEAL_BS">Máu sau bữa ăn \n Đường</string>
+
+    <string name="TOTAL_CHOL">Tổng \n Cholesterol</string>
+    <string name="TOTAL_CHOLESTEROL">Tổng Cholesterol</string>
+    <string name="HDL">HDL</string>
+    <string name="LDL">LDL</string>
+    <string name="TRIGLYCERIDES">Triglycerides</string>
+    <string name="VLDL">VLDL</string>
+
+    <string name="HIGH_BLOOD_PRESSURE">Huyết áp cao</string>
+    <string name="THYROID_IMBALANCE">Mất cân bằng tuyến giáp</string>
+    <string name="HIGH_CHOLESTEROL">Cholesterol cao</string>
+    <string name="DIABETES">Bệnh tiểu đường</string>
+    <string name="ASTHMA">Bệnh hen suyễn</string>
+    <string name="ARTHRITIS">Viêm khớp</string>
+    <string name="MENTAL_ILLNESS">Bệnh tâm thần</string>
+    <string name="HEART_DISEASE">Bệnh tim</string>
+
+    <string name="WOMEN_PERIOD">Kinh nguyệt không đều</string>
+    <string name="WOMEN_PCOS">Hội chứng buồng trứng đa nang (PCOS)</string>
+    <string name="WOMEN_DISCHARGE">Tiết dịch âm đạo</string>
+    <string name="WOMEN_UTI">Nhiễm trùng đường tiết niệu</string>
+    <string name="WOMEN_BRESTPAIN">Căng da ngực</string>
+    <string name="WOMEN_FIB">U xơ</string>
+
+    <string name="CAVITIES">Sâu răng</string>
+    <string name="BAD_BREATH">Hôi miệng</string>
+    <string name="STAINING">Răng ố vàng</string>
+    <string name="BLEEDING_GUM">Chảy máu nướu răng</string>
+    <string name="BLURRED_VISION">Mắt mờ</string>
+    <string name="NEAR_FAR_SIGHTEDNESS">Cận / Viễn thị</string>
+    <string name="DRY_EYES">Khô mắt</string>
+    <string name="DANDRUFF">Gàu</string>
+    <string name="ACNE">Mụn</string>
+    <string name="SKIN_DRYNESS">Da khô</string>
+
+    <string name="OBESITY">Béo phì</string>
+    <string name="HEART_PROBLEMS">Vấn đề tim mạch</string>
+    <string name="BREAST_CANCER">Ung thư vú</string>
+    <string name="COLORECTAL_CANCER">Ung thư đại trực tràng</string>
+    <string name="CERVICAL_CANCER">Ung thư cổ tử cung</string>
+
+    <string name="RB_ALWAYS">Luôn luôn</string>
+    <string name="RB_SOMETIMES">Thỉnh thoảng</string>
+    <string name="RB_RARELY">Hiếm khi</string>
+    <string name="RB_NEVER">Không bao giờ</string>
+    <string name="RB_USUALLY">Thường xuyên</string>
+
+    <string name="LESS_THAN_6HOURS">Ít hơn 6 giờ</string>
+    <string name="SIXTO_EIGHT_HOURS">Từ 6 đến 8 giờ</string>
+    <string name="MORE_THAN_8HOURS">Nhiều hơn 8 giờ</string>
+
+    <string name="RB_DONT_SMOKE">Không, tôi không hút thuốc</string>
+    <string name="RB_12CIGAR">Từ 1 đến 2 điếu thuốc lá</string>
+    <string name="RB_34CIGAR">Từ 3 đến 4 điếu thuốc lá</string>
+    <string name="RB_MORETHAN_4CIGAR">"Nhiều hơn 4 điếu thuốc lá "</string>
+
+    <string name="I_DONT_DRINK">"Không, tôi không uống "</string>
+    <string name="RB_1_2_PEGS">Lên đến 60ml</string>
+    <string name="RB_3_4_PEGS">Từ 60 – 120ml</string>
+    <string name="RB_4_PEGS">Nhiều hơn 120ml</string>
+
+    <string name="RB_VERY_STRONG">Rất gắn kết</string>
+    <string name="RB_ABOVE_AVERAGE">Trên mức trung bình</string>
+    <string name="RB_BELOW_AVERAGE">Dưới trung bình</string>
+    <string name="RB_NOT_SURE">Không rõ</string>
+
+    <string name="COMPLETELY">"Hoàn toàn "</string>
+    <string name="MOSTLY">Hầu hết</string>
+    <string name="PARTLY">Một phần nào đó</string>
+    <string name="NOT_SATISFIED">Không hài lòng</string>
+
+    <string name="BRIGHT_LIGHT">Ánh sáng</string>
+    <string name="LOUD_NOISE">Tiếng ồn lớn</string>
+    <string name="HAZARDOUS_GASES">Khí độc hại</string>
+    <string name="TALKING_LONG">Nói chuyện trong nhiều giờ</string>
+
+    <string name="DEATH_OF_RELATIVE">Người thân mất / Người thân</string>
+    <string name="END_OF_RELATIONSHIP">Kết thúc mối quan hệ như ly hôn / chia tay</string>
+    <string name="FEEL_DEMOTIVATED">Cảm thấy có không động lực trong công việc</string>
+    <string name="PHYSICAL_PROBLEM">Lạm dụng thể chất, tình dục hoặc tình cảm</string>
+    <string name="ONGOING_MEDICATION">Đang dùng thuốc</string>
+    <string name="FINANCIAL_MATTER">Vấn đề tài chính / Mất việc</string>
+    <string name="HEALTH_CONCERNS">Mối quan tâm về sức khỏe</string>
+
+    <string name="GESTATION_DIAB">Tiểu đường thai kỳ</string>
+    <string name="WOMEN_CONCEIVE">Sự phức tạp trong việc thụ thai</string>
+    <string name="WOMEN_PID">Bệnh viêm vùng chậu</string>
+
+    <string name="CHOLESTEROL_TEST">Kiểm tra Cholesterol</string>
+    <string name="PAP_TEST">Phết tế bào cổ tử cung</string>
+    <string name="THYROID_TEST">Hồ sơ tuyến giáp</string>
+    <string name="BASIC_HEALTH_CHECKUP">Kiểm tra sức khỏe cơ bản</string>
+    <string name="SUGAR_PROFILE_TEST">Hồ sơ đường huyết</string>
+    <string name="MAMMOGRAM">Chụp nhũ ảnh</string>
+    <string name="PAP_SMEAR_TEST">Thử nghiệm Pap Smear</string>
+
+    <string name="PLEASE_SELECT_FAMILY_MEMBER">Vui lòng chọn thành viên gia đình</string>
+    <string name="EXIT_ASSESSMENT">Đánh giá thoát?</string>
+    <string name="EXIT_ASSESSMENT_DESC">Bạn có chắc chắn muốn thoát không? \ n Tiến trình đánh giá hiện tại của bạn sẽ bị mất.</string>
+
+    <string name="PLEASE_ENTER_VALID_RANDOM_SUGAR_VALUE">Vui lòng nhập giá trị Đường ngẫu nhiên</string>
+    <string name="PLEASE_ENTER_VALID_FASTING_SUGAR_VALUE">Vui lòng nhập giá trị Đường lúc nhịn ăn</string>
+    <string name="PLEASE_ENTER_VALID_POST_MEAL_BLOOD_SUGAR_VALUE">Vui lòng nhập giá trị đường huyết sau bữa ăn</string>
+    <string name="PLEASE_ENTER_VALID_HBA1C_SUGAR_VALUE">Vui lòng nhập giá trị HbA1c hợp lệ</string>
+
+    <string name="RANDOM_SUGAR_VALUE_MUST_BE_BETWEEN">Giá trị Đường ngẫu nhiên phải nằm trong khoảng</string>
+    <string name="FASTING_SUGAR_VALUE_MUST_BE_BETWEEN">Giá trị đường lúc nhịn ăn phải nằm trong khoảng</string>
+    <string name="POST_MEAL_BLOOD_SUGAR_VALUE_MUST_BE_BETWEEN">Giá trị Đường trong máu Sau bữa ăn phải nằm trong khoảng</string>
+    <string name="HBA1C_VALUE_MUST_BE_BETWEEN">Giá trị HbA1c phải nằm trong khoảng</string>
+
+    <string name="PLEASE_SELECT_VALID_HEIGHT_BETWEEN">Vui lòng chọn chiều cao hợp lệ giữa</string>
+    <string name="PLEASE_SELECT_VALID_WEIGHT_BETWEEN">Vui lòng chọn trọng lượng hợp lệ giữa</string>
+    <string name="PLEASE_SELECT_VALID_INPUT_HEIGHT">Vui lòng cung cấp đầu vào hợp lệ cho Chiều cao.</string>
+    <string name="PLEASE_SELECT_VALID_INPUT_WEIGHT">Vui lòng cung cấp đầu vào hợp lệ cho Cân nặng.</string>
+    <string name="PLEASE_ENTER_VALID_TOTAL_CHOLESTEROL_VALUE">Vui lòng nhập tổng giá trị Cholesterol hợp lệ</string>
+    <string name="PLEASE_ENTER_VALID_HDL_VALUE">Vui lòng nhập giá trị HDL hợp lệ</string>
+    <string name="PLEASE_ENTER_VALID_LDL_VALUE">Vui lòng nhập giá trị LDL hợp lệ</string>
+    <string name="PLEASE_ENTER_VALID_TRIGLYCERIDES_VALUE">Vui lòng nhập giá trị Triglyceride hợp lệ</string>
+    <string name="PLEASE_ENTER_VALID_VLDL_VALUE">Vui lòng nhập giá trị VLDL hợp lệ</string>
+
+    <string name="TOTAL_CHOLESTEROL_VALUE_MUST_BE_BETWEEN">Tổng giá trị Cholesterol phải nằm trong khoảng</string>
+    <string name="HDL_VALUE_MUST_BE_BETWEEN">Giá trị HDL phải nằm trong khoảng</string>
+    <string name="LDL_VALUE_MUST_BE_BETWEEN">Giá trị LDL phải nằm trong khoảng</string>
+    <string name="TRIGLYCERIDES_VALUE_MUST_BE_BETWEEN">Giá trị triglyceride phải nằm trong khoảng</string>
+    <string name="VLDL_VALUE_MUST_BE_BETWEEN">Giá trị VLDL phải nằm trong khoảng</string>
+
+    <!--HRA Summary-->
+    <string name="YOUR_WELLNESS_SCORE_PLACES">Điểm số sức khỏe của bạn \\ n bạn được xếp vào</string>
+    <string name="WELLNESS_DESC_CURRENT_HRA_HISTORY_ID">Chúng tôi không thể tính Điểm sức khỏe của bạn vì bạn chưa thực hiện đầy đủ HRA. Vui lòng làm HRA để có thể xem Điểm sức khỏe của bạn</string>
+    <string name="WELLNESS_DESC_HRA_CUTOFF">Chúng tôi không thể tính Điểm sức khỏe của bạn vì bạn chưa trả lời một số câu hỏi bắt buộc cần thiết để tính Điểm sức khỏe. Vui lòng hoàn thành HRA để có thể xem Điểm sức khỏe của bạn</string>
+    <string name="WELLNESS_DESC_SCORE_ZERO_NEGATIVE">Điểm sức khỏe của bạn là 0 (trên 100), xếp bạn vào loại Rủi ro cao</string>
+    <string name="CONGRATULATION_NO_RISK">Xin chúc mừng!! Theo thông tin bạn đã cung cấp, có vẻ như hiện tại bạn không gặp rủi ro gì. \\ N \\ nHãy tiếp tục công việc tốt, duy trì lối sống lành mạnh</string>
+    <string name="SUMMERY_SUBTITLE_TEXT">Các rủi ro được nêu bật là cơ sở cho các phản ứng do bạn cung cấp và các loại rủi ro theo sức khỏe cá nhân, tiền sử gia đình và các thông số sức khỏe</string>
+    <string name="LAB_TESTS_SUBTITLE_TEXT">Các đề xuất Kiểm tra cung cấp cho bạn lịch trình và tần suất của các xét nghiệm quan trọng để xác định sức khỏe của bạn thường xuyên, dựa trên điểm số sức khỏe của bạn &amp; Tóm tắt rủi ro</string>
+    <!--HRA Summary-->
+
+    <string name="TEXT_START_ASSESSMENT"><![CDATA[Xin chào <b>%s. </b> Trong 10 phút tới, bạn sẽ cần trả lời một số câu hỏi và sẽ có cơ hội hiểu rõ hơn về sức khỏe tổng thể của mình. \ nTrong quá trình đánh giá rủi ro sức khỏe này, chúng tôi sẽ tìm hiểu 3 vấn đề chính về sức khỏe của bạn - Sức khỏe, Lối sống & Sức khỏe nghề nghiệp. \ n Bên cạnh đó, bạn sẽ được cung cấp một điểm số về sức khỏe và bản tóm tắt đầy đủ và các khuyến nghị để giảm rủi ro sức khỏe của bạn (nếu có).]]></string>
+    <string name="QUES_FAMILY_PROFILE"><![CDATA[ Trước khi bắt đầu, hãy cho chúng tôi biết ai là người đang làm bài đánh giá này? ]]></string>
+    <string name="QUESTION_BMI"><![CDATA[Hãy cùng tính chỉ số khối cơ thể (BMI) của bạn; một cách đơn giản để đo tỷ lệ cân nặng: chiều cao của bạn. Vui lòng nhập các thông số Vital Health của bạn.]]></string>
+    <string name="QUESTION_BP"><![CDATA[Chỉ số huyết áp của bạn là bao nhiêu? Vui lòng đề cập đầu vào bằng mmHg?]]></string>
+    <string name="QUESTION_BLOOD_SUGAR"><![CDATA[Hãy cho Chúng tôi biết loại báo cáo đường huyết nào sau đây mà bạn đã làm gần nhất?]]></string>
+    <string name="QUESTION_BLOOD_SUGAR_INPUT"><![CDATA[Vui lòng cập nhật kết quả đo mức <b> Đường trong máu </b> gần đây nhất của bạn]]></string>
+    <string name="QUESTION_CHOLESTEROL"><![CDATA[Hãy cho Chúng tôi biết loại báo cáo Cholesterol nào sau đây mà bạn đã làm gần nhất?]]></string>
+    <string name="QUESTION_CHOLESTEROL_INPUT"><![CDATA[Vui lòng cập nhật kết quả đo mức <b> Cholesterol trong máu </b> gần nhất của bạn]]></string>
+    <string name="QUESTION_HEALTH_CONDITION"><![CDATA[Bạn có đang mắc bệnh nào trong số này không?]]></string>
+    <string name="QUESTION_WOMEN"><![CDATA[Bạn có tiền sử về bất kỳ bệnh nào trong số này không?]]></string>
+    <string name="QUESTION_EDS"><![CDATA[Bạn có đang mắc chứng rối loạn Da / Nha / Mắt nào sau đây?]]></string>
+    <string name="QUESTION_FAMILY_HISTORY"><![CDATA[Có ai trong quan hệ huyết thống của bạn có bất kỳ bệnh nào trong số này không?]]></string>
+    <string name="QUESTION_SNACKS"><![CDATA[Bạn có ăn trái cây và rau 2 đến 3 lần một ngày không?]]></string>
+    <string name="QUESTION_FAT"><![CDATA[Bạn có ăn thức ăn nhanh như thịt đỏ, phô mai, đồ chiên hơn 3 lần một tuần không?]]></string>
+    <string name="QUESTION_EXERCISE"><![CDATA[Bạn có tập thể dùng hơn 3 giờ mỗi tuần không?]]></string>
+    <string name="QUESTION_SLEEP"><![CDATA[Bạn ngủ bao nhiêu giờ đồng hồ mỗi ngày?]]></string>
+    <string name="QUESTION_SMOKE"><![CDATA[Bạn hút bao nhiêu điếu thuốc lá mỗi ngày?]]></string>
+    <string name="QUESTION_DRINK"><![CDATA[Bạn tiêu thụ bao nhiêu rượu mỗi tuần?]]></string>
+    <string name="QUESTION_FAMILY_LIFE"><![CDATA[Bạn có cảm thấy mình cân bằng tốt giữa công việc và cuộc sống gia đình không?]]></string>
+    <string name="QUESTION_SOCIAL"><![CDATA[Sự gắn kết giữa xã hội với gia đình và bạn bè của bạn đang ở mức nào?]]></string>
+    <string name="QUESTION_SATISFIED_LIFE"><![CDATA[Bạn có hài lòng với cuộc sống hiện tại không?]]></string>
+    <string name="QUESTION_JOB_PAY"><![CDATA[Công việc của bạn có đủ thời gian nghỉ ngơi không?]]></string>
+    <string name="QUESTION_SHIFT"><![CDATA[Bạn có làm ca không?]]></string>
+    <string name="QUESTION_EXTENDED_TIME"><![CDATA[Bạn có sử dụng máy tính nhiều hơn 8 giờ mỗi ngày?]]></string>
+    <string name="QUESTION_EXPOSE"><![CDATA[Điều kiện tại nơi làm việc của bạn có các yếu tố sau?]]></string>
+    <string name="QUESTION_STRESS"><![CDATA[Bạn có thường xuyên cảm giác căng thẳng?]]></string>
+    <string name="QUESTION_PHY"><![CDATA[Cái nào sau đây áp dụng cho trường hợp của bạn??</b>]]></string>
+    <string name="QUESTION_CHECKUP"><![CDATA[Bạn đã trải qua những lần khám sức khỏe nào sau đây trong năm qua?]]></string>
+    <string name="QUESTION_LAST"><![CDATA[Cảm ơn vì đã chia sẻ thông tin chi tiết với chúng tôi. Kết quả đánh giá rủi ro sức khỏe của bạn đang được tiến hành.]]></string>
+
+    <string name="QUESTION_BRIGHT_LIGHT"><![CDATA[Bạn có <b>tiếp xúc với</b> bất kỳ điều nào <b>sau đây tại nơi làm việc của mình không?</b>]]></string>
+    <!--End Hra Module -->
+
+    <!--Start Medication Module -->
+    <string name="TITLE_MEDICINE_TRACKER">Máy theo dõi thuốc</string>
+    <string name="TITLE_MY_MEDICATIONS">Thuốc của tôi</string>
+    <string name="TITLE_ADD_MEDICATION">Thêm loại thuốc</string>
+    <string name="TITLE_SCHEDULE_MEDICATION">Lên lịch thuốc</string>
+
+    <string name="ADD_MEDICATION">Thêm loại thuốc</string>
+    <string name="MY_MEDICATIONS">Thuốc của tôi</string>
+    <string name="UPDATE_STATUS">Cập nhật trạng thái</string>
+    <string name="UPDATE_YOUR_MEDICINE_STATUS">Cập nhật tình trạng thuốc của bạn</string>
+    <string name="MEDICINE_NAME">Tên thuốc</string>
+
+    <string name="ENABLE">Cho phép</string>
+    <string name="DISABLE">Vô hiệu</string>
+    <string name="START_DATE">Ngày bắt đầu</string>
+    <string name="END_DATE">Ngày kết thúc</string>
+    <string name="STATUS">Tình trạng</string>
+    <string name="DOSAGE">Liều lượng</string>
+    <string name="SCHEDULE">Lịch</string>
+
+    <string name="TAKEN">Đã uống</string>
+    <string name="SKIPPED">Bỏ qua</string>
+    <string name="MISSED">Quên</string>
+
+    <string name="BEFORE_MEAL">Trước bữa ăn</string>
+    <string name="WITH_MEAL">Trong bữa ăn</string>
+    <string name="AFTER_MEAL">Sau bữa ăn</string>
+    <string name="ANYTIME">Mọi lúc</string>
+
+    <string name="ONGOING">Đang diễn ra</string>
+    <string name="COMPLETED">Hoàn thành</string>
+
+    <string name="TABLET">Viên thuốc</string>
+    <string name="CAPSULE">Viên con nhộng</string>
+    <string name="SYRUP">Xi rô</string>
+    <string name="DROPS">Giọt</string>
+    <string name="INJECTION">Tiêm</string>
+    <string name="GEL">Gel</string>
+    <string name="TUBE">Ống</string>
+    <string name="SPRAY">"Xịt "</string>
+    <string name="MOUTHWASH">Nước xúc miệng</string>
+    <string name="MOUTH_WASH">Nước xúc miệng</string>
+    <string name="SOLUTION">Dung dịch</string>
+    <string name="OINTMENT">Thuốc mỡ</string>
+
+    <string name="FOR_TODAY_ONLY">Chỉ cho hôm nay</string>
+    <string name="STARTING_ON">Bắt đầu vào</string>
+    <string name="STARTED">Đã bắt đầu</string>
+
+    <string name="DAILY">Hằng ngày</string>
+    <string name="FOR_X_DAYS">Trong x ngày</string>
+
+    <string name="NOTES">Ghi chú</string>
+    <string name="NUMBER_OF_DAYS">số ngày</string>
+    <string name="HOW_OFTEN_WILL_YOU_TAKE">Bạn sẽ dùng bao lâu một lần?</string>
+    <string name="HOW_MANY_YOU_NEED_TO_TAKE_AT_ONE_TIME">Bạn cần uống bao nhiêu viên cùng một lúc?</string>
+    <string name="HOW_MANY_TIME_DAILY">Bao nhiêu lần mỗi ngày?</string>
+    <string name="INTAKE_INSTRUCTIONS">Hướng dẫn sử dụng</string>
+    <string name="ENABLE_NOTIFICATION_ALERT">Cho phép hiện thông báo</string>
+    <string name="TYPE_YOUR_NOTES">Ghi chú của bạn</string>
+    <string name="MAX_50_CHARACTERS">Tối đa 50 ký tự</string>
+
+    <string name="EDIT_ENTRY">Chỉnh sửa mục nhập</string>
+    <string name="CHOOSE_MEDICINE_TYPE">Chọn loại thuốc</string>
+    <string name="TYPE_YOUR_MEDICINE_NAME">Nhập tên thuốc của bạn</string>
+    <string name="WHAT_TIMES_OF_DAY">Mấy giờ trong ngày?</string>
+    <string name="YOU_HAVE_TAKEN">Bạn vừa cầm</string>
+    <string name="YOU_HAVE_SKIPPED">Bạn đã bỏ qua</string>
+
+    <string name="DO_YOU_WANT_TO">Bạn có muốn</string>
+    <string name="NOTIFICATION_ALERT">Hiện thông báo</string>
+    <string name="DELETE_MEDICINE">Xóa thuốc</string>
+    <string name="RESCHEDULE_MEDICINE">Lên lịch uống thuốc lại</string>
+    <string name="UPDATE_MEDICINE_SCHEDULES">Cập nhật lịch uống thuốc</string>
+    <string name="PAST_MEDICINES">Thuốc đã dùng</string>
+    <string name="NO_MEDICINES_AVAILABLE">Không có thuốc sẵn</string>
+    <string name="MEDICINE_DELETED">Thuốc đã được xóa thành công</string>
+    <string name="MEDICINE_ADDED">Thuốc đã được thêm thành công</string>
+    <string name="MEDICINE_UPDATED">Thuốc đã được cập nhật thành công</string>
+    <string name="ALERT_ENABLED">Thông báo được bật thành công</string>
+    <string name="ALERT_DISABLED">Thông báo được tắt thành công</string>
+    <string name="ERROR_SELECT_SCHEDULE_TIME">Vui lòng chọn thời gian lên lịch</string>
+    <string name="ERROR_ENTER_MEDICINE_TYPE">"Vui lòng nhập tên thuốc "</string>
+    <string name="ERROR_ENTER_MEDICINE_NAME">Vui lòng nhập tên thuốc</string>
+    <string name="ERROR_SELECT_MEDICINE_STATUS">Vui lòng chọn tình trạng của thuốc</string>
+    <string name="ALREADY_DELETED_MEMBER_RELATED_TO_NOTIFICATION">Bạn đã xóa thành viên gia đình liên quan đến thông báo này</string>
+    <string name="YOU_ARE_ALREADY_TAKING">Bạn đã lấy rồi</string>
+    <string name="YOU_HAVE_REMOVED_OR_RESCHEDULED_TIME">Bạn đã xóa hoặc thay đổi lịch</string>
+    <string name="YOU_HAVE_ALREADY_DELETED">"Bạn đã xóa "</string>
+
+    <string name="MSG_SCHEDULE_TIME_FOUND">Bạn chưa lên lịch cho loại thuốc này. Bạn có muốn thêm lịch?</string>
+    <string name="MSG_CONFIRMATION_DELETE_MEDICINE">Bạn có chắc chắn muốn xóa thuốc này không?</string>
+    <string name="MSG_CONFIRMATION_RESCHEDULE_MEDICINE">Bạn có muốn thay đổi lịch</string>
+
+    <string name="ERROR_START_DATE_MUST_BE_LESS_THAN_OR_EQUAL_TO_END_DATE">Ngày bắt đầu phải trước hoặc bằng ngày kết thúc</string>
+    <string name="ERROR_END_DATE_MUST_BE_GREATER_THAN_OR_EQUAL_TO_START_DATE">Ngày kết thúc phải sau hoặc bằng ngày ngày bắt đầu</string>
+    <string name="ERROR_SCHEDULE_TIME_NOT_FOUND_PLEASE_SELECT_TO_UPDATE_MEDICINE_DETAILS">Thời gian đặt lịch không tìm thấy, vui lòng chọn để cập nhật chi tiết thuốc</string>
+    <string name="ERROR_PLEASE_SELECT_VALID_SCHEDULE_TIME">Vui lòng chọn thời gian lịch hợp lệ</string>
+    <string name="ERROR_PLEASE_ENTER_VALID_NUMBER_OF_DAYS">Vui lòng nhập số ngày hợp lệ</string>
+    <string name="ERROR_PLEASE_SELECT_INTAKE_INSTRUCTION">Vui lòng chọn hướng dẫn tiếp nhận</string>
+    <string name="ERROR_STATUS_FOR_FUTURE_SCHEDULE_TIMES_CAN_NOT_BE_UPDATED">Không thể cập nhật trạng thái cho thời gian lên lịch trong tương lai</string>
+    <!--End Medication Module-->
+
+    <!--Start Record Tracker Module -->
+    <string name="TITLE_MY_HEALTH_RECORDS">Hồ sơ sức khỏe của tôi</string>
+    <string name="TITLE_ADD_RECORDS">Thêm bản ghi</string>
+    <string name="REVERSE_CHRONOLOGICAL_ORDER">Trình bày theo thứ tự thời gian đảo ngược</string>
+
+    <string name="DOWNLOAD_RECORD">Tải xuống bản ghi</string>
+    <string name="SHARE_RECORD">Chia sẻ hồ sơ</string>
+    <string name="DELETE_RECORD">Xóa hồ sơ</string>
+
+    <string name="NO_RECORD_AVAILABLE">Không có hồ sơ nào</string>
+    <string name="SELECT_RECORD_TO_UPLOAD">Chọn hồ sơ để tải lên</string>
+    <string name="DATE_OF_CHECKUP">Ngày kiểm tra</string>
+    <string name="TYPE_OF_DOCUMENT">Loại tài liệu</string>
+    <string name="VALUE_MUST_BE_BETWEEN">Giá trị phải ở giữa</string>
+    <string name="SELECT_RECORDS_TO_PROCEED">Vui lòng chọn hồ sơ để tiếp tục</string>
+    <string name="DOWNLOAD_DOCUMENT_TO_PROCEED">Mời các bạn tải tài liệu về để chia sẻ</string>
+    <string name="DOCUMENT_BELONGS_TO">Tài liệu này thuộc về ai</string>
+    <string name="HAVE_NOTES_TO_MENTION">Bạn có một số lưu ý để đề cập đến?</string>
+    <string name="MSG_DELETE_CONFIRMATION">Bạn có chắc chắn muốn xóa Hồ sơ đã Chọn khỏi danh sách không?</string>
+
+    <string name="MSG_RECORD_SAVED">Hồ sơ đã được lưu thành công</string>
+    <string name="MSG_RECORD_DELETED">Hồ sơ đã được xóa thành công</string>
+    <string name="MSG_REOCRD_DOWNLOADED">Hồ sơ đã được tải thành công</string>
+
+    <string name="NO_RECORDS_FOUND">Không tìm thấy được hồ sơ nào</string>
+    <string name="NO_PATHOLOGY_REPORTS_UPLOADED">Không có báo cáo bệnh lý nào được tải lên</string>
+    <string name="NO_RECORDS_CLICK_FOR_UPLOADING">Không có báo cáo nào được tải lên \n Nhấp vào một tùy chọn bên dưới \n để bắt đầu tải lên</string>
+    <string name="RECORDS_DISCLAIMER">Vui lòng chọn tệp từ thư mục Điện thoại/Tải xuống hoặc Google Drive của bạn</string>
+
+    <string name="PLEASE_SELECT_DOCUMENT_TYPE">Vui lòng chọn loại tài liệu</string>
+    <string name="ERROR_SELECT_MEMBER_TO_PROCEED">Vui lòng Chọn thành viên gia đình mà tài liệu này thuộc về</string>
+    <string name="ERROR_UNIT_NOT_SUPPORTED">Đơn vị không được hỗ trợ</string>
+    <string name="ERROR_VALUE_NOT_CORRECT">Giá trị không đúng</string>
+    <string name="ERROR_UNIT_NOT_CORRECT">Đơn vị không đúng</string>
+    <string name="ERROR_ENTER_VALID_INPUT">Vui lòng nhập thông tin đầu vào hợp lệ</string>
+    <string name="ERROR_DOES_NOT_MATCHING_REQUIREMENTS">không phù hợp với yêu cầu, vui lòng loại bỏ nó để tiếp tục</string>
+
+    <string name="PICK_UPLOAD_TYPE">Chọn loại tải lên</string>
+    <string name="UPLOAD_PHOTO">Tải lên \ n Ảnh</string>
+    <string name="UPLOAD_FROM_GALLERY">Tải lên từ Thư viện \ n</string>
+    <string name="UPLOAD_FILE">Tải lên \ n Tệp</string>
+
+    <string name="TYPE_PATHOLOGY_LAB_REPORT">Bệnh học \n Báo cáo</string>
+    <string name="TYPE_HOSPITAL_REPORT">Bệnh viện \n Báo cáo</string>
+    <string name="TYPE_DOCTOR_PRESCRIPTION">Bác sĩ \n Đơn thuốc</string>
+    <string name="TYPE_DIET_PLAN">Kế hoạch ăn kiêng</string>
+    <string name="TYPE_FITNESS_PLAN">Kế hoạch tập thể dục</string>
+    <string name="TYPE_OTHER_DOCUMENT">Khác \n Tài liệu</string>
+    <string name="TYPE_HRA_REPORT">HRA \n Báo cáo</string>
+    <!--End Record Tracker Module -->
+
+    <!--Start Security Module-->
+    <string name="SPLASH_DESC1">Được trao giải Đổi mới trong việc tương tác với khách hàng</string>
+    <!--<string name="SPLASH_DESC2">Giải thưởng Bharat Fintech</string>-->
+    <string name="SPLASH_DESC2">Hội nghị Đổi mới BFSI &amp; giải thưởng</string>
+    <string name="YOUR_HOLISTIC_HEALTH_DESC">Người bạn đồng hành quản lý sức khỏe toàn diện của bạn.</string>
+    <string name="FIND_AND_MONITOR_HEALTH">Tìm hiểu và theo dõi tình trạng sức khỏe của bạn</string>
+    <string name="GET_YOUR_HEALTH_SCORE_DESC">Nhận điểm số sức khỏe của bạn, cải thiện nó bằng cách theo dõi thường xuyên các chỉ số và hoạt động của bạn. Một giải pháp duy nhất để xác định, theo dõi và quản lý sức khỏe của bạn.</string>
+    <string name="A_VITAL_COMPANION_DESC">Người bạn đồng hành quan trọng cho nhu cầu sức khỏe của bạn</string>
+    <string name="AVAIL_DOCTOR_CONSULTATION_DESC">Sẵn sàng tư vấn bác sĩ, hồ sơ sức khỏe, đơn thuốc để phát thuốc thuận tiện cho bạn.</string>
+    <string name="TAKE_ME_TO_APP">Đưa tôi đến ứng dụng</string>
+
+    <string name="ARE_YOU_EMPLOYEE">Bạn có phải là nhân viên của ?</string>
+    <string name="BANK_OF_INDIA">Ngân hàng Ấn Độ</string>
+    <string name="UNION_BANK_OF_INDIA">Ngân hàng Liên minh Ấn Độ</string>
+    <string name="SUD_LIFE_INSURANCE">Bảo hiểm nhân thọ SUD</string>
+    <string name="NONE_OF_ABOVE">Không ai trong số trên</string>
+
+    <string name="DONT_HAVE_ACCOUNT">Bạn chưa có tài khoản?</string>
+    <string name="TERMS_CONCENT">tôi đã đọc và đồng ý với</string>
+    <string name="USER_TERMS_CONDITIONS">Điều khoản và Điều kiện của người dùng</string>
+    <string name="TERMS_OF_SERVICE_HEALTH_HDETAILS">Tôi xác nhận và xác nhận thêm rằng các thông tin sức khỏe do tôi tải lên có thể được SUD Life và các bên thứ ba liên kết thu thập và sử dụng cho mục đích của ứng dụng này.</string>
+
+    <string name="WARNING">Cảnh báo</string>
+    <string name="WARNING_DESC">Thiết bị này dường như đã được root/jailbreak. Có những rủi ro bảo mật cố hữu với các thiết bị đã bẻ khóa, do đó, để bảo mật dữ liệu của bạn, ứng dụng này sẽ ngừng hoạt động.</string>
+
+    <string name="MSG_LOGIN_SUD">Vì bạn là nhân viên của SUD Life, vui lòng yêu cầu bạn truy cập ứng dụng từ ứng dụng nhân sự chính thức ‘Darwinbox’ để có trải nghiệm liền mạch.</string>
+
+    <string name="YOUR_DOB">Ngày tháng năm sinh của bạn</string>
+    <string name="TERMS_CONDITIONS">Điều khoản và điều kiện</string>
+    <string name="ADDITIONAL_DETAILS">Chi tiết bổ sung</string>
+    <string name="ADDITIONAL_DETAILS_MISSING">Hãy cho chúng tôi biết một chút về bản thân bạn</string>
+    <string name="LOGIN_USING_FB">Đăng nhập bằng Facebook</string>
+    <string name="LOGIN_USING_GOOGLE">Đăng nhập bằng Google</string>
+    <string name="OR_LOGIN_WITH">Hoặc Đăng nhập bằng</string>
+    <string name="EMAIL_OR_PHONE">Email hoặc điện thoại</string>
+    <string name="OTP">OTP</string>
+    <string name="EMAIL_PHONE">Địa chỉ Email đã Đăng ký</string>
+    <string name="REGISTERED_EMAIL">Địa chỉ Email đã đăng ký</string>
+    <string name="REGISTERED_PHONE">Số điện thoại di động đã đăng ký</string>
+    <string name="LOG_IN">Đăng nhập</string>
+    <string name="SIGN_IN">Đăng nhập</string>
+    <string name="SIGN_UP">Đăng ký</string>
+    <string name="LOG_IN_WITH_OTP">Đăng nhập bằng OTP</string>
+    <string name="LOG_IN_WITH_OTP_DESC">Nhập số điện thoại di động đã đăng ký của bạn và chúng tôi sẽ\nsgửi OTP để đăng nhập vào tài khoản của bạn</string>
+    <string name="FORGOT_PASSWORD">Quên mật khẩu?</string>
+    <string name="I_AM_DONE">Tôi xong rồi</string>
+    <string name="SIGN_IN_WITH_GOOGLE">Đăng nhập bằng Google</string>
+    <string name="SIGN_IN_WITH_FACEBOOK">Đăng nhập bằng facebook</string>
+
+    <string name="NAME_COMPULSARY">Tên*</string>
+    <string name="EMAIL_COMPULSARY">Email*</string>
+    <string name="DOB_COMPULSARY">Ngày sinh*</string>
+    <string name="PASSWORD_COMPULSARY">Mật khẩu*</string>
+    <string name="PHONE_COMPULSARY">Số điện thoại*</string>
+
+    <string name="ENTER_NEW_PASSWORD">Nhập mật khẩu mới</string>
+    <string name="RESET_PASSWORD">Đặt lại mật khẩu</string>
+    <string name="FORGOT_PASSWORD_DESC">Nhập địa chỉ email của bạn, chúng tôi sẽ gửi hướng dẫn để bạn đặt lại mật khẩu</string>
+    <string name="VERIFICATION_CODE">Mã xác thực</string>
+    <string name="OTP_SENT_DESC">Vui lòng nhập OTP được gửi tới\nEmail đăng ký/Số điện thoại di động của bạn</string>
+    <string name="OTP_VARIFIED_SUCCESSFULLY">Đã xác minh OTP thành công</string>
+
+    <string name="PLEASE_ACCEPT_TERMS">Vui lòng chấp nhận Điều khoản và Điều kiện</string>
+    <string name="PLEASE_ACCEPT_TERMS_PRIVACY_POLICY">Vui lòng chấp nhận Điều khoản và Điều kiện và Chính sách quyền riêng tư</string>
+    <string name="GOOGLE_SIGN_IN_FAILED">Đăng nhập Google không thành công</string>
+    <string name="FB_SIGN_IN_FAILED">Đăng nhập Facebook không thành công</string>
+    <string name="ERROR_INVALID_EMAIL_PHONE">Vui lòng nhập địa chỉ email hoặc số điện thoại hợp lệ</string>
+    <string name="ERROR_AGE_GREATER_THEN_18_YEARS">Độ tuổi phải lớn hơn 18</string>
+    <string name="ERROR_EMAIL_REGISTERED">Email này đã được đăng ký</string>
+    <string name="ERROR_EMAIL_NOT_REGISTERED">Email này chưa được đăng ký với chúng tôi</string>
+    <string name="ERROR_PHONE_REGISTERED">Số điện thoại này đã được đăng ký</string>
+    <string name="ERROR_PHONE_NOT_REGISTERED">Số điện thoại này chưa được đăng ký</string>
+    <string name="ERROR_EMAIL_PHONE_NOT_REGISTERED">Email hoặc số điện thoại này chưa được đăng ký</string>
+    <string name="ERROR_INVALID_NAME">Xin hãy nhập tên của bạn</string>
+    <string name="ERROR_INVALID_PHONE">Xin nhập số điện thoại hợp lệ</string>
+    <string name="ERROR_INVALID_EMAIL">Vui lòng nhập địa chỉ email hoặc số điện thoại hợp lệ</string>
+    <string name="ERROR_INVALID_PASSWORD">Vui lòng nhập mật khẩu hợp lệ</string>
+    <string name="ERROR_INCORRECT_PASSWORD">Mật khẩu không đúng</string>
+    <string name="ERROR_PASSWORD_DOESNOT_MATCH">Mật khẩu không phù hợp</string>
+    <string name="ERROR_PASSWORD_DOESNOT_MATCH_REQUIREMENTS">Mật khẩu không phù hợp với Yêu cầu</string>
+    <string name="ERROR_PASSWORD_CONFIRM_DOESNOT_MATCH">Mật khẩu và mật khẩu xác nhận không khớp</string>
+    <string name="ERROR_USERNAME_PASSWORD_SAME">Tên người dùng không được giống với Mật khẩu</string>
+    <string name="ERROR_FIELD_REQUIRED">Trường này là bắt buộc</string>
+
+    <string name="ERROR_INVALID_USER_CREDENTIALS">Thông tin đăng nhập người dùng không hợp lệ</string>
+    <string name="ERROR_UNABLE_TO_RESET_PASSWORD">Không thể đặt lại mật khẩu</string>
+    <string name="ERROR_ENTER_VALID_OTP">Vui lòng nhập mã OTP hợp lệ</string>
+    <string name="ERROR_UNABLE_LOGIN_WITH_USER">Không thể đăng nhập với người dùng này</string>
+
+    <string name="INTRO_SLIDE_1_TITLE">Tập luyện và yoga</string>
+    <string name="INTRO_SLIDE_2_TITLE">Hỗ trợ sức khỏe tâm thần</string>
+    <string name="INTRO_SLIDE_3_TITLE">Phúc lợi tài chính</string>
+    <string name="INTRO_SLIDE_4_TITLE">Một ứng dụng thể dục hoàn chỉnh</string>
+
+    <string name="INTRO_SLIDE_1_DESC">Rèn luyện sức mạnh, tính linh hoạt của yoga - sự kết hợp để mang lại sức khỏe toàn diện cho cơ thể và tinh thần.</string>
+    <string name="INTRO_SLIDE_2_DESC">Tâm trí bình tĩnh, cuộc sống không căng thẳng – ưu tiên sức khỏe tinh thần là chăm sóc bản thân.</string>
+    <string name="INTRO_SLIDE_3_DESC">Lập ngân sách một cách khôn ngoan, tiết kiệm, đầu tư – chìa khóa cho sự ổn định tài chính và hạnh phúc.</string>
+    <string name="INTRO_SLIDE_4_DESC">Theo dõi, rèn luyện, tiến bộ – một ứng dụng toàn diện cho hành trình tập thể dục hoàn chỉnh.</string>
+
+    <string name="LOGIN_SIGN_UP">Đăng nhập/Đăng ký</string>
+    <string name="LOGIN_SIGN_UP_DESC">Để hòa mình vào thế giới Thể dục &amp; Tâm thần \n Sức khỏe, Vui lòng đăng nhập hoặc đăng ký</string>
+
+    <string name="ENTER_OTP">Nhập TAC</string>
+    <string name="PLEASE_ENTER_THE_OTP_SENT_TO">Vui lòng nhập TAC gửi tới</string>
+    <string name="DIDN_NOT_RECEIVE_OTP">Không nhận được TAC?</string>
+    <string name="RESEND_OTP_IN">Gửi lại TAC trong</string>
+
+    <string name="IS_NOT_REGISTERED_WITH_US">chưa được đăng ký với chúng tôi.</string>
+    <string name="DO_YOU_WANT_REGISTER_IT_NOW">Bạn có muốn đăng ký ngay bây giờ không?</string>
+
+    <string name="STEP_1_OF_4">BƯỚC 1 trên 4</string>
+    <string name="STEP_2_OF_4">BƯỚC 2 trên 4</string>
+    <string name="STEP_3_OF_4">BƯỚC 3 trên 4</string>
+    <string name="STEP_4_OF_4">BƯỚC 4 trên 4</string>
+
+    <string name="PERSONAL_DETAILS">Thông tin cá nhân</string>
+    <string name="SIGN_UP_DESC">Vui lòng chia sẻ thông tin cá nhân của bạn để đăng ký \n và nhận được đề xuất tốt hơn</string>
+
+    <string name="I_HAVE_READ_AGREE">Tôi đã đọc &amp; đồng ý với Điều khoản và Điều kiện</string>
+    <string name="I_AGREE_DATA_USES">Tôi đồng ý với việc sử dụng dữ liệu</string>
+
+    <string name="EMAIL_MOBILE_COMPULSARY">Email hoặc số điện thoại di động *</string>
+    <string name="HINT_EMAIL_MOBILE">Nhập Email hoặc số điện thoại di động.</string>
+    <string name="USERNAME_COMPULSARY">Tên *</string>
+    <string name="HINT_USERNAME">Nhập tên của bạn</string>
+    <string name="FIRST_NAME_COMPULSARY">Tên đầu tiên *</string>
+    <string name="HINT_FIRST_NAME">Nhập tên của bạn</string>
+    <string name="LAST_NAME_COMPULSARY">Họ *</string>
+    <string name="HINT_LAST_NAME">Nhập họ của bạn</string>
+    <string name="MOBILE_NO_COMPULSARY">Số di động *</string>
+    <string name="HINT_MOBILE_NO">Nhập số điện thoại di động của bạn</string>
+    <string name="EMAIL_COMPULSARY2">Email *</string>
+    <string name="HINT_EMAIL">Nhập email của bạn</string>
+
+    <string name="SELECT_YOUR_GENDER">Chọn giới tính của bạn</string>
+    <string name="SELECT_YOUR_DOB">Chọn ngày sinh của bạn</string>
+    <string name="SELECT_YOUR_RELEVANT_EMPLOYER">Chọn Nhà tuyển dụng phù hợp</string>
+    <string name="I_VE_READ_AND_ACCEPTED_ALL_TERMS_AND_CONDITIONS">I\'ve read and accepted all Terms and Conditions and Privacy Policy. I authorize SUD Life Insurance to contact me via SMS/Email/Phone/WhatsApp/Facebook or any other modes overriding my \'DND\'.</string>
+    <string name="KINDLY_DISABLE_THE_DEVELOPER_MODE_ON_YOUR_DEVICE">Kindly disable the developer mode on your device.</string>
+    <string name="FOR_SECURITY_REASONS_YOU_CANNOT_USE_OUR_APPLICATION_IF_THE_DEVELOPER_MODE_IS_ENABLED_ON_YOUR_DEVICE">For security reasons, you cannot use our application if the developer mode is enabled on your device.</string>
+    <!--End Security Module-->
+
+    <!--Start Tool Calculator Module-->
+    <string name="TITLE_TOOLS_CALCULATORS">Công cụ và Máy tính</string>
+
+    <string name="HEART_AGE_CALCULATOR">Máy tính tuổi tim</string>
+    <string name="DIABETES_CALCULATOR">Máy tính tiểu đường</string>
+    <string name="HYPERTENSION_CALCULATOR">Máy tính tăng huyết áp</string>
+    <string name="STRESS_ANXIETY_CALCULATOR">Máy tính căng thẳng và lo âu</string>
+    <string name="SMART_PHONE_CALCULATOR">Nghiện điện thoại thông minh</string>
+    <string name="DUE_DATE_CALCULATOR">Tính ngày dự sinh</string>
+
+    <string name="TRACKER_HEART_AGE2">Máy tính tuổi tim</string>
+    <string name="TRACKER_DIABETES2">Bệnh tiểu đường Máy tính</string>
+    <string name="TRACKER_HYPERTENSION2">Tăng huyết áp Máy tính</string>
+    <string name="TRACKER_STRESS_ANXIETY2">Căng thẳng &amp; Lo lắng Máy tính</string>
+    <string name="TRACKER_SMART_PHONE2">Điện thoại thông minh Nghiện</string>
+    <string name="TRACKER_DUE_DATE2">Ngày dự sinh Máy tính</string>
+
+    <string name="TRACKER_DESC_HEART_AGE2">Tim của bạn có trẻ như bạn đang có?</string>
+    <string name="TRACKER_DESC_DIABETES2">Biết nguy cơ mắc bệnh tiểu đường của bạn</string>
+    <string name="TRACKER_DESC_HYPERTENSION2">Biết huyết áp của bạn</string>
+    <string name="TRACKER_DESC_STRESS_ANXIETY2">Bạn có đang cảm thấy căng thẳng không?</string>
+    <string name="TRACKER_DESC_SMART_PHONE2">Bạn nghiện điện thoại thông minh?</string>
+    <string name="TRACKER_DESC_DUE_DATE2">Biết ngày dự sinh của bạn</string>
+
+    <string name="DISCLAIMER_TITLE">Tài liệu tham khảo về tính toán và đề xuất máy tính sức khỏe</string>
+    <string name="DISCLAIMER_CARDIOVASCULAR">Nguy cơ mắc bệnh tim mạch :</string>
+    <string name="DISCLAIMER_HEART_AGE">Máy tính tuổi tim và điểm rủi ro :</string>
+    <string name="DISCLAIMER_WOMEN_HEALTH">Hướng dẫn về sức khỏe thời kỳ kinh nguyệt và sức khỏe phụ nữ :</string>
+    <string name="DISCLAIMER_DASS">Thang đo căng thẳng lo âu trầm cảm (DASS-21) :</string>
+    <string name="DISCLAIMER_DASS_DESC">Lovibond, S.H. &amp; Lovibond, P.F. (1995). Manual for the Depression Anxiety &amp; Stress Scales. (2nd Ed.)Sydney: Psychology Foundation.</string>
+    <string name="DISCLAIMER_WORKABILITY_INDEX">Chỉ số khả năng làm việc :</string>
+    <string name="DISCLAIMER_WORKABILITY_INDEX_DESC">1. Ilmarinen J (ed.). Người công nhân già đi. Scand J Work Environ Health 1991;17(Phụ lục 1): 1–141.\n2. Tuomi K (ed.). Theo dõi 11 năm của những người lao động lớn tuổi. Vụ bê bối J Sức khỏe môi trường làm việc 1997; 23(Phụ lục 1): 1–71.\n3. Radkiewich P, Widerszal–Bazyl M. Đặc tính tâm lý của Chỉ số Khả năng Làm việc dưới góc độ Nghiên cứu Khảo sát So sánh. Chuỗi Đại hội Quốc tế 1280. Hà Lan: Elsevier, 2005; 304–309.</string>
+    <string name="DOWNLOAD_PDF_FROM">Tải xuống bản PDF từ</string>
+    <string name="CLICK">Nhấp chuột</string>
+    <string name="HERE">đây</string>
+
+    <string name="PROFILE_PARAMETERS">Thông số hồ sơ</string>
+    <string name="MEASUREMENT_PARAMETERS">Các thông số đo lường</string>
+    <string name="LIFESTYLE_CHANGES">Thay đổi lối sống</string>
+    <string name="AGE_IN_YEARS">Tuổi tính theo năm</string>
+    <string name="TODAY_VIA_MOBILE_ENTRY">Hôm nay thông qua mục nhập di động</string>
+
+    <string name="LOW_RISK_1">Nguy cơ thấp</string>
+    <string name="HIGH_RISK_1">Rủi ro cao</string>
+
+    <string name="SELECT_ALL_THAT_APPLIES_TO_YOU">Chọn tất cả những gì phù hợp với bạn</string>
+    <string name="HEALTH_CONDITION">Tình trạng sức khỏe</string>
+    <string name="KIDNEY_DISEASE">Bệnh thận</string>
+    <string name="STROKE">Đột quỵ</string>
+    <string name="CORONARY_ARTERY">Động mạch vành</string>
+    <string name="FAMILY_HISTORY_OF_HEART_DISEASE">Tiền sử gia đình mắc bệnh tim</string>
+
+    <string name="UNDER_35_YEARS">Dưới 35 tuổi</string>
+    <string name="AGE_35_TO_44" translatable="false">35 – 44</string>
+    <string name="AGE_45_TO_54" translatable="false">45 – 54</string>
+    <string name="AGE_55_TO_64" translatable="false">55 – 64</string>
+    <string name="AGE_65_YRS_OR_OVER">65 tuổi trở lên</string>
+
+    <string name="RANGE_0_TO_4" translatable="false">0 – 4</string>
+    <string name="UPPER_LIMIT">Giới hạn trên</string>
+    <string name="LOWER_LIMIT">Giơi hạn dươi</string>
+
+    <string name="DEPRESSION">Phiền muộn</string>
+    <string name="ANXIETY">Sự lo ngại</string>
+    <string name="STRESS">Căng thẳng</string>
+
+    <string name="DYSPHORIA">Sự chán chường</string>
+    <string name="LACK_OF_INTEREST_INVOLVEMENT">Thiếu sự quan tâm / tham gia</string>
+    <string name="HOPELESSNESS">Vô vọng</string>
+    <string name="ANHEDONIA">Hội chứng không niềm vui</string>
+    <string name="DEVALUATION_OF_LIFE">Phá giá cuộc sống</string>
+    <string name="INERTIA">Quán tính</string>
+
+    <string name="AUTONOMIC_AROUSAL">Kích thích tự động</string>
+    <string name="SELF_DEPRECATION">Tự ti</string>
+    <string name="SKELETAL_MUSCLE_EFFECTS">Căng thẳng</string>
+    <string name="SUBJECTIVE_EXPERIENCE_OF_ANXIOUS_AFFECT">Kinh nghiệm chủ quan về ảnh hưởng lo lắng</string>
+    <string name="SITUATIONAL_ANXIETY">Tình huống lo lắng</string>
+
+    <string name="DIFFICULTY_RELAXING">Khó thư giãn</string>
+    <string name="NERVOUS_AROUSAL">Kích thích thần kinh</string>
+    <string name="BEING_EASILY_UPSET_AGITATED_IRRITABLE_OVER_REACTIVE_AND_IMPATIENT">Dễ khó chịu / kích động, cáu kỉnh / phản ứng thái quá và thiếu kiên nhẫn</string>
+
+    <string name="BASED_ON_YOUR_SCORE_YOU_HAVE">Dựa trên Điểm của bạn mà bạn có</string>
+    <string name="PROBABILITY_OF_GETTING_DIABETES">% Xác suất mắc bệnh tiểu đường</string>
+
+    <string name="HEART_AGE">Tuổi của tim</string>
+    <string name="HEART_RISK">Nguy cơ tim</string>
+    <string name="YOUR_AGE">Tuổi của bạn</string>
+    <string name="YOU_ARE_UNDER">Bạn dưới</string>
+    <string name="HYPERTENSION_SUMMARY">Tóm tắt về tăng huyết áp</string>
+    <string name="OPTIMUM_RISK">Rủi ro tối ưu</string>
+    <string name="RISK_1">Rủi ro của bạn</string>
+    <string name="RISK_2">Rủi ro được điều chỉnh</string>
+    <string name="YEAR_1">Năm 1</string>
+    <string name="YEAR_2">Năm 2</string>
+    <string name="YEAR_4">Năm 4</string>
+
+    <string name="VIEW_DETAILED_REPORT">Xem báo cáo chi tiết</string>
+    <string name="RESTART_ASSESSMENT">Khởi động lại đánh giá</string>
+
+    <string name="SYSTOLIC_BP">Huyết áp tâm thu (mm Hg)</string>
+    <string name="DIASTOLIC_BP">Huyết áp tâm trương (mm Hg)</string>
+    <string name="SYSTOLIC_DIALOG_TITLE">Tâm thu &amp; Huyết áp tâm trương</string>
+    <string name="SYSTOLIC_DIALOG_MESSAGE">Nhập chi tiết huyết áp của bạn</string>
+
+    <string name="DIABETES_RANGE_LOW_RISK" translatable="false">0 – 5</string>
+    <string name="DIABETES_RANGE_MILD_RISK" translatable="false">6 – 11</string>
+    <string name="DIABETES_RANGE_MODERATE_RISK" translatable="false">12 – 19</string>
+    <string name="DIABETES_RANGE_HIGH_RISK" translatable="false">20 – 47</string>
+
+    <string name="NEVER">Không bao giờ</string>
+    <string name="SOMETIMES">Thỉnh thoảng</string>
+    <string name="OFTEN">Thường xuyên</string>
+    <string name="ALWAYS">Luôn luôn</string>
+    <string name="ALMOST_ALWAYS">Gần như luôn luôn</string>
+
+    <string name="DEPRESSION_RISK_SCORE">ĐIỂM RỦI RO PHỤ THUỘC</string>
+    <string name="ANXIETY_RISK_SCORE">ĐIỂM RỦI RO ANXIETY</string>
+    <string name="STRESS_RISK_SCORE">ĐIỂM RỦI RO NHẤN MẠNH</string>
+
+    <string name="RISK_NORMAL">Bình thường Rủi ro</string>
+    <string name="RISK_MILD">Nhẹ Rủi ro</string>
+    <string name="RISK_MODERATE">Vừa phải Rủi ro</string>
+    <string name="RISK_SEVERE">Nghiêm trọng Rủi ro</string>
+    <string name="RISK_EXTREMELY_SEVERE">Cực kỳ Rủi ro nghiêm trọng</string>
+
+    <string name="NORMAL">Bình thường</string>
+    <string name="MILD">Nhẹ</string>
+    <string name="SEVERE">Nghiêm trọng</string>
+    <string name="MODERATE">Vừa phải</string>
+    <string name="EXTREMELY_SEVERE">Cực kỳ \n Rủi ro nghiêm trọng</string>
+
+    <string name="LOW_RISK">Thấp Rủi ro</string>
+    <string name="MILD_RISK">Nhẹ Rủi ro</string>
+    <string name="SEVERE_RISK">Nghiêm trọng Rủi ro</string>
+    <string name="NORMAL_RISK">Bình thường \n Rủi ro</string>
+    <string name="EXTREMELY_SEVER_RISK">Cực kỳ Rủi ro nghiêm trọng</string>
+
+    <string name="LAST_MENSTRUAL_PERIOD">Kinh nguyệt cuối cùng (LMP)</string>
+    <string name="YOUR_BABY_IS_DUE_ON_OR_AROUND">"Em bé của bạn sắp sinh vào hoặc gần "</string>
+    <string name="DUE_DATE_OBSERVATION">* Đây là ước tính về thời điểm ra đời của con bạn. Trẻ sơ sinh hiếm khi tuân theo một thời gian biểu chính xác, vì vậy, thai kỳ đủ tháng của bạn có thể nằm trong khoảng từ <h2> <b> 37 đến 42 tuần. </b> </h2></string>
+    <string name="LABEL_MENSTRUAL_PERIOD_LMP">Nhập ngày của ngày đầu tiên của kỳ kinh cuối cùng của bạn (LMP):</string>
+    <string name="THE_DEPRESSION_SCALE_ASSESSES">Thang điểm đánh giá trầm cảm</string>
+    <string name="THE_ANXIETY_SCALE_ASSESSES">"Thang đo đánh giá Lo lắng "</string>
+    <string name="THE_STRESS_SCALE_ASSESSES">Thang đo đánh giá căng thẳng</string>
+    <string name="YOU_HAVE_FOLLOWING_NON_MODERATE_RISK">Bạn có Rủi ro Không vừa phải sau</string>
+
+    <string name="TO_MANAGE_YOUR_EMOTIONAL_HEALTH">Để quản lý sức khỏe cảm xúc của bạn</string>
+    <string name="HEALTH_CONDITION_CONTENT">nếu bạn có bất kỳ yếu tố rủi ro nào trong số này, rủi ro của bạn có thể cao hơn những gì được hiển thị trong công cụ</string>
+    <string name="HEALTH_CONDITION_QUESTION">Bạn có bất kỳ bệnh nào trong số này không?</string>
+    <string name="HEALTH_CONDITION_RESULT">Bạn đã chọn</string>
+    <string name="STRESS_SUMMERY_OBSERVATION">Thang đo trầm cảm, lo âu và căng thẳng - 21 hạng mục (DASS-21) là một bộ ba thang điểm tự báo cáo được thiết kế để đo lường các trạng thái cảm xúc của trầm cảm, lo lắng và căng thẳng. Mỗi thang trong số ba thang đo DASS-21 chứa 7 mục, được chia thành các thang phụ có nội dung tương tự nhau.</string>
+    <string name="HYPERTENSION_SUMMARY_TEXT">Máy tính Tăng huyết áp cung cấp cho bạn một ý tưởng tổng thể về sức khỏe và một dấu hiệu chung về cách các yếu tố liên quan đến lối sống có thể ảnh hưởng đến Huyết áp của bạn. Rủi ro đã được tính toán dựa trên các thông số cho nhóm tuổi, giới tính của bạn.</string>
+    <string name="HEART_AGE_SUMMARY_TEXT">Tuổi và Nguy cơ tim cung cấp cho bạn một ý tưởng tổng thể về sức khỏe của trái tim và dấu hiệu chung về cách các yếu tố liên quan đến lối sống có thể ảnh hưởng đến sức khỏe tim của bạn.</string>
+
+    <string name="ITS_TIME_TO_MAKE_SOME_CHANGES">Đã đến lúc phải thay đổi!</string>
+    <string name="PLEASE_INPUT_VALUE_BETWEEN">Vui lòng nhập giá trị giữa</string>
+    <string name="PLEASE_FILL">Vui lòng điền vào</string>
+    <string name="PLEASE_FILL_HEIGHT_DETAILS">Vui lòng điền chi tiết chiều cao</string>
+    <string name="PLEASE_FILL_WEIGHT_DETAILS">Vui lòng điền chi tiết cân nặng</string>
+    <string name="ENTER_YOUR">Nhập của bạn</string>
+    <string name="PARAMETER_VALUE">Giá trị thông số</string>
+    <string name="SHOULD_BE_BETWEEN">nên ở giữa</string>
+    <string name="PLEASE_PROVIDE_AGE">Vui lòng cung cấp tuổi</string>
+    <string name="ENTER_AGE_BETWEEN_18_AND_74_YEARS">Tuổi từ 18 đến 74</string>
+
+    <string name="YOU_ARE_DOING_GOOD_IN">Bạn đang làm tốt trong</string>
+    <string name="YOU_NEED_TO_IMPROVE_ON">Bạn cần cải thiện</string>
+    <string name="YOU_HAVE_FOLLOWING_ON_MODIFIABLE_RISK">Bạn có Rủi ro không thể sửa đổi sau đây</string>
+
+    <string name="NO_NOMOPHOBIC">Không Nghiện điện thoại</string>
+    <string name="MILD_NOMOPHOBIC">Nhẹ Nghiện điện thoại</string>
+    <string name="MODERATE_NOMOPHOBIC">Vừa phải Nghiện điện thoại</string>
+    <string name="SEVERE_NOMOPHOBIC">Nghiêm trọng Nghiện điện thoại</string>
+
+    <string name="NOT_AT_ALL_NOMOPHOBIC">Không hề Nghiện điện thoại</string>
+    <string name="MILD_NOMOPHOBIA">Nhẹ Nghiện điện thoại</string>
+    <string name="MODERATE_NOMOPHOBIA">Vừa phải Nghiện điện thoại</string>
+    <string name="SEVERE_NOMOPHOBIA">Nghiêm trọng Nghiện điện thoại</string>
+
+    <string name="HAVE_NO_NOMOPHOBIA">Không Nghiện điện thoại</string>
+    <string name="HAVE_MILD_NOMOPHOBIA">Nhẹ Nghiện điện thoại</string>
+    <string name="HAVE_MODERATE_NOMOPHOBIA">Vừa phải Nghiện điện thoại</string>
+    <string name="HAVE_SEVERE_NOMOPHOBIA">Nghiêm trọng Nghiện điện thoại</string>
+
+    <string name="DESC_MILD_NOMOPHOBIC">Bạn có một chút nghiện điện thoại. Bạn sẽ cảm thấy hơi khó chịu khi để quên điện thoại ở nhà trong một ngày hoặc bị kẹt ở nơi nào đó không có WiFi, nhưng sự lo lắng không phải là quá lớn.</string>
+    <string name="DESC_MODERATE_NOMOPHOBIC">Bạn nghiện điện thoại một cách vừa phải. Bạn đang khá gắn bó với thiết bị của mình. Bạn thường kiểm tra các bản cập nhật khi đang đi dạo trên phố hoặc nói chuyện với một người bạn và bạn thường cảm thấy lo lắng khi bị ngắt kết nối. Bạn đang trên bờ vực trở nên nghiện. Tuy nhiên, điều tốt là bạn không nên để chiếc điện thoại thông minh của mình cản đường. Đôi khi, bạn tránh điện thoại và cảm thấy tồi tệ với nó, nhưng phần còn lại là ở bên gia đình, con cái, v.v., khiến bạn hạnh phúc. Vì vậy, bạn chỉ cần cẩn thận !.</string>
+    <string name="DESC_SEVERE_NOMOPHOBIC">Bạn đang nghiện điện thoại nghiêm trọng. Bạn chỉ có thể sử dụng trong 60 giây mà không cần kiểm tra điện thoại. Đây là điều đầu tiên bạn kiểm tra vào buổi sáng và cuối cùng vào ban đêm và chi phối hầu hết các hoạt động của bạn ở giữa. Bạn chắc chắn đang mắc chứng Nghiện điện thoại, và hãy tìm cách giúp những người khác nếu bạn để quên điện thoại ở nhà hoặc làm mất nó! Bạn nghiện điện thoại đến nỗi đôi khi tự hỏi điều gì sẽ xảy ra nếu bạn có thể dính điện thoại vào tay !.</string>
+
+    <string name="SELECT_YOUR_AGE_GROUP">Chọn nhóm tuổi của bạn</string>
+    <string name="PLEASE_ENTER_WAIST_SIZE_BETWEEN">Vui lòng nhập kích thước vòng eo giữa</string>
+
+    <!--Hypertension Questions-->
+    <string name="ARE_YOU_UNDER_MEDICATION_FOR_HIGH_BLOOD_PRESSURE">Bạn có đang dùng thuốc điều trị cao huyết áp không?</string>
+    <string name="MEDICATION_FOR_BP">Thuốc điều trị huyết áp</string>
+    <string name="HAVE_YOU_EVER_SMOKED">Bạn đã bao giờ hút thuốc chưa?</string>
+    <string name="ARE_YOU_DIABETIC">Bạn bị tiểu đường?</string>
+    <!--Hypertension Questions-->
+
+    <!--Diabetes Questions-->
+    <string name="QUES_DIABETES_1">Bạn là người gốc Châu Á?</string>
+    <string name="QUES_DIABETES_2">Cha mẹ của bạn hoặc bất kỳ anh chị em nào của bạn đã được chẩn đoán mắc bệnh Tiểu đường chưa?</string>
+    <string name="QUES_DIABETES_3">Bạn đã bao giờ bị phát hiện có lượng đường trong máu cao (khi kiểm tra sức khỏe / ốm đau / mang thai) chưa?</string>
+    <string name="QUES_DIABETES_4">Hiện tại bạn có đang dùng thuốc điều trị Cao huyết áp?</string>
+    <string name="QUES_DIABETES_5">Hiện tại bạn có hút thuốc lá hoặc bất kỳ sản phẩm thuốc lá nào khác hàng ngày không?</string>
+    <string name="QUES_DIABETES_6">Bạn có ăn trái cây và rau 2 đến 3 lần một ngày không?</string>
+    <string name="QUES_DIABETES_7">Trung bình, bạn có tập thể dục hơn 3 giờ một tuần?</string>
+    <!--Diabetes Questions-->
+
+    <!--Stress & Anxiety Questions-->
+    <string name="QUES_STRESS_ANXIETY_1">Tôi cảm thấy cuộc sống thật vô nghĩa.</string>
+    <string name="QUES_STRESS_ANXIETY_2">Tôi cảm thấy mình không xứng đáng với tư cách là một con người.</string>
+    <string name="QUES_STRESS_ANXIETY_3">Tôi đã không thể trở nên nhiệt tình với bất cứ điều gì.</string>
+    <string name="QUES_STRESS_ANXIETY_4">Tôi cảm thấy tổn thương và buồn.</string>
+    <string name="QUES_STRESS_ANXIETY_5">Tôi cảm thấy rằng tôi không có gì để mong đợi</string>
+    <string name="QUES_STRESS_ANXIETY_6">Tôi cảm thấy rất khó để đưa ra sáng kiến ​​làm mọi việc</string>
+    <string name="QUES_STRESS_ANXIETY_7">Tôi dường như không thể có bất kỳ cảm giác tích cực nào</string>
+    <string name="QUES_STRESS_ANXIETY_8">Tôi cảm thấy sợ hãi mà không có bất kỳ lý do chính đáng nào</string>
+    <string name="QUES_STRESS_ANXIETY_9">Tôi nhận thức được hoạt động của trái tim mình khi không có gắng sức \\ n \"(ví dụ: Cảm giác nhịp tim tăng, tim mất nhịp)</string>
+    <string name="QUES_STRESS_ANXIETY_10">Tôi cảm giác gần như hoảng sợ</string>
+    <string name="QUES_STRESS_ANXIETY_11">Tôi lo lắng về những tình huống mà tôi có thể hoảng sợ và tự cho mình là kẻ ngốc</string>
+    <string name="QUES_STRESS_ANXIETY_12">Tôi cảm thấy đôi bàn tay mình run rẫy</string>
+    <string name="QUES_STRESS_ANXIETY_13">Tôi cảm thấy khó thở \\ n \"(ví dụ: thở nhanh quá mức, khó thở khi không có gắng sức)</string>
+    <string name="QUES_STRESS_ANXIETY_14">Tôi đã biết mình bị khô miệng</string>
+    <string name="QUES_STRESS_ANXIETY_15">Tôi cảm thấy rằng tôi khá dễ xúc động</string>
+    <string name="QUES_STRESS_ANXIETY_16">Tôi không khoan dung với bất cứ điều gì khiến tôi không thể tiếp tục với những gì tôi đang làm</string>
+    <string name="QUES_STRESS_ANXIETY_17">Tôi cảm thấy rất khó để thoải mái</string>
+    <string name="QUES_STRESS_ANXIETY_18">Tôi thấy mình trở nên kích động</string>
+    <string name="QUES_STRESS_ANXIETY_19">Tôi cảm thấy rằng tôi đang sử dụng rất nhiều năng lượng lo lắng</string>
+    <string name="QUES_STRESS_ANXIETY_20">Tôi có xu hướng phản ứng quá mức với các tình huống</string>
+    <string name="QUES_STRESS_ANXIETY_21">Tôi cảm thấy thật khó để hạ gục</string>
+    <!--Stress & Anxiety Questions-->
+
+    <!--Smart Phone Addiction Questions-->
+    <string name="QUES_SMART_PHONE_ADDICTION_1">Bạn có thường nghĩ rằng điện thoại thông minh của bạn đang đổ chuông / rung trong khi nó không?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_2">Khi điện thoại đổ chuông, bạn có cảm thấy muốn kiểm tra ngay tức khắc không?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_3">Bạn có nhìn vào điện thoại sau khi thức dậy vào buổi sáng hay trước khi đi ngủ không?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_4">Bạn có ngủ với điện thoại thông minh, đặt nó trên hoặc dưới gối hoặc cạnh giường không?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_5">Bạn có nhắn tin, e-mail / lướt web trong khi chờ đèn tín hiệu giao thông không?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_6">Bạn có liên tục kiểm tra điện thoại của mình nếu bạn không có tín hiệu dữ liệu hoặc Wi-Fi không?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_7">Bạn có cảm thấy rất lo lắng nếu điện thoại của bạn không hoạt động / bạn vô tình để quên nó?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_8">Bạn có thấy mình luôn bỏ qua thời gian tìm kiếm trên google / các trang thương mại điện tử không?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_9">Bạn có dành nhiều thời gian hơn để nhắn tin / gửi email sau đó nói chuyện với những người xung quanh?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_10">Khi bạn dùng bữa, điện thoại di động của bạn có luôn là một phần của vị trí đặt trên bàn ăn không?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_11">Bạn có cảm thấy cô đơn nếu điện thoại thông minh của bạn không đổ chuông trong vài giờ?</string>
+    <!--Smart Phone Addiction Questions-->
+
+    <string name="RISK">Rủi ro</string>
+    <string name="SCALE_ASSETS">Tỷ lệ năng lượng</string>
+    <string name="DEPRESSION_SCALE_ASSETS">Tỷ lệ năng lượng trầm cảm</string>
+    <string name="ANXIETY_SCALE_ASSETS">Tỷ lệ năng lượng lo âu</string>
+    <string name="STRESS_SCALE_ASSETS">Tỷ lệ năng lượng căng thẳng</string>
+    <string name="START_QUIZ">Bắt đầu câu đố</string>
+    <string name="NOT_NOW">Không phải bây giờ</string>
+
+    <string name="DIGITAL_EYE_STRAIN">Mỏi mắt kỹ thuật số</string>
+    <string name="NECK_PROBLEMS">Vấn đề về cổ</string>
+    <string name="INCREASED_ILLNESSES_DUE_TO_GERMS">Gia tăng bệnh tật do vi trùng</string>
+    <string name="SLEEP_DISTURBANCES">Rối loạn giấc ngủ</string>
+    <string name="OBSESSIVE_COMPULSIVE_DISORDER">Chứng rối loạn ám ảnh cưỡng chế</string>
+    <string name="RELATIONSHIP_PROBLEMS">Vấn đề về mối quan hệ</string>
+
+    <!--    <string name="PHYSICAL_EFFECTS_OF_ADDICTION">Tác động vật lý của chứng nghiện</string>
+        <string name="PHYSICAL_EFFECTS_OF_ADDICTION_DESC">Sử dụng quá nhiều điện thoại di động hoặc điện thoại thông minh của bạn có thể dẫn đến một số vấn đề vật lý khác nhau có thể gây ra tổn thương vĩnh viễn hoặc khó điều trị, bao gồm:</string>
+        <string name="PSYCHOLOGICAL_EFFECTS_OF_CELL_PHONE_ADDICTION">Ảnh hưởng tâm lý của chứng nghiện điện thoại di động</string>
+
+        <string name="SUB_1_DIGITAL_EYE_STRAIN">Mắt bắt đầu bỏng và ngứa.</string>
+        <string name="SUB_2_DIGITAL_EYE_STRAIN">Nhìn mờ.</string>
+        <string name="SUB_3_DIGITAL_EYE_STRAIN">Mỏi mắt.</string>
+        <string name="SUB_4_DIGITAL_EYE_STRAIN">Căng mắt kỹ thuật số có thể gây đau đầu.</string>
+        <string name="SUB_5_DIGITAL_EYE_STRAIN">Cảm giác đau và khó chịu liên quan đến việc xem màn hình kỹ thuật số trong hơn 2 giờ.</string>
+
+        <string name="SUB_1_NECK_PROBLEMS">Còn được gọi là &quot; cổ văn bản, &quot; là chứng đau cổ do nhìn xuống điện thoại di động hoặc máy tính bảng quá lâu.</string>
+        <string name="SUB_1_INCREASED_ILLNESSES_DUE_TO_GERMS">"Cứ 6 chiếc điện thoại di động thì có 1 chiếc có vấn đề. "</string>
+        <string name="SUB_2_INCREASED_ILLNESSES_DUE_TO_GERMS">Vi khuẩn E.coli, có thể gây sốt, nôn mửa và tiêu chảy, được tìm thấy trên nhiều điện thoại.</string>
+        <string name="SUB_3_INCREASED_ILLNESSES_DUE_TO_GERMS">Điện thoại đã bị nhiễm MRSA.</string>
+        <string name="SUB_31_INCREASED_ILLNESSES_DUE_TO_GERMS">Gây ra các ổ áp xe đau đớn.</string>
+        <string name="SUB_32_INCREASED_ILLNESSES_DUE_TO_GERMS">Nhiễm trùng đe dọa tính mạng ở xương, khớp, vết thương phẫu thuật, mạch máu, van tim và phổi.</string>
+        <string name="SUB_4_INCREASED_ILLNESSES_DUE_TO_GERMS">Những vụ tai nạn ô tô.</string>
+        <string name="SUB_41_INCREASED_ILLNESSES_DUE_TO_GERMS">Nhiều người cho rằng họ có thể đa nhiệm và sử dụng điện thoại khi lái xe, nhưng điều này gây ảnh hưởng không nhỏ đến người lái và những người khác trên đường.</string>
+        <string name="SUB_42_INCREASED_ILLNESSES_DUE_TO_GERMS">Nghiên cứu đã chỉ ra rằng nhắn tin và lái xe có thể nguy hiểm như uống rượu và lái xe.</string>
+        <string name="SUB_5_INCREASED_ILLNESSES_DUE_TO_GERMS">Vô sinh nam.</string>
+        <string name="SUB_51_INCREASED_ILLNESSES_DUE_TO_GERMS">Các nghiên cứu sơ bộ đã chỉ ra rằng bức xạ điện thoại di động có thể làm giảm số lượng tinh trùng, khả năng di chuyển và khả năng sống của tinh trùng.</string>
+
+        <string name="SUB_1_SLEEP_DISTURBANCES">Nghiện điện thoại di động có liên quan đến sự gia tăng rối loạn giấc ngủ và mệt mỏi ở người dùng.</string>
+        <string name="SUB_2_SLEEP_DISTURBANCES">Sử dụng điện thoại di động của bạn trước khi đi ngủ làm tăng khả năng mất ngủ.</string>
+        <string name="SUB_21_SLEEP_DISTURBANCES">Ánh sáng chói có thể làm giảm chất lượng giấc ngủ.</string>
+        <string name="SUB_22_SLEEP_DISTURBANCES">Việc sử dụng điện thoại thông minh có thể làm tăng thời gian đi vào giấc ngủ.</string>
+        <string name="SUB_23_SLEEP_DISTURBANCES">Ánh sáng phát ra từ điện thoại di động có thể kích hoạt não.</string>
+
+        <string name="SUB_1_RELATIONSHIP_PROBLEMS">Các mối quan hệ ngoại tuyến có thể bị ảnh hưởng do việc bỏ bê việc sử dụng điện thoại di động và mạng xã hội quá nhiều.</string>
+
+        <string name="SUB_1_ANXIETY">Nghiên cứu đã phát hiện ra rằng sinh viên đại học sử dụng điện thoại di động nhiều nhất có nhiều khả năng cảm thấy lo lắng hơn trong thời gian chết.</string>-->
+    <!--End Tool Calculator Module-->
+
+    <!--Start Tracker Parameter Module -->
+    <string name="TITLE_TRACK_HEALTH_PARAMETERS">Theo dõi các thông số sức khỏe</string>
+    <string name="TITLE_SELECT_PARAMETERS">Chọn thông số</string>
+    <string name="TITLE_UPDATE_PARAMETERS">Cập nhật thông số</string>
+    <string name="TITLE_PARAMETER_HISTORY">Lịch sử thông số</string>
+    <string name="TITLE_COMPLETE_HISTORY">Lịch sử hoàn thành</string>
+
+    <string name="TRACK_HEALTH_PARAMETERS">Theo dõi các thông số sức khỏe</string>
+    <string name="SELECT_PARAMETERS">Chọn thông số</string>
+    <string name="UPDATE_PARAMETER">Cập nhật thông số</string>
+
+    <string name="SELECT_PARAMETERS_DESC">Chọn các thông số sức khỏe quan trọng để theo dõi</string>
+    <string name="UPDATE_PARAMETER_DESC">Cập nhật thông số để xem xu hướng</string>
+    <string name="DASHBOARD_DESC">Xem nhanh dữ liệu sức khỏe của bạn</string>
+    <string name="HISTORY_DESC">Kiểm tra dữ liệu hiện có của bạn</string>
+
+    <string name="BLOOD_PRESSURE2">Huyết\náp</string>
+    <string name="BLOOD_SUGAR_PROFILE">Cấu hình đường huyết</string>
+    <string name="HEMOGRAM_PROFILE">Hồ sơ huyết đồ</string>
+    <string name="KIDNEY_PROFILE">Hồ sơ thận</string>
+    <string name="LIPID_PROFILE">Hồ sơ Lipid</string>
+    <string name="LIVER_PROFILE">Hồ sơ gan</string>
+    <string name="THYROID_PROFILE">Hồ sơ tuyến giáp</string>
+    <string name="URINE_PROFILE">Hồ sơ nước tiểu</string>
+
+    <string name="WHR">WHR</string>
+    <string name="BLOOD_SUGAR">Đường huyết</string>
+    <string name="CHOLESTEROL">Cholesterol</string>
+    <string name="HEMOGLOBIN">"Huyết sắc tố "</string>
+    <string name="CREATININE">Creatinine</string>
+    <string name="TOT_BILIRUBIN">Bilirubin toàn phần</string>
+    <string name="TSH" translatable="false">TSH</string>
+    <string name="HEMOGRAM">Huyết đồ</string>
+    <string name="KIDNEY">Thận</string>
+    <string name="LIPID">Lipid</string>
+    <string name="LIVER">Gan</string>
+    <string name="THYROID">Tuyến giáp</string>
+    <string name="URINE">Nước tiểu</string>
+    <string name="PULSE">Xung</string>
+
+    <string name="RECORD_DATE">Ngày ghi</string>
+    <string name="ADD_EDIT">Thêm / Chỉnh sửa</string>
+    <string name="LAST_CHECKED_ON">Ngày ghi cuối cùng</string>
+    <string name="SYSTOLIC_DIASTOLIC">Tâm thu / tâm trương</string>
+
+    <string name="MSG_SELECT_PARAM_TO_TRACK">Vui lòng chọn ít nhất một thông số để theo dõi</string>
+    <string name="MSG_SELECT_PROFILE_TO_PROCEED">"Vui lòng chọn hồ sơ để tiến hành "</string>
+    <string name="MSG_ENTER_AT_LEAST_ONE_VALUE_FOR">Vui lòng nhập ít nhất một giá trị cho</string>
+    <string name="MSG_PARAMETER_IS_UPDATED">Thông số đã được cập nhật thành công</string>
+    <string name="PLEASE_ENTER_ALL_BMI_PROFILE_FIELDS">Vui lòng nhập tất cả các trường hồ sơ BMI</string>
+    <string name="PLEASE_ENTER_ALL_WHR_PROFILE_FIELDS">Vui lòng nhập tất cả các trường hồ sơ WHR</string>
+
+    <string name="CURRENT_VALUES">Giá trị hiện tại</string>
+    <string name="UPDATED">Đã cập nhật</string>
+    <string name="YOUR_CURRENT_BMI_VALUE_IS">Giá trị BMI hiện tại của bạn là</string>
+    <string name="YOUR_CURRENT_WHR_VALUE_IS">Giá trị WHR hiện tại của bạn là</string>
+    <string name="PARAMETER_UPDATED">Đã cập nhật thông số thành công</string>
+    <!--End Tracker Parameter Module -->
+
+    <!--Start Water Tracker Module -->
+    <string name="TITLE_WATER_TRACKER">Theo dõi Sự Hydrat hóa</string>
+
+    <string name="TITLE_CALCULATE_INTAKE">Tính Mục Tiêu Nước Hằng Ngày</string>
+    <string name="DESC_CALCULATE_INTAKE">Tính hoặc Chỉnh sửa Lượng Nước Hằng Ngày để đặt làm Mục Tiêu Hằng Ngày của bạn</string>
+
+    <string name="TITLE_LOG_TODAY_INTAKE">Nhật Ký Tiêu Thụ Nước Hôm Nay</string>
+    <string name="DESC_LOG_TODAY_INTAKE">Nhật ký lượng nước bạn đã tiêu thụ cho các thời điểm khác nhau trong một ngày</string>
+
+    <string name="TITLE_TRACK_INTAKE">Theo dõi Lượng Nước Tiêu Thụ</string>
+    <string name="DESC_TRACK_INTAKE">Theo dõi lượng nước hiện tại và quá khứ với chi tiết lịch sử đầy đủ</string>
+
+    <string name="TODAYS_WATER_CONSUMPTION">Lượng Nước Tiêu Thụ Hôm Nay</string>
+    <string name="CALCULATE_EDIT_INTAKE_TARGET">Tính/Chỉnh sửa Mục Tiêu Nước Hằng Ngày</string>
+    <string name="TRACK_YOUR_WATER_INTAKE">Theo dõi Lượng Nước của bạn</string>
+
+    <string name="WATER">Nước</string>
+    <string name="COFFEE">Cà phê</string>
+    <string name="TEA">Trà</string>
+    <string name="MILK">Sữa</string>
+    <string name="JUICE">Nước trái cây</string>
+    <string name="ENERGY_DRINK">Nước tăng lực</string>
+
+    <string name="CURRENT_TARGET">Mục Tiêu Hiện Tại</string>
+    <string name="DEFAULT_TARGET">Mục Tiêu Mặc Định</string>
+    <string name="CUSTOM_TARGET">Mục Tiêu Tùy Chỉnh</string>
+    <string name="SELECT_YOUR_WEIGHT">Chọn cân nặng của bạn</string>
+    <string name="DO_YOU_EXERCISE">Bạn có tập thể dục không?</string>
+    <string name="ENTER_DURATION_OF_EXERCISE_IN_MINUTES">Nhập Thời lượng Tập luyện trong phút</string>
+    <string name="ENABLE_NOTIFICATION">Bật Thông báo?</string>
+    <string name="YOUR_DAILY_WATER_INTAKE">Lượng Nước Hằng Ngày của Bạn</string>
+    <string name="SHOULD_BE">nên là</string>
+    <string name="YOU_HAVE_SET_DAILY_WATER_INTAKE">Bạn đã đặt Mục Tiêu Nước Hằng Ngày</string>
+    <string name="TARGET_TO">mục tiêu là</string>
+    <string name="CUSTOM_WATER_INTAKE">Lượng nước tùy chỉnh</string>
+    <string name="ENTER_WATER_INTAKE_QUANTITY_SUGGESTED_BY_YOUR_PHYSICIAN">Nhập lượng nước được đề xuất bởi Bác sĩ của bạn</string>
+    <string name="SET_CUSTOM_TARGET">Đặt Mục Tiêu Tùy Chỉnh</string>
+
+    <string name="LOG_YOUR_INTAKE">Nhật Ký Tiêu Thụ Của Bạn</string>
+    <string name="ENTER_YOUR_WATER_INTAKE">Nhập lượng Nước của bạn</string>
+
+    <string name="TARGET">Mục Tiêu</string>
+    <string name="ACHIEVED">Đã Đạt Được</string>
+
+    <string name="WTD">Tuần cho \n Ngày</string>
+    <string name="ACHIEVEMENT_THIS_WEEK">Thành Tích Trong Tuần Này</string>
+    <string name="WITD">Lượng Nước Đã Tiêu Thụ Đến Ngày</string>
+    <string name="MAX_STREAK">Kỷ Lục \n Cao Nhất</string>
+    <string name="CURRENT_STREAK">Kỷ Luật \n Hiện Tại</string>
+
+    <string name="WEEK_START_DAY">Ngày Bắt Đầu Tuần (Thứ Hai)</string>
+    <string name="WTD_DESC">Đây là lượng nước đã tiêu thụ trong tuần này đến hôm nay so với mục tiêu hàng tuần đến hôm nay của bạn</string>
+    <string name="ACHIEVEMENT_THIS_WEEK_DESC">Đây là lượng nước đã đạt được so với mục tiêu trong 7 ngày của tuần hiện tại</string>
+    <string name="WITD_DESC">Tổng lượng nước bạn đã đăng ký trong ứng dụng kể từ khi bạn bắt đầu ghi lại lượng nước hằng ngày</string>
+    <string name="MAX_STREAK_DESC">Đây là số ngày liên tiếp tối đa (không nghỉ) mà bạn đã đạt được mục tiêu nước và ghi lại một cách liên tục trong ứng dụng</string>
+    <string name="CURRENT_STREAK_DESC">Đây là chuỗi ngày liên tiếp hiện tại của việc đạt được mục tiêu nước hàng ngày (không tính hôm nay). Bạn ghi lại nước hàng ngày càng đều, chuỗi càng cao</string>
+
+    <string name="PLEASE_SET_WATER_INTAKE_TARGET">Vui lòng Đặt Mục Tiêu Nước Hằng Ngày trước</string>
+    <string name="PLEASE_ENTER_EXERCISE_DURATION">Vui lòng Nhập Thời Lượng Tập Luyện</string>
+    <string name="PLEASE_ENTER_VALID_DURATION_BETWEEN">Vui lòng Nhập Thời Lượng Hợp Lệ giữa</string>
+    <string name="PLEASE_ENTER_WATER_INTAKE_QUANTITY">Vui lòng Nhập Lượng Nước</string>
+    <string name="PLEASE_ENTER_VALID_WATER_INTAKE_QUANTITY_BETWEEN">Vui lòng Nhập Lượng Nước Hợp Lệ giữa</string>
+    <string name="INTAKE_ADDED_SUCCESSFULLY">Lượng Nước Đã Thêm Thành Công</string>
+    <!--End Water Tracker Module -->
+    <string name="FOR_DETAILED_INFORMATION_ABOUT_YOUR_POLICY_PLEASE_CLICK_HERE">Để biết bất kỳ dịch vụ nào hoặc để biết thêm về chính sách của bạn, hãy nhấp vào bên dưới :</string>
+    <string name="CUSTOMER_PORTAL">Cổng thông tin khách hàng</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_aktivo_score"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vivant_bright_blue">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_aktivo_score"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:padding="@dimen/_1sdp"
+        android:src="@drawable/circle_bg_shimmer"
+        android:tint="@color/shimmerColor"
+        app:layout_constraintBottom_toBottomOf="@+id/lbl_aktivo_score"
+        app:layout_constraintEnd_toStartOf="@+id/lbl_aktivo_score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbl_aktivo_score" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_aktivo_score"
+        style="@style/VivantDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@color/shimmerColor"
+        android:gravity="center"
+        android:text="Aktivo Score"
+        android:textColor="@color/shimmerColor"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/img_aktivo_score"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_aktivo_score"
+        style="@style/VivantTitle"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/shimmerColor"
+        android:text="--"
+        android:textColor="@color/shimmerColor"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_aktivo_score" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

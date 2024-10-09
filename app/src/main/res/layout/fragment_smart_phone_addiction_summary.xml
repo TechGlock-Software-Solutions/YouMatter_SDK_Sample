@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_30sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_heart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_observation"
+                    style="@style/VivantTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <at.grabner.circleprogress.CircleProgressView
+                    android:id="@+id/indicator_score"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:animateProgress="true"
+                    app:cpv_autoTextSize="true"
+                    app:cpv_barColor="@color/colorPrimary"
+                    app:cpv_barStrokeCap="Round"
+                    app:cpv_barWidth="@dimen/_14sdp"
+                    app:cpv_fillColor="@color/white"
+                    app:cpv_innerContourColor="#F5F5F5"
+                    app:cpv_maxValue="100"
+                    app:cpv_outerContourSize="0dp"
+                    app:cpv_rimColor="@color/vivant_light_grey"
+                    app:cpv_rimWidth="@dimen/_15sdp"
+                    app:cpv_seekMode="true"
+                    app:cpv_spinColor="@color/highlight_blue"
+                    app:cpv_textMode="Text"
+                    app:cpv_value="0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_observation" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_score"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="--"
+                    android:textSize="@dimen/_25sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/indicator_score"
+                    app:layout_constraintEnd_toEndOf="@+id/indicator_score"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="@+id/indicator_score"
+                    app:layout_constraintTop_toTopOf="@+id/indicator_score" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_smartphone_result"
+                    style="@style/VivantTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_15sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/indicator_score"
+                    app:layout_constraintStart_toStartOf="@+id/indicator_score"
+                    app:layout_constraintTop_toBottomOf="@+id/indicator_score" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_risk_ranges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_17sdp"
+                app:layout_constraintEnd_toEndOf="@+id/layout_heart"
+                app:layout_constraintStart_toStartOf="@+id/layout_heart"
+                app:layout_constraintTop_toBottomOf="@+id/layout_heart">
+
+                <com.techglock.health.app.common.view.RiskRangesView
+                    android:id="@+id/layout_not_nomophobic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/layout_mild_nomophobic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.techglock.health.app.common.view.RiskRangesView
+                    android:id="@+id/layout_mild_nomophobic"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/layout_not_nomophobic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/layout_not_nomophobic"
+                    app:layout_constraintTop_toTopOf="@+id/layout_not_nomophobic" />
+
+                <com.techglock.health.app.common.view.RiskRangesView
+                    android:id="@+id/layout_moderate_nomophobic"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/layout_severe_nomophobic"
+                    app:layout_constraintEnd_toStartOf="@+id/layout_severe_nomophobic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_not_nomophobic" />
+
+                <com.techglock.health.app.common.view.RiskRangesView
+                    android:id="@+id/layout_severe_nomophobic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/layout_moderate_nomophobic"
+                    app:layout_constraintTop_toTopOf="@+id/layout_moderate_nomophobic" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_smartphone_result_msg"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text=""
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/layout_risk_ranges"
+                app:layout_constraintStart_toStartOf="@+id/layout_risk_ranges"
+                app:layout_constraintTop_toBottomOf="@+id/layout_risk_ranges" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_physical_effects_of_addiction"
+                style="@style/VivantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text=""
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_smartphone_result_msg"
+                app:layout_constraintStart_toStartOf="@+id/txt_smartphone_result_msg"
+                app:layout_constraintTop_toBottomOf="@+id/txt_smartphone_result_msg" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_physical_effects_of_addiction_desc"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text=""
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_physical_effects_of_addiction"
+                app:layout_constraintStart_toStartOf="@+id/lbl_physical_effects_of_addiction"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_physical_effects_of_addiction" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_physical_effects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_physical_effects_of_addiction_desc"
+                app:layout_constraintStart_toStartOf="@+id/lbl_physical_effects_of_addiction_desc"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_physical_effects_of_addiction_desc"
+                tools:listitem="@layout/item_smartphone_addiction" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_physchological_effects_of_addiction"
+                style="@style/VivantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text=""
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="@+id/rv_physical_effects"
+                app:layout_constraintStart_toStartOf="@+id/rv_physical_effects"
+                app:layout_constraintTop_toBottomOf="@+id/rv_physical_effects" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_physchological_effects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_physchological_effects_of_addiction"
+                app:layout_constraintStart_toStartOf="@+id/lbl_physchological_effects_of_addiction"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_physchological_effects_of_addiction"
+                tools:listitem="@layout/item_smartphone_addiction" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_restart"
+        style="@style/CustomButton"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text="@string/RESTART_ASSESSMENT"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollview"
+        app:layout_constraintStart_toStartOf="@+id/scrollview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

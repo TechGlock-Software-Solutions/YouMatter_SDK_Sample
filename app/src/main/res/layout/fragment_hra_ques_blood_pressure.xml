@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_previous"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:tint="@color/textViewColor"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_previous"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_previous"
+                app:srcCompat="@drawable/img_left" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_previous"
+                style="@style/HRAQuestion"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:gravity="center_vertical"
+                android:text="@string/PREVIOUS"
+                app:layout_constraintBottom_toBottomOf="@+id/img_previous"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_previous"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_ques"
+            style="@style/HRAImageView"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_previous" />
+
+        <com.techglock.health.app.hra.views.HTMLTextView
+            android:id="@+id/txt_ques"
+            style="@style/HRAQuestion"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_ques" />
+
+        <LinearLayout
+            android:id="@+id/layout_input_fields"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:clipToPadding="false"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_115sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_ques"
+            app:layout_constraintStart_toStartOf="@+id/txt_ques"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ques">
+
+            <com.techglock.health.app.common.view.CustomEditTextHra
+                android:id="@+id/lay_systolic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.techglock.health.app.common.view.CustomEditTextHra
+                android:id="@+id/lay_diastolic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_observation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_info"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:src="@drawable/img_info"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_observation"
+                    app:tint="@color/transparent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_observation"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:gravity="top"
+                    android:text=""
+                    android:textColor="@color/state_success"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_info"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <com.techglock.health.app.common.view.ArcButton
+            android:id="@+id/btn_dont_remember"
+            style="@style/CustomButtonLeft"
+            android:layout_width="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/I_DONT_REMEMBER"
+            app:isLeftButton="true"
+            app:isTemplate="true"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="@+id/layout_input_fields"
+            app:layout_constraintStart_toStartOf="@+id/layout_input_fields" />
+
+        <com.techglock.health.app.common.view.ArcButton
+            android:id="@+id/btn_next"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/NEXT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/layout_input_fields"
+            app:layout_constraintStart_toStartOf="@+id/layout_input_fields" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

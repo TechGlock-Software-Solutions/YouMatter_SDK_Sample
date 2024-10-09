@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="@color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/btn_border_disabled"
+                android:backgroundTint="@color/white"
+                android:paddingBottom="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_close_input">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_close_input"
+                    android:layout_width="@dimen/_21sdp"
+                    android:layout_height="@dimen/_21sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:padding="@dimen/_1sdp"
+                    android:scaleType="centerCrop"
+                    android:tint="@color/almost_black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_close" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_title"
+                    style="@style/VivantTitle"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:text="@string/DISCLAIMER_TITLE"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_close_input" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_cardiovascular"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/DISCLAIMER_CARDIOVASCULAR"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_title" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_cardiovascular_desc"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/CLICK"
+                    android:textColor="@color/almost_black"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_cardiovascular" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/vivantInactive"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_cardiovascular_desc" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_heart_age"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/DISCLAIMER_HEART_AGE"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_heart_age_desc"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/CLICK"
+                    android:textColor="@color/almost_black"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_heart_age" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/vivantInactive"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_heart_age_desc" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_women_health"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/DISCLAIMER_WOMEN_HEALTH"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_women_health_desc"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/CLICK"
+                    android:textColor="@color/almost_black"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_women_health" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/vivantInactive"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_women_health_desc" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_dass"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/DISCLAIMER_DASS"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_dass_desc"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/CLICK"
+                    android:textColor="@color/almost_black"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_dass" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_dass_desc_2"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/DISCLAIMER_DASS_DESC"
+                    android:textColor="@color/almost_black"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_dass_desc" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/vivantInactive"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_dass_desc_2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_workability_index"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/DISCLAIMER_WORKABILITY_INDEX"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_disclaimer_workability_index_desc"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/DISCLAIMER_WORKABILITY_INDEX_DESC"
+                    android:textColor="@color/almost_black"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintStart_toStartOf="@+id/txt_disclaimer_title"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_workability_index" />
+
+                <com.techglock.health.app.common.view.ArcButton
+                    android:id="@+id/btn_ok"
+                    style="@style/CustomButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:text="@string/OK"
+                    app:isTemplate="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer_workability_index_desc" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

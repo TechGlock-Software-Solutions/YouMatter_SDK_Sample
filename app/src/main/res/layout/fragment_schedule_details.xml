@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_schedule_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_schedule"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:text="@string/SCHEDULE"
+                    android:textSize="@dimen/_16sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_how_often"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/HOW_OFTEN_WILL_YOU_TAKE"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_schedule"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_schedule"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_schedule" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_med_frequency"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginEnd="@dimen/_17sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_how_often"
+                    app:spanCount="2"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/item_med_frequency" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_dates"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/rv_med_frequency"
+                    app:layout_constraintStart_toStartOf="@+id/rv_med_frequency"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_med_frequency">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_x_days"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toStartOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_enter_days"
+                            style="@style/VivantDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:text="@string/NUMBER_OF_DAYS"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="@dimen/_13sdp"
+                            app:layout_constraintEnd_toStartOf="@+id/edt_duration"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_calender"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/img_calender"
+                            android:tint="@color/dark_gold"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="@+id/edt_duration"
+                            app:layout_constraintStart_toStartOf="@+id/edt_duration"
+                            app:layout_constraintTop_toTopOf="@+id/edt_duration" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_duration"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:backgroundTint="@color/vivant_edit_textcolor"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:paddingStart="@dimen/_30sdp"
+                            android:text=""
+                            android:textColor="@color/textViewColor"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/lbl_enter_days"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/lbl_enter_days"
+                            app:layout_constraintTop_toTopOf="@+id/lbl_enter_days" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_days"
+                            style="@style/VivantDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:text="@string/DAYS"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/edt_duration"
+                            app:layout_constraintEnd_toEndOf="@+id/edt_duration"
+                            app:layout_constraintTop_toTopOf="@+id/edt_duration" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_start_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toStartOf="@+id/layout_end_date"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/layout_x_days">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_start_date"
+                            style="@style/VivantTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/START_DATE"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.techglock.health.app.common.view.ArcImageView
+                            android:id="@+id/img_calender2"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@drawable/img_calender"
+                            android:tint="@color/almost_black"
+                            app:layout_constraintBottom_toBottomOf="@+id/edt_start_date"
+                            app:layout_constraintEnd_toEndOf="@+id/edt_start_date"
+                            app:layout_constraintTop_toTopOf="@+id/edt_start_date" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_start_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:background="@drawable/btn_border_disabled"
+                            android:editable="false"
+                            android:gravity="start"
+                            android:hint="dd mmm yyyy"
+                            android:imeOptions="actionDone"
+                            android:inputType="none"
+                            android:lines="1"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/textViewColor"
+                            android:textColorHint="@color/vivant_edit_textcolor"
+                            android:textSize="@dimen/_13sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/lbl_start_date"
+                            app:layout_constraintStart_toStartOf="@+id/lbl_start_date"
+                            app:layout_constraintTop_toBottomOf="@+id/lbl_start_date" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_end_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/layout_start_date"
+                        app:layout_constraintTop_toTopOf="@+id/layout_start_date">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/lbl_end_date"
+                            style="@style/VivantTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/END_DATE"
+                            android:textColor="@color/textViewColor"
+                            android:textSize="@dimen/_12sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.techglock.health.app.common.view.ArcImageView
+                            android:id="@+id/img_calender3"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@drawable/img_calender"
+                            android:tint="@color/almost_black"
+                            app:layout_constraintBottom_toBottomOf="@+id/edt_end_date"
+                            app:layout_constraintEnd_toEndOf="@+id/edt_end_date"
+                            app:layout_constraintTop_toTopOf="@+id/edt_end_date" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_end_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:background="@drawable/btn_border_disabled"
+                            android:editable="false"
+                            android:gravity="start"
+                            android:hint="dd mmm yyyy"
+                            android:imeOptions="actionDone"
+                            android:inputType="none"
+                            android:lines="1"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/textViewColor"
+                            android:textColorHint="@color/vivant_edit_textcolor"
+                            android:textSize="@dimen/_13sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/lbl_end_date"
+                            app:layout_constraintStart_toStartOf="@+id/lbl_end_date"
+                            app:layout_constraintTop_toBottomOf="@+id/lbl_end_date" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_dose_count"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/HOW_MANY_YOU_NEED_TO_TAKE_AT_ONE_TIME"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_how_often"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_how_often"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_dates" />
+
+                <com.techglock.health.app.medication_tracker.view.CounterView
+                    android:id="@+id/counter_med_dose"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_dose_count"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_dose_count"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_dose_count" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_med_time"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/WHAT_TIMES_OF_DAY"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/counter_med_dose"
+                    app:layout_constraintStart_toStartOf="@+id/counter_med_dose"
+                    app:layout_constraintTop_toBottomOf="@+id/counter_med_dose" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_med_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_med_time"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_med_time"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_med_time"
+                    app:spanCount="3"
+                    tools:itemCount="6"
+                    tools:listitem="@layout/item_med_time" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_meal_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="@+id/layout_schedule_details"
+                app:layout_constraintStart_toStartOf="@+id/layout_schedule_details"
+                app:layout_constraintTop_toBottomOf="@+id/layout_schedule_details">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_intake_instruction"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/INTAKE_INSTRUCTIONS"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_meal_time"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:clipToPadding="false"
+                    android:paddingEnd="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_intake_instruction"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_intake_instruction"
+                    tools:listitem="@layout/item_meal_time" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_notes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="@+id/layout_schedule_details"
+                app:layout_constraintStart_toStartOf="@+id/layout_schedule_details"
+                app:layout_constraintTop_toBottomOf="@+id/card_meal_time">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_notes"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ADDITIONAL_NOTES"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_edt_notes"
+                    style="@style/MyTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_notes"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_notes"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_notes">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_notes"
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/HINT_NOTES"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLength="50" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--                    <com.google.android.material.textfield.TextInputLayout
+                                        android:id="@+id/til_edt_notes"
+                                        style="@style/VivantTextInputLayoutStyle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        app:hintEnabled="false"
+                                        app:passwordToggleEnabled="false"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:layout_marginBottom="@dimen/_10sdp"
+                                        android:background="@drawable/btn_border_disabled"
+                                        app:layout_constraintEnd_toEndOf="@+id/lbl_notes"
+                                        app:layout_constraintStart_toStartOf="@+id/lbl_notes"
+                                        app:layout_constraintTop_toBottomOf="@+id/lbl_notes"
+                                        app:layout_constraintBottom_toBottomOf="parent">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/edt_notes"
+                                            style="@style/VivantEditTextStyle"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="@string/HINT_NOTES"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="text"
+                                            android:digits="01234567890 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ .,!@#$%^*(){}:;>=+-_|\/?`~&amp;"
+                                            android:maxLength="50"
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:paddingTop="@dimen/_10sdp"
+                                            android:paddingBottom="@dimen/_15sdp" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_alert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="@+id/card_notes"
+                app:layout_constraintStart_toStartOf="@+id/card_notes"
+                app:layout_constraintTop_toBottomOf="@+id/card_notes">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_alert"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="@string/ENABLE_NOTIFICATION_ALERT"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_checked"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:text="@string/YES"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/sw_alert"
+                    app:layout_constraintEnd_toStartOf="@+id/sw_alert"
+                    app:layout_constraintTop_toTopOf="@+id/sw_alert" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sw_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:thumb="@drawable/thumb_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/lbl_alert"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_alert"
+                    app:track="@drawable/track_selector" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.techglock.health.app.common.view.ArcButton
+                android:id="@+id/btn_schedule"
+                style="@style/CustomButton"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="@string/SCHEDULE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/card_alert"
+                app:layout_constraintStart_toStartOf="@+id/card_alert"
+                app:layout_constraintTop_toBottomOf="@+id/card_alert" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textRelationShipFDSHP"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/DOCUMENT_BELONGS_TO"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_relatives_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textDocumentNotesFDSHP"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/HAVE_NOTES_TO_MENTION"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_edt_notes"
+                style="@style/MyTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textDocumentNotesFDSHP"
+                app:layout_constraintTop_toBottomOf="@+id/textDocumentNotesFDSHP">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_notes"
+                    style="@style/MyEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/HINT_NOTES"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="50" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--                <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/til_edt_notes"
+                                style="@style/VivantTextInputLayoutStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:hintEnabled="false"
+                                app:passwordToggleEnabled="false"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_15sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/textDocumentNotesFDSHP"
+                                app:layout_constraintTop_toBottomOf="@+id/textDocumentNotesFDSHP"
+                                app:layout_constraintBottom_toBottomOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edt_notes"
+                                    style="@style/VivantEditTextStyle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/HINT_NOTES"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="50"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_15sdp"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--                <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/layout_notes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_button_white"
+                                android:layout_marginStart="@dimen/_17sdp"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_marginEnd="@dimen/_17sdp"
+                                android:layout_marginBottom="@dimen/_20sdp"
+                                app:layout_constraintEnd_toEndOf="@+id/layout_login_or"
+                                app:layout_constraintStart_toStartOf="@+id/layout_login_or"
+                                app:layout_constraintTop_toBottomOf="@+id/layout_login_or">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/img_notes"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    app:srcCompat="@drawable/img_other"
+                                    android:padding="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    android:layout_marginStart="@dimen/_15sdp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"/>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/lbl_notes"
+                                    style="@style/VivantDescription"
+                                    android:layout_width="0dp"
+                                    android:text="@string/ADDITIONAL_NOTES"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textColor="@color/textViewColor"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_15sdp"
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/img_notes"
+                                    app:layout_constraintTop_toTopOf="@+id/img_notes"
+                                    app:layout_constraintBottom_toBottomOf="@+id/img_notes"/>
+
+                                <View
+                                    android:id="@+id/view"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:background="@color/vivantInactive"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    app:layout_constraintTop_toBottomOf="@+id/img_notes"
+                                    app:layout_constraintStart_toStartOf="@+id/img_notes"
+                                    app:layout_constraintEnd_toEndOf="@+id/lbl_notes"/>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/til_edt_notes"
+                                    style="@style/VivantTextInputLayoutStyle"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:hintEnabled="false"
+                                    app:passwordToggleEnabled="false"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    app:layout_constraintEnd_toEndOf="@+id/lbl_notes"
+                                    app:layout_constraintStart_toStartOf="@+id/img_notes"
+                                    app:layout_constraintTop_toBottomOf="@+id/view"
+                                    app:layout_constraintBottom_toBottomOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edt_notes"
+                                        style="@style/VivantEditTextStyle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/HINT_NOTES"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="text"
+                                        android:maxLength="50"
+                                        android:digits="01234567890 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ .,!@#$%^*(){}:;>=+-_|\/?`~&amp;"
+                                        android:paddingTop="@dimen/_10sdp"
+                                        android:paddingBottom="@dimen/_15sdp"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_save_select_relation"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_17sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/card_alert"
+        app:layout_constraintStart_toStartOf="@+id/card_alert"
+        app:layout_constraintTop_toBottomOf="@+id/card_alert" />
+
+    <!--        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <com.caressa.allizhealth.app.common.view.ArcButton
+                    android:id="@+id/btn_back_select_relation"
+                    style="@style/CustomButtonLeft"
+                    android:text="@string/BACK"
+                    app:isLeftButton="true"
+                    app:isTemplate="true" />
+
+                <com.caressa.allizhealth.app.common.view.ArcButton
+                    android:id="@+id/btn_save_select_relation"
+                    style="@style/CustomButtonRight"
+                    android:text="@string/SAVE"
+                    app:isTemplate="true" />
+
+            </LinearLayout>-->
+
+</LinearLayout>

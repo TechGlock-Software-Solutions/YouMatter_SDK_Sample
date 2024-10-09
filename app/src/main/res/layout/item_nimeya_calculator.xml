@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="calculator"
+            type="com.techglock.health.app.home.common.CalculatorModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_105sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_tracker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackgroundBorderless"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_tracker_name"
+                            style="@style/VivantDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Risko"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="@color/vivantPurple"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_tracker_name2"
+                            style="@style/VivantDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Meter"
+                            android:textSize="@dimen/_13sdp"
+                            android:textColor="@color/moderate_risk"
+                            android:textAllCaps="true"
+                            android:layout_marginBottom="-5dp"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            app:layout_constraintStart_toEndOf="@+id/txt_tracker_name"
+                            app:layout_constraintBottom_toBottomOf="@+id/txt_tracker_name"/>-->
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_tracker"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:tint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_tracker_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_tracker_name"
+                app:srcCompat="@drawable/img_riskometer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_tracker_name"
+                style="@style/VivantTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:text="Risko\nMeter"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_tracker"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_tracker_desc"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:minLines="2"
+                android:text="Know your risk tolarance level"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_tracker_name" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgCalculatorsArrow"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:tint="@color/colorPrimary"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_forward" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

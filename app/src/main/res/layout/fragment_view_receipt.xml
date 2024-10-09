@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_receipt_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:paddingBottom="@dimen/_15sdp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_policy_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E2EEE2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_next"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:tint="@color/colorPrimary"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_sud_logo"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:src="@drawable/ic_sud_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_policy_name"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/img_sud_logo"
+                        app:layout_constraintTop_toTopOf="@+id/img_sud_logo" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_policy_status"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/txt_policy_name"
+                        app:layout_constraintStart_toStartOf="@+id/txt_policy_name"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_policy_name" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_receipt_id"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/RECEIPT_ID"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_policy_header" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_receipt_id"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_receipt_id"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_receipt_id"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_receipt_id" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_date_time"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/RECEIPT_DATE"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_receipt_id" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_date_time"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_date_time"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_date_time"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_date_time" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_bnfy_name"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/BNFY_NAME"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_date_time" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_bnfy_name"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_bnfy_name"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_bnfy_name"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_bnfy_name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_product_uin_code"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/PRODUCT_UIN_CODE"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_bnfy_name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_product_uin_code"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_product_uin_code"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_product_uin_code"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_product_uin_code" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_application_number"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/APPLICATION_NUMBER"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_product_uin_code" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_application_number"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_application_number"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_application_number"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_application_number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_current_bill_channel_desc"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/CURRENT_BILL_CHANNEL_DESCRIPTION"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_application_number" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_current_bill_channel_desc"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_current_bill_channel_desc"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_current_bill_channel_desc"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_current_bill_channel_desc" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_base_premium_cgst_amount"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/BASE_PREMIUM_CGST_AMOUNT"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_current_bill_channel_desc" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_base_premium_cgst_amount"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_base_premium_cgst_amount"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_base_premium_cgst_amount"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_base_premium_cgst_amount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_base_premium_sgst_amount"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/BASE_PREMIUM_SGST_AMOUNT"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_base_premium_cgst_amount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_base_premium_sgst_amount"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_base_premium_sgst_amount"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_base_premium_sgst_amount"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_base_premium_sgst_amount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_base_premium_igst_amount"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/BASE_PREMIUM_IGST_AMOUNT"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_base_premium_sgst_amount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_base_premium_igst_amount"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_base_premium_igst_amount"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_base_premium_igst_amount"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_base_premium_igst_amount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_covr_si"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/COVR_SI"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_base_premium_igst_amount" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_covr_si"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_covr_si"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_covr_si"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_covr_si" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_total_premium"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/TOTAL_PREMIUM"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_covr_si" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_total_premium"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_total_premium"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_total_premium"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_total_premium" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_contract_type_desc"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/CONTRACT_TYPE_DESCRIPTION"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_total_premium" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_contract_type_desc"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_contract_type_desc"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_contract_type_desc"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_contract_type_desc" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_current_bill_frequency"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/CURRENT_BILL_FREQUENCY"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_contract_type_desc" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_current_bill_frequency"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_current_bill_frequency"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_current_bill_frequency"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_current_bill_frequency" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_cover_premium_term"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/COVER_PREMIUM_TERM"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_current_bill_frequency" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_cover_premium_term"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/DASH_3"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_cover_premium_term"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_cover_premium_term"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_cover_premium_term" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_download_receipt"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="@string/DOWNLOAD_RECEIPT"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_receipt_details" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

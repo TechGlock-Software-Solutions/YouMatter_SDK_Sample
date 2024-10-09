@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:tint="@color/almost_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_otp_verification"
+            style="@style/VivantTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:text="@string/OTP_VERIFICATION"
+            android:textSize="@dimen/_17sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_close" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_otp_verification_desc"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:text="@string/OTP_VERIFICATION_DESC"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_otp_verification"
+            app:layout_constraintStart_toStartOf="@+id/txt_otp_verification"
+            app:layout_constraintTop_toBottomOf="@+id/txt_otp_verification" />
+
+        <com.techglock.health.app.common.view.PinView
+            android:id="@+id/layout_code_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:textColor="@color/vivant_charcoal_grey"
+            android:textSize="@dimen/_24sdp"
+            app:itemCount="6"
+            app:itemHeight="@dimen/_40sdp"
+            app:itemRadius="@dimen/_2sdp"
+            app:itemSpacing="@dimen/_6sdp"
+            app:itemViewType="rectangle"
+            app:itemWidth="@dimen/_40sdp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_otp_verification_desc"
+            app:layout_constraintStart_toStartOf="@+id/txt_otp_verification_desc"
+            app:layout_constraintTop_toBottomOf="@+id/txt_otp_verification_desc"
+            app:lineColor="@color/vivant_greyish"
+            app:lineWidth="1.5dp">
+
+        </com.techglock.health.app.common.view.PinView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_resend"
+            style="@style/VivantTitle"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/RESEND_OTP"
+            android:textColor="@color/vivantInactive"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_code_view"
+            app:layout_constraintTop_toBottomOf="@+id/layout_code_view" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_code_view">
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:id="@+id/progress_otp"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                app:animateProgress="true"
+                app:cpv_autoTextSize="true"
+                app:cpv_barColor="@color/colorPrimary"
+                app:cpv_barStrokeCap="Round"
+                app:cpv_barWidth="@dimen/_5sdp"
+                app:cpv_fillColor="@color/transparent"
+                app:cpv_innerContourColor="@color/transparent"
+                app:cpv_maxValue="30"
+                app:cpv_outerContourSize="0dp"
+                app:cpv_rimColor="@color/vivantLight"
+                app:cpv_rimWidth="@dimen/_5sdp"
+                app:cpv_seekMode="true"
+                app:cpv_spinColor="@color/highlight_blue"
+                app:cpv_textMode="Text"
+                app:cpv_value="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_seconds_left"
+                style="@style/VivantTitle"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:text="0"
+                android:textSize="@dimen/size_18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/progress_otp"
+                app:layout_constraintEnd_toEndOf="@+id/progress_otp"
+                app:layout_constraintStart_toStartOf="@+id/progress_otp"
+                app:layout_constraintTop_toTopOf="@+id/progress_otp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_sec"
+                style="@style/VivantDescription"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/SEC"
+                android:textColor="@color/textViewColorSecondary"
+                android:textSize="@dimen/size_15sp"
+                app:layout_constraintEnd_toEndOf="@+id/progress_otp"
+                app:layout_constraintStart_toStartOf="@+id/progress_otp"
+                app:layout_constraintTop_toBottomOf="@+id/progress_otp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_verify"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:text="@string/VERIFY"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/layout_code_view"
+            app:layout_constraintStart_toStartOf="@+id/layout_code_view"
+            app:layout_constraintTop_toBottomOf="@+id/layout_timer" />
+
+        <!--            <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layout_know_your_policy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/btn_oval_selected"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_policy_number">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_35sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/img_know_your_policy"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/img_know_your_policy"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txt_know_your_policy"
+                                style="@style/VivantTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:gravity="center_vertical"
+                                android:text="@string/KNOW_YOUR_POLICY"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_13sdp"/>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

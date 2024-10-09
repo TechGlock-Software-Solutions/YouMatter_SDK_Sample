@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_water_tracker_feature"
+    app:startDestination="@id/waterTrackerDashboardFragment">
+
+    <fragment
+        android:id="@+id/waterTrackerDashboardFragment"
+        android:name="com.techglock.health.app.water_tracker.ui.WaterTrackerDashboardFragment"
+        tools:layout="@layout/fragment_water_tracker_dashboard">
+
+        <argument
+            android:name="screen"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="title"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="message"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_waterTrackerDashboardFragment_to_calculateWaterIntakeFragment"
+            app:destination="@id/calculateWaterIntakeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_waterTrackerDashboardFragment_to_trackWaterFragment"
+            app:destination="@id/trackWaterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/trackWaterFragment"
+        android:name="com.techglock.health.app.water_tracker.ui.TrackWaterFragment"
+        tools:layout="@layout/fragment_track_water">
+
+        <action
+            android:id="@+id/action_trackWaterFragment_to_waterTrackerDashboardFragment"
+            app:enterAnim="@anim/hra_enter_anim"
+            app:exitAnim="@anim/hra_exit_anim"
+            app:popEnterAnim="@anim/hra_enter_to_exit"
+            app:popExitAnim="@anim/hra_exit_to_exit"
+            app:popUpTo="@id/waterTrackerDashboardFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/calculateWaterIntakeFragment"
+        android:name="com.techglock.health.app.water_tracker.ui.CalculateWaterIntakeFragment"
+        tools:layout="@layout/fragment_calculate_water_intake">
+
+        <argument
+            android:name="goal"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_calculateWaterIntakeFragment_to_waterTrackerDashboardFragment"
+            app:enterAnim="@anim/hra_enter_anim"
+            app:exitAnim="@anim/hra_exit_anim"
+            app:popEnterAnim="@anim/hra_enter_to_exit"
+            app:popExitAnim="@anim/hra_exit_to_exit"
+            app:popUpTo="@id/waterTrackerDashboardFragment" />
+
+    </fragment>
+
+</navigation>

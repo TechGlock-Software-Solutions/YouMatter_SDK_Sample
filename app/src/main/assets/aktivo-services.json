@@ -1,0 +1,15 @@
+{
+  "oauth_client": {
+    "client_id": "sudlifeuat",
+    "client_secret": "eABH66ZsxwaWLvHbyhhBiUqy7DBatbyG"
+  },
+  "config": {
+    "configuration_version": "1",
+    "base_url_type": 7
+  },
+  "log_platform_config": {
+    "base_url": "https://56915c95d8454c61be0fc37d7eb7147f.ap-southeast-1.aws.found.io:9243/android_0002_sudlifeuat/",
+    "index": "android_0002_sudlifeuat",
+    "api_key": "azk0TEpva0JDSlMwalZVbEJCcGM6OHZ3Y0FGT1BTT0czU3h4OFpSUjBvZw=="
+  }
+}

@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_80sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_title"
+                style="@style/VivantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:text="@string/CHECK_YOUR_LIFE_HEALTH_INSURANCE_GAP"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_dob"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Date of Birth"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_title"
+                app:layout_constraintStart_toStartOf="@+id/lbl_title"
+                app:layout_constraintTop_toBottomOf="@id/lbl_title" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/border_button_white"
+                android:padding="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_dob">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_dob"
+                    style="@style/VivantDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/img_dropdown"
+                    app:layout_constraintStart_toEndOf="@+id/img_calender"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_calender"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/img_calender_new"
+                    android:tint="@color/vivant_icon_warm_grey"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_dob"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_dob" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_dropdown"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/img_down"
+                    android:tint="@color/vivant_icon_warm_grey"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_dob"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_dob" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_retirement_age"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/AT_WHAT_AGE_WILL_YOUR_INCOME_STOP"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/layout_date" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_edt_retirement_age"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_retirement_age">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_retirement_age"
+                    style="@style/MyEditTextStyleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_family_member_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_edt_retirement_age">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_family_details"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="@string/YOUR_FAMILY_DETAILS"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_add"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn_add" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add"
+                    style="@style/CustomButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginBottom="0dp"
+                    android:padding="@dimen/_3sdp"
+                    android:text="Add"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintStart_toEndOf="@+id/lbl_family_details"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.techglock.health.app.common.view.ExpandedHeightListView
+                    android:id="@+id/rv_family_members"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_95sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:clipToPadding="false"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_family_details"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/item_nimeya_family_member" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_no_member"
+                    style="@style/VivantDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="@string/NO_FAMILY_MEMBER_ADDED"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_family_details" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_income_expenses"
+                style="@style/VivantTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="@string/YOUR_INCOME_EXPENSES_MONTHLY"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/layout_family_member_data" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_your_income"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/YOUR_INCOME"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_income_expenses" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_edt_income"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_your_income">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_income"
+                    style="@style/MyEditTextStyleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_23sdp"
+                    android:paddingEnd="@dimen/_23sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/VivantDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/INDIAN_RUPEE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/til_edt_income"
+                app:layout_constraintStart_toStartOf="@+id/til_edt_income"
+                app:layout_constraintTop_toTopOf="@+id/til_edt_income" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_living_expense"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/YOUR_LIVING_EXPENSE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/til_edt_income" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_edt_living_expense"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_living_expense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_living_expense"
+                    style="@style/MyEditTextStyleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_23sdp"
+                    android:paddingEnd="@dimen/_23sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/VivantDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/INDIAN_RUPEE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/til_edt_living_expense"
+                app:layout_constraintStart_toStartOf="@+id/til_edt_living_expense"
+                app:layout_constraintTop_toTopOf="@+id/til_edt_living_expense" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_expense_parents"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/EXPENSE_TOWARDS_DEPENDANT_PARENTS"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/til_edt_living_expense" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_edt_expense_parents"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_expense_parents">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_expense_parents"
+                    style="@style/MyEditTextStyleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_23sdp"
+                    android:paddingEnd="@dimen/_23sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/VivantDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/INDIAN_RUPEE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/til_edt_expense_parents"
+                app:layout_constraintStart_toStartOf="@+id/til_edt_expense_parents"
+                app:layout_constraintTop_toTopOf="@+id/til_edt_expense_parents" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_existing_insurance_debt_investments"
+                style="@style/VivantTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/YOUR_EXISTING_INSURANCE_DEBT_AND_INVESTMENTS_MONTHLY"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/til_edt_expense_parents" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_total_sum_assured_life_insurance"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/TOTAL_SUM_ASSURED_ON_EXISTING_LIP"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_existing_insurance_debt_investments" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_total_sum_assured_life_insurance"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_total_sum_assured_life_insurance">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_total_sum_assured_life_insurance"
+                    style="@style/MyEditTextStyleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_23sdp"
+                    android:paddingEnd="@dimen/_23sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/VivantDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/INDIAN_RUPEE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/til_total_sum_assured_life_insurance"
+                app:layout_constraintStart_toStartOf="@+id/til_total_sum_assured_life_insurance"
+                app:layout_constraintTop_toTopOf="@+id/til_total_sum_assured_life_insurance" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_total_sum_assured_health_insurance"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/TOTAL_SUM_ASSURED_ON_EXISTING_HIP"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/til_total_sum_assured_life_insurance" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_total_sum_assured_health_insurance"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_total_sum_assured_health_insurance">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_total_sum_assured_health_insurance"
+                    style="@style/MyEditTextStyleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_23sdp"
+                    android:paddingEnd="@dimen/_23sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/VivantDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/INDIAN_RUPEE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/til_total_sum_assured_health_insurance"
+                app:layout_constraintStart_toStartOf="@+id/til_total_sum_assured_health_insurance"
+                app:layout_constraintTop_toTopOf="@+id/til_total_sum_assured_health_insurance" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_outstanding_home_loan"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/YOUR_HOME_LOAN_BALANCE_OUTSTANDING"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/til_total_sum_assured_health_insurance" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_outstanding_home_loan"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_outstanding_home_loan">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_outstanding_home_loans"
+                    style="@style/MyEditTextStyleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_23sdp"
+                    android:paddingEnd="@dimen/_23sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/VivantDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/INDIAN_RUPEE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/til_outstanding_home_loan"
+                app:layout_constraintStart_toStartOf="@+id/til_outstanding_home_loan"
+                app:layout_constraintTop_toTopOf="@+id/til_outstanding_home_loan" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_other_debts"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/YOUR_OTHER_DEBTS"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/til_outstanding_home_loan" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_other_debts"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_other_debts">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_other_debts"
+                    style="@style/MyEditTextStyleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_23sdp"
+                    android:paddingEnd="@dimen/_23sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/VivantDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/INDIAN_RUPEE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/til_other_debts"
+                app:layout_constraintStart_toStartOf="@+id/til_other_debts"
+                app:layout_constraintTop_toTopOf="@+id/til_other_debts" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_current_investment"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/YOUR_CURRENT_INVESTMENT"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/til_other_debts" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_current_investment"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintEnd_toEndOf="@+id/lbl_dob"
+                app:layout_constraintStart_toStartOf="@+id/lbl_dob"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_current_investment">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_current_investment"
+                    style="@style/MyEditTextStyleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_23sdp"
+                    android:paddingEnd="@dimen/_23sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/VivantDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/INDIAN_RUPEE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_17sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/til_current_investment"
+                app:layout_constraintStart_toStartOf="@+id/til_current_investment"
+                app:layout_constraintTop_toTopOf="@+id/til_current_investment" />
+
+            <!--            <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_submit"
+                            style="@style/CustomButton"
+                            android:layout_width="match_parent"
+                            android:text="@string/CALCULATE"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            app:layout_constraintTop_toBottomOf="@+id/til_current_investment"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

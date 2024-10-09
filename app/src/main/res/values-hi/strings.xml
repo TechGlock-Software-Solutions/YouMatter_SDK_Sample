@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">You Matter</string>
+
+    <string name="SAVE">सहेजें (सेव करें)</string>
+    <string name="SUBMIT">सबमिट करें</string>
+    <string name="RESTART">रीस्टार्ट करें</string>
+    <string name="SEND">भेजें</string>
+    <string name="FINISH">समाप्त करें</string>
+    <string name="THATS_ALL">बस इतना ही</string>
+    <string name="DONE">पूर्ण</string>
+    <string name="NEXT">अगला</string>
+    <string name="PREVIOUS">पहला</string>
+    <string name="OK">ओके</string>
+    <string name="AND">और</string>
+    <string name="OR">या</string>
+    <string name="CONFIRM">पुष्टि करें</string>
+    <string name="PROCEED">आगे बढ़ें</string>
+    <string name="VERIFY">सत्यापित करें</string>
+    <string name="SELECT">चयन करें</string>
+    <string name="SELECT_DATE">तारीख चुनें</string>
+    <string name="CLOSE">बंद करें</string>
+    <string name="CANCEL">रद्द करें</string>
+    <string name="EXIT">बाहर निकलें</string>
+    <string name="BACK">पीछे जाएं</string>
+    <string name="START">शुरू करें</string>
+    <string name="STOP">रोकें</string>
+    <string name="CONTINUE">जारी रखें</string>
+    <string name="CALCULATE">गिनें</string>
+    <string name="RECALCULATE">फिर से गिनें</string>
+    <string name="DELETE">मिटाएं (डिलीट करें)</string>
+    <string name="UPDATE">अपडेट करें</string>
+    <string name="EDIT">एडिट करें</string>
+    <string name="DOWNLOAD">डाउनलोड करें</string>
+    <string name="DOWNLOADS">डाउनलोड्स</string>
+    <string name="SHARE">शेयर करें</string>
+    <string name="VIEW">देखें</string>
+    <string name="ADD">जोड़ें</string>
+    <string name="TAKE">ले</string>
+    <string name="ENABLED">सक्षम करें (इनेबल)</string>
+    <string name="DISABLED">अक्षम करें (डिसेबल)</string>
+    <string name="ALERT">चेतावनी</string>
+    <string name="VIEW_MORE">और देखें</string>
+    <string name="REPORT">सुचना (रिपोर्ट)</string>
+    <string name="DESCRIPTION">विवरण</string>
+    <string name="RECOMMENDATIONS">अनुरोध</string>
+    <string name="SKIP">छोड़ें (स्किप)</string>
+    <string name="VALUE">मूल्य (वैल्यू)</string>
+    <string name="OBSERVATION">अवलोकन करें</string>
+    <string name="REFRESH">रिफ्रेश करें</string>
+    <string name="CATEGORY">श्रेणी</string>
+    <string name="DOSE">खुराक (डोज)</string>
+    <string name="TIME">समय</string>
+    <string name="SEND_OTP">ओटीपी प्राप्त करें</string>
+    <string name="RESEND_OTP">फिर से ओटीपी भेजें</string>
+    <string name="RESEND">फिर से भेजें</string>
+    <string name="NO_THANKS">जी नहीं, धन्यवाद</string>
+    <string name="DEAR_USER">प्रिय उपयोगकर्ता</string>
+    <string name="MEDICINE_REMINDER">दवा रिमाइंडर</string>
+    <string name="ALL">सभी</string>
+    <string name="IS">है</string>
+    <string name="DASHBOARD">डैशबोर्ड</string>
+    <string name="HISTORY">इतिहास</string>
+    <string name="DIGITIZE">डिजिटाइज़</string>
+    <string name="YES">हां</string>
+    <string name="NO">नहीं</string>
+    <string name="NONE">कोई नहीं</string>
+    <string name="MALE">पुरुष</string>
+    <string name="FEMALE">महिला</string>
+    <string name="OTHER">अन्य</string>
+    <string name="NAME">नाम</string>
+    <string name="CONTACT">संपर्क</string>
+    <string name="GENDER">लिंग</string>
+    <string name="PHONE">फोन</string>
+    <string name="PHONE_NUMBER">फोन नंबर</string>
+    <string name="NUMBER">नंबर</string>
+    <string name="ALTERNATE_NUMBER">वैकल्पिक नंबर</string>
+    <string name="EMAIL">ईमेल</string>
+    <string name="EMAIL_ADDRESS">ईमेल एड्रेस</string>
+    <string name="ALTERNATE_EMAIL_ADDRESS">वैकल्पिक ईमेल एड्रेस</string>
+    <string name="ADDRESS">पता</string>
+    <string name="LOGIN">लॉगिन</string>
+    <string name="PASSWORD">पासवर्ड</string>
+    <string name="AGE">आयु</string>
+    <string name="BIRTH_DATE">जन्मतिथि</string>
+    <string name="DATE_OF_BIRTH">जन्म की तारीख</string>
+    <string name="MOBILE_NUMBER">मोबाइल नंबर</string>
+    <string name="DATE">तारीख</string>
+    <string name="DAY">दिन</string>
+    <string name="WEEK">सप्ताह</string>
+    <string name="MONTH">महीना</string>
+    <string name="YEAR">वर्ष</string>
+    <string name="YEARS">साल</string>
+    <string name="FOR">के लिए</string>
+    <string name="FROM">से</string>
+    <string name="TO">को</string>
+    <string name="ONLY">केवल</string>
+    <string name="SEC">सेकंड</string>
+    <string name="TODAY">आज</string>
+    <string name="WEEKLY">साप्ताहिक</string>
+    <string name="MONTHLY">मासिक</string>
+    <string name="YEARLY">सालाना</string>
+    <string name="SESSION">सत्र</string>
+    <string name="MYSELF">स्वयं</string>
+    <string name="MEMBER">सदस्य</string>
+    <string name="MEMBERS">सदस्यों</string>
+    <string name="LOGOUT">लॉगआउट</string>
+    <string name="LOGOUT_APPLICATION">लॉगआउट एप्लिकेशन</string>
+    <string name="ALLOW_PERMISSIONS">अनुमतियां दें</string>
+    <string name="ADD_MORE">और जोड़ें</string>
+    <string name="TERMS_AND_CONDITIONS">नियम एवं शर्तें</string>
+    <string name="PRIVACY_POLICY">गोपनीयता नीति</string>
+    <string name="VERSION">वर्जन</string>
+    <string name="DISCLAIMER">अस्वीकरण</string>
+
+    <string name="SELECT_LANGUAGE">भाषा चुनें</string>
+    <string name="CHOOSE_APP_LANGUAGE">ऐप की भाषा चुनें</string>
+    <string name="CHOOSE_APP_LANGUAGE_DESC">आप अपनी पसंद के अनुसार अपनी ऐप भाषा चुन सकते हैं</string>
+
+    <string name="RECORDS_EMPTY">रिकार्ड खाली है</string>
+    <string name="RECORDS_EMPTY_DESC">रिकॉर्ड जोड़ें, जो आपको यहां दिखाई देगा</string>
+    <string name="BIOMETRIC_AUTHENTICATION">बॉयोमीट्रिक प्रमाणीकरण</string>
+    <string name="BIOMETRIC_AUTHENTICATION_DESC">फोन स्क्रीन लॉक फिंगरप्रिंट, पैटर्न, पिन या पासवर्ड दर्ज करें</string>
+    <string name="CONSULT_WITH_THERAPIST">मानसिक स्वास्थ्य पेशेवर (मेंटल हेल्थ प्रोफेशनल) से परामर्श लें</string>
+
+    <string name="SELF">स्वयं</string>
+    <string name="FATHER">पिता</string>
+    <string name="MOTHER">माता</string>
+    <string name="SON">बेटा</string>
+    <string name="DAUGHTER">बेटी</string>
+    <string name="BROTHER">भाई</string>
+    <string name="SISTER">बहन</string>
+    <string name="WIFE">पत्नी</string>
+    <string name="HUSBAND">पति</string>
+    <string name="SPOUSE">पति-पत्नी</string>
+    <string name="GRAND_FATHER">दादा</string>
+    <string name="GRAND_MOTHER">दादी</string>
+
+    <string name="JANUARY">जनवरी</string>
+    <string name="FEBRUARY">फरवरी</string>
+    <string name="MARCH">मार्च</string>
+    <string name="APRIL">अप्रैल</string>
+    <string name="MAY">मई</string>
+    <string name="JUNE">जून</string>
+    <string name="JULY">जुलाई</string>
+    <string name="AUGUST">अगस्त</string>
+    <string name="SEPTEMBER">सितंबर</string>
+    <string name="OCTOBER">अक्टूबर</string>
+    <string name="NOVEMBER">नवंबर</string>
+    <string name="DECEMBER">दिसंबर</string>
+
+    <string name="MON">सोम</string>
+    <string name="TUE">मंगल</string>
+    <string name="WED">बुध</string>
+    <string name="THU">गुरु</string>
+    <string name="FRI">शुक्र</string>
+    <string name="SAT">शनि</string>
+    <string name="SUN">रवि</string>
+
+    <string name="YR">वर्ष</string>
+    <string name="YRS">वर्ष</string>
+    <string name="DAYS">दिन</string>
+    <string name="MONTHS">महीने</string>
+
+    <string name="LANGUAGE">भाषा</string>
+    <string name="ENGLISH">अंग्रेज़ी</string>
+    <string name="HINDI">हिंदी</string>
+    <string name="LANGUAGE_API_SUCCESS_MSG">भाषा प्राथमिकता सफलतापूर्वक सहेजी गई</string>
+
+    <string name="BADGE_CONTENDER">कंटेंडर</string>
+    <string name="BADGE_CHALLENGER">चैलेंजर</string>
+    <string name="BADGE_ACHIEVER">अचीवर</string>
+
+    <string name="HEIGHT">कद (हाइट)</string>
+    <string name="WEIGHT">वजन</string>
+    <string name="BMI">बीएमआई</string>
+    <string name="DURATION">अवधि</string>
+    <string name="WAIST">कमर</string>
+    <string name="SYSTOLIC">सिस्टोलिक</string>
+    <string name="DIASTOLIC">डायस्टोलिक</string>
+    <string name="BLOOD_PRESSURE">ब्लड प्रेशर (रक्तचाप)</string>
+    <string name="BP">ब्लड प्रेशर</string>
+    <string name="FEET_INCH">Feet/inch</string>
+    <string name="FT_IN">ft,in</string>
+    <string name="FT">ft</string>
+    <string name="INCH">inch</string>
+    <string name="CM">cm</string>
+    <string name="CENTIMETER">Centimeter</string>
+    <string name="LBS">lbs</string>
+    <string name="KG">kg</string>
+    <string name="MM_HG">mm Hg</string>
+    <string name="MG_DL">mg/dL</string>
+    <string name="MMOL_L">mmol/L</string>
+    <string name="KCAL">Kcal</string>
+    <string name="MIN">min</string>
+    <string name="KM">km</string>
+    <string name="MTR">mtr</string>
+    <string name="ML">ml</string>
+    <string name="LITRE">Litre</string>
+    <string name="LITRES">Litres</string>
+
+    <string name="LOW">कम</string>
+    <string name="HIGH">अधिक</string>
+    <string name="HIGH_NORMAL">अधिक सामान्य</string>
+
+    <string name="BOUNDRY_LOW_RISK">कम जोखिम</string>
+    <string name="BOUNDRY_HIGH_RISK">अधिक जोखिम</string>
+
+    <string name="ABNORMAL">असामान्य</string>
+    <string name="DIABETIC">मधुमेह</string>
+    <string name="EARLY_DIABETIC">शुरुआती मधुमेह</string>
+    <string name="VERY_HIGH">बहुत अधिक</string>
+    <string name="VERY_LOW">बहुत कम</string>
+    <string name="MILDLY_HIGH">हल्का अधिक</string>
+    <string name="MILDLY_LOW">हल्का कम</string>
+    <string name="BORDERLINE_HIGH">सीमारेखा से अधिक</string>
+    <string name="BETTER">बढ़िया</string>
+    <string name="NEAR_OPTIMAL">बेहतर के करीब</string>
+    <string name="MODERATE_LOW">मध्यम से कम</string>
+    <string name="MODERATE_HIGH">मध्यम से अधिक</string>
+    <string name="MILD_LOW">हल्का कम</string>
+    <string name="MILD_HIGH">हल्का अधिक</string>
+    <string name="AVERAGE_RISK">औसत जोखिम</string>
+    <string name="DESIRABLE">बेहतर</string>
+    <string name="BEST">बेहतरीन</string>
+    <string name="OPTIMAL">सर्वोत्कृष्ट</string>
+    <string name="GOOD">अच्छा</string>
+
+    <string name="PRE_HYPERTENSION">प्री-हाइपरटेंशन</string>
+    <string name="HYPERTENSION_STAGE_1">हाइपरटेंशन (उच्च रक्तचाप) - चरण 1</string>
+    <string name="HYPERTENSION_STAGE_2">हाइपरटेंशन (उच्च रक्तचाप) - चरण 2</string>
+    <string name="HYPERTENSION_CRITICAL">हाइपरटेंशन - गंभीर</string>
+
+    <string name="UNDERWEIGHT">कम वजन (अंडरवेट)</string>
+    <string name="OVERWEIGHT">अधिक वजन (ओवरवेट)</string>
+    <string name="OBESE">मोटापा</string>
+    <string name="PRE_OBESE">पूर्व-मोटापे से ग्रस्त</string>
+    <string name="OBESE_LEVEL_1">मोटापा स्तर 1</string>
+    <string name="OBESE_LEVEL_2">मोटापा स्तर 2</string>
+    <string name="OBESE_LEVEL_3">मोटापा स्तर 3</string>
+
+    <string name="SWITCH_PROFILE">प्रोफाइल बदलें</string>
+    <string name="PICK_YOUR_HEIGHT">अपनी हाइट चुनें</string>
+    <string name="PICK_YOUR_WEIGHT">अपना वजन चुनें</string>
+    <string name="PICK_YOUR_WAIST">अपनी कमर चुनें</string>
+    <string name="ENTER_WEIGHT">अपना वजन दर्ज करें</string>
+    <string name="ENTER_HEIGHT">अपनी हाइट दर्ज करें</string>
+    <string name="ENTER_YOUR_WAIST_SIZE">अपनी कमर की साइज दर्ज करें</string>
+
+    <!--HRA-->
+    <string name="TAKE_YOUR_HRA">अपना एचआरए लें</string>
+    <string name="COMPLETE_YOUR_HRA">अपना एचआरए पूरा करें</string>
+    <string name="HIGH_RISK">अधिक जोखिम</string>
+    <string name="MODERATE_RISK">मध्यम जोखिम</string>
+    <string name="AT_RISK">खतरे में</string>
+    <string name="NEEDS_IMPROVEMENT">सुधार की जरूरत</string>
+    <string name="NEED_IMPROVEMENT">सुधार की जरूरत</string>
+    <string name="HEALTHY">स्वस्थ</string>
+    <string name="OPTIMUM">बेहतरीन</string>
+    <!--HRA-->
+
+    <string name="DIET_PLAN">डाइट प्लान</string>
+    <string name="FITNESS_PLAN">फिटनेस प्लान</string>
+    <string name="DOCTOR_PRESCRIPTION">डॉक्टर निर्देश</string>
+    <string name="PATHOLOGY_REPORT">पैथोलॉजी रिपोर्ट</string>
+    <string name="PATHOLOGY_LAB_REPORT">पैथोलॉजी लैब रिपोर्ट</string>
+    <string name="RECEIPT">रसीद</string>
+    <string name="HOSPITAL_REPORT">अस्पताल रिपोर्ट</string>
+    <string name="OTHER_DOCUMENT">अन्य दस्तावेज</string>
+    <string name="HRA_REPORT">एचआरए रिपोर्ट</string>
+
+    <string name="VIEW_PROFILE_PHOTO">प्रोफाइल फोटो देखें</string>
+    <string name="OPEN_GALLERY">गैलरी में जाएं</string>
+    <string name="TAKE_PHOTO">फोटो चुनें</string>
+    <string name="REMOVE_PHOTO">फोटो हटाएं</string>
+    <string name="GALLERY">गैलरी</string>
+    <string name="PHOTO">फोटो</string>
+    <string name="REMOVE">हटाएं</string>
+
+    <string name="ADDITIONAL_NOTES">अतिरिक्त नोट</string>
+    <string name="HINT_NOTES">अतिरिक्त नोट्स लिखें (वैकल्पिक)</string>
+    <string name="NOTE">नोट</string>
+
+    <string name="PERMISSION_REQUIRED">अनुमति आवश्यक है</string>
+    <string name="PERMISSIONS_REQUIRED">अनुमति आवश्यक है</string>
+    <string name="SELECT_RECORDS">रिकॉर्ड्स चुनें</string>
+    <string name="SELECT_APP">ऐप चुनें</string>
+    <string name="SELECT_PROFILE_PHOTO">प्रोफाइल फोटो चुनें</string>
+    <string name="SELECT_AN_IMAGE">कोई इमेज चुनें</string>
+    <string name="SELECT_A_FILE">कोई फाइल चुनें</string>
+    <string name="SELECT_A_FILE_TO_UPLOAD">अपलोड के लिए एक फाइल चुनें</string>
+    <string name="NEED_WEBVIEW_PERMISSION">आगे बढ़ने के लिए स्टोरेज, कैमरा व ऑडियो की अनुमति आवश्यक है</string>
+    <string name="NEED_STORAGE_PERMISSION">फाइल स्टोर करने व पढ़ने के लिए हमें स्टोरेज अनुमति की आवश्यकता है</string>
+    <string name="NEED_CAMERA_PERMISSION">अपलोड के लिए स्नैप पर क्लिक करने के लिए हमें कैमरे की अनुमति की आवश्यकता है</string>
+
+    <string name="NEED_CAMERA_PERMISSION_WELLFIE">वेलफी केलिए आगे बढ़ने के लिए हमें कैमरे की अनुमति दें</string>
+    <string name="NEED_NOTIFICATION_PERMISSION">अधिसूचनाएं प्राप्त करने के लिए हमें अधिसूचना (नोटिफिकेशन) की अनुमति दें</string>
+    <string name="NEED_HEART_RATE_PERMISSION">1) अपने हार्ट रेट डेटा को ट्रैक करने के लिए हमें गूगल फिट हार्ट रेट की अनुमति दें</string>
+    <string name="NEED_SLEEP_PERMISSION">2) अपने स्लीप (नींद) डेटा को ट्रैक करने के लिए हमें गूगल फिट स्लीप की अनुमति दें</string>
+    <string name="NEED_PHYSICAL_PERMISSION">3) अपनी गतिविधियों (एक्टिविटी) को ट्रैक करने के लिए हमें फिजिकल एक्टिविटी की अनुमति दें</string>
+
+    <string name="ERROR_GOOGLE_FIT_PERMISSION">सभी गूगल फिट अनुमतियां अस्वीकृत</string>
+    <string name="ERROR_PHYSICAL_ACTIVITY_PERMISSION">फिजिकल एक्टिविटी अनुमति अस्वीकृत</string>
+    <string name="ERROR_STORAGE_PERMISSION">आगे बढ़ने के लिए स्टोरेज की अनुमति आवश्यक है</string>
+    <string name="ERROR_CAMERA_PERMISSION">आगे बढ़ने के लिए कैमरा की अनुमति आवश्यक है</string>
+    <string name="ERROR_NOTIFICATION_PERMISSION">अधिसूचनाएं भेजने के लिए अधिसूचना (नोटिफिकेशन) की अनुमति आवश्यक है</string>
+    <string name="MSG_NOTIFICATION_PERMISSION">अधिसूचना की अनुमति स्वीकृत</string>
+    <string name="MSG_VERIFICATION_CODE_SENT">ओटीपी आपके पंजीकृत ईमेल/मोबाइल नंबर पर भेजा गया है</string>
+
+    <string name="OTP_VERIFICATION">ओटीपी सत्यापित करें</string>
+    <string name="OTP_VERIFICATION_DESC">कृपया अपने पंजीकृत मोबाइल नंबर पर प्राप्त ओटीपी को दर्ज करें</string>
+
+    <string name="AN_ERROR_HAPPENED">कहीं कोई त्रुटि हुई है, कृपया फिर से कोशिश करें!</string>
+    <string name="UNEXPECTED_ERROR">अनपेक्षित त्रुटि उत्पन्न हुई है, कृपया फिर से कोशिश करें</string>
+    <string name="UNABLE_TO_CONNECT">कनेक्ट करने में असमर्थ हैं, कृपया फिर से कोशिश करें</string>
+    <string name="SESSION_EXPIRED">आपका सेशन समाप्त हो चुका है, कृपया फिर से कोशिश करें</string>
+
+    <!--App Message-->
+    <string name="API_RETRY_ERROR">कृपया फिर से कोशिश करें!</string>
+    <string name="MSG_API_DEFAULT_ERROR">कुछ गलत हुआ है!</string>
+    <string name="SOME_ERROR">कुछ त्रुटि हुई है!</string>
+    <string name="NO_INTERNET_CONNECTION">इंटरनेट कनेक्शन नहीं है</string>
+
+    <string name="NO_DATA">कोई डेटा नहीं</string>
+    <string name="NO_DATA_AVAILABLE">कोई डेटा उपलब्ध नहीं</string>
+    <string name="NO_HISTORY_AVAILABLE">कोई विवरण उपलब्ध नहीं</string>
+    <string name="PASSWORD_CHANGED">पासवर्ड बदला गया</string>
+    <string name="PASSWORD_CHANGED_SUCCESS">आपका पासवर्ड सफलतापूर्वक बदला गया</string>
+    <string name="GO_TO_APP">माय ऐप पर वापस जाएं</string>
+    <string name="PLEASE_WAIT">कृपया प्रतीक्षा करें</string>
+    <string name="LOADING">लोड हो रहा है</string>
+    <string name="ERROR_GENERAL">कनेक्ट करने में असमर्थ हैं, कृपया फिर से कोशिश करें</string>
+    <string name="AWW_SNAP">एडब्ल्यूडब्ल्यू! स्नेप!</string>
+    <string name="PRESS_AGAIN_TO_EXIT">बाहर निकलने के लिए फिर से प्रेस करें</string>
+    <string name="SOMETHING_WENT_WRONG">कुछ गलत हुआ है!</string>
+    <string name="MSG_SESSION_EXPIRED">ऐसा लगता है कि आपका सेशन समाप्त हो चुका है, कृपया फिर से लॉगिन करें</string>
+    <string name="ERROR_INTERNET_UNAVAILABLE">ऐसा लगता है कि जैसे आप ऑफलाइन हैं। अपने इंटरनेट कनेक्शन की जांच करें और पुन: प्रयास करें</string>
+    <string name="MSG_OTP">ओटीपी आपके पंजीकृत मोबाइल नंबर पर भेजा गया है। कृपया हमारे पुन: भेजने तक प्रतीक्षा करें</string>
+
+    <!--Error Msg-->
+    <string name="VALIDATE_OTP">कृपया वैध ओटीपी दर्ज करें</string>
+    <string name="VALIDATE_USER_ID">कृपया वैध उपयोगकर्ता (यूजर) आईडी दर्ज करें</string>
+    <string name="VALIDATE_PASSWORD">कृपया वैध पासवर्ड दर्ज करें</string>
+    <string name="VALIDATE_NEW_PASSWORD">कृपया वैध नया पासवर्ड दर्ज करें</string>
+    <string name="VALIDATE_CONFIRM_PASSWORD">कृपया वैध कंफर्म पासवर्ड दर्ज करें</string>
+    <string name="VALIDATE_EMPTY_OLD_PASSWORD">कृपया पुराना पासवर्ड दर्ज करें</string>
+    <string name="VALIDATE_EMPTY_NEW_PASSWORD">कृपया नया पासवर्ड दर्ज करें</string>
+    <string name="VALIDATE_EMPTY_CONFIRM_PASSWORD">कृपया कंफर्म पासवर्ड दर्ज करें</string>
+
+    <string name="ERROR_PASSWORD_SHOULD_BE_MINIMUM_6_CHARACTERS">पासवर्ड कम से कम 6 अक्षरों का होना चाहिए</string>
+    <string name="ERROR_NEW_PASSWORD_MUST_BE_DIFFERENT_FROM_OLD_PASSWORD">नया पासवर्ड पुराने पासवर्ड से अलग होना चाहिए</string>
+    <string name="ERROR_PASSWORD_DOES_NOT_MATCH">पासवर्ड मेल नहीं खा रहे हैं</string>
+    <string name="ERROR_PASSWORD_DOES_NOT_MATCH_REQUIREMENTS">पासवर्ड आवश्यकताओं से मेल नहीं खा रहा है</string>
+    <string name="ERROR_PASSWORD_CONFIRM_DOES_NOT_MATCH">पासवर्ड और कंफर्म पासवर्ड मेल नहीं खा रहे हैं</string>
+
+    <string name="PASSWORD_CRITERIA">आपके पासवर्ड का मानदंड</string>
+    <string name="PASSWORD_CRITERIA_DESC1">पासवर्ड कम से कम 8 अक्षर लंबा होना चाहिए</string>
+    <string name="PASSWORD_CRITERIA_DESC2">पासवर्ड के अक्षरों में शामिल होना चाहिए:</string>
+    <string name="PASSWORD_CRITERIA_DESC3">न्यूनतम एक अपरकेस</string>
+    <string name="PASSWORD_CRITERIA_DESC4">न्यूनतम एक लोअरकेस</string>
+    <string name="PASSWORD_CRITERIA_DESC5">न्यूनतम एक संख्या</string>
+    <string name="PASSWORD_CRITERIA_DESC6">न्यूनतम एक स्पेशल कैरेक्टर</string>
+    <string name="PASSWORD_CRITERIA_DESC7">यूजरनेम का इस्तेमाल पासवर्ड के रूप में न करें</string>
+
+    <string name="VALUE_SHOULD_BE_BETWEEN">के बीच मूल्य होना चाहिए</string>
+    <string name="PLEASE_ENTER_VALUE">कृपया मूल्य दर्ज करें</string>
+    <string name="PLEASE_SELECT_OPTION">कृपया विकल्प चुनें</string>
+    <string name="PLEASE_SELECT_HEIGHT">कृपया हाइट चुनें</string>
+    <string name="PLEASE_SELECT_WEIGHT">कृपया वजन चुनें</string>
+    <string name="PLEASE_INSERT_SYSTOLIC_BP_VALUE">कृपया सिस्टोलिक बीपी वैल्यू इंसर्ट करें</string>
+    <string name="PLEASE_INSERT_DIASTOLIC_BP_VALUE">कृपया डायस्टोलिक बीपी वैल्यू इंसर्ट करें</string>
+    <string name="DIASTOLIC_VALUE_SHOULD_BE_LESS_THAN_SYSTOLIC_VALUE">डायस्टोलिक वैल्यू सिस्टोलिक वैल्यू से कम होना चाहिए</string>
+    <string name="SYSTOLIC_BP_SHOULD_NOT_LESS_THAN_DIASTOLIC_BP">सिस्टोलिक बीपी डायस्टोलिक बीपी से कम नहीं होना चाहिए</string>
+    <string name="PLEASE_INSERT_SYSTOLIC_BP_VALUE_BETWEEN_10_TO_300">कृपया सिस्टोलिक बीपी वैल्यू 10 से 350 के बीच डालें</string>
+    <string name="PLEASE_INSERT_DIASTOLIC_BP_VALUE_BETWEEN_0_TO_150">कृपया डायस्टोलिक बीपी वैल्यू 0 से 150 के बीच डालें</string>
+
+    <string name="PLEASE_FILL_DETAILS">कृपया विवरण भरें</string>
+    <string name="VALIDATE_AGE">आयु 18 वर्ष से अधिक होनी चाहिए</string>
+    <string name="VALIDATE_DATE_OF_BIRTH">कृपया वैध जन्मतिथि दर्ज करें</string>
+    <string name="VALIDATE_EMAIL">कृपया वैध ईमेल दर्ज करें</string>
+    <string name="VALIDATE_USERNAME">कृपया वैध यूजरनेम दर्ज करें</string>
+    <string name="VALIDATE_GENDER">कृपया लिंग चुनें</string>
+    <string name="VALIDATE_EMAIL_MUST_INCLUDE">ईमेल में @ अवश्य शामिल होना चाहिए</string>
+    <string name="VALIDATE_PHONE">कृपया वैध मोबाइल नंबर दर्ज करें</string>
+    <string name="VALIDATE_DIFFERENT_PHONE">कृपया अलग मोबाइल नंबर दर्ज करें</string>
+    <string name="VALIDATE_DIFFERENT_EMAIL">कृपया अलग ईमेल पता दर्ज करें</string>
+    <string name="VALIDATE_MESSAGE">कृपया संदेश में कुछ लिखें</string>
+    <string name="VALIDATE_VERIFICATION_CODE">कृपया वैध ओटीपी दर्ज करें</string>
+    <string name="VALIDATE_EMAIL_PHONE">कृपया वैध ईमेल/मोबाइल नंबर दर्ज करें</string>
+    <string name="VALIDATE_SAME_PHONE">कृपया नया नंबर दर्ज करें</string>
+    <string name="ERROR_MOBILE_ALREADY_REGISTERED">यह नंबर हमारे पास पहले से ही पंजीकृत है</string>
+    <string name="VALIDATE_NAME">कृपया वैध नाम दर्ज करें</string>
+    <string name="ERROR_UNABLE_VERIFY_OTP">दर्ज ओटीपी सत्यापित करने में असमर्थ हैं, कृपया फिर से प्रयास करें</string>
+    <string name="ERROR_FILE_NOT_EXIST">सिस्टम में फाइल मौजूद नहीं है</string>
+    <string name="ERROR_NO_APPLICATION_TO_VIEW_PDF">पीडीएफ देखने के लिए कोई एप्लिकेशन उपलब्ध नहीं है</string>
+    <string name="ERROR_FILE_SIZE_LESS_THEN_5MB">फाइल साइज 5MB से कम होनी चाहिए</string>
+    <string name="ERROR_UNABLE_TO_READ_FILE">फाइल पढ़ने में असमर्थ हैं, कृपया फिर से कोशिश करें</string>
+    <string name="ERROR_FILES_NOT_ACCEPTED">फाइलें स्वीकृत नहीं हैं</string>
+    <string name="ERROR_UNABLE_TO_OPEN_FILE">फाइल खोलने में असमर्थ हैं</string>
+    <string name="ERROR_FILE_DOES_NOT_EXIST">फाइल मौजूद नहीं है</string>
+    <string name="ERROR_VALIDATE_OTP">कृपया वैध ओटीपी दर्ज करें</string>
+    <string name="ERROR_INVALID_OTP">दर्ज ओटीपी अमान्य है। कृपया अपने मोबाइल नंबर/ईमेल पर प्राप्त वैध ओटीपी दर्ज करें</string>
+    <string name="ERROR_UNABLE_TO_DOWNLOAD">डाउनलोड करने में असमर्थ</string>
+    <!--Error Msg-->
+
+    <string name="HRA_SUMMARY">एचआरए सारांश</string>
+    <string name="HEALTH_LIBRARY">स्वास्थ्य पुस्तकालय</string>
+    <string name="RELATED_BLOGS">संबंधित ब्लॉग</string>
+    <string name="WELLNESS_SCORE_SUBTITLE_TEXT">समग्र स्वास्थ्य स्थिति प्रश्नावली पर दी गई आपकी प्रतिक्रियाओं पर आधारित होती है।</string>
+
+    <string name="FOR_YOU">For You</string>
+    <string name="digits_alpha">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="digits_alpha_numeric">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</string>
+    <string name="numeric">1234567890</string>
+    <string name="numeric_fraction">1234567890.</string>
+
+    <string name="DASH_3">---</string>
+    <string name="INDIAN_RUPEE">\u20B9</string>
+    <string name="RS">\u20A8</string>
+
+    <!--Start Blog module-->
+    <string name="NO_BLOG">No Blogs Available</string>
+    <string name="SEARCH_ARTICLES" translatable="false">Search Articles</string>
+    <string name="SHARE_ARTICLE">Share Article</string>
+    <!--End Blog Module -->
+
+    <!--Start Fitness Tracker -->
+    <string name="SWITCH_ACCOUNT">खाता बदलें</string>
+    <string name="STEPS">कदम</string>
+    <string name="GOAL">लक्ष्य</string>
+    <string name="CALORIES">कैलोरी</string>
+    <string name="DISTANCE">दूरी</string>
+    <string name="ACTIVE_TIME">सक्रिय समय (एक्टिव टाइम)</string>
+    <string name="MY_GOAL">मेरा लक्ष्य (माय गोल)</string>
+
+    <string name="JOINED_ON">को जुड़ा / को शामिल हुआ</string>
+    <string name="AVG_STEPS">औसत कदम</string>
+    <string name="AVG_DISTANCE">औसत दूरी</string>
+    <string name="AVG_CALORIES">औसत कैलोरी</string>
+
+    <string name="MSG_GOALS_UPDATED">लक्ष्य सफलतापूर्वक अपडेट किया गया</string>
+    <string name="FORCE_SYNC_CONFORMATION">क्या आप वाकई में किसी अन्य गूगल फिट खाते को स्विच करना चाहते हैं? कृपया ध्यान दें कि आपके फिटनेस डेटा और रिवार्ड्स की गणना चयन की तारीख से चयनित गूगल फिट खाते के आधार पर की जाएगी। आपका पिछला फिटनेस डेटा और रिवार्ड्स अपरिवर्तित रहेंगे।</string>
+    <string name="MSG_SAME_GOOGLE_ACCOUNT">कृपया कोई अलग गूगल खाता चुनें</string>
+    <string name="ERROR_ENTER_VALUE_IN_30_10000">कृपया 30 से 50000 के बीच वैल्यू दर्ज करें</string>
+    <string name="ERROR_ENTER_STEPS">कृपया कदम दर्ज करें</string>
+    <string name="NO_FITNESS_DATA">फिटनेस डेटा उपलब्ध नहीं है</string>
+
+    <string name="TITLE_ACTIVITY_TRACKER">फिजिकल एक्टिविटी ट्रैकर</string>
+    <string name="YOUR_DAILY_GOAL">आपका दैनिक लक्ष्य</string>
+    <string name="CHANGE_DAILY_GOAL">दैनिक लक्ष्य बदलें</string>
+    <string name="THIS_WEEK">इस सप्ताह</string>
+    <string name="LAST_WEEK">पिछले सप्ताह</string>
+    <string name="GOAL_REACHED">लक्ष्य पूरा हुआ</string>
+    <string name="CAL">Cal</string>
+    <!--End Fitness Tracker-->
+
+    <!--Start Home Module-->
+    <string name="POWERED_BY_SUD_LIFE">एसयूडी लाइफ द्वारा संचालित</string>
+    <string name="HOME">होम</string>
+    <string name="HOME2">घर</string>
+    <string name="TRACK">ट्रैक</string>
+    <string name="YOUR_POLICY">आपकी पॉलिसी</string>
+    <string name="PROFILE">प्रोफाइल</string>
+    <string name="SETTINGS">सेटिंग्स</string>
+    <string name="HOW_IT_WORKS">यह काम किस प्रकार करता है</string>
+
+    <string name="HI">नमस्ते</string>
+    <string name="WELCOME_TO_YOU_MATTER">यू मैटर में आपका स्वागत है</string>
+
+    <string name="CHALLENGES">चुनौतियां</string>
+    <string name="ENROLLED">दाखिला लिया!</string>
+    <string name="ENROLL_NOW">अभी दाखिला लें!</string>
+    <string name="DAYS_LEFT">दिन शेष</string>
+    <string name="MARATHON_MSG">एसयूडी लाइफ हाफ मैराथन - दूसरे संस्करण के लिए पंजीकरण आधिकारिक तौर पर खुला है। क्लिक करें यहाँ रजिस्टर करने के लिए।</string>
+
+    <string name="BUILD_YOUR_PATH_TO_WELLNESS">वेलनेस की दिशा में बढ़ें</string>
+    <string name="POWERED_BY_AKTIVO">एक्टिवो द्वारा संचालित</string>
+    <string name="AKTIVO_SCORE">एक्टिवो स्कोर</string>
+    <string name="MIND_SCORE">माइंड स्कोर</string>
+    <string name="SLEEP">नींद</string>
+    <string name="SEDENTARY">गतिहीन</string>
+    <string name="LIGHT_ACTIVITY">हल्की गतिविधि</string>
+    <string name="CHECK_NOW">अब जांचें</string>
+
+    <string name="SCAN_YOUR_VITALS">अपने वाइटल्स को स्कैन करें</string>
+    <string name="SCAN_YOUR_VITALS_DESC">अपने समग्र स्वास्थ्य की तत्काल रिपोर्ट प्राप्त करने के लिए\nअपने महत्वपूर्ण अंगों को स्कैन करें।\nवेलफ़ी द्वारा संचालित</string>
+    <string name="POWERED_BY_WELLFIE">वेलफ़ी द्वारा संचालित</string>
+    <string name="SCAN_NOW">अब स्कैन करें</string>
+    <string name="RESCAN_YOUR_VITALS">महत्वपूर्ण अंगों को पुनः स्कैन करें</string>
+    <string name="LAST_SCANNED">अंतिम बार स्कैन किया गया  : </string>
+    <string name="OXYGEN_LEVEL">ऑक्सीजन स्तर  : </string>
+    <string name="STRESS_LEVEL">तनाव स्तर  : </string>
+    <string name="HEART_RATE">हृदय की गति</string>
+    <string name="BREATHING_RATE">सांस की गति</string>
+    <string name="BLOOD_OXYGEN">रक्त ऑक्सीजन</string>
+    <string name="CURRENT_VITALS">आपका वर्तमान वाइटल</string>
+    <string name="PAST_VITALS">आपका अतीत वाइटल</string>
+    <string name="LAST_UPDATED">आखरी बार अपडेट</string>
+    <string name="WELLFIE_INSTRUCTION">अपना चेहरा स्थिर व कैमरे के करीब रखें, ताकि आपके वाइटल्स की गणना स्वयं हो सके</string>
+    <string name="BEGIN_WELLFIE_MSG">शुरू करने से पहले कृपया अपनी हाइट व वजन का विवरण अपडेट करें</string>
+    <string name="LEARN_MORE">और अधिक जानें</string>
+    <string name="WELLFIE_DISCLAIMER_LABEL">इसमें शामिल परीक्षण परिणाम केवल सूचनात्मक उद्देश्यों के लिए हैं</string>
+    <string name="WELLFIE_DISCLAIMER1">वेलफी टेस्ट का उद्देश्य पूर्णतः सूचनात्मक और सामान्य स्वास्थ्य को बढ़ावा देना है। माप के परिणाम कैमरा वीडियो कैप्चर क्षमता, चेहरे पर प्रकाश, नेटवर्क विलंबता और परीक्षण वाले डिवाइस की गति जैसी परीक्षण स्थितियों पर निर्भर होते हैं। याद रहे, आपको प्रदान किए गए माप परिणामों को चिकित्सीय सलाह या निदान, बीमारी या चोट के निदान, उपचार, किसी बीमारी के इलाज या रोकथाम के रूप में नहीं माना जाना चाहिए। यदि आपके पास स्वास्थ्य संबंधी कोई प्रश्न है, तो कृपया अपने चिकित्सक या अन्य चिकित्सा पेशेवरों को कॉल करें या उनसे संपर्क करें।</string>
+    <string name="WELLFIE_DISCLAIMER2">इस ऐप का उपयोग यह दर्शाता है कि आप वेलफी टेस्ट अस्वीकरण के उद्देश्य एवं किसी भी अन्य परिणाम से हमें क्षतिपूर्ति देने के लिए सहमत हैं।</string>
+    <string name="WELLFIE_HRA_TITLE">एचआरए पर मार्गदर्शन करें</string>
+    <string name="WELLFIE_HRA_MSG1">बेहतर स्वास्थ्य जानकारी के लिए हम आपको हेल्थ रिस्क असेसमेंट (एचआरए) देने की सलाह देते हैं</string>
+    <string name="WELLFIE_HRA_MSG2">क्या आप इसे अभी शुरू करना चाहते हैं?</string>
+
+    <string name="STATUS_CALIBRATING">सिग्नल्स का विश्लेषण जारी है…</string>
+    <string name="STATUS_NOISE_DURING_EXECUTION">अस्थिर स्थितियों की तलाश जारी है, पुन: ठीक किया जा रहा है</string>
+    <string name="STATUS_RECALIBRATING">पुनः अंशांकन… कृपया प्रतीक्षा करें</string>
+    <string name="STATUS_NO_FACE">किसी चेहरे का पता नहीं चला, कृपया ठीक से कैमरे की ओर देखें</string>
+    <string name="STATUS_FACE_LOST">चेहरा नहीं दिखा, आपसे अनुरोध है ठीक से कैमरे की ओर देखें</string>
+    <string name="STATUS_BRIGHT_LIGHT_ISSUE">तेज प्रकाश की समस्या… कृपया अपने चेहरे के पीछे की बैकलाइट की जांच एवं ठीक करें</string>
+    <string name="STATUS_UNKNOWN">अज्ञात स्थिति… कृपया फिर से कोशिश करें</string>
+    <string name="STATUS_SUCCESS">सभी मापदंडों की गणना की जा सकती है</string>
+    <string name="STATUS_MOVING_WARNING">कृपया आगे बढ़ना बंद करें</string>
+
+    <string name="CONSULT_THERAPIST">मानसिक स्वास्थ्य पेशेवर से परामर्श लें</string>
+    <string name="GET_STARTED">शुरू करें</string>
+
+    <string name="LEADERSHIP_EXPERIENCES">नेतृत्व के अनुभव</string>
+    <string name="EXPLORE">अन्वेषण</string>
+
+    <string name="HRA_NOT_GIVEN">स्वास्थ्य जोखिम\nमूल्यांकन लें</string>
+    <string name="HRA_GIVEN">आपका वेलनेस\nस्कोर</string>
+    <string name="HRA_NOT_GIVEN_MSG">नमस्कार, स्वास्थ्य बेहतर बनाने का सबसे बेहतरीन तरीका है रोग की पहचान करना। बेहतर स्वास्थ्य संबंधी जानकारी के लिए अपना एचआरए पूरा करें।</string>
+    <string name="VIEW_DETAILS">विवरण देखें</string>
+
+    <string name="INVITE_TITLE">रेफर. रिवॉर्ड. रिपीट.</string>
+    <string name="INVITE_DESC">मित्रों को आमंत्रित करें, पुरस्कार\nजीतें और सिलसिला जारी रखें!</string>
+    <string name="GET_REWARDED">पुरस्कार पाएं</string>
+
+    <string name="REFER_SUBJECT">यूमैटर से जुड़ें</string>
+    <string name="REFER_A_FRIEND">दोस्त को संदर्भ दे</string>
+    <string name="REFER_MSG1">नमस्ते</string>
+    <string name="REFER_MSG2">चाहते है कि आप यू मैटर से जुड़ें ! 🙋‍♀️</string>
+    <string name="REFER_MSG3">यू मैटर एक ऐसा व्यापक स्वास्थ्य एवं कल्याण ऐप है, जो आपके तन-मन की देखभाल करने में आपकी मदद करता है 💪🧠</string>
+    <string name="REFER_MSG4">यू मैटर के साथ आप</string>
+    <string name="REFER_MSG5">अपने वेलनेस स्कोर को ट्रैक करें 🤩</string>
+    <string name="REFER_MSG6">व्यक्तिगत अनुरोध और स्वास्थ्य लक्ष्य प्राप्त करें 🎯</string>
+    <string name="REFER_MSG7">अपने दोस्तों के साथ प्रतिस्पर्धा करें और विभिन्न फिटनेस चुनौतियों में भाग लें 🏃🏻🏃🏻‍♀</string>
+    <string name="REFER_MSG8">और अपने महत्वपूर्ण वाइटल को तुरंत प्राप्त करने के लिए 1-मिनट फेस स्कैन 🕵️‍♀️ करें 😮</string>
+    <string name="REFER_MSG9">अब से अपने पर्सनल हेल्थ कोच को अपनी जेब में रखें!📱</string>
+    <string name="REFER_MSG10">ऐप डाउनलोड करें ⬇️</string>
+    <string name="REFER_MSG11">और स्वस्थ जीवन की ओर बढ़ें! 😊</string>
+    <string name="REFER_MSG12">आप भी जानने के लिए ऐप डाउनलोड करें ⬇️</string>
+
+    <string name="REFER_MPT_MSG1">मैं हूँ</string>
+    <string name="REFER_MPT_MSG2">क्या आप जानते हैं, अब आप यू मैटर के मनी पर्सनैलिटी क्विज़ से भी अपनी मनी पर्सनैलिटी पा सकते हैं।</string>
+
+    <string name="YOUR_MONEY_PERSONALITY">आपका धन\nव्यक्तित्व</string>
+    <!--    <string name="MONEY_PERSONALITY_TEST">धन व्यक्तित्व परीक्षा</string>-->
+    <string name="MPT_TITLE">क्या आप अपने धन संबंधी व्यक्तित्व को जानते हैं?</string>
+    <string name="MPT_DESC">हमारा धन प्रश्नोत्तरी लें और हम आपको बताएंगे</string>
+    <string name="POWERED_BY_SALT">साल्ट द्वारा संचालित</string>
+    <string name="VIEW_RESULT">परिणाम देखे</string>
+    <string name="SALT_VIDEOS_TITLE">अनुभवी सलाह</string>
+    <string name="SALT_VIDEOS_DESC">वित्तीय कल्याण पर विशेषज्ञ के विचार</string>
+
+    <string name="NIMEYA_TITLE">वित्तीय लेख</string>
+    <string name="NIMEYA_DESC">वित्तीय दुनिया के बारे में अपडेट रहें और फिनटॉक और फिनस्टैट के माध्यम से कई निवेश विकल्पों के बारे में जानें</string>
+    <string name="POWERED_BY_NIMEYA">निमेया द्वारा संचालित</string>
+    <string name="INVESTOMETERS">इन्वेस्टोमीटर</string>
+    <string name="RISKO_METER">रिस्को\nमीटर</string>
+    <string name="PROTECTO_METER">प्रोटेक्टो\nमीटर</string>
+    <string name="RETIRO_METER">रिटायरो\nमीटर</string>
+    <string name="RISKO_METER_DESC">अपने जोखिम सहनशीलता स्तर की जाँच करें</string>
+    <string name="PROTECTO_METER_DESC">अपने बीमा कवर की पर्याप्तता की जाँच करें</string>
+    <string name="RETIRO_METER_DESC">आपकी सेवानिवृत्ति आय तक पहुँचने से कितना दूर है</string>
+
+    <string name="WHAT_ARE_YOU_LOOKING_FOR">आप किसमें इच्छुक हैं?</string>
+    <string name="MEDITATION">ध्यान</string>
+    <string name="YOGA">योग</string>
+    <string name="EXERCISE">व्यायाम</string>
+    <string name="POWERED_BY_SMIT_FIT">स्मिट फ़िट द्वारा संचालित</string>
+
+    <string name="CURATED_FOR_YOU">आपके लिए क्यूरेट किया गया</string>
+    <string name="ON_GOING">जारी</string>
+    <string name="JOIN_NOW">अभी जुड़ें</string>
+    <string name="PLEASE_JOIN_THE_SESSION_ON">कृपया इस सत्र में जुड़ें</string>
+
+    <string name="FINANCIAL_WELLNESS_CALCULATORS">वित्तीय वेलनेस कैलकुलेटर</string>
+    <string name="EDUCATION">शिक्षा</string>
+    <string name="MARRIAGE">विवाह</string>
+    <string name="WEALTH">संपत्ति</string>
+    <string name="RETIREMENT">सेवानिवृत्ति</string>
+    <string name="HUMAN_VALUE">मानवीय मूल्य</string>
+    <string name="POWERED_BY_NVEST">एनवेस्ट द्वारा संचालित</string>
+
+    <string name="HYDRATION_TRACKER">हाइड्रेशन ट्रैकर</string>
+    <string name="HYDRATION_TRACKER_DESC">लॉग करें और अपने जल सेवन को ट्रैक करें</string>
+    <string name="VITAL_PARAMETERS">वाइटल पैरामीटर</string>
+    <string name="VITAL_PARAMETERS_DESC">अपने सबसे महत्वपूर्ण स्वास्थ्य निशानों को लॉग करें और समय के साथ प्रगति का पता लगाएं</string>
+    <string name="MEDICATION_TRACKER">दवा ट्रैकर</string>
+    <string name="MEDICATION_DESCRIPTION">दूसरी दवा कभी न भूलें; समय पर अधिसूचनाओं और निर्देशों के अनुसार, अपने उपचार के लिए हमेशा तैयार रहें।</string>
+    <string name="MY_HEALTH_RECORDS">मेरा स्वास्थ्य रिकार्ड</string>
+    <string name="HEALTH_RECORDS_DESC">अपने स्वास्थ्य रिकॉर्ड को अपलोड, ट्रैक और शेयर करें।</string>
+    <string name="TOOLS_AND_CALCULATORS">टूल्स एवं कैलकुलेटर</string>
+    <string name="TOOLS_AND_CALCULATORS_DESC">अपने स्वास्थ्य के बारे में बेहतर जानकारी प्राप्त करें</string>
+    <string name="READ_LATEST_ARTICLES">नवीनतम स्वास्थ्य संबंधी लेख (आर्टिकल) पढ़ें</string>
+
+    <string name="TRACKER_HEART_AGE">हृदय आयु कैलकुलेटर</string>
+    <string name="TRACKER_DIABETES">मधुमेह कैलकुलेटर</string>
+    <string name="TRACKER_HYPERTENSION">उच्च रक्तचाप कैलकुलेटर</string>
+    <string name="TRACKER_STRESS_ANXIETY">तनाव व चिंता कैलकुलेटर</string>
+    <string name="TRACKER_SMART_PHONE">स्मार्ट फोन की लत</string>
+    <string name="TRACKER_DUE_DATE">देय तिथि कैलकुलेटर</string>
+
+    <string name="TRACKER_DESC_HEART_AGE">क्या आपका दिल भी उतना ही जवान है जितना आप हैं?</string>
+    <string name="TRACKER_DESC_DIABETES">अपने मधुमेह के खतरे को जानें</string>
+    <string name="TRACKER_DESC_HYPERTENSION">अपने रक्तचाप (ब्लड प्रेशर) को जानें</string>
+    <string name="TRACKER_DESC_STRESS_ANXIETY">क्या आप तनाव महसूस कर रहे हैं?</string>
+    <string name="TRACKER_DESC_SMART_PHONE">स्मार्टफोन की लत है?</string>
+    <string name="TRACKER_DESC_DUE_DATE">अपनी देय तिथि जानें</string>
+
+    <string name="DELETE_ACCOUNT">खाता मिटाएं (अकाउंट डिलीट)</string>
+    <string name="DELETE_ACCOUNT_TITLE">क्या आप वास्तव में इस खाते को डिलीट करना चाहते हैं?</string>
+    <string name="DELETE_ACCOUNT_CONFIRMATION">कृपया ध्यान दें कि इस ऐप से जुड़े आपके सभी व्यक्तिगत डेटा और स्वास्थ्य डेटा स्थायी रूप से मिटा दिए जाएंगे। आपका खाता (अकाउंट) 72 घंटों के भीतर सिस्टम से पूरी तरह से मिटा दिया जाएगा। इस दौरान भी आप ऐप का उपयोग कर सकते हैं। खाता मिटाने के बाद आपको सूचित किया जाएगा। यदि आप भविष्य में फिर से इस ऐप का उपयोग करना चाहते हैं, तो खुद को फिर से पंजीकृत कर सकते हैं।</string>
+    <string name="DELETE_ACCOUNT_SUCCESS">आपका खाता सफलतापूर्वक मिटा दिया गया है</string>
+
+    <string name="RE_LOGIN">फिर से लॉगिन करें</string>
+    <string name="CHANGE_PASSWORD">पासवर्ड बदलें</string>
+    <string name="CHANGE_PASSWORD_DESC">आपका नया पासवर्ड पहले इस्तेमाल किए गए पासवर्ड से अलग होना चाहिए</string>
+    <string name="OLD_PASSWORD">पुराना पासवर्ड</string>
+    <string name="NEW_PASSWORD">नया पासवर्ड</string>
+    <string name="CONFIRM_PASSWORD">पासवर्ड की पुष्टि करें</string>
+
+    <!--SUD Customer Service Strings-->
+    <string name="TITLE_POLICY_DASHBOARD">पॉलिसी देखें</string>
+    <string name="TITLE_POLICY_DETAILS">पॉलिसी विवरण</string>
+    <string name="TITLE_PREMIUM_RECEIPT">प्रीमियम रसीद</string>
+
+    <string name="PREMIUM_RECEIPT">प्रीमियम रसीद</string>
+    <string name="POLICY_DOCUMENT">पॉलिसी दस्तावेज</string>
+    <string name="KNOW_YOUR_POLICY">अपनी पॉलिसी जानें</string>
+    <string name="PAY_YOUR_PREMIUM">अपना प्रीमियम भरें</string>
+    <string name="DOWNLOAD_RECEIPT">रसीद डाउनलोड करें</string>
+    <string name="BUY_POLICY">पॉलिसी खरीदें</string>
+
+    <string name="POLICY_BANNER_CONSENT_MSG">मैं एसयूडी लाइफ और उसके प्रतिनिधियों को कॉल, ईमेल, एसएमएस या व्हाट्सएप के माध्यम से मुझसे संपर्क करने के लिए अधिकृत करता हूं। यह सहमति डीएनसी/एनडीएनसी के तहत मेरे पंजीकरण को निरस्त करती है।</string>
+    <string name="LINK_SUD_POLICY_WITH_NUMBER">अपनी एसयूडी लाइफ पॉलिसी को अपने\nमोबाइल नंबर से जोड़ें</string>
+    <string name="CUSTOMER_CARE">ग्राहक देखभाल (कस्टमर केयर) :- </string>
+    <string name="CUSTOMER_CARE_NO">1800 266 8833</string>
+    <string name="EMAIL_ID">ईमेल आईडी :- </string>
+    <string name="CUSTOMER_CARE_EMAIL">customercare@sudlife.in</string>
+    <string name="ERROR_WHATS_NOT_INSTALLED">आपके डिवाइस पर व्हाट्सएप इंस्टॉल नहीं है</string>
+
+    <string name="POLICY_AUTHENTICATION_TITLE">मोबाइल सत्यापन</string>
+    <string name="POLICY_AUTHENTICATION_DESC">पॉलिसी सेवाओं की पहुंच आगे बढ़ाने के लिए आपकी एसयूडी लाइफ पॉलिसी से जुड़े आपके मोबाइल नंबर को सत्यापित किया जाएगा।</string>
+    <string name="PMJJBY_TITLE">प्रधानमंत्री जीवन ज्योति बीमा योजना (पीएमजेजेबीवाई)</string>
+    <string name="PMJJBY_DESC">अपने पंजीकृत मोबाइल नंबर से जुड़ी अपनी पीएमजेजेबीवाई पॉलिसी तक पहुंचें</string>
+    <string name="GROUP_COI_TITLE">एसयूडी लाइफ ग्रुप टर्म इंश्योरेंस</string>
+    <string name="GROUP_COI_DESC">अपने पंजीकृत मोबाइल नंबर से जुड़ी अपनी एसयूडी लाइफ ग्रुप टर्म इंश्योरेंस पॉलिसी तक पहुंचें</string>
+    <string name="CREDIT_LIFE_TITLE">क्रेडिट लाइफ पॉलिसी</string>
+    <string name="CREDIT_LIFE_DESC">अपने पंजीकृत मोबाइल नंबर से जुड़ी अपनी क्रेडिट लाइफ पॉलिसी तक पहुंचें</string>
+    <string name="CREDIT_LIFE_DIALOG_TITLE">कृपया नीचे से कोई भी संख्या चुनें और उसका\nमूल्य दर्ज करें जो आपकी क्रेडिट लाइफ पॉलिसी\nसे संबद्ध है</string>
+
+    <string name="LOAN_ACCOUNT_NUMBER">ऋण खाता संख्या</string>
+    <string name="MEMBERSHIP_NUMBER">सदस्यता संख्या</string>
+    <string name="COI_NUMBER">सीओआई संख्या</string>
+
+    <string name="POLICIES">पॉलिसीज</string>
+    <string name="NEXT_RENEWAL">अगला रिनुअल (नवीनीकरण)  :</string>
+    <string name="POLICY_HOLDER">पॉलिसीधारक  :</string>
+    <string name="POLICY_NO">पॉलिसी संख्या  :</string>
+    <string name="RISK_COMMENCEMENT_DATE">जोखिम शामिल होने की तिथि  :</string>
+    <string name="SUM_ASSURED">सुनिश्चित राशि  :</string>
+    <string name="POLICY_TYPE">पॉलिसी का प्रकार  :</string>
+    <string name="POLICY_TERM">पॉलिसी की अवधि  :</string>
+    <string name="PREMIUM_PAYING_TERM">प्रीमियम की भुगतान अवधि  :</string>
+    <string name="MATURITY_DATE">परिपक्वता तिथि  :</string>
+    <string name="NEXT_PREMIUM_DUE_DATE">अगले देय तिथि  :</string>
+    <string name="PREMIUM_FREQUENCY">प्रीमियम/आवृत्ति :</string>
+    <string name="FREQUENCY_OF_PREMIUM">प्रीमियम की आवृत्ति  :</string>
+    <string name="FUND_DETAILS">फंड विवरण  :</string>
+    <string name="TOTAL_FUND_VALUE">कुल फंड वैल्यू  :</string>
+    <string name="FUND_VALUE">फंड वैल्यू  :</string>
+    <string name="UNITS_ALLOCATED">यूनिट्स आवंटित  :</string>
+    <string name="NAV">एनएवी  :</string>
+    <string name="NAV_DATE">एनएवी तिथि  :</string>
+
+    <string name="RECEIPT_ID">रसीद आईडी</string>
+    <string name="RECEIPT_DATE">रसीद तिथि</string>
+    <string name="BNFY_NAME">लाभार्थी का नाम</string>
+    <string name="PRODUCT_UIN_CODE">प्रोडक्ट यूआईएन कोड</string>
+    <string name="APPLICATION_NUMBER">आवेदन संख्या</string>
+    <string name="CURRENT_BILL_CHANNEL_DESCRIPTION">वर्तमान बिल चैनल का विवरण</string>
+    <string name="BASE_PREMIUM_CGST_AMOUNT">बेस प्रीमियम सीजीएसटी राशि</string>
+    <string name="BASE_PREMIUM_SGST_AMOUNT">बेस प्रीमियम एसजीएसटी राशि</string>
+    <string name="BASE_PREMIUM_IGST_AMOUNT">बेस प्रीमियम आईजीएसटी राशि</string>
+    <string name="COVR_SI">कवरएसआई</string>
+    <string name="TOTAL_PREMIUM">कुल प्रीमियम</string>
+    <string name="CONTRACT_TYPE_DESCRIPTION">अनुबंध प्रकार का विवरण</string>
+    <string name="CURRENT_BILL_FREQUENCY">वर्तमान बिल की आवृत्ति</string>
+    <string name="COVER_PREMIUM_TERM">प्रीमियम अवधि कवर करें</string>
+    <string name="PMJJBY_PASSWORD_FORMAT1">कृपया ध्यान दें कि</string>
+    <string name="PMJJBY_PASSWORD_FORMAT2">बैंक ऑफ़ इंडिया या यूनियन बैंक ऑफ़ इंडिया</string>
+    <string name="PMJJBY_PASSWORD_FORMAT3">से खरीदी गई पॉलिसी केवल डाउनलोड की जा सकती है|</string>
+    <string name="PMJJBY_PASSWORD_FORMAT4">इसके अलावा, दस्तावेज पासवर्ड द्वारा सुरक्षित है, जिसे खोलने के लिए पासवर्ड डीडीएमएमवाईवाईवाईवाई फॉर्मेट में उपयोगकर्ता की जन्मतिथि है। यानी अगर आपकी जन्मतिथि 19 मई 2000 है तो पासवर्ड 19052000 होगा।</string>
+    <string name="PMJJBY_ERROR">आपके पंजीकृत मोबाइल नंबर पर कोई पीएमएमजेजेबीवाई पॉलिसी नहीं मिली। अधिक सहायता के लिए कृपया अपनी निकटतम बैंक शाखा पर जाएं।</string>
+    <string name="GROUP_COI_ERROR">आपके पंजीकृत मोबाइल नंबर पर कोई एसयूडी लाइफ ग्रुप टर्म इंश्योरेंस पॉलिसी नहीं मिली है। कृपया अधिक सहायता के लिए अपनी नजदीकी बैंक शाखा में जाएँ।</string>
+    <string name="KYP_PASSWORD_FORMAT">यह दस्तावेज़ पासवर्ड से सुरक्षित है और दस्तावेज़ को खोलने के लिए पासवर्ड ddmmyyyy प्रारूप में उपयोगकर्ता की जन्मतिथि है। यानी अगर आपकी जन्मतिथि 19 मई 2000 है तो पासवर्ड 19052000 होगा।</string>
+
+    <string name="POLICY_MOBILE_NUMBER">पॉलिसी मोबाइल नंबर</string>
+    <string name="CHANGE_POLICY_MOBILE_NUMBER">पॉलिसी मोबाइल नंबर स्विच करें</string>
+    <string name="CALL_CUSTOMER_CARE">ग्राहक सेवा को कॉल करें</string>
+    <string name="WHATSAPP_CHATBOT">व्हाट्सएप चैटबॉट</string>
+    <!--SUD Customer Service Strings-->
+
+    <string name="TITLE_MY_PROFILE">मेरी प्रोफाइल</string>
+    <string name="TITLE_YOUR_PROFILE">आपकी प्रोफाइल</string>
+    <string name="TITLE_EDIT_PROFILE">प्रोफाइल एडिट करें</string>
+    <string name="TITLE_FAMILY_MEMBERS">परिवार के सदस्य</string>
+    <string name="TITLE_EDIT_DETAILS">परिवार के सदस्य को एडिट करें</string>
+    <string name="TITLE_SELECT_RELATION">संबंध चुनें</string>
+    <string name="TITLE_ADD_FAMILY_MEMBER">परिवार के सदस्य को जोड़ें</string>
+    <string name="FAMILY_MEMBERS">परिवार के सदस्य</string>
+    <string name="ADD_NEW_FAMILY_MEMBER">परिवार के नए सदस्य को जोड़ें</string>
+
+    <string name="DELETE_FAMILY_MEMBER">सदस्य को हटाएं</string>
+    <string name="REMOVE_PROFILE_PHOTO">अपनी प्रोफाइल फोटो हटाएं</string>
+    <string name="ADD_NEW_MEMBER">परिवार के एक नए सदस्य को जोड़ें</string>
+    <string name="NO_RELATIVES">कोई रिश्तेदार नहीं मिला</string>
+    <string name="MEMBER_ADDED">परिवार का सदस्य सफलतापूर्वक जोड़ा गया</string>
+    <string name="MEMBER_DELETED">प्रोफाइल सफलतापूर्वक मिटाई गई</string>
+    <string name="PROFILE_UPDATED">प्रोफाइल सफलतापूर्वक अपडेट की गई</string>
+    <string name="PROFILE_PHOTO_UPDATED">प्रोफाइल फोटो सफलतापूर्वक अपडेट की गई</string>
+    <string name="PROFILE_PHOTO_REMOVED">प्रोफाइल फोटो सफलतापूर्वक हटाई गई</string>
+    <string name="ERROR_PROFILE_PHOTO">प्रोफाइल फोटो हटाने में असमर्थ</string>
+    <string name="MOBILE_UPDATED">मोबाइल नंबर सफलतापूर्वक अपडेट किया गया</string>
+    <string name="MSG_REMOVE_PROFILE_PHOTO_CONFORMATION">क्या आप वाकई में प्रोफाइल फोटो हटाना चाहते हैं?</string>
+
+    <string name="MSG_DELETE_MEMBER_CONFIRMATION">क्या आप वाकई में चयनित परिवार के सदस्य को सूची से हटाना चाहते हैं?</string>
+    <string name="MSG_LOGOUT_CONFORMATION">क्या आप वाकई में ऐप से लॉगआउट करना चाहते हैं?</string>
+    <string name="MSG_SWITCH_PROFILE_CONFIRMATION1">क्या आप अपनी स्वास्थ्य प्रोफाइल देखना चाहेंगे</string>
+    <string name="MSG_SWITCH_PROFILE_CONFIRMATION2">आगे बढ़ने के लिए पुष्टि (कंफर्म) पर क्लिक करें</string>
+    <string name="MSG_ALREADY_ADDED">आप पहले ही जोड़ चुके हैं</string>
+    <string name="ERROR_INVALID_OLD_PASSWORD">पुराना पासवर्ड अमान्य है</string>
+    <string name="ERROR_PARENTS_AGE">माता-पिता की आयु आपकी आयु से अधिक होनी चाहिए</string>
+    <string name="ERROR_KIDS_AGE">बच्चों की आयु आपकी आयु से कम होनी चाहिए</string>
+    <string name="ERROR__GP_AGE">दादा-दादी की आयु आपकी आयु से अधिक होनी चाहिए</string>
+    <string name="ERROR_AGE_NOT_LESS_THAN_18">आयु 18 वर्ष से कम नहीं हो सकती</string>
+    <string name="ERROR_SELECT_RELATION_FIRST">कृपया पहले संबंध (रिलेशनशिप) चुनें</string>
+    <string name="ERROR_PLEASE_ENTER_FEEDBACK_TO_SUBMIT">सबमिट के लिए कृपया फीडबैक दर्ज करें</string>
+    <string name="ERROR_DOB_UNAVAILABLE">लॉग इन उपयोगकर्ता की आयु अनुपलब्ध होने के कारण प्रोफाइल जानकारी सहेजने (सेव करने) में असमर्थ हैं</string>
+
+    <string name="SWITCH_FAMILY_MEMBER">परिवार के सदस्य को बदलें</string>
+    <string name="SELECT_FAMILY_MEMBER_AS_ACTIVE_USER">सक्रिय उपयोगकर्ता के रूप में परिवार के सदस्य का चयन करें:</string>
+    <string name="WHICH_FAMILY_MEMBER_YOU_WANT_TO_ADD">आप परिवार के किस सदस्य को जोड़ना चाहते हैं?</string>
+    <string name="SWITCH_TO">पर बदलें</string>
+
+    <string name="NAME_MANDATORY">* नाम</string>
+    <string name="GENDER_MANDATORY">* लिंग</string>
+    <string name="DATE_OF_BIRTH_MANDATORY">* जन्मतिथि</string>
+    <string name="NUMBER_MANDATORY">* मोबाइल नंबर</string>
+    <string name="EMAIL_ADDRESS_MANDATORY">* ईमेल एड्रेस</string>
+
+    <!--Navigation Options-->
+    <string name="NAVIGATION_DRAWER_OPEN">Open navigation drawer</string>
+    <string name="NAVIGATION_DRAWER_CLOSE">Close navigation drawer</string>
+    <!--Navigation Options-->
+    <string name="EXIT_MES">ऐप से बाहर निकलने के लिए एक बार और दबाएँ</string>
+
+    <string name="TUTORIAL_AKTIVO_SCORE">एक्टिवो स्कोर</string>
+    <string name="TUTORIAL_AKTIVO_SCORE_DESC">अपनी शारीरिक गतिविधि स्कोर प्राप्त करें जो आपकी दैनिक कदम, नींद, व्यायाम, शांत और हल्की गतिविधा पर आधारित है</string>
+    <string name="TUTORIAL_MIND_SCORE">माइंड स्कोर</string>
+    <string name="TUTORIAL_MIND_SCORE_DESC">अपने मानसिक स्वास्थ्य से संबंधित कुछ सरल सवालों के जवाब देकर अपना मानसिक स्वास्थ्य स्कोर प्राप्त करें।</string>
+    <string name="TUTORIAL_CHALLENGE">चुनौती</string>
+    <string name="TUTORIAL_CHALLENGE_DESC">चुनौतियों में भाग लें और लीडरबोर्ड पर अन्य सदस्यों के साथ प्रतिस्पर्धा करें।</string>
+    <string name="TUTORIAL_CONSULT_THERAPIST">मानसिक स्वास्थ्य पेशेवर से परामर्श लें</string>
+    <string name="TUTORIAL_CONSULT_THERAPIST_DESC">हमारे विशेषज्ञ समूह से अपने मानसिक स्वास्थ्य से संबंधित किसी भी प्रश्न के लिए परामर्श करें।</string>
+    <string name="TUTORIAL_HRA">स्वास्थ्य जोखिम मूल्यांकन</string>
+    <string name="TUTORIAL_HRA_DESC">अपना वेलनेस स्कोर प्राप्त करें, अपने जीवनशैली के बारे में कुछ सरल सवालों का उत्तर दें और एक व्यापक वेलनेस स्कोर प्राप्त करें।</string>
+    <string name="TUTORIAL_SALT_MPT">धन व्यक्तित्व परीक्षण</string>
+    <string name="TUTORIAL_SALT_MPT_DESC">अपने वित्तीय व्यक्तित्व के बारे में और अधिक जानना चाहते हैं? इस सरल धन व्यक्तित्व परीक्षण को लें और जांचें।</string>
+    <string name="TUTORIAL_SMIT_FIT">आप क्या ढूंढ रहे हो?</string>
+    <string name="TUTORIAL_SMIT_FIT_DESC">ध्यान, योग और व्यायाम से संबंधित समृद्धि युक्त सामग्री प्राप्त करें।</string>
+    <string name="TUTORIAL_LIVE_SESSIONS">लाइव स्वास्थ्य सत्र</string>
+    <string name="TUTORIAL_LIVE_SESSIONS_DESC">हमारे लाइव स्वास्थ्य सत्रों में शामिल हों, जो ध्यान, योग और व्यायाम से संबंधित हैं।</string>
+    <string name="TUTORIAL_INVESTOMETERS">इन्वेस्टोमीटर</string>
+    <string name="TUTORIAL_INVESTOMETERS_DESC">- अपने जोखिम सहनशीलता के स्तर की जाँच करें\n- अपने जीवन और स्वास्थ्य बीमा अंतर की जाँच करें\n- जांचें कि आप अपनी सेवानिवृत्ति आय तक पहुंचने से कितने दूर हैं</string>
+    <string name="TUTORIAL_NVEST_CALCULATORS">@string/FINANCIAL_WELLNESS_CALCULATORS</string>
+    <string name="TUTORIAL_NVEST_CALCULATORS_DESC">अपने वित्तीय लक्ष्यों को समझना चाहते हैं? और जानने के लिए इन उपयोगिता कैलकुलेटर्स की जाँच करें।</string>
+    <string name="TUTORIAL_WELLFIE">अपने महत्वपूर्ण अंगों को स्कैन करें</string>
+    <string name="TUTORIAL_WELLFIE_DESC">हमारी उन्नत फेसियल स्कैन आपको आपके वर्तमान महत्वपूर्ण पैरामीटर्स जैसे कि बीपी, एसपीओ2, तनाव स्तर और बीएमआई का त्वरित अवलोकन करने में मदद करती है।</string>
+    <string name="TUTORIAL_SETTINGS">@string/SETTINGS</string>
+    <string name="TUTORIAL_SETTINGS_DESC">- पॉलिसी मोबाइल नंबर स्विच करें\n- ग्राहक सेवा को कॉल करें\n- व्हाट्सएप चैटबॉट</string>
+    <string name="TUTORIAL_POLICIES">@string/POLICIES</string>
+    <string name="TUTORIAL_POLICIES_DESC">अपने पंजीकृत मोबाइल नंबर के साथ जुड़ी नीतियों और उनकी सेवा सुविधाओं का उपयोग करें। आप ऊपर दिए गए सेटिंग्स विकल्पों से नंबर बदलकर विभिन्न मोबाइल नंबरों की नीतियों की जाँच भी कर सकते हैं।</string>
+    <string name="TUTORIAL_DOWNLOADS">@string/DOWNLOADS</string>
+    <!--    <string name="TUTORIAL_DOWNLOADS_DESC">- अपने पंजीकृत मोबाइल नंबर से जुड़े प्रधानमंत्री जीवन ज्योति बीमा योजना (पीएमजेजेबीवाई) पॉलिसी डाउनलोड करें</string>-->
+    <string name="TUTORIAL_DOWNLOADS_DESC">- अपने पंजीकृत मोबाइल नंबर से जुड़े प्रधानमंत्री जीवन ज्योति बीमा योजना (पीएमजेजेबीवाई) पॉलिसी डाउनलोड करें\n- अपने पंजीकृत मोबाइल नंबर से जुड़े एसयूडी लाइफ ग्रुप टर्म इंश्योरेंस पॉलिसी डाउनलोड करें</string>
+    <string name="SHARE_WITH_FRIENDS">दोस्तों के साथ बांटें</string>
+    <string name="SHARE_MESSAGE_FOR_CENTURION_BANNER">अरे, क्या आपने इस अद्भुत नई योजना की जाँच की है? एसयूडी लाइफ सेंचुरियन 🏏 सुरक्षित कल के लिए अभी निवेश करें। 💰 एकमुश्त प्रीमियम और 100 महीनों के बाद 7.2% तक रिटर्न* प्राप्त करें। अब इसे जांचें! 🌟 </string>
+    <string name="SHARE_MESSAGE_FOR_SMART_HEALTH_PRODUCT_BANNER">अरे, क्या आपने इस अद्भुत नई योजना की जाँच की है? एसयूडी लाइफ स्मार्ट हेल्थकेयर।\nएक योजना जो गंभीर बीमारी की बड़ी और छोटी स्थितियों के खिलाफ स्वास्थ्य बीमा सुरक्षा प्रदान करती है।\nइसे जांचें 🌟</string>
+    <string name="SHARE_MESSAGE_FOR_BANNER_GENERAL">अरे, क्या आपने इस अद्भुत नई योजना की जाँच की है? अब इसे जांचें! 🌟</string>
+    <string name="CLICK_HERE_TO_KNOW_MORE">अधिक जानकारी के लिए यहां क्लिक करें</string>
+    <string name="FITNESS_TRACKER">फिटनेस ट्रैकर</string>
+    <string name="DISCLAIMER_CENTURION_BANNER">अपना विवरण जमा करके, मैं अपने एनडीएनसी पंजीकरण को ओवरराइड करता हूं और स्टार यूनियन दाई-इची लाइफ इंश्योरेंस और उसके प्रतिनिधियों को कॉल, एसएमएस, व्हाट्सएप या ई-मेल के माध्यम से मुझसे संपर्क करने के लिए अधिकृत करता हूं।</string>
+    <string name="TRACK_FITNESS_DATA_STEPS_EXERCISE_SLEEP_OPTIMIZE_WELL_BEING_GOALS">फिटनेस डेटा ट्रैक करें: कदम, व्यायाम, नींद; कल्याण लक्ष्यों को अनुकूलित करें।</string>
+    <!--End Home Module -->
+
+    <!--Start Hra Module -->
+    <string name="HRA">HRA</string>
+    <string name="TITLE_HRA">स्वास्थ्य जोखिम मूल्यांकन</string>
+    <string name="I_DONT_REMEMBER">मैं नहीं जानता/याद नहीं</string>
+    <string name="RESTART_HRA">एचआरए रीस्टार्ट करें</string>
+    <string name="DOWNLOAD_REPORT">रिपोर्ट डाउनलोड करें</string>
+    <string name="BEFORE_WE_BEGIN">शुरू करने से पहले</string>
+
+    <string name="WELCOME_TO_HRA">स्वास्थ्य जोखिम मूल्यांकन में आपका स्वागत है</string>
+    <string name="WELCOME_TO_HRA_desc">प्रश्नावली पर दी गई आपकी प्रतिक्रिया के आधार पर संपूर्ण स्वास्थ्य स्थिति का सारांश।</string>
+    <string name="CHECKOUT_YOUR_WELLNESS">अपने स्वास्थ्य की जांच करें</string>
+    <string name="CHECKOUT_YOUR_WELLNESS_desc">अपना वेलनेस स्कोर, स्वास्थ्य जोखिम सारांश और अनुशंसित लैब परीक्षण सुझाव प्राप्त करें।</string>
+
+    <string name="YOUR_WELNESS_SCORE">आपका वेलनेस स्कोर</string>
+    <string name="WELLNESS_SCORE">वेलनेस स्कोर</string>
+    <string name="RISK_SUMMARY">जोखिम सारांश</string>
+    <string name="RECOMMENDED_LAB_TESTS">अनुशंसित लैब परीक्षण</string>
+    <string name="FREQUENCY">आवृत्ति</string>
+    <string name="COMMON_TEST_CHECK_UPS">सामान्य टेस्ट/चेक-अप</string>
+    <string name="TEST_CHECK_UPS_SUGGESTED_BY_DOCTOR">डॉक्टर द्वारा सुझाए गए टेस्ट/चेक-अप</string>
+
+    <string name="HRA_RANGE_HIGH_RISK">0 – 15</string>
+    <string name="HRA_RANGE_MODERATE_RISK">16 – 45</string>
+    <string name="HRA_RANGE_HEALTHY">46 – 85</string>
+    <string name="HRA_RANGE_OPTIMUM">86 – 100</string>
+
+    <string name="YOUR_BMI">आपका बीएमआई</string>
+    <string name="YOUR_BP_IS">आपका रक्तचाप (ब्लडप्रेशर) वैल्यू है</string>
+    <string name="YOUR_BS_IS">आपका ब्लड शुगर लेवल है</string>
+    <string name="YOUR_CL_IS">आपका कोलेस्ट्रॉल लेवल है</string>
+
+    <string name="PLEASE_SELECT_ALL_THAT_APPLY">कृपया उन सभी विकल्पों का चयन करें, जो आप पर लागू होते हैं</string>
+    <string name="SWITCH_PROFILE_DESC">परिवार के किसी सदस्य को एचआरए देने के लिए आपकी प्रोफाइल उस संबंधित परिवार के सदस्य के नाम पर स्विच कर दी जाएगी</string>
+    <string name="START_HRA">मूल्यांकन शुरू करें</string>
+    <string name="TAKE_HRA">एचआरए लें</string>
+    <string name="SKIP_FOR_NOW">अभी के लिए छोड़ें</string>
+    <string name="ADD_FAMILY_MEMBER">परिवार के सदस्य को जोड़ें</string>
+    <string name="VIEW_REPORT">रिपोर्ट देखें</string>
+
+    <string name="OTHERS">अन्य</string>
+
+    <string name="RANDOM_BLOOD_SUGAR">रैंडम ब्लड शुगर</string>
+    <string name="FASTING_BLOOD_SUGAR">फास्टिंग ब्लड शुगर</string>
+    <string name="POST_MEAL_BLOOD_SUGAR">भोजन बाद ब्लड शुगर</string>
+    <string name="HBA1C">एचबीए 1 सी</string>
+
+    <string name="RANDOM_BS">रैंडम ब्लड शुगर</string>
+    <string name="FASTING_BS">फास्टिंग ब्लड शुगर</string>
+    <string name="POST_MEAL_BS">भोजन बाद ब्लड शुगर</string>
+
+    <string name="TOTAL_CHOL">कुल कोलेस्ट्रॉल</string>
+    <string name="TOTAL_CHOLESTEROL">कुल कोलेस्ट्रॉल</string>
+    <string name="HDL">एचडीएल</string>
+    <string name="LDL">एलडीएल</string>
+    <string name="TRIGLYCERIDES">ट्राइग्लिसराइड्स</string>
+    <string name="VLDL">वीएलडीएल</string>
+
+    <string name="HIGH_BLOOD_PRESSURE">हाई ब्लड प्रेशर (उच्च रक्तचाप)</string>
+    <string name="THYROID_IMBALANCE">थायराइड असंतुलन</string>
+    <string name="HIGH_CHOLESTEROL">हाई कोलेस्ट्रॉल</string>
+    <string name="DIABETES">डायबिटीज (मधुमेह)</string>
+    <string name="ASTHMA">अस्थमा (दमा)</string>
+    <string name="ARTHRITIS">वात रोग</string>
+    <string name="MENTAL_ILLNESS">मानसिक रोग</string>
+    <string name="HEART_DISEASE">हृदय रोग</string>
+
+    <string name="WOMEN_PERIOD">अनियमित मासिक धर्म</string>
+    <string name="WOMEN_PCOS">पॉलीसिस्टिक ओवरी सिंड्रोम (पीसीओएस)</string>
+    <string name="WOMEN_DISCHARGE">योनि स्राव</string>
+    <string name="WOMEN_UTI">मूत्र पथ संक्रमण</string>
+    <string name="WOMEN_BRESTPAIN">स्तन मृदुता</string>
+    <string name="WOMEN_FIB">फाइब्रॉइड (गर्भाशय में होने वाली गांठ)</string>
+
+    <string name="CAVITIES">कैविटीज़</string>
+    <string name="BAD_BREATH">सांस की दुर्गंध</string>
+    <string name="STAINING">धुंधलापन</string>
+    <string name="BLEEDING_GUM">मसूड़ों से खून निकलना</string>
+    <string name="BLURRED_VISION">धुंधली दृष्टि</string>
+    <string name="DRY_EYES">आंखों में सूखापन</string>
+    <string name="NEAR_FAR_SIGHTEDNESS">निकट/दूर दृष्टि दोष</string>
+    <string name="DANDRUFF">रूसी (डैंड्रफ)</string>
+    <string name="ACNE">मुंहासे</string>
+    <string name="SKIN_DRYNESS">रूखी त्वचा</string>
+
+    <string name="OBESITY">मोटापा</string>
+    <string name="HEART_PROBLEMS">हृदय की समस्याएं</string>
+    <string name="BREAST_CANCER">ब्रेस्ट (स्तन) कैंसर</string>
+    <string name="COLORECTAL_CANCER">कोलोरेक्टल कैंसर</string>
+    <string name="CERVICAL_CANCER">सर्वाइकल कैंसर</string>
+
+    <string name="RB_ALWAYS">हमेशा</string>
+    <string name="RB_SOMETIMES">कभी-कभी</string>
+    <string name="RB_RARELY">कभी-कभार</string>
+    <string name="RB_NEVER">कभी नहीं</string>
+    <string name="RB_USUALLY">आम तौर पर</string>
+
+    <string name="LESS_THAN_6HOURS">6 घंटे से कम</string>
+    <string name="SIXTO_EIGHT_HOURS">6 से 8 घंटे</string>
+    <string name="MORE_THAN_8HOURS">8 घंटे से अधिक</string>
+
+    <string name="RB_DONT_SMOKE">नहीं, मैं धूम्रपान नहीं करता</string>
+    <string name="RB_12CIGAR">1 – 2 सिगरेट</string>
+    <string name="RB_34CIGAR">3 – 4 सिगरेट</string>
+    <string name="RB_MORETHAN_4CIGAR">4 सिगरेट से अधिक</string>
+
+    <string name="I_DONT_DRINK">नहीं, मैं शराब नहीं पीता</string>
+    <string name="RB_1_2_PEGS">60 मिली तक</string>
+    <string name="RB_3_4_PEGS">60 – 120 मिली तक</string>
+    <string name="RB_4_PEGS">120 मिली से अधिक</string>
+
+    <string name="RB_VERY_STRONG">बहुत स्ट्रांग</string>
+    <string name="RB_ABOVE_AVERAGE">औसत से ऊपर</string>
+    <string name="RB_BELOW_AVERAGE">औसत से कम</string>
+    <string name="RB_NOT_SURE">निश्चित नहीं</string>
+
+    <string name="COMPLETELY">पूरी तरह</string>
+    <string name="MOSTLY">खासकर</string>
+    <string name="PARTLY">कुछ हद तक</string>
+    <string name="NOT_SATISFIED">संतुष्ट नहीं</string>
+
+    <string name="BRIGHT_LIGHT">तेज प्रकाश</string>
+    <string name="LOUD_NOISE">शोरगुल</string>
+    <string name="HAZARDOUS_GASES">खतरनाक गैस</string>
+    <string name="TALKING_LONG">लंबे समय तक बात करने की लत</string>
+
+    <string name="DEATH_OF_RELATIVE">रिश्तेदार/करीबी की मृत्यु</string>
+    <string name="END_OF_RELATIONSHIP">तलाक/ब्रेकअप, आदि की वजह से रिश्ता खत्म</string>
+    <string name="FEEL_DEMOTIVATED">काम पर हतोत्साहित महसूस करना</string>
+    <string name="PHYSICAL_PROBLEM">शारीरिक, यौन या भावनात्मक शोषण</string>
+    <string name="ONGOING_MEDICATION">जारी दवा</string>
+    <string name="FINANCIAL_MATTER">वित्तीय समस्याएं/नौकरी छूट गई</string>
+    <string name="HEALTH_CONCERNS">स्वास्थ्य संबंधी समस्याएं</string>
+
+    <string name="GESTATION_DIAB">गर्भकालीन मधुमेह</string>
+    <string name="WOMEN_CONCEIVE">गर्भावस्था संबंधित समस्याएं</string>
+    <string name="WOMEN_PID">श्रोणि सूजन रोग (पेल्विक इंफ्लेमेटरी डिजीज)</string>
+
+    <string name="CHOLESTEROL_TEST">कोलेस्ट्रॉल टेस्ट</string>
+    <string name="PAP_TEST">पैप टेस्ट</string>
+    <string name="THYROID_TEST">थायराइड प्रोफाइल</string>
+    <string name="BASIC_HEALTH_CHECKUP">सामान्य स्वास्थ्य जांच</string>
+    <string name="SUGAR_PROFILE_TEST">शुगर प्रोफाइल टेस्ट</string>
+    <string name="MAMMOGRAM">मैमोग्राम</string>
+    <string name="PAP_SMEAR_TEST">पैप स्मीयर टेस्ट</string>
+
+    <string name="PLEASE_SELECT_FAMILY_MEMBER">कृपया परिवार के सदस्य को चुनें</string>
+    <string name="EXIT_ASSESSMENT">मूल्यांकन से बाहर निकलना है?</string>
+    <string name="EXIT_ASSESSMENT_DESC">क्या आप वाकई में बाहर निकलना चाहते हैं? आपकी वर्तमान मूल्यांकन प्रगति मिट जाएगी।</string>
+
+    <string name="PLEASE_ENTER_VALID_RANDOM_SUGAR_VALUE">कृपया वैध रैंडम शुगर वैल्यू दर्ज करें</string>
+    <string name="PLEASE_ENTER_VALID_FASTING_SUGAR_VALUE">कृपया वैध फास्टिंग शुगर वैल्यू दर्ज करें</string>
+    <string name="PLEASE_ENTER_VALID_POST_MEAL_BLOOD_SUGAR_VALUE">कृपया भोजन बाद वैध ब्लड शुगर वैल्यू दर्ज करें</string>
+    <string name="PLEASE_ENTER_VALID_HBA1C_SUGAR_VALUE">कृपया वैध एचबीए1सी वैल्यू दर्ज करें</string>
+
+    <string name="RANDOM_SUGAR_VALUE_MUST_BE_BETWEEN">के बीच रैंडम शुगर वैल्यू होना चाहिए</string>
+    <string name="FASTING_SUGAR_VALUE_MUST_BE_BETWEEN">के बीच फास्टिंग शुगर वैल्यू होना चाहिए</string>
+    <string name="POST_MEAL_BLOOD_SUGAR_VALUE_MUST_BE_BETWEEN">के बीच भोजन बाद ब्लड शुगर वैल्यू होना चाहिए</string>
+    <string name="HBA1C_VALUE_MUST_BE_BETWEEN">के बीच एचबीए1सी वैल्यू होना चाहिए</string>
+
+    <string name="PLEASE_SELECT_VALID_HEIGHT_BETWEEN">कृपया के बीच वैध हाइट चुनें</string>
+    <string name="PLEASE_SELECT_VALID_INPUT_HEIGHT">कृपया हाइट के लिए वैध इनपुट प्रदान करें।</string>
+    <string name="PLEASE_SELECT_VALID_INPUT_WEIGHT">कृपया वजन के लिए वैध इनपुट प्रदान करें।</string>
+    <string name="PLEASE_SELECT_VALID_WEIGHT_BETWEEN">कृपया के बीच वैध वजन का चयन करें</string>
+    <string name="PLEASE_ENTER_VALID_TOTAL_CHOLESTEROL_VALUE">कृपया वैध कुल कोलेस्ट्रॉल वैल्यू दर्ज करें</string>
+    <string name="PLEASE_ENTER_VALID_HDL_VALUE">कृपया वैध एचडीएल वैल्यू दर्ज करें</string>
+    <string name="PLEASE_ENTER_VALID_LDL_VALUE">कृपया वैध एलडीएल वैल्यू दर्ज करें</string>
+    <string name="PLEASE_ENTER_VALID_TRIGLYCERIDES_VALUE">कृपया वैध ट्राइग्लिसराइड्स वैल्यू दर्ज करें</string>
+    <string name="PLEASE_ENTER_VALID_VLDL_VALUE">कृपया वैध वीएलडीएल वैल्यू दर्ज करें</string>
+
+    <string name="TOTAL_CHOLESTEROL_VALUE_MUST_BE_BETWEEN">के बीच कुल कोलेस्ट्रॉल वैल्यू होना चाहिए</string>
+    <string name="HDL_VALUE_MUST_BE_BETWEEN">के बीच एचडीएल वैल्यू होना चाहिए</string>
+    <string name="LDL_VALUE_MUST_BE_BETWEEN">के बीच एलडीएल वैल्यू होना चाहिए</string>
+    <string name="TRIGLYCERIDES_VALUE_MUST_BE_BETWEEN">के बीच ट्राइग्लिसराइड्स वैल्यू होना चाहिए</string>
+    <string name="VLDL_VALUE_MUST_BE_BETWEEN">के बीच वीएलडीएल वैल्यू होना चाहिए</string>
+
+    <!--HRA Summary-->
+    <string name="YOUR_WELLNESS_SCORE_PLACES">आपका वेलनेस स्कोर आपको वहां पहुंचाता है</string>
+    <string name="WELLNESS_DESC_CURRENT_HRA_HISTORY_ID">हम आपके स्वास्थ्य स्कोर की गणना करने में असमर्थ हैं, क्योंकि आपने अपना एचआरए पूरा नहीं किया है। अपना स्वास्थ्य स्कोर देखने के लिए कृपया पहले एचआरए पूरा करें।</string>
+    <string name="WELLNESS_DESC_HRA_CUTOFF">हम आपके स्वास्थ्य स्कोर की गणना करने में सक्षम नहीं हैं, क्योंकि स्वास्थ्य स्कोर की गणना के लिए जरूरी आपने कुछ अनिवार्य प्रश्नों के उत्तर नहीं दिए हैं। अपना स्वास्थ्य स्कोर देखने के लिए कृपया पहले एचआरए पूरा करें।</string>
+    <string name="WELLNESS_DESC_SCORE_ZERO_NEGATIVE">आपका वेलनेस स्कोर 0 (100 में से) है, जो आपको उच्च जोखिम वाली श्रेणी में रखता है</string>
+    <string name="CONGRATULATION_NO_RISK">बधाई हो!! आपके द्वारा प्रदान की गई जानकारी के अनुसार ऐसा लग रहा है कि वर्तमान में आप खतरे से बाहर हैं। इसी तरह अच्छा काम करते रहें और स्वस्थ जीवनशैली की आदत बनाए रखें।</string>
+    <string name="SUMMERY_SUBTITLE_TEXT">हाइलाइट किए गए जोखिम आपके द्वारा प्रदान की गई प्रतिक्रियाओं और व्यक्तिगत स्वास्थ्य तथा पारिवारिक इतिहास और स्वास्थ्य मापदंडों के तहत जोखिम श्रेणियों पर आधारित हैं।</string>
+    <string name="LAB_TESTS_SUBTITLE_TEXT">परीक्षण की विशेषता स्वास्थ्य स्कोर और जोखिम सारांश के आधार पर नियमित रूप से अपने स्वास्थ्य की पहचान करने के लिए महत्वपूर्ण परीक्षणों की अनुसूची एवं आवृत्ति प्रदान करती हैं।</string>
+    <!--HRA Summary-->
+
+    <string name="TEXT_START_ASSESSMENT"><![CDATA[ नमस्ते <b>%s.</b>अगले 10 मिनट में आपको कुछ सवालों के जवाब देने होंगे और अपने संपूर्ण स्वास्थ्य के बारे में जानकारी हासिल करनी होगी। \nइस <b> स्वास्थ्य जोखिम मूल्यांकन </b> के दौरान, हम आपके स्वास्थ्य संबंधी 3 प्रमुख स्तंभों को समझेंगे – जीवनशक्ति, जीवनशैली और व्यावसायिक स्वास्थ्य। बोनस के रूप में हम आपको आपके स्वास्थ्य जोखिमों को कम करने के लिए स्वास्थ्य स्कोर एवं संपूर्ण सारांश व प्रशंसा प्रदान करेंगे ( यदि कोई)।]]></string>
+    <string name="QUES_FAMILY_PROFILE"><![CDATA[ शुरू करने से पहले, कृपया मुझे बताएं <b>कौन</b> यह मूल्यांकन कर रहा है? ]]></string>
+    <string name="QUESTION_BMI"><![CDATA[ आइए अपने बॉडी मास इंडेक्स (बीएमआई) की गणना करें; अपना वजन मापने का सबसे आसान तरीका: ऊंचाई अनुपात। कृपया अपने महत्वपूर्ण <b>स्वास्थ्य पैरामीटर</b> को दर्ज करें। ]]></string>
+    <string name="QUESTION_BP"><![CDATA[ आपका <b>ब्लड प्रेशर</b> वैल्यू कितना है? \nकृपया एमएमएचजी में इनपुट का उल्लेख करें ]]></string>
+    <string name="QUESTION_BLOOD_SUGAR"><![CDATA[ आपने हाल ही में निम्नलिखित में से कौन-सी <b>शुगर रिपोर्ट</b> कराई है? ]]></string>
+    <string name="QUESTION_BLOOD_SUGAR_INPUT"><![CDATA[ कृपया अपनी पिछली <b>ब्लड शुगर</b> लेवल रीडिंग को अपडेट करें ]]></string>
+    <string name="QUESTION_CHOLESTEROL"><![CDATA[ आपने हाल ही में निम्नलिखित में से कौन-सी <b>कोलेस्ट्रॉल रिपोर्ट</b> कराई है? ]]></string>
+    <string name="QUESTION_CHOLESTEROL_INPUT"><![CDATA[ कृपया अपनी पिछली <b>ब्लड कोलेस्ट्रॉल</b> लेवल रीडिंग को अपडेट करें ]]></string>
+    <string name="QUESTION_HEALTH_CONDITION"><![CDATA[ क्या आपको इनमें से कोई <b>स्वास्थ्य समस्या</b> है? ]]></string>
+    <string name="QUESTION_WOMEN"><![CDATA[ क्या आप इनमें से किसी पुराने <b>चिकित्सीय रोग</b> से संबंधित है? ]]></string>
+    <string name="QUESTION_EDS"><![CDATA[ आप निम्नलिखित में से किस <b>त्वचा/दंत/नेत्र</b> विकार से पीड़ित हैं? ]]></string>
+    <string name="QUESTION_FAMILY_HISTORY"><![CDATA[ क्या आपके <b>ब्लड रिलेशन</b> में किसी को इनमें से कोई <b>स्वास्थ्य समस्या</b> है? ]]></string>
+    <string name="QUESTION_SNACKS"><![CDATA[ क्या आप दिन में 2 से 3 बार <b>फल और सब्जियां खाते</b> हैं? ]]></string>
+    <string name="QUESTION_FAT"><![CDATA[ क्या आप सप्ताह में 3 बार से अधिक <b>फास्ट फूड जैसे रेड मीट, पनीर, तले हुए खाद्य पदार्थ खाते</b> हैं? ]]></string>
+    <string name="QUESTION_EXERCISE"><![CDATA[ क्या आप सप्ताह में 3 घंटे से अधिक <b>व्यायाम</b> करते हैं? ]]></string>
+    <string name="QUESTION_SLEEP"><![CDATA[ आप 1 दिन में <b>कितने घंटे सोते</b> हैं? ]]></string>
+    <string name="QUESTION_SMOKE"><![CDATA[ आप 1 दिन में <b>कितनी सिगरेट पीते</b> हैं? ]]></string>
+    <string name="QUESTION_DRINK"><![CDATA[ आप प्रति सप्ताह कितनी <b>शराब का सेवन</b> करते हैं? ]]></string>
+    <string name="QUESTION_FAMILY_LIFE"><![CDATA[ क्या आपको लगता है कि आपके <b>काम और पारिवारिक जीवन</b> के बीच अच्छा संतुलन है? ]]></string>
+    <string name="QUESTION_SOCIAL"><![CDATA[ अपने <b>परिवार और दोस्तों</b> के साथ आपके <b>सामाजिक संबंध</b> कितने मजबूत हैं? ]]></string>
+    <string name="QUESTION_SATISFIED_LIFE"><![CDATA[ आप <b>अपने जीवन</b> से कितने <b>संतुष्ट</b> हैं? ]]></string>
+    <string name="QUESTION_JOB_PAY"><![CDATA[ क्या आपकी नौकरी <b>पर्याप्त मात्रा में सवैतनिक अवकाश</b> प्रदान करती है? ]]></string>
+    <string name="QUESTION_SHIFT"><![CDATA[ क्या आप <b>शिफ्ट में</b> काम करते हैं? ]]></string>
+    <string name="QUESTION_EXTENDED_TIME"><![CDATA[ क्या आप <b>पीसी/लैपटॉप</b> के सामने <b>8 घंटे से ज्यादा समय</b> बिताते हैं? ]]></string>
+    <string name="QUESTION_EXPOSE"><![CDATA[ क्या आप <b>अपने कार्यस्थल पर</b> निम्नलिखित में से किसी के <b>संपर्क</b> में हैं? ]]></string>
+    <string name="QUESTION_STRESS"><![CDATA[ क्या आप अक्सर <b>तनाव महसूस</b> करते हैं? ]]></string>
+    <string name="QUESTION_PHY"><![CDATA[ निम्नलिखित में से क्या <b>आप पर लागू</b> होता है? ]]></string>
+    <string name="QUESTION_CHECKUP"><![CDATA[ पिछले वर्ष आपने निम्नलिखित में से कौन-सी <b>स्वास्थ्य जांच</b> कराई है? ]]></string>
+    <string name="QUESTION_LAST"><![CDATA[ हमारे साथ विवरण साझा करने के लिए धन्यवाद। आपके <b>स्वास्थ्य जोखिम मूल्यांकन</b> के परिणाम प्रगति पर हैं। ]]></string>
+
+    <string name="QUESTION_BRIGHT_LIGHT"><![CDATA[ क्या आप <b>अपने कार्यस्थल पर</b> निम्नलिखित में से किसी के <b>संपर्क</b> में हैं? ]]></string>
+    <!--End Hra Module -->
+
+    <!--Start Medication Module -->
+    <string name="TITLE_MEDICINE_TRACKER">मेडिसिन ट्रैकर</string>
+    <string name="TITLE_MY_MEDICATIONS">मेरी दवाएं</string>
+    <string name="TITLE_ADD_MEDICATION">दवा जोड़ें</string>
+    <string name="TITLE_SCHEDULE_MEDICATION">दवा की सूची</string>
+
+    <string name="ADD_MEDICATION">दवा जोड़ें</string>
+    <string name="MY_MEDICATIONS">मेरी दवाएं</string>
+    <string name="UPDATE_STATUS">स्टेटस अपडेट करें</string>
+    <string name="UPDATE_YOUR_MEDICINE_STATUS">अपनी दवा की स्थिति अपडेट करें</string>
+    <string name="MEDICINE_NAME">दवा का नाम</string>
+
+    <string name="ENABLE">सक्षम करें</string>
+    <string name="DISABLE">अक्षम करें</string>
+    <string name="START_DATE">प्रारंभ तिथि</string>
+    <string name="END_DATE">अंतिम तिथ</string>
+    <string name="STATUS">स्थिति (स्टेटस</string>
+    <string name="DOSAGE">खुराक</string>
+    <string name="SCHEDULE">सूची</string>
+
+    <string name="TAKEN">लिया</string>
+    <string name="SKIPPED">नहीं लिया</string>
+    <string name="MISSED">छूट गया</string>
+
+    <string name="BEFORE_MEAL">भोजन से पहले</string>
+    <string name="WITH_MEAL">भोजन के साथ</string>
+    <string name="AFTER_MEAL">भोजन के बाद</string>
+    <string name="ANYTIME">किसी भी समय</string>
+
+    <string name="ONGOING">जारी</string>
+    <string name="COMPLETED">पूर्ण</string>
+
+    <string name="TABLET">टेबलेट (गोली)</string>
+    <string name="CAPSULE">कैप्सूल</string>
+    <string name="SYRUP">सिरप</string>
+    <string name="DROPS">ड्रॉप</string>
+    <string name="INJECTION">इंजेक्शन (दवा की सूई)</string>
+    <string name="GEL">जेल</string>
+    <string name="TUBE">ट्यूब</string>
+    <string name="SPRAY">स्प्रे</string>
+    <string name="MOUTHWASH">माउथवॉश</string>
+    <string name="MOUTH_WASH">माउथ वॉश</string>
+    <string name="SOLUTION">सलूशन (समाधान)</string>
+    <string name="OINTMENT">मलहम</string>
+
+    <string name="FOR_TODAY_ONLY">केवल आज के लिए</string>
+    <string name="STARTING_ON">को शुरू</string>
+    <string name="STARTED">को शुरू किया</string>
+
+    <string name="DAILY">दैनिक</string>
+    <string name="FOR_X_DAYS">X दिनों के लिए</string>
+
+    <string name="NOTES">नोट्स</string>
+    <string name="NUMBER_OF_DAYS">दिनों की संख्या</string>
+    <string name="HOW_OFTEN_WILL_YOU_TAKE">आप इसे कितनी बार लेंगे?</string>
+    <string name="HOW_MANY_YOU_NEED_TO_TAKE_AT_ONE_TIME">एक बार में आपको कितना लेने की आवश्यकता है?</string>
+    <string name="HOW_MANY_TIME_DAILY">प्रतिदिन में कितनी बार?</string>
+    <string name="INTAKE_INSTRUCTIONS">सेवन के निर्देश</string>
+    <string name="ENABLE_NOTIFICATION_ALERT">नोटिफिकेशन अलर्ट सक्षम करें?</string>
+    <string name="TYPE_YOUR_NOTES">अपने नोट्स टाइप करें</string>
+    <string name="MAX_50_CHARACTERS">अधिकतम 50 अक्षर</string>
+
+    <string name="EDIT_ENTRY">एंट्री एडिट करें</string>
+    <string name="CHOOSE_MEDICINE_TYPE">दवा का प्रकार चुनें</string>
+    <string name="TYPE_YOUR_MEDICINE_NAME">अपनी दवा का नाम लिखें</string>
+    <string name="WHAT_TIMES_OF_DAY">दिन के किस समय?</string>
+    <string name="YOU_HAVE_TAKEN">आपने लिया है</string>
+    <string name="YOU_HAVE_SKIPPED">आपने नहीं लिया है</string>
+
+    <string name="DO_YOU_WANT_TO">क्या आप यह करना चाहते हैं</string>
+    <string name="NOTIFICATION_ALERT">नोटिफिकेशन अलर्ट</string>
+    <string name="DELETE_MEDICINE">दवा मिटाएं</string>
+    <string name="RESCHEDULE_MEDICINE">दवा की अनुसूची बदलें</string>
+    <string name="UPDATE_MEDICINE_SCHEDULES">दवा की अनुसूची अपडेट करें</string>
+    <string name="PAST_MEDICINES">पिछली दवाएं</string>
+    <string name="NO_MEDICINES_AVAILABLE">कोई दवा उपलब्ध नहीं</string>
+    <string name="MEDICINE_DELETED">दवा सफलतापूर्वक हटा दी गई</string>
+    <string name="MEDICINE_ADDED">दवा सफलतापूर्वक जोड़ी गई</string>
+    <string name="MEDICINE_UPDATED">दवा सफलतापूर्वक अपडेट की गई</string>
+    <string name="ALERT_ENABLED">नोटिफिकेशन सफलतापूर्वक सक्षम की गई</string>
+    <string name="ALERT_DISABLED">नोटिफिकेशन सफलतापूर्वक अक्षम की गई</string>
+    <string name="ERROR_SELECT_SCHEDULE_TIME">कृपया अनुसूची समय का चयन करें</string>
+    <string name="ERROR_ENTER_MEDICINE_TYPE">कृपया दवा का प्रकार चुनें</string>
+    <string name="ERROR_ENTER_MEDICINE_NAME">कृपया दवा का नाम दर्ज करें</string>
+    <string name="ERROR_SELECT_MEDICINE_STATUS">कृपया दवा की स्थिति का चयन करें</string>
+    <string name="ALREADY_DELETED_MEMBER_RELATED_TO_NOTIFICATION">आपने इस नोटिफिकेशन से संबंधित परिवार के सदस्य को पहले ही हटा दिया है</string>
+    <string name="YOU_ARE_ALREADY_TAKING">आप पहले से ही ले रहे हैं</string>
+    <string name="YOU_HAVE_REMOVED_OR_RESCHEDULED_TIME">आपने समय को हटाया या पुनर्निर्धारित किया है</string>
+    <string name="YOU_HAVE_ALREADY_DELETED">आपने पहले ही डिलीट कर दिया है</string>
+
+    <string name="MSG_SCHEDULE_TIME_FOUND">हमारे पास इस दवा से संबंधित कोई अनुसूची मौजूद नहीं है। क्या आप अनुसूची समय को जोड़ना चाहते हैं?</string>
+    <string name="MSG_CONFIRMATION_DELETE_MEDICINE">क्या आप वाकई में इस दवा को डिलीट करना चाहते हैं?</string>
+    <string name="MSG_CONFIRMATION_RESCHEDULE_MEDICINE">क्या आप रीशेड्यूल करना चाहते हैं</string>
+
+    <string name="ERROR_START_DATE_MUST_BE_LESS_THAN_OR_EQUAL_TO_END_DATE">प्रारंभ तिथि, समाप्ति तिथि से छोटी या उसके बराबर होनी चाहिए</string>
+    <string name="ERROR_END_DATE_MUST_BE_GREATER_THAN_OR_EQUAL_TO_START_DATE">समाप्ति तिथि, प्रारंभ तिथि से बड़ी या उसके बराबर होनी चाहिए</string>
+    <string name="ERROR_SCHEDULE_TIME_NOT_FOUND_PLEASE_SELECT_TO_UPDATE_MEDICINE_DETAILS">अनुसूची समय नहीं मिला, कृपया दवा विवरण अपडेट का चयन करें</string>
+    <string name="ERROR_PLEASE_SELECT_VALID_SCHEDULE_TIME">कृपया वैध अनुसूची समय का चयन करें</string>
+    <string name="ERROR_PLEASE_ENTER_VALID_NUMBER_OF_DAYS">कृपया दिनों की वैध संख्या दर्ज करें</string>
+    <string name="ERROR_PLEASE_SELECT_INTAKE_INSTRUCTION">कृपया सेवन के निर्देश का चयन करें</string>
+    <string name="ERROR_STATUS_FOR_FUTURE_SCHEDULE_TIMES_CAN_NOT_BE_UPDATED">आगामी अनुसूची समय की स्थिति अपडेट नहीं की जा सकती</string>
+    <!--End Medication Module-->
+
+    <!--Start Record Tracker Module -->
+    <string name="TITLE_MY_HEALTH_RECORDS">स्वास्थ्य रिकार्ड</string>
+    <string name="TITLE_ADD_RECORDS">रिकार्ड जोड़ें</string>
+    <string name="REVERSE_CHRONOLOGICAL_ORDER">उल्टे कालानुक्रमिक क्रम (रिवर्स क्रोनोलॉजिकल ऑर्डर) में प्रस्तुत करें</string>
+
+    <string name="DOWNLOAD_RECORD">रिकॉर्ड डाउनलोड करें</string>
+    <string name="SHARE_RECORD">रिकॉर्ड शेयर करें</string>
+    <string name="DELETE_RECORD">रिकॉर्ड डिलीट करें </string>
+
+    <string name="NO_RECORD_AVAILABLE">कोई रिकार्ड उपलब्ध नहीं</string>
+    <string name="SELECT_RECORD_TO_UPLOAD">अपलोड करने के लिए रिकॉर्ड चुनें</string>
+    <string name="DATE_OF_CHECKUP">जांच (चेकअप) की तिथि </string>
+    <string name="TYPE_OF_DOCUMENT">दस्तावेज के प्रकार</string>
+    <string name="VALUE_MUST_BE_BETWEEN">के बीच वैल्यू होना चाहिए</string>
+    <string name="SELECT_RECORDS_TO_PROCEED">कृपया आगे बढ़ने के लिए रिकॉर्ड्स का चयन करें</string>
+    <string name="DOWNLOAD_DOCUMENT_TO_PROCEED">कृपया शेयर करने के लिए दस्तावेज डाउनलोड करें</string>
+    <string name="DOCUMENT_BELONGS_TO">उनके लिए, जिनसे ये दस्तावेज संबंधित हैं</string>
+    <string name="HAVE_NOTES_TO_MENTION">क्या आपके पास उल्लेख करने के लिए कुछ नोट्स हैं?</string>
+    <string name="MSG_DELETE_CONFIRMATION">क्या आप वाकई में चयनित रिकॉर्ड को सूची से डिलीट करना चाहते हैं?</string>
+
+    <string name="MSG_RECORD_SAVED">रिकॉर्ड सफलतापूर्वक सेव किया गया</string>
+    <string name="MSG_RECORD_DELETED">रिकॉर्ड सफलतापूर्वक डिलीट किया गया</string>
+    <string name="MSG_REOCRD_DOWNLOADED">रिकॉर्ड सफलतापूर्वक डाउनलोड हुआ </string>
+
+    <string name="NO_RECORDS_FOUND">कोई रिकॉर्ड नहीं मिला</string>
+    <string name="NO_PATHOLOGY_REPORTS_UPLOADED">कोई पैथोलॉजी रिपोर्ट अपलोड नहीं की गई है </string>
+    <string name="NO_RECORDS_CLICK_FOR_UPLOADING">कोई रिपोर्ट अपलोड नहीं की गई है। अपलोड शुरू करने के लिए नीचे दिए विकल्प पर क्लिक करें</string>
+    <string name="RECORDS_DISCLAIMER">कृपया अपने फोन/डाउनलोड डायरेक्टरी या गूगल ड्राइव से फाइल का चयन करें</string>
+
+    <string name="PLEASE_SELECT_DOCUMENT_TYPE">कृपया दस्तावेज प्रकार चुनें</string>
+    <string name="ERROR_SELECT_MEMBER_TO_PROCEED">कृपया इस दस्तावेज से संबंधित परिवार के सदस्य का चयन करें</string>
+    <string name="ERROR_UNIT_NOT_SUPPORTED">यूनिट समर्थित नहीं </string>
+    <string name="ERROR_VALUE_NOT_CORRECT">वैल्यू सही नहीं है</string>
+    <string name="ERROR_UNIT_NOT_CORRECT">यूनिट सही नहीं है</string>
+    <string name="ERROR_ENTER_VALID_INPUT">कृपया वैध इनपुट दर्ज करें</string>
+    <string name="ERROR_DOES_NOT_MATCHING_REQUIREMENTS">आवश्यकताओं से मेल नहीं खा रहा, कृपया आगे बढ़ने के लिए इसे हटाएं </string>
+
+    <string name="PICK_UPLOAD_TYPE">अपलोड के प्रकार चुनें</string>
+    <string name="UPLOAD_PHOTO">फोटो अपलोड करें</string>
+    <string name="UPLOAD_FROM_GALLERY">गैलरी से अपलोड करें</string>
+    <string name="UPLOAD_FILE">फाइल अपलोड करें</string>
+
+    <string name="TYPE_PATHOLOGY_LAB_REPORT">पैथोलॉजी \n रिपोर्ट</string>
+    <string name="TYPE_HOSPITAL_REPORT">अस्पताल \n रिपोर्ट</string>
+    <string name="TYPE_DOCTOR_PRESCRIPTION">डॉक्टर \n निर्देश </string>
+    <string name="TYPE_DIET_PLAN">डाइट \n प्लान</string>
+    <string name="TYPE_FITNESS_PLAN">फिटनेस \n प्लान</string>
+    <string name="TYPE_OTHER_DOCUMENT">अन्य \n दस्तावेज</string>
+    <string name="TYPE_HRA_REPORT">एचआरए \n रिपोर्ट</string>
+    <!--End Record Tracker Module -->
+
+    <!--Start Security Module-->
+    <string name="facebook_app_id" translatable="false">606675634437313</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb606675634437313</string>
+    <string name="facebook_client_token" translatable="false">d2337e3739f1bad138d911ae47dcd0bc</string>
+
+    <!--    <string name="facebook_app_id" translatable="false">397824020674947</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb397824020674947</string>-->
+    <string name="google_web_client_id" translatable="false">963831629628-s2bn21hirc0iiqpo8a04esucanvv6vhk.apps.googleusercontent.com</string>
+    <!--    <string name="google_web_client_id" translatable="false">131375685253-kgb90ksquontqa1gion390lql0fpanku.apps.googleusercontent.com</string>-->
+    <!--    <string name="google_web_client_id">694765538505-tg34ue2keb3ghfbkurjp2op8tehflek8.apps.googleusercontent.com</string>-->
+
+    <string name="SPLASH_DESC1">ग्राहक सहभागिता में नवपरिवर्तन का पुरस्कार</string>
+    <!--    <string name="SPLASH_DESC2">भारत फिनटेक पुरस्कार</string>-->
+    <string name="SPLASH_DESC2">बीएफएसआई इनोवेशन कॉन्फेक्स और अवॉर्ड्स</string>
+    <string name="YOUR_HOLISTIC_HEALTH_DESC">आपका संपूर्ण स्वास्थ्य प्रबंधन साथी।</string>
+    <string name="FIND_AND_MONITOR_HEALTH">अपने स्वास्थ्य की स्थिति जानें एवं उचित देखभाल करें</string>
+    <string name="GET_YOUR_HEALTH_SCORE_DESC">अपना स्वास्थ्य स्कोर जानें तथा स्वास्थ्य संबंधी अपनी सभी महत्वपूर्ण गतिविधियों पर नियमित रूप से नजर रखें एवं सुधार करें। आपके स्वास्थ्य की पहचान, ट्रैकिंग और प्रबंधन के लिए ‘एक स्थान, बेहतरीन समाधान’।</string>
+    <string name="A_VITAL_COMPANION_DESC">आपकी स्वास्थ्य संबंधी सभी आवश्यकताओं के लिए सबसे खास साथी</string>
+    <string name="AVAIL_DOCTOR_CONSULTATION_DESC">अपनी सुविधा के अनुसार, डॉक्टर के परामर्श, स्वास्थ्य रिकॉर्ड और प्रिस्क्रिप्शन से लेकर दवा की डिलीवरी तक का लाभ उठाएं।</string>
+    <string name="TAKE_ME_TO_APP">मुझे ऐप में ले चलो</string>
+
+    <string name="ARE_YOU_EMPLOYEE">क्या आप इनमें से किसी के कर्मचारी हैं?</string>
+    <string name="BANK_OF_INDIA">बैंक ऑफ इंडिया</string>
+    <string name="UNION_BANK_OF_INDIA">यूनियन बैंक ऑफ इंडिया</string>
+    <string name="SUD_LIFE_INSURANCE">एसयूडी  लाइफ इंश्योरेंस</string>
+    <string name="NONE_OF_ABOVE">इनमें से कोई भी नहीं</string>
+
+    <string name="DONT_HAVE_ACCOUNT">क्या आपके पास अभी तक खाता नहीं है?</string>
+    <string name="TERMS_CONCENT">मैंने नियमों को पढ़ा है और उनसे सहमत हूं </string>
+    <string name="USER_TERMS_CONDITIONS">उपयोगकर्ता के लिए नियम एवं शर्तें</string>
+    <string name="TERMS_OF_SERVICE_HEALTH_HDETAILS">मैं यह स्वीकार एवं पुष्टि करता हूं कि मेरे द्वारा अपलोड किए गए स्वास्थ्य विवरण, इस ऐप के प्रयोजनों के लिए एसयूडी लाइफ और संबद्ध तृतीय पक्षों द्वारा एकत्र एवं उपयोग किए जा सकते हैं।</string>
+
+    <string name="WARNING">चेतावनी</string>
+    <string name="WARNING_DESC">यह डिवाइस रूटेड/जेल ब्रोकन किया हुआ प्रतीत होता है। जेल ब्रोकन डिवाइस के साथ अंतर्निहित सुरक्षा जोखिम होते हैं, इसलिए आपकी डेटा सुरक्षा के लिए यह ऐप अब बंद हो जाएगा। </string>
+
+    <string name="MSG_LOGIN_SUD">आप एसयूडी लाइफ कर्मचारी हैं,इसलिए आपसे अनुरोध है कि सहज अनुभव के लिए कृपया अपने आधिकारिक एचआर ऐप ‘डार्विनबॉक्स’ से ऐप का उपयोग करें।</string>
+
+    <string name="YOUR_DOB">आपकी जन्मतिथि </string>
+    <string name="TERMS_CONDITIONS">नियम एवं शर्तें</string>
+    <string name="ADDITIONAL_DETAILS">अतिरिक्त विवरण</string>
+    <string name="ADDITIONAL_DETAILS_MISSING">कृपया अपने बारे में कुछ बताएं</string>
+    <string name="LOGIN_USING_FB">फेसबुक के जरिए लॉगिन करें</string>
+    <string name="LOGIN_USING_GOOGLE">गूगल के जरिए लॉगिन करें</string>
+    <string name="OR_LOGIN_WITH">या के साथ लॉगिन करें</string>
+    <string name="EMAIL_OR_PHONE">ईमेल या फोन</string>
+    <string name="OTP">ओटीपी</string>
+    <string name="EMAIL_PHONE">पंजीकृत ईमेल/मोबाइल नंबर</string>
+    <string name="REGISTERED_EMAIL">पंजीकृत ईमेल पता</string>
+    <string name="REGISTERED_PHONE">पंजीकृत मोबाइल नंबर</string>
+    <string name="LOG_IN">लॉगिन करें </string>
+    <string name="SIGN_IN">साइन इन करें</string>
+    <string name="SIGN_UP">साइन अप करें</string>
+    <string name="LOG_IN_WITH_OTP">ओटीपी के साथ लॉगिन करें</string>
+    <string name="LOG_IN_WITH_OTP_DESC">अपना पंजीकृत मोबाइल नंबर दर्ज करें, ताकि हम आपके खाते को लॉगिन करने के लिए ओटीपी भेज सकें </string>
+    <string name="FORGOT_PASSWORD">पासवर्ड भूल गए?</string>
+    <string name="I_AM_DONE">मैंने कर लिया</string>
+    <string name="SIGN_IN_WITH_GOOGLE">गूगल के जरिए साइन इन करें</string>
+    <string name="SIGN_IN_WITH_FACEBOOK">फेसबुक के जरिए साइन इन करें</string>
+
+    <string name="NAME_COMPULSARY">नाम*</string>
+    <string name="EMAIL_COMPULSARY">ईमेल*</string>
+    <string name="DOB_COMPULSARY">जन्मतिथि*</string>
+    <string name="PASSWORD_COMPULSARY">पासवर्ड*</string>
+    <string name="PHONE_COMPULSARY">मोबाइल नंबर*</string>
+
+    <string name="ENTER_NEW_PASSWORD">अपना नया पासवर्ड दर्ज करें</string>
+    <string name="RESET_PASSWORD">पासवर्ड रीसेट करें </string>
+    <string name="FORGOT_PASSWORD_DESC">अपना ईमेल दर्ज करें, ताकि आपका पासवर्ड रीसेट करने के लिए हम आपको ओटीपी भेज सकें </string>
+    <string name="VERIFICATION_CODE">सत्यापन (वेरिफिकेशन) कोड</string>
+    <string name="OTP_SENT_DESC">कृपया अपने पंजीकृत ईमेल/मोबाइल नंबर पर प्राप्त ओटीपी दर्ज करें</string>
+    <string name="OTP_VARIFIED_SUCCESSFULLY">ओटीपी सफलतापूर्वक सत्यापित हुआ </string>
+
+    <string name="PLEASE_ACCEPT_TERMS">कृपया नियम एवं शर्तें स्वीकार करें</string>
+    <string name="PLEASE_ACCEPT_TERMS_PRIVACY_POLICY">कृपया नियम एवं शर्तें तथा गोपनीयता नीति स्वीकार करें</string>
+    <string name="GOOGLE_SIGN_IN_FAILED">गूगल साइन इन विफल रहा</string>
+    <string name="FB_SIGN_IN_FAILED">फेसबुक साइन इन विफल रहा</string>
+    <string name="ERROR_INVALID_EMAIL_PHONE">कृपया वैध ईमेल पता या फोन दर्ज करें</string>
+    <string name="ERROR_AGE_GREATER_THEN_18_YEARS">आयु 18 वर्ष से अधिक होनी चाहिए</string>
+    <string name="ERROR_EMAIL_REGISTERED">यह ईमेल हमारे पास पहले से ही पंजीकृत है</string>
+    <string name="ERROR_EMAIL_NOT_REGISTERED">यह ईमेल हमारे साथ पंजीकृत नहीं है</string>
+    <string name="ERROR_PHONE_REGISTERED">यह मोबाइल नंबर हमारे साथ पहले से ही पंजीकृत है</string>
+    <string name="ERROR_PHONE_NOT_REGISTERED">यह मोबाइल नंबर हमारे साथ पंजीकृत नहीं है</string>
+    <string name="ERROR_EMAIL_PHONE_NOT_REGISTERED">यह ईमेल या मोबाइल नंबर हमारे साथ पंजीकृत नहीं है</string>
+    <string name="ERROR_INVALID_NAME">कृपया अपना नाम दर्ज करें</string>
+    <string name="ERROR_INVALID_PHONE">कृपया वैध मोबाइल नंबर दर्ज करें</string>
+    <string name="ERROR_INVALID_EMAIL">कृपया वैध ईमेल दर्ज करें</string>
+    <string name="ERROR_INVALID_PASSWORD">कृपया वैध पासवर्ड दर्ज करें</string>
+    <string name="ERROR_INCORRECT_PASSWORD">यह पासवर्ड गलत है</string>
+    <string name="ERROR_PASSWORD_DOESNOT_MATCH">पासवर्ड मेल नहीं खा रहा </string>
+    <string name="ERROR_PASSWORD_DOESNOT_MATCH_REQUIREMENTS">आवश्यकताओं के अनुसार पासवर्ड मेल नहीं खा रहा </string>
+    <string name="ERROR_PASSWORD_CONFIRM_DOESNOT_MATCH">पासवर्ड और कंफर्म पासवर्ड मेल नहीं खा रहें </string>
+    <string name="ERROR_USERNAME_PASSWORD_SAME">यूजरनेम का उपयोग पासवर्ड के रूप में नहीं किया जाना चाहिए</string>
+    <string name="ERROR_FIELD_REQUIRED">यह फील्ड भरना जरूरी है</string>
+
+    <string name="ERROR_INVALID_USER_CREDENTIALS">उपयोगकर्ता क्रेडेंशियल अमान्य है </string>
+    <string name="ERROR_UNABLE_TO_RESET_PASSWORD">पासवर्ड रीसेट करने में असमर्थ हैं </string>
+    <string name="ERROR_ENTER_VALID_OTP">कृपया वैध ओटीपी दर्ज करें</string>
+    <string name="ERROR_UNABLE_LOGIN_WITH_USER">इस उपयोगकर्ता के साथ लॉगिन करने में असमर्थ हैं </string>
+
+    <string name="INTRO_SLIDE_1_TITLE">कसरत और योग</string>
+    <string name="INTRO_SLIDE_2_TITLE">मानसिक कल्याण सहायता</string>
+    <string name="INTRO_SLIDE_3_TITLE">वित्तीय कल्याण</string>
+    <string name="INTRO_SLIDE_4_TITLE">एक संपूर्ण फिटनेस ऐप</string>
+
+    <string name="INTRO_SLIDE_1_DESC">व्यायाम शक्ति, योग लचीलापन - समग्र मन-शरीर कल्याण के लिए मिश्रण।</string>
+    <string name="INTRO_SLIDE_2_DESC">शांत मन, तनाव मुक्त जीवन - मानसिक स्वास्थ्य को प्राथमिकता देना आत्म-देखभाल है।</string>
+    <string name="INTRO_SLIDE_3_DESC">समझदारी से बजट बनाएं, बचत करें, निवेश करें - वित्तीय स्थिरता और खुशहाली की कुंजी।</string>
+    <string name="INTRO_SLIDE_4_DESC">ट्रैक, ट्रेन, प्रगति - संपूर्ण फिटनेस यात्रा के लिए एक समग्र ऐप।</string>
+
+    <string name="LOGIN_SIGN_UP">लॉगइन/साइनअप</string>
+    <string name="LOGIN_SIGN_UP_DESC">शारीरिक स्वास्थ्य और मानसिक कल्याण की दुनिया में गोता लगाने \n के लिए, कृपया लॉग इन या साइन अप इन करें</string>
+
+    <string name="ENTER_OTP">ओटीपी दर्ज करें</string>
+    <string name="PLEASE_ENTER_THE_OTP_SENT_TO">कृपया ओटीपी दर्ज करें जो इस पर भेजा गया है</string>
+    <string name="DIDN_NOT_RECEIVE_OTP">ओटीपी प्राप्त नहीं हुआ?</string>
+    <string name="RESEND_OTP_IN">ओटीपी पुनः भेजें</string>
+
+    <string name="IS_NOT_REGISTERED_WITH_US">हमारे साथ पंजीकृत नहीं है|</string>
+    <string name="DO_YOU_WANT_REGISTER_IT_NOW">क्या आप इसे अभी पंजीकृत करना चाहते हैं?</string>
+
+    <string name="STEP_1_OF_4">4 में से चरण 1</string>
+    <string name="STEP_2_OF_4">4 में से चरण 2</string>
+    <string name="STEP_3_OF_4">4 में से चरण 3</string>
+    <string name="STEP_4_OF_4">4 में से चरण 4</string>
+
+    <string name="PERSONAL_DETAILS">व्यक्तिगत विवरण</string>
+    <string name="SIGN_UP_DESC">पंजीकरण और बेहतर अनुशंसाओं के लिए कृपया\nअपना व्यक्तिगत विवरण साझा करें</string>
+
+    <string name="I_HAVE_READ_AGREE">मैंने पढ़ ली हैं और उनसे सहमत हूं</string>
+    <string name="I_AGREE_DATA_USES">मैं डेटा उपयोग से सहमत हूं</string>
+
+    <string name="EMAIL_MOBILE_COMPULSARY">ईमेल या मोबाइल नंबर *</string>
+    <string name="HINT_EMAIL_MOBILE">ईमेल या मोबाइल नंबर दर्ज करें</string>
+    <string name="USERNAME_COMPULSARY">नाम *</string>
+    <string name="HINT_USERNAME">अपना नाम दर्ज करें</string>
+    <string name="FIRST_NAME_COMPULSARY">पहला नाम *</string>
+    <string name="HINT_FIRST_NAME">अपना पहला नाम दर्ज करें</string>
+    <string name="LAST_NAME_COMPULSARY">उपनाम *</string>
+    <string name="HINT_LAST_NAME">अपना उपनाम दर्ज करें</string>
+    <string name="MOBILE_NO_COMPULSARY">मोबाइल नंबर *</string>
+    <string name="HINT_MOBILE_NO">अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="EMAIL_COMPULSARY2">ईमेल *</string>
+    <string name="HINT_EMAIL">अपना ईमेल दर्ज करें</string>
+
+    <string name="SELECT_YOUR_GENDER">अपना लिंग चुनें</string>
+    <string name="SELECT_YOUR_DOB">अपनी जन्मतिथि चुनें</string>
+    <string name="SELECT_YOUR_RELEVANT_EMPLOYER">प्रासंगिक नियोक्ता का चयन करें</string>
+    <string name="I_VE_READ_AND_ACCEPTED_ALL_TERMS_AND_CONDITIONS">मैंने सभी नियम एवं शर्तें और गोपनीयता नीति पढ़ ली है और उन्हें स्वीकार कर लिया है। मैं एसयूडी लाइफ इंश्योरेंस को मुझसे संपर्क करने के लिए अधिकृत करता हूं एसएमएस/ईमेल/फोन/व्हाट्सएप/फेसबुक या कोई अन्य मेरे \'डीएनडी\' को ओवरराइड करने वाले मोड।</string>
+    <string name="KINDLY_DISABLE_THE_DEVELOPER_MODE_ON_YOUR_DEVICE">कृपया अपने डिवाइस पर डेवलपर मोड अक्षम करें।</string>
+    <string name="FOR_SECURITY_REASONS_YOU_CANNOT_USE_OUR_APPLICATION_IF_THE_DEVELOPER_MODE_IS_ENABLED_ON_YOUR_DEVICE">सुरक्षा कारणों से, यदि आपके डिवाइस पर डेवलपर मोड सक्षम है तो आप हमारे एप्लिकेशन का उपयोग नहीं कर सकते।</string>
+    <!--End Security Module-->
+
+    <!--Start Tool Calculator Module-->
+    <string name="TITLE_TOOLS_CALCULATORS">टूल्स व कैलकुलेटर</string>
+
+    <string name="HEART_AGE_CALCULATOR">हृदय आयु कैलकुलेटर</string>
+    <string name="DIABETES_CALCULATOR">मधुमेह कैलकुलेटर</string>
+    <string name="HYPERTENSION_CALCULATOR">उच्च रक्तचाप कैलकुलेटर</string>
+    <string name="STRESS_ANXIETY_CALCULATOR">तनाव व चिंता कैलकुलेटर</string>
+    <string name="SMART_PHONE_CALCULATOR">स्मार्ट फोन की लत</string>
+    <string name="DUE_DATE_CALCULATOR">देय तिथि कैलकुलेटर</string>
+
+    <string name="TRACKER_HEART_AGE2">हृदय आयु कैलकुलेटर</string>
+    <string name="TRACKER_DIABETES2">मधुमेह कैलकुलेटर</string>
+    <string name="TRACKER_HYPERTENSION2">उच्च रक्तचाप कैलकुलेटर</string>
+    <string name="TRACKER_STRESS_ANXIETY2">तनाव व चिंता कैलकुलेटर</string>
+    <string name="TRACKER_SMART_PHONE2">स्मार्ट फोन \n की लत</string>
+    <string name="TRACKER_DUE_DATE2">देय तिथि \n कैलकुलेटर</string>
+
+    <string name="TRACKER_DESC_HEART_AGE2">क्या आपका दिल भी उतना ही जवान है जितना आप हैं?</string>
+    <string name="TRACKER_DESC_DIABETES2">अपने मधुमेह के खतरे को जानें</string>
+    <string name="TRACKER_DESC_HYPERTENSION2">अपने रक्तचाप (ब्लड प्रेशर) को जानें</string>
+    <string name="TRACKER_DESC_STRESS_ANXIETY2">क्या आप तनाव महसूस कर रहे हैं?</string>
+    <string name="TRACKER_DESC_SMART_PHONE2">स्मार्टफोन की लत है?</string>
+    <string name="TRACKER_DESC_DUE_DATE2">अपनी देय तिथि जानें</string>
+
+    <string name="DISCLAIMER_TITLE">स्वास्थ्य कैलकुलेटर गणना और सुझावों के लिए संदर्भ</string>
+    <string name="DISCLAIMER_CARDIOVASCULAR">हृदय संबंधी स्थितियों के लिए जोखिम :</string>
+    <string name="DISCLAIMER_HEART_AGE">हृदय आयु कैलकुलेटर और जोखिम स्कोर :</string>
+    <string name="DISCLAIMER_WOMEN_HEALTH">मासिक धर्म स्वास्थ्य और महिला स्वास्थ्य दिशानिर्देश :</string>
+    <string name="DISCLAIMER_DASS">अवसाद चिंता तनाव स्केल (DASS-21) :</string>
+    <string name="DISCLAIMER_DASS_DESC">लोविबॉन्ड, एस.एच. और लोविबॉन्ड, पी.एफ. (1995)। अवसाद चिंता एवं तनाव माप के लिए मैनुअल। (दूसरा संस्करण) सिडनी: मनोविज्ञान फाउंडेशन।</string>
+    <string name="DISCLAIMER_WORKABILITY_INDEX">कार्यशीलता सूचकांक :</string>
+    <string name="DISCLAIMER_WORKABILITY_INDEX_DESC">1. इल्मारिनन जे (सं.). उम्रदराज़ कार्यकर्ता. स्कैंड जे वर्क एनवायरन हेल्थ 1991;17(सप्ल. 1): 1–141।\n2. तुओमी के (सं.). उम्रदराज़ श्रमिकों का ग्यारह–वर्षीय अनुवर्ती। स्कैंड जे वर्क एनवायरन हेल्थ 1997; 23(सप्ल. 1): 1–71.\n3. रैडकिविच पी, विडर्सज़ल–बाज़िल एम. तुलनात्मक सर्वेक्षण अध्ययन के आलोक में कार्य क्षमता सूचकांक के साइकोमेट्रिक गुण। अंतर्राष्ट्रीय कांग्रेस श्रृंखला 1280. नीदरलैंड: एल्सेवियर, 2005; 304–309.</string>
+    <string name="DOWNLOAD_PDF_FROM">Download PDF From</string>
+    <string name="CLICK">क्लिक करें</string>
+    <string name="HERE">यहाँ</string>
+
+    <string name="PROFILE_PARAMETERS">प्रोफाइल पैरामीटर</string>
+    <string name="MEASUREMENT_PARAMETERS">माप पैरामीटर</string>
+    <string name="LIFESTYLE_CHANGES">जीवनशैली में परिवर्तन</string>
+    <string name="AGE_IN_YEARS">वर्षों में आयु</string>
+    <string name="TODAY_VIA_MOBILE_ENTRY">आज मोबाइल एंट्री के जरिए</string>
+
+    <string name="LOW_RISK_1">कम जोखिम</string>
+    <string name="HIGH_RISK_1">अधिक जोखिम</string>
+
+    <string name="SELECT_ALL_THAT_APPLIES_TO_YOU">उन सभी विकल्पों को चुनें, जो आप पर लागू होते हैं</string>
+    <string name="HEALTH_CONDITION">स्वास्थ्य स्थिति</string>
+    <string name="KIDNEY_DISEASE">किडनी रोग</string>
+    <string name="STROKE">स्ट्रोक</string>
+    <string name="CORONARY_ARTERY">कोरोनरी धमनी रोग</string>
+    <string name="FAMILY_HISTORY_OF_HEART_DISEASE">हृदय रोगों का पारिवारिक इतिहास</string>
+
+    <string name="UNDER_35_YEARS">35 वर्ष से कम</string>
+    <string name="AGE_35_TO_44">35 – 44</string>
+    <string name="AGE_45_TO_54">45 – 54</string>
+    <string name="AGE_55_TO_64">55 – 64</string>
+    <string name="AGE_65_YRS_OR_OVER">65 वर्ष या उससे अधिक</string>
+
+    <string name="RANGE_0_TO_4">0 – 4</string>
+    <string name="UPPER_LIMIT">ऊपरी सीमा</string>
+    <string name="LOWER_LIMIT">निचली सीमा</string>
+
+    <string name="DEPRESSION">अवसाद</string>
+    <string name="ANXIETY">चिंता</string>
+    <string name="STRESS">तनाव</string>
+
+    <string name="DYSPHORIA">दुःखाभास</string>
+    <string name="LACK_OF_INTEREST_INVOLVEMENT">रुचि/सहभागिता का अभाव</string>
+    <string name="HOPELESSNESS">निराशा</string>
+    <string name="ANHEDONIA">सुखदु:खाभाव (एनहेडोनिया)</string>
+    <string name="DEVALUATION_OF_LIFE">जीवन का अवमूल्यन</string>
+    <string name="INERTIA">जड़त्व</string>
+
+    <string name="AUTONOMIC_AROUSAL">ऑटोनोमिक उत्तेजना</string>
+    <string name="SELF_DEPRECATION">आत्म-निंदा</string>
+    <string name="SKELETAL_MUSCLE_EFFECTS">तनाव</string>
+    <string name="SUBJECTIVE_EXPERIENCE_OF_ANXIOUS_AFFECT">चिंताजनक प्रभाव का व्यक्तिपरक अनुभव</string>
+    <string name="SITUATIONAL_ANXIETY">परिस्थितिजन्य चिंता</string>
+
+    <string name="DIFFICULTY_RELAXING">आराम करने में कठिनाई</string>
+    <string name="NERVOUS_AROUSAL">घबराहट संबंधी उत्तेजना</string>
+    <string name="BEING_EASILY_UPSET_AGITATED_IRRITABLE_OVER_REACTIVE_AND_IMPATIENT">शीघ्र परेशानी/उत्तेजना/चिड़चिड़ापन/ओवर-रिएक्टिव और अधीर होना</string>
+
+    <string name="BASED_ON_YOUR_SCORE_YOU_HAVE">आपके पास मौजूद स्कोर के आधार पर</string>
+    <string name="PROBABILITY_OF_GETTING_DIABETES">मधुमेह (डायबिटीज) होने की % संभावना</string>
+
+    <string name="HEART_AGE">हृदय आयु</string>
+    <string name="HEART_RISK">हृदय जोखिम</string>
+    <string name="YOUR_AGE">आपकी आयु</string>
+    <string name="YOU_ARE_UNDER">आप के नीचे हैं</string>
+    <string name="HYPERTENSION_SUMMARY">उच्च रक्तचाप (हाइपरटेंशन) का सारांश</string>
+    <string name="OPTIMUM_RISK">इष्टतम जोखिम</string>
+    <string name="RISK_1">आपका जोखिम</string>
+    <string name="RISK_2">समायोजित जोखिम</string>
+    <string name="YEAR_1">वर्ष 1</string>
+    <string name="YEAR_2">वर्ष 2</string>
+    <string name="YEAR_4">वर्ष 4</string>
+
+    <string name="VIEW_DETAILED_REPORT">विस्तृत रिपोर्ट देखें</string>
+    <string name="RESTART_ASSESSMENT">मूल्यांकन रीस्टार्ट करें</string>
+
+    <string name="SYSTOLIC_BP">सिस्टोलिक बीपी (mm Hg)</string>
+    <string name="DIASTOLIC_BP">डायस्टोलिक बीपी (mm Hg)</string>
+    <string name="SYSTOLIC_DIALOG_TITLE">सिस्टोलिक और डायस्टोलिक बीपी</string>
+    <string name="SYSTOLIC_DIALOG_MESSAGE">अपना रक्तचाप (ब्लड प्रेशर) विवरण दर्ज करें</string>
+
+    <string name="DIABETES_RANGE_LOW_RISK">0 – 5</string>
+    <string name="DIABETES_RANGE_MILD_RISK">6 – 11</string>
+    <string name="DIABETES_RANGE_MODERATE_RISK">12 – 19</string>
+    <string name="DIABETES_RANGE_HIGH_RISK">20 – 47</string>
+
+    <string name="NEVER">कभी नहीं</string>
+    <string name="SOMETIMES">कभी-कभी</string>
+    <string name="OFTEN">अक्सर</string>
+    <string name="ALWAYS">हमेशा</string>
+    <string name="ALMOST_ALWAYS">लगभग हमेशा</string>
+
+    <string name="DEPRESSION_RISK_SCORE">अवसाद जोखिम स्कोर</string>
+    <string name="ANXIETY_RISK_SCORE">चिंता जोखिम स्कोर</string>
+    <string name="STRESS_RISK_SCORE">तनाव जोखिम स्कोर</string>
+
+    <string name="RISK_NORMAL">सामान्य जोखिम</string>
+    <string name="RISK_MILD">हल्का जोखिम</string>
+    <string name="RISK_MODERATE">मध्यम जोखिम</string>
+    <string name="RISK_SEVERE">गंभीर जोखिम</string>
+    <string name="RISK_EXTREMELY_SEVERE">अत्यंत गंभीर जोखिम</string>
+
+    <string name="NORMAL">सामान्य</string>
+    <string name="MILD">हल्का</string>
+    <string name="MODERATE">मध्यम</string>
+    <string name="SEVERE">गंभीर</string>
+    <string name="EXTREMELY_SEVERE">अत्यंत गंभीर</string>
+
+    <string name="LOW_RISK">कम जोखिम</string>
+    <string name="MILD_RISK">हल्का जोखिम</string>
+    <string name="SEVERE_RISK">गंभीर जोखिम</string>
+    <string name="NORMAL_RISK">सामान्य जोखिम</string>
+    <string name="EXTREMELY_SEVER_RISK">अत्यंत गंभीर जोखिम</string>
+
+    <string name="LAST_MENSTRUAL_PERIOD">अंतिम मासिक धर्म अवधि (एलएमपी)</string>
+    <string name="YOUR_BABY_IS_DUE_ON_OR_AROUND">आपके बच्चे का जन्म इसी समय या निकटतम समय में होने की संभावना है</string>
+    <string name="DUE_DATE_OBSERVATION">यह आपके शिशु के जन्म की अनुमानित तारीख है। शिशु के जन्म की तारीख कभी भी एकदम सटीक नहीं हो सकती, इसलिए आपकी पूर्ण अवधि की गर्भावस्था <h2><b>37 और 42 सप्ताह के बीच कहीं भी हो सकती है।</b></h2></string>
+    <string name="LABEL_MENSTRUAL_PERIOD_LMP">अपने अंतिम मासिक धर्म के पहले दिन की तारीख दर्ज करें (एलएमपी)</string>
+    <string name="THE_DEPRESSION_SCALE_ASSESSES">डिप्रेशन का पैमाना आकलन करता है</string>
+    <string name="THE_ANXIETY_SCALE_ASSESSES">चिंता का पैमाना आकलन करता है</string>
+    <string name="THE_STRESS_SCALE_ASSESSES">तनाव का पैमाना आकलन करता है</string>
+    <string name="YOU_HAVE_FOLLOWING_NON_MODERATE_RISK">आपके पास निम्न गैर मध्यम जोखिम है</string>
+
+    <string name="TO_MANAGE_YOUR_EMOTIONAL_HEALTH">अपने भावनात्मक स्वास्थ्य का प्रबंधन करने के लिए</string>
+    <string name="HEALTH_CONDITION_CONTENT">यदि आपके पास इनमें से कोई भी जोखिम कारक है, तो आपका जोखिम टूल में दिखाए गए जोखिम से अधिक हो सकता है</string>
+    <string name="HEALTH_CONDITION_QUESTION">क्या आपको इनमें से कोई स्वास्थ्य समस्या है?</string>
+    <string name="HEALTH_CONDITION_RESULT">आपने चुना है</string>
+    <string name="STRESS_SUMMERY_OBSERVATION">DASS-21 का उपयोग फेस-टू-फेस क्लिनिकल इंटरव्यू के स्थान पर नहीं किया जाना चाहिए। यदि आपका भावनात्मक संकट असहनीय है या सुधार नहीं हो रहा है, तो आपको अपने डॉक्टर से संपर्क करना चाहिए। अवसाद, चिंता और तनाव की भावनात्मक स्थिति को मापने के लिए अवसाद (डिप्रेशन), चिंता और तनाव स्केल - 21 आइटम (DASS-21) के तीन सेल्फ-रिपोर्ट स्केल के सेट को डिजाइन किया गया है। तीनों DASS-21 स्केल के प्रत्येक स्केल में 7 आइटम शामिल हैं, जो समान सामग्री वाले उप-स्तरों (सबस्केल) में बंटे हुए हैं।</string>
+    <string name="HYPERTENSION_SUMMARY_TEXT">उच्च रक्तचाप (हाइपरटेंशन) कैलकुलेटर आपको स्वास्थ्य संबंधी ओवरऑल आइडिया के साथ यह संकेत देता है कि किस तरह जीवनशैली संबंधित कारक आपके रक्तचाप (ब्लडप्रेशर) को प्रभावित कर सकते हैं। जोखिम % की गणना आपके आयु समूह व लिंग (जेंडर) के मापदंडों के आधार पर की गई है।</string>
+    <string name="HEART_AGE_SUMMARY_TEXT">हृदय आयु और जोखिम आपको आपके हृदय स्वास्थ्य संबंधी ओवरऑल आइडिया के साथ यह सामान्य संकेत देता है कि किस तरह जीवनशैली संबंधित कारक आपके दिल के स्वास्थ्य को प्रभावित कर सकते हैं।</string>
+
+    <string name="ITS_TIME_TO_MAKE_SOME_CHANGES">अब समय है नए बदलाव का!</string>
+    <string name="PLEASE_INPUT_VALUE_BETWEEN">कृपया के बीच वैल्यू इनपुट करें</string>
+    <string name="PLEASE_FILL">कृपया भरें</string>
+    <string name="PLEASE_FILL_HEIGHT_DETAILS">कृपया हाइट का विवरण भरें</string>
+    <string name="PLEASE_FILL_WEIGHT_DETAILS">कृपया वजन का विवरण भरें</string>
+    <string name="ENTER_YOUR">अपना भरें</string>
+    <string name="PARAMETER_VALUE">पैरामीटर वैल्यू</string>
+    <string name="SHOULD_BE_BETWEEN">के बीच होना चाहिए</string>
+    <string name="PLEASE_PROVIDE_AGE">कृपया आयु प्रदान करें</string>
+    <string name="ENTER_AGE_BETWEEN_18_AND_74_YEARS">आयु 18 से 74 वर्ष के बीच दर्ज करें</string>
+
+    <string name="YOU_ARE_DOING_GOOD_IN">में आप बेहतर कर रहे हैं</string>
+    <string name="YOU_NEED_TO_IMPROVE_ON">पर आपको सुधार की जरूरत है</string>
+    <string name="YOU_HAVE_FOLLOWING_ON_MODIFIABLE_RISK">आपके पास निम्नलिखित गैर-परिवर्तनीय जोखिम हैं</string>
+
+    <string name="NO_NOMOPHOBIC">नोमोफोबिया नहीं</string>
+    <string name="MILD_NOMOPHOBIC">हल्का नोमोफोबिया</string>
+    <string name="MODERATE_NOMOPHOBIC">मध्यम नोमोफोबिया</string>
+    <string name="SEVERE_NOMOPHOBIC">गंभीर नोमोफोबिया</string>
+
+    <string name="NOT_AT_ALL_NOMOPHOBIC">नोमोफोबिया बिल्कुल भी नहीं</string>
+    <string name="MILD_NOMOPHOBIA">हल्का नोमोफोबिया</string>
+    <string name="MODERATE_NOMOPHOBIA">मध्यम नोमोफोबिया</string>
+    <string name="SEVERE_NOMOPHOBIA">गंभीर नोमोफोबिया</string>
+
+    <string name="HAVE_NO_NOMOPHOBIA">नोमोफोबिया नहीं</string>
+    <string name="HAVE_MILD_NOMOPHOBIA">हल्का नोमोफोबिया</string>
+    <string name="HAVE_MODERATE_NOMOPHOBIA">मध्यम नोमोफोबिया</string>
+    <string name="HAVE_SEVERE_NOMOPHOBIA">गंभीर नोमोफोबिया</string>
+
+    <string name="DESC_MILD_NOMOPHOBIC">आपको हल्का नोमोफोबिया है। जब आप अपना फोन एक दिन के लिए घर पर भूल जाते हैं या बिना वाई-फाई के कहीं फंस जाते हैं, तो आपको थोड़ी चिंता होती है, लेकिन चिंता इतनी अधिक नहीं होती है।</string>
+    <string name="DESC_MODERATE_NOMOPHOBIC">आपको मध्यम नोमोफोबिया है। आप अपने डिवाइस से काफी जुड़े हुए हैं। जब आप सड़क पर चल रहे होते हैं या किसी दोस्त से बात कर रहे होते हैं, तो आप अक्सर अपडेट की जांच करते रहते हैं और जब आपका संपर्क टूट जाता है, तो आप अक्सर चिंतित महसूस करते हैं। मतलब आप आदी बनने की कगार पर हैं। आपके लिए यह अच्छा होगा कि आप अपने स्मार्टफोन को खुद से थोड़ा दूर रखें। कभी-कभी जब आप अपने फोन से दूरी बनाते हैं, तो इसके लिए थोड़ा बुरा महसूस करते हैं। आपको अपने परिवार, बच्चों आदि के साथ रहने से आपको खुशी मिलती है। इसका मतलब हुआ आपको बस सावधान रहने की जरूरत है!</string>
+    <string name="DESC_SEVERE_NOMOPHOBIC">आपको गंभीर नोमोफोबिया है। आप बड़ी मुश्किल से 60 सेकंड तक अपना फोन चेक किए बिना रह सकते हैं। यह वह चीज है, जिसकी शुरुआत सुबह चेक करने और रात आखिरी चेक के बाद होती है और यही चीज पूरे दिन आपकी अधिकांश गतिविधियों पर हावी रहती है। आप निश्चित रूप से नोमोफोबिया से पीड़ित हैं और यदि आप अपना फोन घर पर भूल जाते हैं या खो जाता है तो ऐसे में भगवान दूसरों की मदद करें! आप अपने फोन के इतने आदी हो जाते हैं कि कभी-कभी आप सोचते हैं कि काश इस फोन को अपने हाथ से चिपका सकते तो कितना अच्छा होता!</string>
+
+    <string name="SELECT_YOUR_AGE_GROUP">अपना आयु समूह चुनें</string>
+    <string name="PLEASE_ENTER_WAIST_SIZE_BETWEEN">कृपया के बीच कमर की साइज दर्ज करें</string>
+
+    <!--Hypertension Questions-->
+    <string name="ARE_YOU_UNDER_MEDICATION_FOR_HIGH_BLOOD_PRESSURE">क्या आप उच्च रक्तचाप (हाई ब्लड प्रेशर) के लिए दवा ले रहे हैं?</string>
+    <string name="MEDICATION_FOR_BP">बीपी की दवा</string>
+    <string name="HAVE_YOU_EVER_SMOKED">क्या आपने कभी धूम्रपान किया है?</string>
+    <string name="ARE_YOU_DIABETIC">क्या आपको मधुमेह (डायबिटीज) हैं?</string>
+    <!--Hypertension Questions-->
+
+    <!--Diabetes Questions-->
+    <string name="QUES_DIABETES_1">क्या आप एशियाई मूल के हैं?</string>
+    <string name="QUES_DIABETES_2">क्या आपके माता-पिता या आपके भाई-बहन में से किसी ने कभी मधुमेह का निदान कराया है?</string>
+    <string name="QUES_DIABETES_3">क्या कभी स्वास्थ्य जांच/बीमारी/गर्भावस्था के दौरान आपमें हाई ब्लड शुगर पाया गया है?</string>
+    <string name="QUES_DIABETES_4">क्या आप वर्तमान में हाई ब्लड शुगर के लिए दवा ले रहे हैं?</string>
+    <string name="QUES_DIABETES_5">क्या आप वर्तमान में दैनिक आधार पर सिगरेट या कोई अन्य तम्बाकू उत्पाद का सेवन करते हैं?</string>
+    <string name="QUES_DIABETES_6">क्या आप दिन में 2 से 3 बार फल और सब्जियों का सेवन करते हैं?</string>
+    <string name="QUES_DIABETES_7">क्या आप सप्ताह में औसतन 3 घंटे से अधिक व्यायाम करते हैं?</string>
+    <!--Diabetes Questions-->
+
+    <!--Stress & Anxiety Questions-->
+    <string name="QUES_STRESS_ANXIETY_1">मुझे लगता था कि जीवन निरर्थक है।</string>
+    <string name="QUES_STRESS_ANXIETY_2">मुझे महसूस होता था कि एक मनुष्य के रूप में मेरी कोई कीमत नहीं है।</string>
+    <string name="QUES_STRESS_ANXIETY_3">मैं किसी भी चीज से उत्साहित नहीं हो पा रहा था।</string>
+    <string name="QUES_STRESS_ANXIETY_4">मैं निराश और दुखी महसूस कर रहा था।</string>
+    <string name="QUES_STRESS_ANXIETY_5">मुझे लगा कि मेरे पास हासिल करने के लिए कोई वजह नहीं बची है</string>
+    <string name="QUES_STRESS_ANXIETY_6">इन चीजों को शुरू करने के लिए शुरुआत में बहुत कठिनाई महसूस हुई</string>
+    <string name="QUES_STRESS_ANXIETY_7">मुझे बिल्कुल भी किसी प्रकार की सकारात्मक अनुभूति महसूस नहीं हो पा रही थी</string>
+    <string name="QUES_STRESS_ANXIETY_8">कोई अच्छी वजह न होने के कारण मैं डर रहा था</string>
+    <string name="QUES_STRESS_ANXIETY_9">शारीरिक मेहनत की कमी में मैं अपने दिल की गतिविधि के बारे में जानता था (उदाहरण के लिए हृदय गति में वृद्धि की भावना, दिल की धड़कन थमना)</string>
+    <string name="QUES_STRESS_ANXIETY_10">मुझे लगा कि जैसे मैं पूरी तरह से घबरा गया हूं</string>
+    <string name="QUES_STRESS_ANXIETY_11">मैं उन विपरीत परिस्थितियों से चिंतित था, जो मेरे घबराने और खुद को मूर्ख बनाने की वजह थी</string>
+    <string name="QUES_STRESS_ANXIETY_12">मैंने अपने हाथों में कंपन का अनुभव किया</string>
+    <string name="QUES_STRESS_ANXIETY_13">सांस लेते समय मुझे कठिनाई महसूस हुई (उदाहरण के लिए - तेजी-तेजी से सांस लेना, शारीरिक मेहनत की कमी के कारण सांस फूलना)</string>
+    <string name="QUES_STRESS_ANXIETY_14">मैंने अपना मुंह सूखने का अहसास किया था</string>
+    <string name="QUES_STRESS_ANXIETY_15">मैंने बेहद चिड़चिड़ापन महसूस किया</string>
+    <string name="QUES_STRESS_ANXIETY_16">मैं उस हर चीज के प्रति असहिष्णु था, जो मुझे वह चीज करने से रोकती थी, जो मुझे बहुत पसंद था</string>
+    <string name="QUES_STRESS_ANXIETY_17">मैं ठीक से आराम नहीं कर पा रहा था</string>
+    <string name="QUES_STRESS_ANXIETY_18">मैंने महसूस किया कि मैं उत्तेजित हो रहा हूं</string>
+    <string name="QUES_STRESS_ANXIETY_19">मुझे लगा कि मैं नकारात्मक ऊर्जा से पूरी तरह घिरा हुआ हूं</string>
+    <string name="QUES_STRESS_ANXIETY_20">विपरीत परिस्थितियों में मैं जरूरत से ज्यादा ओवर-रिएक्ट करता हूं</string>
+    <string name="QUES_STRESS_ANXIETY_21">इसे शांत करना मेरे लिए कठिन था</string>
+    <!--Stress & Anxiety Questions-->
+
+    <!--Smart Phone Addiction Questions-->
+    <string name="QUES_SMART_PHONE_ADDICTION_1">क्या आपके दिमाग में अक्सर यह चलता रहता है कि आपका स्मार्टफोन बज/कंपन कर रहा है, जबकि ऐसा कुछ नहीं होता?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_2">जैसे ही आपके फोन की घंटी बजती है, तो क्या आपको उसे देखने की तीव्र इच्छा महसूस होती है?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_3">क्या आप सुबह सोकर उठते ही या सोने से पहले अपना फोन देखते हैं?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_4">क्या आप अपने स्मार्टफोन को तकिए के नीचे या अपने बिस्तर के बगल में रखकर सोते हैं?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_5">क्या आप ट्रैफिक सिग्नल पर इंतजार करते समय टेक्स्ट, ई-मेल/वेब सर्फ करते हैं?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_6">क्या आप लगातार अपना फोन चेक करते रहते हैं कि डेटा सिग्नल या वाई-फाई है कि नहीं?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_7">यदि आपका फोन काम नहीं कर रहा है या आपने उसे कहीं गलती से छोड़ दिया है, तो उस समय क्या आप बहुत अधिक चिंता महसूस करते हैं?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_8">क्या आप खुद को हर समय गूगल/ई-कॉमर्स साइटों पर अपना समय बर्बाद करते हुए पाते हैं?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_9">क्या आप अपने आसपास के लोगों से ज्यादा अपना समय संदेश भेजने, ट्वीट या ईमेल करने में खर्च करते हैं?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_10">क्या भोजन करते समय भी आपका सेल-फोन हमेशा आपके साथ होता है?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_11">जब आपका स्मार्टफोन कई घंटों तक नहीं बजता, तो क्या आप अकेलापन महसूस करते हैं?</string>
+    <!--Smart Phone Addiction Questions-->
+
+    <string name="RISK">जोखिम</string>
+    <string name="SCALE_ASSETS">स्केल एसेट्स</string>
+    <string name="DEPRESSION_SCALE_ASSETS">अवसाद (डिप्रेशन) स्केल एसेट्स</string>
+    <string name="ANXIETY_SCALE_ASSETS">चिंता (एंग्जायटी) स्केल एसेट्स</string>
+    <string name="STRESS_SCALE_ASSETS">तनाव (स्ट्रेस) स्केल एसेट्स</string>
+    <string name="START_QUIZ">प्रश्नोत्तरी शुरू करें</string>
+    <string name="NOT_NOW">अभी नहीं</string>
+
+    <string name="DIGITAL_EYE_STRAIN">डिजिटल आई स्ट्रेन (आंख ऐंठन)</string>
+    <string name="NECK_PROBLEMS">गर्दन समस्या</string>
+    <string name="INCREASED_ILLNESSES_DUE_TO_GERMS">कीटाणुओं के संग बढ़ें बीमारियां</string>
+    <string name="SLEEP_DISTURBANCES">नींद संबंधी विकार</string>
+    <string name="OBSESSIVE_COMPULSIVE_DISORDER">जुनूनी-बाध्यकारी विकार</string>
+    <string name="RELATIONSHIP_PROBLEMS">रिश्ता संबंधी समस्या</string>
+
+    <!--    <string name="PHYSICAL_EFFECTS_OF_ADDICTION">Physical Effects of Addiction</string>
+        <string name="PHYSICAL_EFFECTS_OF_ADDICTION_DESC">Over use of your cell phone or smartphone can result in a number of different physical problems that may cause permanent damage or be difficult to treat, including:</string>
+        <string name="PSYCHOLOGICAL_EFFECTS_OF_CELL_PHONE_ADDICTION">Psychological Effects of Cell Phone Addiction</string>
+
+        <string name="SUB_1_DIGITAL_EYE_STRAIN">Eyes begin to burn and itch.</string>
+        <string name="SUB_2_DIGITAL_EYE_STRAIN">Blurred vision.</string>
+        <string name="SUB_3_DIGITAL_EYE_STRAIN">Eye fatigue.</string>
+        <string name="SUB_4_DIGITAL_EYE_STRAIN">Digital Eye Strain can cause headaches.</string>
+        <string name="SUB_5_DIGITAL_EYE_STRAIN">The pain and discomfort associated with viewing a digital screen for over 2 hours.</string>
+
+        <string name="SUB_1_NECK_PROBLEMS">Also known as &quot;text neck,&quot; which refers to neck pain resulting from looking down at cell phone or tablet for too long.</string>
+        <string name="SUB_1_INCREASED_ILLNESSES_DUE_TO_GERMS">1 in 6 cell phones has fecal matter on it.</string>
+        <string name="SUB_2_INCREASED_ILLNESSES_DUE_TO_GERMS">E. coli bacteria, which can cause fever, vomiting, and diarrhea, is found on many phones.</string>
+        <string name="SUB_3_INCREASED_ILLNESSES_DUE_TO_GERMS">Phones have been found to be contaminated with MRSA.</string>
+        <string name="SUB_31_INCREASED_ILLNESSES_DUE_TO_GERMS">Causes painful abscesses.</string>
+        <string name="SUB_32_INCREASED_ILLNESSES_DUE_TO_GERMS">Life-threatening infections in bones, joints, surgical wounds, bloodstream, heart valves, and lungs.</string>
+        <string name="SUB_4_INCREASED_ILLNESSES_DUE_TO_GERMS">Car accidents.</string>
+        <string name="SUB_41_INCREASED_ILLNESSES_DUE_TO_GERMS">Many people believe that they can multitask and use their phones while driving, but this causes significant impairment and puts the driver and others on the road in danger.</string>
+        <string name="SUB_42_INCREASED_ILLNESSES_DUE_TO_GERMS">Research has revealed that texting and driving can be just as dangerous as drinking and driving.</string>
+        <string name="SUB_5_INCREASED_ILLNESSES_DUE_TO_GERMS">Male infertility.</string>
+        <string name="SUB_51_INCREASED_ILLNESSES_DUE_TO_GERMS">Preliminary studies have revealed that cell phone radiation may decrease sperm count, sperm motility and viability.</string>
+
+        <string name="SUB_1_SLEEP_DISTURBANCES">Cell phone addiction has been linked to an increase in sleep disorders and fatigue in users.</string>
+        <string name="SUB_2_SLEEP_DISTURBANCES">Using your cell phone before bed increases the likelihood of insomnia.</string>
+        <string name="SUB_21_SLEEP_DISTURBANCES">Bright light may decrease sleep quality.</string>
+        <string name="SUB_22_SLEEP_DISTURBANCES">Smartphone use could increase amount of time it takes to fall asleep.</string>
+        <string name="SUB_23_SLEEP_DISTURBANCES">Light emitted from the cell phone may activate the brain.</string>
+
+        <string name="SUB_1_RELATIONSHIP_PROBLEMS">Offline relationships may suffer as a result of neglect in favor of excessive cell phone and social media use.</string>
+
+        <string name="SUB_1_ANXIETY">Research has found that college students who use their cell phones the most are more likely to feel anxious during downtime.</string>-->
+    <!--End Tool Calculator Module-->
+
+    <!--Start Tracker Parameter Module -->
+    <string name="TITLE_TRACK_HEALTH_PARAMETERS">वाइटल पैरामीटर ट्रैक करें</string>
+    <string name="TITLE_SELECT_PARAMETERS">पैरामीटर्स चुनें</string>
+    <string name="TITLE_UPDATE_PARAMETERS">पैरामीटर अपडेट करें</string>
+    <string name="TITLE_PARAMETER_HISTORY">पैरामीटर इतिहास</string>
+    <string name="TITLE_COMPLETE_HISTORY">संपूर्ण इतिहास</string>
+
+    <string name="TRACK_HEALTH_PARAMETERS">स्वास्थ्य पैरामीटर को ट्रैक करें</string>
+    <string name="SELECT_PARAMETERS">पैरामीटर्स चुनें</string>
+    <string name="UPDATE_PARAMETER">पैरामीटर अपडेट करें</string>
+
+    <string name="SELECT_PARAMETERS_DESC">ट्रैक करने के लिए प्रमुख स्वास्थ्य पैरामीटर का चयन करें</string>
+    <string name="UPDATE_PARAMETER_DESC">रुझान देखने के लिए पैरामीटर अपडेट करें</string>
+    <string name="DASHBOARD_DESC">अपने स्वास्थ्य डेटा को त्वरित देखें</string>
+    <string name="HISTORY_DESC">अपने मौजूदा डेटा की जांच करें</string>
+
+    <string name="BLOOD_PRESSURE2">ब्लड प्रेशर\n(रक्तचाप)</string>
+    <string name="BLOOD_SUGAR_PROFILE">ब्लड शुगर प्रोफाइल</string>
+    <string name="HEMOGRAM_PROFILE">हेमोग्राम प्रोफाइल</string>
+    <string name="KIDNEY_PROFILE">किडनी प्रोफाइल</string>
+    <string name="LIPID_PROFILE">लिपिड प्रोफाइल</string>
+    <string name="LIVER_PROFILE">लिवर प्रोफाइल</string>
+    <string name="THYROID_PROFILE">थायराइड प्रोफाइल</string>
+    <string name="URINE_PROFILE">यूरिन प्रोफाइल</string>
+
+    <string name="WHR">डब्ल्यूएचआर</string>
+    <string name="BLOOD_SUGAR">ब्लड शुगर</string>
+    <string name="CHOLESTEROL">कोलेस्ट्रॉल</string>
+    <string name="HEMOGLOBIN">हीमोग्लोबिन</string>
+    <string name="CREATININE">क्रिएटिनिन</string>
+    <string name="TOT_BILIRUBIN">कुल बिलीरुबिन</string>
+    <string name="TSH">TSH</string>
+    <string name="HEMOGRAM">हेमोग्राम</string>
+    <string name="KIDNEY">किडनी</string>
+    <string name="LIPID">लिपिड</string>
+    <string name="LIVER">लिवर</string>
+    <string name="THYROID">थायराइड</string>
+    <string name="URINE">पेशाब (यूरिन)</string>
+    <string name="PULSE">नाड़ी (पल्स)</string>
+
+    <string name="RECORD_DATE">रिकॉर्ड तिथि</string>
+    <string name="ADD_EDIT">एड/एडिट</string>
+    <string name="LAST_CHECKED_ON">अंतिम रिकॉर्ड तिथि</string>
+    <string name="SYSTOLIC_DIASTOLIC">सिस्टोलिक/डायस्टोलिक</string>
+
+    <string name="MSG_SELECT_PARAM_TO_TRACK">कृपया ट्रैक करने के लिए कम से कम एक पैरामीटर चुनें</string>
+    <string name="MSG_SELECT_PROFILE_TO_PROCEED">कृपया आगे बढ़ने के लिए एक प्रोफाइल चुनें</string>
+    <string name="MSG_ENTER_AT_LEAST_ONE_VALUE_FOR">के लिए कृपया कम से कम एक वैल्यू दर्ज करें</string>
+    <string name="MSG_PARAMETER_IS_UPDATED">पैरामीटर सफलतापूर्वक अपडेट हुआ</string>
+    <string name="PLEASE_ENTER_ALL_BMI_PROFILE_FIELDS">कृपया सभी बीएमआई प्रोफाइल फील्ड दर्ज करें</string>
+    <string name="PLEASE_ENTER_ALL_WHR_PROFILE_FIELDS">कृपया सभी डब्ल्यूएचआर प्रोफाइल फील्ड दर्ज करें</string>
+
+    <string name="CURRENT_VALUES">वर्तमान वैल्यू</string>
+    <string name="UPDATED">अपडेट पूरा</string>
+    <string name="YOUR_CURRENT_BMI_VALUE_IS">आपका वर्तमान बीएमआई वैल्यू है</string>
+    <string name="YOUR_CURRENT_WHR_VALUE_IS">आपका वर्तमान डब्ल्यूएचआर वैल्यू है</string>
+    <string name="PARAMETER_UPDATED">पैरामीटर सफलतापूर्वक अपडेट हुआ</string>
+    <!--End Tracker Parameter Module -->
+
+    <!--Start Water Tracker Module -->
+    <string name="TITLE_WATER_TRACKER">हाइड्रेशन ट्रैकर</string>
+
+    <string name="TITLE_CALCULATE_INTAKE">रोजाना जल लक्ष्य की गणना करें</string>
+    <string name="DESC_CALCULATE_INTAKE">अपने दैनिक लक्ष्य को निर्धारित करने के लिए अपने दैनिक जल सेवन की गणना करें या एडिट करें</string>
+
+    <string name="TITLE_LOG_TODAY_INTAKE">आज का जल सेवन लॉग करें</string>
+    <string name="DESC_LOG_TODAY_INTAKE">दिन के अलग-अलग समय के लिए अपने जल खपत की मात्रा को लॉग करें</string>
+
+    <string name="TITLE_TRACK_INTAKE">जल सेवन को ट्रैक करें </string>
+    <string name="DESC_TRACK_INTAKE">संपूर्ण पुराने विवरण के साथ अपने वर्तमान और पिछले जल सेवन को ट्रैक करें </string>
+
+    <string name="TODAYS_WATER_CONSUMPTION">आज की जल खपत</string>
+    <string name="CALCULATE_EDIT_INTAKE_TARGET">दैनिक जल सेवन लक्ष्य की गणना/संपादित करें</string>
+    <string name="TRACK_YOUR_WATER_INTAKE">अपने जल सेवन को ट्रैक करें </string>
+
+    <string name="WATER">जल </string>
+    <string name="COFFEE">कॉफी</string>
+    <string name="TEA">चाय</string>
+    <string name="MILK">दूध</string>
+    <string name="JUICE">जूस</string>
+    <string name="ENERGY_DRINK">एनर्जी ड्रिंक </string>
+
+    <string name="CURRENT_TARGET">वर्तमान टारगेट </string>
+    <string name="DEFAULT_TARGET">डिफ़ॉल्ट टारगेट </string>
+    <string name="CUSTOM_TARGET">कस्टम टारगेट </string>
+    <string name="SELECT_YOUR_WEIGHT">अपना वजन चुनें</string>
+    <string name="DO_YOU_EXERCISE">क्या आप व्यायाम करते हैं?</string>
+    <string name="ENTER_DURATION_OF_EXERCISE_IN_MINUTES">मिनटों में व्यायाम की अवधि दर्ज करें</string>
+    <string name="ENABLE_NOTIFICATION">नोटिफिकेशन सक्षम करें?</string>
+    <string name="YOUR_DAILY_WATER_INTAKE">आपका दैनिक जल सेवन</string>
+    <string name="SHOULD_BE">होना चाहिए</string>
+    <string name="YOU_HAVE_SET_DAILY_WATER_INTAKE">आपने दैनिक जल सेवन निर्धारित किया है</string>
+    <string name="TARGET_TO">का लक्ष्य </string>
+    <string name="CUSTOM_WATER_INTAKE">कस्टम जल सेवन</string>
+    <string name="ENTER_WATER_INTAKE_QUANTITY_SUGGESTED_BY_YOUR_PHYSICIAN">अपने चिकित्सक द्वारा सुझाई गई पानी सेवन की मात्रा दर्ज करें</string>
+    <string name="SET_CUSTOM_TARGET">कस्टम लक्ष्य निर्धारित करें</string>
+
+    <string name="LOG_YOUR_INTAKE">अपना सेवन लॉग करें</string>
+    <string name="ENTER_YOUR_WATER_INTAKE">अपना जल सेवन दर्ज करें</string>
+
+    <string name="TARGET">टारगेट </string>
+    <string name="ACHIEVED">अचीव्ड </string>
+
+    <string name="WTD">सप्ताह तक \ तिथि </string>
+    <string name="ACHIEVEMENT_THIS_WEEK">इस सप्ताह की उपलब्धि</string>
+    <string name="WITD">आज तक जल सेवन</string>
+    <string name="MAX_STREAK">अधिकतम \ दौर </string>
+    <string name="CURRENT_STREAK">वर्तमान \दौर </string>
+
+    <string name="WEEK_START_DAY">सप्ताह आरंभ दिवस (सोमवार)</string>
+    <string name="WTD_DESC">यह आपके साप्ताहिक लक्ष्य की तुलना में इस सप्ताह यानी आज तक खपत की गई पानी की मात्रा है</string>
+    <string name="ACHIEVEMENT_THIS_WEEK_DESC">यह वर्तमान सप्ताह के 7 दिनों के लक्ष्य की तुलना में जल लॉग उपलब्धि की मात्रा है</string>
+    <string name="WITD_DESC">जब से आपने अपने दैनिक जल सेवन को लॉग करना शुरू किया है, तब से आपका कुल जल सेवन ऐप में लॉग इन हो गया है</string>
+    <string name="MAX_STREAK_DESC">यह निरंतर उन दिनों की अधिकतम संख्या है (बिना किसी ब्रेक के) जब आपने अपने जल सेवन के लक्ष्यों को पूरा किया और ऐप में लगातार लॉग इन किया</string>
+    <string name="CURRENT_STREAK_DESC">यह दिन के जल सेवन लक्ष्य (आज छोड़कर) को पूरा करने की वर्तमान लगातार श्रृंखला है, जितना अधिक आप लगातार अपने जल सेवन को लॉग करेंगे, स्ट्रीक उतनी ही ऊंची होगी</string>
+
+    <string name="PLEASE_SET_WATER_INTAKE_TARGET">कृपया पहले दैनिक जल सेवन लक्ष्य निर्धारित करें</string>
+    <string name="PLEASE_ENTER_EXERCISE_DURATION">कृपया व्यायाम की अवधि दर्ज करें</string>
+    <string name="PLEASE_ENTER_VALID_DURATION_BETWEEN">कृपया के बीच की वैध अवधि दर्ज करें</string>
+    <string name="PLEASE_ENTER_WATER_INTAKE_QUANTITY">कृपया जल सेवन की मात्रा दर्ज करें</string>
+    <string name="PLEASE_ENTER_VALID_WATER_INTAKE_QUANTITY_BETWEEN">कृपया के बीच वैध जल सेवन मात्रा दर्ज करें</string>
+    <string name="INTAKE_ADDED_SUCCESSFULLY">सेवन सफलतापूर्वक जोड़ा गया</string>
+    <!--End Water Tracker Module -->
+    <string name="FOR_DETAILED_INFORMATION_ABOUT_YOUR_POLICY_PLEASE_CLICK_HERE">किसी भी सेवाओं के लिए या अपनी एसयूडी लाइफ पॉलिसी के बारे में अधिक जानने के लिए, नीचे क्लिक करें :</string>
+    <!--    <string name="for_detailed_information_about_your_policy_please_click_here">अपनी एसयूडी लाइफ पॉलिसी के बारे में विस्तृत जानकारी के लिए कृपया यहां क्लिक करें।</string>-->
+    <string name="CUSTOMER_PORTAL">ग्राहक पोर्टल</string>
+
+</resources>

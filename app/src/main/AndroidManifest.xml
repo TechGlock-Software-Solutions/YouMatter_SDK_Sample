@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission
+        android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+
+    <queries>
+        <!-- Explicit apps you know in advance about: -->
+        <package android:name="com.whatsapp" />
+    </queries>
+
+
+    <application>
+
+
+        <activity
+            android:name="com.techglock.health.app.MainAppActivity"
+            android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="youmatter.onelink.me"
+                    android:pathPrefix="/UtYy"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mainactivity"
+                    android:scheme="youmatterapp" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- <service
+             android:name="com.caressa.allizhealth.app.receiver.FCMMessagingService"
+             android:exported="true">
+             <intent-filter>
+                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
+             </intent-filter>
+         </service>-->
+
+
+        <!--    <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/notification_logo" />
+
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/secondary_red" />-->
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
+
+        <service
+            android:name="com.techglock.health.app.common.syncadapter.SyncService"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+
+        <receiver
+            android:name="com.techglock.health.app.receiver.AppNavigationBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="HRA" />
+                <action android:name="FAMILY_HRA" />
+                <action android:name="STEPS" />
+                <action android:name="BLOG" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="CLEVERTAP_ACCOUNT_ID"
+            android:value="@string/CLEVERTAP_ACCOUNT_ID" />
+        <meta-data
+            android:name="CLEVERTAP_TOKEN"
+            android:value="@string/CLEVERTAP_TOKEN" />
+        <meta-data
+            android:name="CLEVERTAP_REGION"
+            android:value="eu1" />
+
+
+        <!--   <service
+               android:name="com.caressa.allizhealth.app.common.syncadapter.SyncService"
+               android:exported="true"
+               android:process=":sync">
+               <intent-filter>
+                   <action android:name="android.content.SyncAdapter"/>
+               </intent-filter>
+               <meta-data android:name="android.content.SyncAdapter"
+                   android:resource="@xml/syncadapter" />
+           </service>-->
+
+        <!--Start Blog Module -->
+        <activity
+            android:name="com.techglock.health.app.blogs.BlogsActivity"
+            android:exported="true" />
+
+        <!-- <service
+             android:name="com.caressa.allizhealth.app.common.syncadapter.SyncService"
+             android:exported="true"
+             android:process=":sync">
+             <intent-filter>
+                 <action android:name="android.content.SyncAdapter"/>
+             </intent-filter>
+             <meta-data android:name="android.content.SyncAdapter"
+                 android:resource="@xml/syncadapter" />
+         </service>-->
+        <!--End Blog Module-->
+
+        <!--Start Fitness Tracker -->
+        <activity
+            android:name="com.techglock.health.app.fitness_tracker.ui.FitnessDataActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.techglock.health.app.fitness_tracker.FitnessHomeActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <receiver
+            android:name="com.techglock.health.app.fitness_tracker.receiver.FitnessBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ClearFitnessData" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <service
+             android:name="com.caressa.allizhealth.app.common.syncadapter.SyncService"
+             android:exported="true"
+             android:process=":sync">
+             <intent-filter>
+                 <action android:name="android.content.SyncAdapter"/>
+             </intent-filter>
+             <meta-data android:name="android.content.SyncAdapter"
+                 android:resource="@xml/syncadapter" />
+         </service>-->
+
+        <!--End Fitness Tracker -->
+
+        <!--Start Home Module -->
+        <activity
+            android:name="com.techglock.health.app.home.ui.nimeya.NimeyaActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.techglock.health.app.home.ui.WebViews.GeneralWebNotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.WebViews.LeadershipExperincesActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.nimeya.NimeyaWebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.WebViews.SaltWebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.WebViews.FeedUpdateActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.techglock.health.app.home.ui.aktivo.AktivoPermissionsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.sudLifePolicy.SudPolicyAuthenticationActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.sudLifePolicy.SudLifePolicyActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.wellfie.BmiVitalsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.WebViews.AmahaWebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.wellfie.WellfieResultActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.wellfie.WellfieActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.TermsConditionActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.LanguageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.ProfileAndFamilyMember.EditFamilyMemberActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.ProfileAndFamilyMember.EditProfileActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.PasswordChangeActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.SettingsActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.BlogDetailActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.WebViews.CommonWebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.ProfileAndFamilyMember.FamilyProfileActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.techglock.health.app.home.ui.HomeMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <!-- <activity
+             android:name="com.yalantis.ucrop.UCropActivity"
+             android:screenOrientation="portrait"
+             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />-->
+        <!--<activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/ImageCropperTheme" />-->
+
+        <!--
+        <activity
+            android:name="com.smitfit.media.lib.ui.feature.main.ui.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SmithFitMediaLibraryCustom" />-->
+
+        <!--<service
+            android:name="com.caressa.allizhealth.app.common.syncadapter.SyncService"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>-->
+
+        <!--End Home Module -->
+
+        <!--Start Hra Module -->
+        <activity
+            android:name="com.techglock.health.app.hra.ui.HraInfoActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.techglock.health.app.hra.HraHomeActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.techglock.health.app.hra.ui.HraQuestionsActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.techglock.health.app.hra.ui.HraSummaryActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- <service
+             android:name="com.caressa.allizhealth.app.common.syncadapter.SyncService"
+             android:exported="true"
+             android:process=":sync">
+             <intent-filter>
+                 <action android:name="android.content.SyncAdapter"/>
+             </intent-filter>
+             <meta-data android:name="android.content.SyncAdapter"
+                 android:resource="@xml/syncadapter" />
+         </service>
+ -->
+        <!--End Hra Module -->
+
+        <!--Start Medication Module-->
+        <activity
+            android:name="com.techglock.health.app.medication_tracker.MedicationHomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+        <receiver
+            android:name="com.techglock.health.app.medication_tracker.receiver.MedicineReminderBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="MEDICATION" />
+                <action android:name="Taken" />
+                <action android:name="Skipped" />
+                <action android:name="Data" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <service
+             android:name="com.caressa.allizhealth.app.common.syncadapter.SyncService"
+             android:exported="true"
+             android:process=":sync">
+             <intent-filter>
+                 <action android:name="android.content.SyncAdapter"/>
+             </intent-filter>
+             <meta-data android:name="android.content.SyncAdapter"
+                 android:resource="@xml/syncadapter" />
+         </service>-->
+        <!--End Medication Module-->
+
+
+        <!--Start Record Tracker Module-->
+        <activity
+            android:name="com.techglock.health.app.records_tracker.HealthRecordsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--End Record Tracker Module-->
+
+
+        <!--start Security Module-->
+        <activity
+            android:name="com.techglock.health.app.security.ui.TermsAndPolicyActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.techglock.health.app.security.ui.AppIntroductionActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@string/fb_login_protocol_scheme"
+                    tools:ignore="ManifestResource" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true" />
+        <!--
+<activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.techglock.health.app.security.ui.SecurityActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+        <activity
+            android:name="com.techglock.health.app.security.ui.SplashScreenActivity"
+            android:configChanges="orientation|keyboard"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service
+            android:name="com.techglock.health.app.common.syncadapter.SyncService"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+        <!--end Security Module-->
+
+
+        <!--Start Tool Calculator Module .ToolsCalculatorsHomeActivity-->
+        <activity
+            android:name="com.techglock.health.app.tools_calculators.ToolsCalculatorsHomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--End Tool Calculator Module-->
+
+
+        <activity
+            android:name="com.techglock.health.app.track_parameter.ParameterHomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+
+        <activity
+            android:name="com.techglock.health.app.water_tracker.WaterTrackerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.techglock.health.app.SSOLoaderActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
+

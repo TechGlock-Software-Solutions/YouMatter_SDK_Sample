@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/primary_green</color>
+    <color name="colorSecondary">@color/primary_green</color>
+    <color name="colorAccent">@color/primary_green</color>
+
+    <color name="primary_green">#81A684</color>
+    <color name="secondary_red">#E8988D</color>
+    <color name="primary_light">#e8efe9</color>
+    <color name="secondary_light">#faeae8</color>
+
+    <color name="textViewColor">#000000</color>
+    <color name="shimmerColor">#c8c8c8</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="selection_color">@color/primary_green</color>
+    <color name="tutorial_color">@color/color_meditation</color>
+    <color name="background_color">@color/light_gold</color>
+    <color name="toolbar_bg_color">@color/background_color</color>
+
+    <color name="tab_bg">#f6f6f6</color>
+    <color name="tab_text">#c4c4c4</color>
+
+    <color name="state_error">#ef4545</color>
+    <color name="state_success">#51df79</color>
+
+    <color name="bg_risk_normal">#e7ffee</color>
+    <color name="bg_risk_mild">#f8ffdc</color>
+    <color name="bg_risk_moderate">#fff6e9</color>
+    <color name="bg_risk_severe">#ffeded</color>
+    <color name="bg_risk_extremly_severe">#ffeded</color>
+
+    <color name="risk_normal">#51df79</color>
+    <color name="risk_mild">#b6d33f</color>
+    <color name="risk_moderate_new">#feb64a</color>
+    <color name="risk_severe">#ff0000</color>
+    <color name="risk_extremly_severe">#800000</color>
+
+    <color name="high_risk">@color/vivant_watermelon</color>
+    <color name="moderate_risk">@color/vivant_orange_yellow</color>
+    <color name="healthy_risk">@color/vivant_nasty_green</color>
+    <color name="optimum_risk">#4fa142</color>
+
+    <color name="risk_high">@color/risk_severe</color>
+    <color name="risk_moderate">@color/risk_moderate_new</color>
+    <color name="risk_healthy">@color/risk_mild</color>
+    <color name="risk_optimum">@color/risk_normal</color>
+
+    <color name="color_meditation">#F16495</color>
+    <color name="color_yoga">#80A684</color>
+    <color name="color_exercise">#E89A91</color>
+    <color name="color_house">#2784DA</color>
+    <color name="color_retirement">#80A684</color>
+    <color name="color_human">#E89A91</color>
+
+    <color name="color_english">@color/purple</color>
+    <color name="color_hindi">@color/vivant_watermelon</color>
+
+    <color name="primary_purple_light">#f4f7f4</color>
+
+    <color name="primary_blue">#00ceff</color>
+    <color name="secondary_yellow">#f1c72f</color>
+    <color name="primary_blue_light">#edffff</color>
+    <color name="secondary_yellow_light">#fef9ea</color>
+    <color name="blue_light">#d4ffff</color>
+
+    <color name="dia_ichi_red">#ed1b23</color>
+    <color name="dia_ichi_grey">#aa595A5C</color>
+    <color name="dia_ichi_grey_dark">#595A5C</color>
+    <color name="hlmt_warm_grey">#C7C2BA</color>
+
+    <!-- Vivant Revamp New Colors-->
+    <color name="vivant_toolbar_green_blue">#00c8a0</color>
+    <color name="vivant_title_charcoal_grey">#3f4846</color>
+    <color name="vivant_charcoal_grey">#e13f4846</color>
+    <color name="vivant_marigold">#ffc800</color>
+    <color name="vivant_desc_charcoal_grey_70">#b33f4846</color>
+    <color name="vivant_gunmetal">#616866</color>
+    <color name="vivant_nasty_green">#84c449</color>
+    <color name="vivant_watermelon">#ff485d</color>
+    <color name="vivant_red">#ff181d</color>
+    <color name="vivant_dusty_orange">#e7962b</color>
+    <color name="vivant_green_blue_two">#00c8a1</color>
+    <color name="vivant_pale_grey">#f2f4f7</color>
+    <color name="vivant_bright_sky_blue">#00cfff</color>
+    <color name="vivant_questionsteel_grey">#7b807f</color>
+    <color name="vivant_charcoal_grey_55">#8c3f4846</color>
+    <color name="vivant_orange_yellow">#ffa000</color>
+    <color name="vivant_greyish">#b4b4b4</color>
+    <color name="vivant_pumpkin_orange">#f68b1f</color>
+    <color name="vivant_dark_sky_blue">#31b6ed</color>
+    <color name="vivant_dusky_blue">#466689</color>
+    <color name="vivant_bright_blue">#0273ff</color>
+    <color name="vivant_heather">#9a8cba</color>
+    <color name="vivant_soft_pink">#fcb4c1</color>
+    <color name="vivant_track_param_textcolor">#9a9a9a</color>
+    <color name="vivant_edit_textcolor">#c0c0c0</color>
+    <color name="vivant_icon_warm_grey">#9a9a9a</color>
+    <color name="vivant_teal_blue">#00a49e</color>
+    <color name="vivant_purple">#7a6ba0</color>
+    <color name="vivant_disabled">#E6E6E6</color>
+    <color name="vivant_light_grey">#efefef</color>
+    <!-- Vivant Revamp New Colors-->
+
+    <!--     Vivant Original Colours-->
+    <color name="vivantGreen">#00d2a0</color>
+    <color name="vivantCyan">#00cfff</color>
+    <color name="vivantPurple">#341976</color>
+    <color name="vivantOrange">#ffa000</color>
+    <color name="vivantOrangeDark">#ffa000</color>
+    <color name="vivantBlue">#006eff</color>
+    <color name="vivantYellow">#FED640</color>
+    <color name="vivantTeal">#00a096</color>
+    <color name="vivantPink">#ffafbe</color>
+    <color name="vivantNavy">#326478</color>
+    <color name="vivantDenim">#3A5C81</color>
+    <color name="vivantRed">#ff485d</color>
+    <color name="vivantWhite">#ffffff</color>
+    <color name="vivantLight">#E7E7E7</color>
+    <color name="vivantDarkGrey">#646464</color>
+    <color name="vivantActive">#01a39e</color>
+    <color name="vivantInactive">#c8c8c8</color>
+    <color name="vivantInactiveLight">#44c8c8c8</color>
+    <!--     Vivant Original Colours-->
+
+    <color name="blue">#0273FF</color>
+    <color name="pink">#FCB9C0</color>
+    <color name="red">#FA6F7D</color>
+    <color name="yellow">#FFD600</color>
+    <color name="purple">#A78DE9</color>
+    <color name="green">#62E1B0</color>
+    <color name="navy">#608CBB</color>
+
+    <color name="textViewColorSecondary">#646464</color>
+    <color name="textViewColorBlack">#000</color>
+    <color name="colorBorderUploadAreaURSHP">#d4d3d3</color>
+    <color name="colorBackgroundButtonCrossURSHR">#6b6b6b</color>
+    <color name="colorBorderButtonURSHP">#c9c8c8</color>
+    <color name="colorBorderEditTextFDSHP">#d4d4d4</color>
+    <color name="colorSelectionVRSHR">#ecebeb</color>
+    <color name="greyAlpha">#66afafaf</color>
+    <color name="colorCellBackground">#e5e5e5</color>
+    <color name="security_grey_light">#b4b4b4</color>
+
+    <color name="highlight_blue">#1CB3C8</color>
+    <color name="light_blue">#B0CFEE</color>
+    <color name="brown_gold">#6C5B3E</color>
+    <color name="gold_borwn">#776E5F</color>
+    <color name="dark_gold">#877963</color>
+    <color name="gold">#DFD7C2</color>
+    <color name="light_gold">#F8F7F5</color>
+
+    <color name="almost_black">#3A393B</color>
+    <color name="dark_gray">#757779</color>
+    <color name="mid_gray">#9D9FA1</color>
+    <color name="placeholder">#C7C7C7</color>
+    <color name="light_gray">#E2E2E2</color>
+    <color name="almost_white">#F0F0F0</color>
+    <color name="app_white">#FFFFFF</color>
+    <color name="inactive">#F8F7F5</color>
+
+
+    <!--track parameter Module -->
+    <!--    <color name="colorBorderEditTextFDSHP">#d4d4d4</color>-->
+    <!-- prference Screen  -->
+    <array name="seekbar_colors">
+        <item>#4FC1C1</item>
+        <item>#B4D852</item>
+        <item>#FFD401</item>
+        <item>#FD836E</item>
+    </array>
+
+</resources>

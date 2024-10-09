@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="drawerList">
+        <!--  <item>@string/HOME</item>
+          <item>@string/TRACK</item>
+          <item>@string/YOUR_POLICY</item>
+          <item>@string/PROFILE</item>-->
+        <item>@string/REFER_A_FRIEND</item>
+        <item>@string/HOW_IT_WORKS</item>
+        <item>@string/SETTINGS</item>
+        <item>@string/SELECT_LANGUAGE</item>
+        <item>@string/PRIVACY_POLICY</item>
+        <item>@string/TERMS_AND_CONDITIONS</item>
+        <item>@string/LOGOUT</item>
+
+    </string-array>
+
+
+    <integer-array name="drawerListIcon">
+        <!--<item>@drawable/ic_svg_info</item>
+        <item>@drawable/ic_svg_info</item>
+        <item>@drawable/ic_svg_info</item>
+        <item>@drawable/ic_svg_info</item>-->
+        <item>@drawable/ic_svg_share</item>
+        <item>@drawable/ic_svg_info</item>
+        <item>@drawable/ic_svg_settings</item>
+        <item>@drawable/ic_svg_language</item>
+        <item>@drawable/ic_svg_privacy_policy</item>
+        <item>@drawable/ic_svg_terms_conditions</item>
+        <item>@drawable/ic_svg_logout</item>
+    </integer-array>
+
+
+</resources>

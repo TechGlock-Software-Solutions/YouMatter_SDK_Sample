@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_recent_med"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_4sdp"
+    android:background="@drawable/btn_fill_normal"
+    android:backgroundTint="@color/primary_purple_light"
+    android:padding="@dimen/_4sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_status"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:tint="@color/state_success"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_med_time"
+        app:layout_constraintEnd_toStartOf="@+id/txt_med_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_med_time"
+        app:srcCompat="@drawable/img_circle_check" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_med_time"
+        style="@style/VivantDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:gravity="center_vertical"
+        android:text="---"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_status"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

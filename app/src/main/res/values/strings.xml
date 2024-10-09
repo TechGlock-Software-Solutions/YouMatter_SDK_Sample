@@ -1,0 +1,1810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppsFlyerDevKey" translatable="false">NiEfxvszi8eLYAxYeMiZsH</string>
+
+    <!--    UAT-->
+    <string name="CLEVERTAP_ACCOUNT_ID" translatable="false">TEST-Z46-65R-R96Z</string>
+    <string name="CLEVERTAP_TOKEN" translatable="false">TEST-256-641</string>
+
+    <!--    Prod-->
+<!--    <string name="CLEVERTAP_ACCOUNT_ID" translatable="false">W46-65R-R96Z</string>
+    <string name="CLEVERTAP_TOKEN" translatable="false">256-640</string>-->
+
+
+    <string name="app_name">You Matter</string>
+
+    <string name="SAVE">Save</string>
+    <string name="SUBMIT">Submit</string>
+    <string name="RESTART">Restart</string>
+    <string name="SEND">Send</string>
+    <string name="FINISH">Finish</string>
+    <string name="THATS_ALL">That\'s All</string>
+    <string name="DONE">Done</string>
+    <string name="NEXT">Next</string>
+    <string name="PREVIOUS">Previous</string>
+    <string name="OK">OK</string>
+    <string name="AND">and</string>
+    <string name="OR">Or</string>
+    <string name="CONFIRM">Confirm</string>
+    <string name="PROCEED">Proceed</string>
+    <string name="VERIFY">Verify</string>
+    <string name="SELECT">Select</string>
+    <string name="SELECT_DATE">Select Date</string>
+    <string name="CLOSE">Close</string>
+    <string name="CANCEL">Cancel</string>
+    <string name="EXIT">Exit</string>
+    <string name="BACK">Back</string>
+    <string name="START">Start</string>
+    <string name="STOP">Stop</string>
+    <string name="CONTINUE">Continue</string>
+    <string name="CALCULATE">Calculate</string>
+    <string name="RECALCULATE">Recalculate</string>
+    <string name="DELETE">Delete</string>
+    <string name="UPDATE">Update</string>
+    <string name="EDIT">Edit</string>
+    <string name="DOWNLOAD">Download</string>
+    <string name="DOWNLOADS">Downloads</string>
+    <string name="SHARE">Share</string>
+    <string name="VIEW">View</string>
+    <string name="ADD">Add</string>
+    <string name="TAKE">Take</string>
+    <string name="ENABLED">Enabled</string>
+    <string name="DISABLED">Disabled</string>
+    <string name="ALERT">Alert</string>
+    <string name="VIEW_MORE">View More</string>
+    <string name="REPORT">Report</string>
+    <string name="DESCRIPTION">Description</string>
+    <string name="RECOMMENDATIONS">Recommendations</string>
+    <string name="SKIP">Skip</string>
+    <string name="VALUE">Value</string>
+    <string name="OBSERVATION">Observation</string>
+    <string name="REFRESH">Refresh</string>
+    <string name="CATEGORY">Category</string>
+    <string name="DOSE">Dose</string>
+    <string name="TIME">Time</string>
+    <string name="SEND_OTP">Get OTP</string>
+    <string name="RESEND_OTP">Resend OTP</string>
+    <string name="RESEND">Resend</string>
+    <string name="NO_THANKS">No thanks</string>
+    <string name="DEAR_USER">Dear User</string>
+    <string name="MEDICINE_REMINDER">Medicine Reminder</string>
+    <string name="ALL">All</string>
+    <string name="IS">is</string>
+    <string name="DASHBOARD">Dashboard</string>
+    <string name="HISTORY">History</string>
+    <string name="DIGITIZE">Digitize</string>
+    <string name="YES">Yes</string>
+    <string name="NO">No</string>
+    <string name="NONE">None</string>
+    <string name="MALE">Male</string>
+    <string name="FEMALE">Female</string>
+    <string name="OTHER">Other</string>
+    <string name="NAME">Name</string>
+    <string name="CONTACT">Contact</string>
+    <string name="GENDER">Gender</string>
+    <string name="PHONE">Phone</string>
+    <string name="PHONE_NUMBER">Phone Number</string>
+    <string name="NUMBER">Number</string>
+    <string name="ALTERNATE_NUMBER">Alternate Number</string>
+    <string name="EMAIL">Email</string>
+    <string name="EMAIL_ADDRESS">Email Address</string>
+    <string name="ALTERNATE_EMAIL_ADDRESS">Alternate Email Address</string>
+    <string name="ADDRESS">Address</string>
+    <string name="LOGIN">Login</string>
+    <string name="PASSWORD">Password</string>
+    <string name="AGE">Age</string>
+    <string name="BIRTH_DATE">Birth Date</string>
+    <string name="DATE_OF_BIRTH">Date of Birth</string>
+    <string name="MOBILE_NUMBER">Mobile Number</string>
+    <string name="DATE">Date</string>
+    <string name="DAY">Day</string>
+    <string name="WEEK">Week</string>
+    <string name="MONTH">Month</string>
+    <string name="YEAR">Year</string>
+    <string name="YEARS">Years</string>
+    <string name="FOR">For</string>
+    <string name="FROM">From</string>
+    <string name="TO">to</string>
+    <string name="ONLY">Only</string>
+    <string name="SEC">Sec</string>
+    <string name="TODAY">Today</string>
+    <string name="WEEKLY">Weekly</string>
+    <string name="MONTHLY">Monthly</string>
+    <string name="YEARLY">Yearly</string>
+    <string name="SESSION">Session</string>
+    <string name="MYSELF">Myself</string>
+    <string name="MEMBER">Member</string>
+    <string name="MEMBERS">Members</string>
+    <string name="LOGOUT">Logout</string>
+    <string name="LOGOUT_APPLICATION">Logout Application</string>
+    <string name="ALLOW_PERMISSIONS">Allow Permissions</string>
+    <string name="ADD_MORE">Add More</string>
+    <string name="TERMS_AND_CONDITIONS">Terms &amp; Conditions</string>
+    <string name="PRIVACY_POLICY">Privacy Policy</string>
+    <string name="VERSION">Version</string>
+    <string name="DISCLAIMER">Disclaimer</string>
+
+    <string name="SELECT_LANGUAGE">Select Language</string>
+    <string name="CHOOSE_APP_LANGUAGE">Choose App Language</string>
+    <string name="CHOOSE_APP_LANGUAGE_DESC">You can choose your app language as per\nyour preference</string>
+
+    <string name="RECORDS_EMPTY">Records Empty</string>
+    <string name="RECORDS_EMPTY_DESC">Add a Record and it will show up here</string>
+    <string name="BIOMETRIC_AUTHENTICATION">Biometric Authentication</string>
+    <string name="BIOMETRIC_AUTHENTICATION_DESC">Enter phone screen lock Fingerprint,\n Pattern, PIN or Password</string>
+    <string name="CONSULT_WITH_THERAPIST">Consult with Mental Health Professional</string>
+
+    <string name="SELF">Self</string>
+    <string name="FATHER">Father</string>
+    <string name="MOTHER">Mother</string>
+    <string name="SON">Son</string>
+    <string name="DAUGHTER">Daughter</string>
+    <string name="BROTHER">Brother</string>
+    <string name="SISTER">Sister</string>
+    <string name="WIFE">Wife</string>
+    <string name="HUSBAND">Husband</string>
+    <string name="SPOUSE">Spouse</string>
+    <string name="GRAND_FATHER">Grand Father</string>
+    <string name="GRAND_MOTHER">Grand Mother</string>
+
+    <string name="JANUARY">January</string>
+    <string name="FEBRUARY">February</string>
+    <string name="MARCH">March</string>
+    <string name="APRIL">April</string>
+    <string name="MAY">May</string>
+    <string name="JUNE">June</string>
+    <string name="JULY">July</string>
+    <string name="AUGUST">August</string>
+    <string name="SEPTEMBER">September</string>
+    <string name="OCTOBER">October</string>
+    <string name="NOVEMBER">November</string>
+    <string name="DECEMBER">December</string>
+
+    <string name="MON">Mon</string>
+    <string name="TUE">Tue</string>
+    <string name="WED">Wed</string>
+    <string name="THU">Thu</string>
+    <string name="FRI">Fri</string>
+    <string name="SAT">Sat</string>
+    <string name="SUN">Sun</string>
+
+    <string name="YR">Yr</string>
+    <string name="YRS">Yrs</string>
+    <string name="DAYS">Days</string>
+    <string name="MONTHS">Months</string>
+
+    <string name="LANGUAGE">Language</string>
+    <string name="ENGLISH">English</string>
+    <string name="HINDI">Hindi</string>
+    <string name="LANGUAGE_API_SUCCESS_MSG">Language preference stored successfully</string>
+
+    <string name="BADGE_CONTENDER">Contender</string>
+    <string name="BADGE_CHALLENGER">Challenger</string>
+    <string name="BADGE_ACHIEVER">Achiever</string>
+
+    <string name="HEIGHT">Height</string>
+    <string name="WEIGHT">Weight</string>
+    <string name="BMI">BMI</string>
+    <string name="DURATION">Duration</string>
+    <string name="WAIST">Waist</string>
+    <string name="SYSTOLIC">Systolic</string>
+    <string name="DIASTOLIC">Diastolic</string>
+    <string name="BLOOD_PRESSURE">Blood Pressure</string>
+    <string name="BP">Blood Pressure</string>
+    <string name="FEET_INCH">Feet/inch</string>
+    <string name="FT_IN" translatable="false">ft,in</string>
+    <string name="FT" translatable="false">ft</string>
+    <string name="INCH" translatable="false">inch</string>
+    <string name="CM" translatable="false">cm</string>
+    <string name="CENTIMETER" translatable="false">Centimeter</string>
+    <string name="LBS" translatable="false">lbs</string>
+    <string name="KG" translatable="false">kg</string>
+    <string name="MM_HG" translatable="false">mm Hg</string>
+    <string name="MG_DL" translatable="false">mg/dL</string>
+    <string name="MMOL_L" translatable="false">mmol/L</string>
+    <string name="KCAL" translatable="false">Kcal</string>
+    <string name="MIN" translatable="false">min</string>
+    <string name="KM" translatable="false">km</string>
+    <string name="MTR" translatable="false">mtr</string>
+    <string name="ML" translatable="false">ml</string>
+    <string name="LITRE" translatable="false">Litre</string>
+    <string name="LITRES" translatable="false">Litres</string>
+
+    <string name="LOW">Low</string>
+    <string name="HIGH">High</string>
+    <string name="HIGH_NORMAL">High normal</string>
+
+    <string name="BOUNDRY_LOW_RISK">Low Risk</string>
+    <string name="BOUNDRY_HIGH_RISK">High Risk</string>
+
+    <string name="ABNORMAL">Abnormal</string>
+    <string name="DIABETIC">DIABETIC</string>
+    <string name="EARLY_DIABETIC">EARLY DIABETIC</string>
+    <string name="VERY_HIGH">VERY HIGH</string>
+    <string name="VERY_LOW">VERY LOW</string>
+    <string name="MILDLY_HIGH">MILDLY HIGH</string>
+    <string name="MILDLY_LOW">MILDLY LOW</string>
+    <string name="BORDERLINE_HIGH">BORDERLINE HIGH</string>
+    <string name="BETTER">BETTER</string>
+    <string name="NEAR_OPTIMAL">NEAR OPTIMAL</string>
+    <string name="MODERATE_LOW">MODERATE LOW</string>
+    <string name="MODERATE_HIGH">MODERATE HIGH</string>
+    <string name="MILD_LOW">MILD LOW</string>
+    <string name="MILD_HIGH">MILD HIGH</string>
+    <string name="AVERAGE_RISK">AVERAGE RISK</string>
+    <string name="DESIRABLE">DESIRABLE</string>
+    <string name="BEST">BEST</string>
+    <string name="OPTIMAL">OPTIMAL</string>
+    <string name="GOOD">GOOD</string>
+
+    <string name="PRE_HYPERTENSION">PreHypertension</string>
+    <string name="HYPERTENSION_STAGE_1">Hypertension- Stage 1</string>
+    <string name="HYPERTENSION_STAGE_2">Hypertension- Stage 2</string>
+    <string name="HYPERTENSION_CRITICAL">Hypertension- Critical</string>
+
+    <string name="UNDERWEIGHT">Underweight</string>
+    <string name="OVERWEIGHT">Overweight</string>
+    <string name="OBESE">Obese</string>
+    <string name="PRE_OBESE">Pre-Obese</string>
+    <string name="OBESE_LEVEL_1">Obese Level 1</string>
+    <string name="OBESE_LEVEL_2">Obese Level 2</string>
+    <string name="OBESE_LEVEL_3">Obese Level 3</string>
+
+    <string name="SWITCH_PROFILE">Switch Profile</string>
+    <string name="PICK_YOUR_HEIGHT">Pick Your Height</string>
+    <string name="PICK_YOUR_WEIGHT">Pick Your Weight</string>
+    <string name="PICK_YOUR_WAIST">Pick your Waist</string>
+    <string name="ENTER_WEIGHT">Enter your weight</string>
+    <string name="ENTER_HEIGHT">Enter your height</string>
+    <string name="ENTER_YOUR_WAIST_SIZE">Enter your waist size</string>
+
+    <!--HRA-->
+    <string name="TAKE_YOUR_HRA">Take your HRA</string>
+    <string name="COMPLETE_YOUR_HRA">Complete your HRA</string>
+    <string name="HIGH_RISK">High Risk</string>
+    <string name="MODERATE_RISK">Moderate Risk</string>
+    <string name="AT_RISK">At Risk</string>
+    <string name="NEEDS_IMPROVEMENT">Needs Improvement</string>
+    <string name="NEED_IMPROVEMENT">Needs Improvement</string>
+    <string name="HEALTHY">Healthy</string>
+    <string name="OPTIMUM">Optimum</string>
+    <!--HRA-->
+
+    <string name="DIET_PLAN">Diet Plan</string>
+    <string name="FITNESS_PLAN">Fitness Plan</string>
+    <string name="DOCTOR_PRESCRIPTION">Doctor Prescription</string>
+    <string name="PATHOLOGY_REPORT">Pathology Report</string>
+    <string name="PATHOLOGY_LAB_REPORT">Pathology Lab Report</string>
+    <string name="RECEIPT">Receipt</string>
+    <string name="HOSPITAL_REPORT">Hospital Report</string>
+    <string name="OTHER_DOCUMENT">Other Document</string>
+    <string name="HRA_REPORT">HRA Report</string>
+
+    <string name="VIEW_PROFILE_PHOTO">View Profile Photo</string>
+    <string name="OPEN_GALLERY">Open Gallery</string>
+    <string name="TAKE_PHOTO">Take Photo</string>
+    <string name="REMOVE_PHOTO">Remove Photo</string>
+    <string name="GALLERY">Gallery</string>
+    <string name="PHOTO">Photo</string>
+    <string name="REMOVE">Remove</string>
+
+    <string name="ADDITIONAL_NOTES">Additional Notes</string>
+    <string name="HINT_NOTES">Write additional notes (Optional)</string>
+    <string name="NOTE">Note</string>
+
+    <string name="PERMISSION_REQUIRED">Permission Required</string>
+    <string name="PERMISSIONS_REQUIRED">Permissions Required</string>
+    <string name="SELECT_RECORDS">Select Records</string>
+    <string name="SELECT_APP">Select App</string>
+    <string name="SELECT_PROFILE_PHOTO">Select Profile Photo</string>
+    <string name="SELECT_AN_IMAGE">Select an Image</string>
+    <string name="SELECT_A_FILE">Select a file</string>
+    <string name="SELECT_A_FILE_TO_UPLOAD">Select a File to Upload</string>
+    <string name="NEED_WEBVIEW_PERMISSION">Storage,Camera and Audio Permissions are Required to Proceed further</string>
+    <string name="NEED_STORAGE_PERMISSION">For storing and reading files, we need storage permission</string>
+    <string name="NEED_CAMERA_PERMISSION">For clicking snap to upload we need camera permission</string>
+
+    <string name="NEED_CAMERA_PERMISSION_WELLFIE">To Proceed for Wellfie , we need Camera permission</string>
+    <string name="NEED_NOTIFICATION_PERMISSION">For sending notifications, we need notification permission</string>
+    <string name="NEED_HEART_RATE_PERMISSION">1)In order to track your heart rate data ,\nwe need Google Fit Heart Rate permission.</string>
+    <string name="NEED_SLEEP_PERMISSION">2)In order to track your sleep data , we need Google Fit Sleep permission.</string>
+    <string name="NEED_PHYSICAL_PERMISSION">3)In order to track your activity , we need Physical Activity permission.</string>
+
+    <string name="ERROR_GOOGLE_FIT_PERMISSION">All Google fit Permissions Denied</string>
+    <string name="ERROR_PHYSICAL_ACTIVITY_PERMISSION">Physical Activity Permission Denied</string>
+    <string name="ERROR_STORAGE_PERMISSION">Storage Permission is Required to Proceed further</string>
+    <string name="ERROR_CAMERA_PERMISSION">Camera Permission is Required to Proceed further</string>
+    <string name="ERROR_NOTIFICATION_PERMISSION">Notification Permission is Required to send notifications</string>
+    <string name="MSG_NOTIFICATION_PERMISSION">Notification Permission Granted</string>
+    <string name="MSG_VERIFICATION_CODE_SENT">OTP has been sent to your Registered Email / Mobile Number</string>
+
+    <string name="OTP_VERIFICATION">OTP Verification</string>
+    <string name="OTP_VERIFICATION_DESC">Please enter the OTP sent to your\nRegistered Mobile Number</string>
+
+    <string name="AN_ERROR_HAPPENED">An error happened, please retry !</string>
+    <string name="UNEXPECTED_ERROR">Unexpected error occurred, please try again.</string>
+    <string name="UNABLE_TO_CONNECT">Unable to connect, please try again.</string>
+    <string name="SESSION_EXPIRED">Your Session Expired, please try again.</string>
+
+    <!--App Message-->
+    <string name="API_RETRY_ERROR">Please retry!</string>
+    <string name="MSG_API_DEFAULT_ERROR">Something wrong happened!</string>
+    <string name="SOME_ERROR">Some Error Occurred!</string>
+    <string name="NO_INTERNET_CONNECTION">No Internet Connection</string>
+
+    <string name="NO_DATA">No Data</string>
+    <string name="NO_DATA_AVAILABLE">No Data Available</string>
+    <string name="NO_HISTORY_AVAILABLE">No History Available</string>
+    <string name="PASSWORD_CHANGED">Password Changed</string>
+    <string name="PASSWORD_CHANGED_SUCCESS">Your Password has been changed \n Successfully</string>
+    <string name="GO_TO_APP">Go Back To My App</string>
+    <string name="PLEASE_WAIT">Please wait</string>
+    <string name="LOADING">Loading</string>
+    <string name="ERROR_GENERAL">Unable to connect, please try again</string>
+    <string name="AWW_SNAP">Aww! Snap!</string>
+    <string name="PRESS_AGAIN_TO_EXIT">Press again to exit</string>
+    <string name="SOMETHING_WENT_WRONG">Something went wrong</string>
+    <string name="MSG_SESSION_EXPIRED">Seems your session is expired, please login again.</string>
+    <string name="ERROR_INTERNET_UNAVAILABLE">Seems like you are offline. Please check your internet connection and try again</string>
+    <string name="MSG_OTP">OTP has been sent to your registered mobile number, please wait while we are retrieving</string>
+
+    <!--Error Msg-->
+    <string name="VALIDATE_OTP">Please Enter a Valid OTP</string>
+    <string name="VALIDATE_USER_ID">Please Enter valid User ID</string>
+    <string name="VALIDATE_PASSWORD">Please Enter Valid Password</string>
+    <string name="VALIDATE_NEW_PASSWORD">Please Enter Valid New Password</string>
+    <string name="VALIDATE_CONFIRM_PASSWORD">Please Enter Valid Confirm Password</string>
+    <string name="VALIDATE_EMPTY_OLD_PASSWORD">Please Enter Old Password</string>
+    <string name="VALIDATE_EMPTY_NEW_PASSWORD">Please Enter New Password</string>
+    <string name="VALIDATE_EMPTY_CONFIRM_PASSWORD">Please Enter Confirm Password</string>
+
+    <string name="ERROR_PASSWORD_SHOULD_BE_MINIMUM_6_CHARACTERS">Password Should be minimum 6 Characters</string>
+    <string name="ERROR_NEW_PASSWORD_MUST_BE_DIFFERENT_FROM_OLD_PASSWORD">New password must be different from old password</string>
+    <string name="ERROR_PASSWORD_DOES_NOT_MATCH">Passwords does not match</string>
+    <string name="ERROR_PASSWORD_DOES_NOT_MATCH_REQUIREMENTS">Password does not match the Requirements</string>
+    <string name="ERROR_PASSWORD_CONFIRM_DOES_NOT_MATCH">Password and confirm password does not match</string>
+
+    <string name="PASSWORD_CRITERIA">Your Password Criteria</string>
+    <string name="PASSWORD_CRITERIA_DESC1">Password length should be minimum 8 characters</string>
+    <string name="PASSWORD_CRITERIA_DESC2">Password characters must include :</string>
+    <string name="PASSWORD_CRITERIA_DESC3">Minimum one Uppercase</string>
+    <string name="PASSWORD_CRITERIA_DESC4">Minimum one Lowercase</string>
+    <string name="PASSWORD_CRITERIA_DESC5">Minimum one Numeric</string>
+    <string name="PASSWORD_CRITERIA_DESC6">Minimum one Special Character</string>
+    <string name="PASSWORD_CRITERIA_DESC7">Username should not be same as Password</string>
+
+    <string name="VALUE_SHOULD_BE_BETWEEN">value should be between</string>
+    <string name="PLEASE_ENTER_VALUE">Please enter value</string>
+    <string name="PLEASE_SELECT_OPTION">Please Select Option</string>
+    <string name="PLEASE_SELECT_HEIGHT">Please Select Height</string>
+    <string name="PLEASE_SELECT_WEIGHT">Please Select Weight</string>
+    <string name="PLEASE_INSERT_SYSTOLIC_BP_VALUE">Please insert Systolic BP value</string>
+    <string name="PLEASE_INSERT_DIASTOLIC_BP_VALUE">Please insert Diastolic BP value</string>
+    <string name="DIASTOLIC_VALUE_SHOULD_BE_LESS_THAN_SYSTOLIC_VALUE">Diastolic value should be less than systolic value</string>
+    <string name="SYSTOLIC_BP_SHOULD_NOT_LESS_THAN_DIASTOLIC_BP">Systolic BP should not less than diastolic BP</string>
+    <string name="PLEASE_INSERT_SYSTOLIC_BP_VALUE_BETWEEN_10_TO_300">Please insert Systolic BP value between 10 to 350</string>
+    <string name="PLEASE_INSERT_DIASTOLIC_BP_VALUE_BETWEEN_0_TO_150">Please insert Diastolic BP value between 0 to 150</string>
+
+    <string name="PLEASE_FILL_DETAILS">Please fill details</string>
+    <string name="VALIDATE_AGE">Age must be more than 18 years</string>
+    <string name="VALIDATE_DATE_OF_BIRTH">Please Enter valid Date of Birth</string>
+    <string name="VALIDATE_EMAIL">Please Enter Valid Email</string>
+    <string name="VALIDATE_USERNAME">Please enter valid username</string>
+    <string name="VALIDATE_GENDER">Please Select Gender</string>
+    <string name="VALIDATE_EMAIL_MUST_INCLUDE">Email must include @</string>
+    <string name="VALIDATE_PHONE">Please Enter Valid Mobile Number</string>
+    <string name="VALIDATE_DIFFERENT_PHONE">Please Enter Different Mobile Number</string>
+    <string name="VALIDATE_DIFFERENT_EMAIL">Please Enter Different Email Address</string>
+    <string name="VALIDATE_MESSAGE">Please Write Something in Message</string>
+    <string name="VALIDATE_VERIFICATION_CODE">Please Enter valid OTP</string>
+    <string name="VALIDATE_EMAIL_PHONE">Please Enter valid Email/Mobile Number</string>
+    <string name="VALIDATE_SAME_PHONE">Please Enter a New Number</string>
+    <string name="ERROR_MOBILE_ALREADY_REGISTERED">This Number is already Registered with us</string>
+    <string name="VALIDATE_NAME">Please Enter valid Name</string>
+    <string name="ERROR_UNABLE_VERIFY_OTP">Unable to verify OTP provided, please try again</string>
+    <string name="ERROR_FILE_NOT_EXIST">File does not exist in the system</string>
+    <string name="ERROR_NO_APPLICATION_TO_VIEW_PDF">No Application Available to View PDF</string>
+    <string name="ERROR_FILE_SIZE_LESS_THEN_5MB">File size must be less than 5MB</string>
+    <string name="ERROR_UNABLE_TO_READ_FILE">Unable to read file, please try again</string>
+    <string name="ERROR_FILES_NOT_ACCEPTED">files are not accepted</string>
+    <string name="ERROR_UNABLE_TO_OPEN_FILE">Unable to open file</string>
+    <string name="ERROR_FILE_DOES_NOT_EXIST">File does not exist</string>
+    <string name="ERROR_VALIDATE_OTP">Please Enter Valid OTP.</string>
+    <string name="ERROR_INVALID_OTP">The entered OTP is invalid. Please make sure to provide a valid OTP sent to your Mobile Number / Email.</string>
+    <string name="ERROR_UNABLE_TO_DOWNLOAD">Unable to download.</string>
+    <!--Error Msg-->
+
+    <string name="HRA_SUMMARY">HRA Summary</string>
+    <string name="HEALTH_LIBRARY">Health Library</string>
+    <string name="RELATED_BLOGS">Related Blogs</string>
+    <string name="WELLNESS_SCORE_SUBTITLE_TEXT">Holistic health status basis your\nresponses to the questionnaire.</string>
+
+    <string name="FOR_YOU" translatable="false">For You</string>
+    <string name="digits_alpha" translatable="false">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="digits_alpha_numeric" translatable="false">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890</string>
+    <string name="numeric" translatable="false">1234567890</string>
+    <string name="numeric_fraction" translatable="false">1234567890.</string>
+
+    <string name="DASH_3">---</string>
+    <string name="INDIAN_RUPEE">\u20B9</string>
+    <string name="RS">\u20A8</string>
+
+    <!--Start Blog module-->
+    <string name="NO_BLOG">No Blogs Available</string>
+    <string name="SEARCH_ARTICLES" translatable="false">Search Articles</string>
+    <string name="SHARE_ARTICLE">Share Article</string>
+    <!--End Blog Module -->
+
+    <!--Start Fitness Tracker -->
+    <string name="SWITCH_ACCOUNT">Switch Account</string>
+    <string name="STEPS">Steps</string>
+    <string name="GOAL">Goal</string>
+    <string name="CALORIES">Calories</string>
+    <string name="DISTANCE">Distance</string>
+    <string name="ACTIVE_TIME">Active Time</string>
+    <string name="MY_GOAL">My Goal</string>
+
+    <string name="JOINED_ON">Joined On :</string>
+    <string name="AVG_STEPS">Avg Steps</string>
+    <string name="AVG_DISTANCE">Avg Distance</string>
+    <string name="AVG_CALORIES">Avg Calories</string>
+
+    <string name="MSG_GOALS_UPDATED">Goal Updated Successfully</string>
+    <string name="FORCE_SYNC_CONFORMATION">Are you sure you want to switch to another Google Fit account? Please note that your fitness data and rewards will be calculated based on selected Google Fit account from the date of selection. Your past fitness data and rewards will remain unchanged.</string>
+    <string name="MSG_SAME_GOOGLE_ACCOUNT">Please Select a different Google Account</string>
+    <string name="ERROR_ENTER_VALUE_IN_30_10000">Please enter value between 30 to 50000</string>
+    <string name="ERROR_ENTER_STEPS">Please Enter the Steps</string>
+    <string name="NO_FITNESS_DATA">Fitness Data Not Available</string>
+
+    <string name="TITLE_ACTIVITY_TRACKER">Physical Activity Tracker</string>
+    <string name="YOUR_DAILY_GOAL">Your Daily Goal</string>
+    <string name="CHANGE_DAILY_GOAL">Change Daily Goal</string>
+    <string name="THIS_WEEK">This Week</string>
+    <string name="LAST_WEEK">Last Week</string>
+    <string name="GOAL_REACHED">Goal Reached :</string>
+    <string name="CAL" translatable="false">Cal</string>
+    <!--End Fitness Tracker-->
+
+    <!--Start Home Module-->
+    <string name="POWERED_BY_SUD_LIFE">Powered by SUD Life</string>
+    <string name="HOME">Home</string>
+    <string name="HOME2">Home</string>
+    <string name="TRACK">Track</string>
+    <string name="YOUR_POLICY">Your Policy</string>
+    <string name="PROFILE">Profile</string>
+    <string name="SETTINGS">Settings</string>
+    <string name="HOW_IT_WORKS">How it works</string>
+
+    <string name="HI">Hi</string>
+    <string name="WELCOME_TO_YOU_MATTER">Welcome to You Matter</string>
+
+    <string name="CHALLENGES">Challenges</string>
+    <string name="ENROLLED">Enrolled!</string>
+    <string name="ENROLL_NOW">Enroll Now!</string>
+    <string name="DAYS_LEFT">Days Left</string>
+    <string name="MARATHON_MSG">Registration is officially OPEN for the You Matter Half Marathon - 2nd Edition. Click here to register.</string>
+
+    <string name="BUILD_YOUR_PATH_TO_WELLNESS">Build Your Path to Wellness</string>
+    <string name="POWERED_BY_AKTIVO">Powered by Aktivo</string>
+    <string name="AKTIVO_SCORE">Aktivo Score</string>
+    <string name="MIND_SCORE">Mind Score</string>
+    <string name="SLEEP">Sleep</string>
+    <string name="SEDENTARY">Sedentary</string>
+    <string name="LIGHT_ACTIVITY">Light Activity</string>
+    <string name="CHECK_NOW">Check now</string>
+
+    <string name="SCAN_YOUR_VITALS">Scan your Vitals</string>
+    <string name="SCAN_YOUR_VITALS_DESC">Scan your vitals to get quick report\non your overall health.</string>
+    <string name="POWERED_BY_WELLFIE">Powered by WellFie</string>
+    <string name="SCAN_NOW">Scan now</string>
+    <string name="RESCAN_YOUR_VITALS">Rescan your vitals</string>
+    <string name="LAST_SCANNED">Last Scanned  : </string>
+    <string name="OXYGEN_LEVEL">Oxygen Level  : </string>
+    <string name="STRESS_LEVEL">Stress Level  : </string>
+    <string name="HEART_RATE">Heart Rate</string>
+    <string name="BREATHING_RATE">Breathing Rate</string>
+    <string name="BLOOD_OXYGEN">Blood Oxygen</string>
+    <string name="CURRENT_VITALS">Your Current Vitals</string>
+    <string name="PAST_VITALS">Your Past Vitals</string>
+    <string name="LAST_UPDATED">Last Updated</string>
+    <string name="WELLFIE_INSTRUCTION">Keep your face Steady and Close to Camera, your Vitals will be Auto-Calculated after</string>
+    <string name="BEGIN_WELLFIE_MSG">Before we begin , Please update your Height and Weight Details</string>
+    <string name="LEARN_MORE">Learn More</string>
+    <string name="WELLFIE_DISCLAIMER_LABEL">The test results contained herewith are for informational purposes only.</string>
+    <string name="WELLFIE_DISCLAIMER1">WellFie Test is strictly intended as informational and to promote general wellness. The measurement results are dependent on the test conditions such as camera video capture capacity, light on the face, network latency, and movement of the device running the test. And measurement results provided to you should not be treated as medical advice or to diagnose, treat, cure or prevent any disease, ailment or injury. Should you have any health-related questions, please call or see your clinician or other medical professionals.</string>
+    <string name="WELLFIE_DISCLAIMER2">By using this app you are deemed to agree to this Purpose of WellFie Test disclaimer and agree to indemnify us from any other consequences.</string>
+    <string name="WELLFIE_HRA_TITLE">Navigate to HRA</string>
+    <string name="WELLFIE_HRA_MSG1">For better Health insights , we recommend you to give Health Risk Assessment(HRA)</string>
+    <string name="WELLFIE_HRA_MSG2">Do you want to start it now?</string>
+
+    <string name="STATUS_CALIBRATING">Analyzing signals…</string>
+    <string name="STATUS_NOISE_DURING_EXECUTION">Detecting unstable conditions, attempting to re-adjust</string>
+    <string name="STATUS_RECALIBRATING">Recalibrating… Please wait</string>
+    <string name="STATUS_NO_FACE">No face is detected,Request you to face the camera</string>
+    <string name="STATUS_FACE_LOST">Face was lost, Request you to face the camera</string>
+    <string name="STATUS_BRIGHT_LIGHT_ISSUE">Bright light interference… please check for any Backlight behind your face &amp; adjust</string>
+    <string name="STATUS_UNKNOWN">Unknown status..please Retry</string>
+    <string name="STATUS_SUCCESS">All parameters can be calculated</string>
+    <string name="STATUS_MOVING_WARNING">Please stop moving</string>
+
+    <string name="CONSULT_THERAPIST">Consult with Mental\nHealth Professional</string>
+    <string name="GET_STARTED">Get Started</string>
+
+    <string name="LEADERSHIP_EXPERIENCES">Leadership\nExperiences</string>
+    <string name="EXPLORE">Explore</string>
+
+    <string name="HRA_NOT_GIVEN">Take a Health Risk Assessment</string>
+    <string name="HRA_GIVEN">Your Wellness\nScore</string>
+    <string name="HRA_NOT_GIVEN_MSG">Hello, the best way to improve health is to identify it. Complete your HRA to gain better health insights.</string>
+    <string name="VIEW_DETAILS">View Details</string>
+
+    <string name="INVITE_TITLE">Refer. Reward. Repeat.</string>
+    <string name="INVITE_DESC">Invite friends, earn rewards\nand keep the cycle going!</string>
+    <string name="GET_REWARDED">Get Rewarded</string>
+
+    <string name="REFER_SUBJECT">Join You Matter</string>
+    <string name="REFER_A_FRIEND">Refer a friend</string>
+    <string name="REFER_MSG1">Hey there</string>
+    <string name="REFER_MSG2">wants you to join You Matter ! 🙋‍♀️</string>
+    <string name="REFER_MSG3">You Matter is a comprehensive health &amp; wellness app that helps you take care of your body and mind 💪🧠</string>
+    <string name="REFER_MSG4">With You Matter, you can</string>
+    <string name="REFER_MSG5">Track your wellness score 🤩</string>
+    <string name="REFER_MSG6">Get personalized recommendations and health goals 🎯</string>
+    <string name="REFER_MSG7">Compete with your friends and participate in various fitness challenges 🏃🏻🏃🏻‍♀</string>
+    <string name="REFER_MSG8">And do a 1-minute face scan 🕵️‍♀️ to get your vitals immediately 😮</string>
+    <string name="REFER_MSG9">It\'s like having your own personal health coach in your pocket!📱</string>
+    <string name="REFER_MSG10">Download the app ⬇️</string>
+    <string name="REFER_MSG11">and start taking care of yourself today! 😊</string>
+    <string name="REFER_MSG12">Download the app to know yours ⬇️</string>
+
+    <string name="REFER_MPT_MSG1">I am</string>
+    <string name="REFER_MPT_MSG2">Do you know, now you can also find your Money Personality with You Matter\'s Money Personality Quiz.</string>
+
+    <string name="YOUR_MONEY_PERSONALITY">Your Money Personality</string>
+    <string name="MONEY_PERSONALITY_TEST" translatable="false">Money Personality Test</string>
+    <string name="MPT_TITLE">Do you know your Money Personality?</string>
+    <string name="MPT_DESC">Take our money quiz and we\'ll tell you</string>
+    <string name="POWERED_BY_SALT">Powered by Salt</string>
+    <string name="VIEW_RESULT">View Result</string>
+    <string name="SALT_VIDEOS_TITLE">Expert Advice</string>
+    <string name="SALT_VIDEOS_DESC">Expert views on financial wellness</string>
+
+    <string name="NIMEYA_TITLE">Financial Articles</string>
+    <string name="NIMEYA_DESC">Stay updated about the financial world &amp; learn about multiple investment options through FinTalk &amp; FinStat</string>
+    <string name="POWERED_BY_NIMEYA">Powered by Nimeya</string>
+    <string name="INVESTOMETERS">Investometer</string>
+    <string name="RISKO_METER">RISKO\nMETER</string>
+    <string name="PROTECTO_METER">PROTECTO\nMETER</string>
+    <string name="RETIRO_METER">RETIRO\nMETER</string>
+    <string name="RISKO_METER_DESC">Check your Risk Tolerance Level</string>
+    <string name="PROTECTO_METER_DESC">Check Adequacy of your Insurance Cover</string>
+    <string name="RETIRO_METER_DESC">How far away from reaching your retirement income</string>
+
+    <string name="TITLE_RISKO_METER" translatable="false">RISKO METER</string>
+    <string name="TITLE_PROTECTO_METER" translatable="false">PROTECTO METER</string>
+    <string name="TITLE_RETIRO_METER" translatable="false">RETIRO METER</string>
+
+    <string name="AS_ON" translatable="false">As on</string>
+    <string name="YOUR_RISK_TOLERENCE_SCORE" translatable="false">Your Risk Tolerence Score</string>
+
+    <string name="CHECK_RISK_TOLERANCE_BY_ANSWERING_BELOW_QUESTIONS" translatable="false">Check your Risk Tolerance level by answering below questions</string>
+    <string name="CHECK_YOUR_LIFE_HEALTH_INSURANCE_GAP" translatable="false">Check your life &amp; health insurance gap</string>
+    <string name="AT_WHAT_AGE_WILL_YOUR_INCOME_STOP" translatable="false">At what age will your income stop?</string>
+    <string name="YOUR_FAMILY_DETAILS" translatable="false">Your Family Details</string>
+    <string name="NO_FAMILY_MEMBER_ADDED" translatable="false">No family member added</string>
+    <string name="YOUR_INCOME_EXPENSES_MONTHLY" translatable="false">Your Income &amp; Expenses(Monthly)</string>
+    <string name="YOUR_INCOME" translatable="false">Your income</string>
+    <string name="YOUR_LIVING_EXPENSE" translatable="false">Your Living Expense(excluding child education)</string>
+    <string name="EXPENSE_TOWARDS_DEPENDANT_PARENTS" translatable="false">Expense towards Dependant Parents</string>
+    <string name="YOUR_EXISTING_INSURANCE_DEBT_AND_INVESTMENTS_MONTHLY" translatable="false">Your Existing insurance, debt and investments(Monthly)</string>
+    <string name="TOTAL_SUM_ASSURED_ON_EXISTING_LIP" translatable="false">Total Sum Assured on your existing life insurance policies</string>
+    <string name="TOTAL_SUM_ASSURED_ON_EXISTING_HIP" translatable="false">Total Sum Assured on your existing health insurance policies</string>
+    <string name="YOUR_HOME_LOAN_BALANCE_OUTSTANDING" translatable="false">Your Home Loan Balance/Outstanding</string>
+    <string name="YOUR_OTHER_DEBTS" translatable="false">Your Other Debts</string>
+    <string name="YOUR_CURRENT_INVESTMENT" translatable="false">Your Current Investment</string>
+    <string name="YOUR_LIFE_INSURANCE_SCORE" translatable="false">Your Life Insurance Score</string>
+    <string name="YOUR_HEALTH_INSURANCE_SCORE" translatable="false">Your Health Insurance Score</string>
+    <string name="CURRENT_LIFE_INSURANCE_COVER" translatable="false">Current Life Insurance\ncover</string>
+    <string name="ADDITIONAL_LIFE_INSURANCE_NEEDED" translatable="false">Additional Life Insurance Needed</string>
+    <string name="CURRENT_HEALTH_INSURANCE_COVER" translatable="false">Current Health Insurance Cover</string>
+    <string name="ADDITIONAL_HEALTH_INSURANCE_NEEDED" translatable="false">Additional Health Insurance Needed</string>
+
+    <string name="CHECK_YOUR_RETIREMENT_GAP" translatable="false">Check how far away you are from reaching your retirement income?</string>
+    <string name="RETIREMENT_AGE" translatable="false">Retirement Age</string>
+    <string name="DESIRED_MONTHLY_RETIREMENT_INCOME" translatable="false">Desired monthly retirement income</string>
+    <string name="CURRENT_MONTHLY_INCOME" translatable="false">Current monthly income</string>
+    <string name="CURRENT_VALUE_OF_RETIREMENT_SAVINGS" translatable="false">Current value of Retirement Savings</string>
+    <string name="PUBLIC_PROVIDENT_FUND_DEPOSITS_FD_RD" translatable="false">Public Provident Fund/Deposits(FD,RD etc)</string>
+    <string name="EMPLOYEE_PROVIDENT_FUND" translatable="false">Employee Provident Fund</string>
+    <string name="NATINAL_PENSION_SCHEME" translatable="false">Natinal Pension Scheme</string>
+    <string name="EQUITIES_MUTUAL_FUND_DEFERRED_PENSION_INSURANCE" translatable="false">Equities/Mutual Fund/Deferred Pension/Insurance</string>
+    <string name="CURRENT_MONTHLY_SAVINGS_IN_VARIOUS_RETIREMENT_SCHEMES" translatable="false">Current Monthly Savings in various retirement Schemes</string>
+    <string name="YOUR_RETIRO_METER_SCORE" translatable="false">Your RETIRO METER Score</string>
+
+    <string name="DESIRED_MONTHLY_RETIREMENT_INCOME2" translatable="false">Your Desired Monthly Retirement Income</string>
+    <string name="PROJECTED_MONTHLY_RETIREMENT_INCOME" translatable="false">Your Projected Monthly Retirement Income</string>
+    <string name="REQUIRED_MONTHLY_RETIREMENT_SAVINGS" translatable="false">Your Required Monthly Retirement Savings (A + B + C)</string>
+    <string name="DEPOSIT_SCHEMES" translatable="false">A. Deposit Schemes (PPF, FD, RD, EPF etc)</string>
+    <string name="NATIONAL_PENSION_SCHEME" translatable="false">B. National Pension Scheme</string>
+    <string name="EQUITY_MUTUAL_FUNDS_PENSION_INSURANCE" translatable="false">C. Equity/Mutual Funds/Deferred Pension/Insurance</string>
+
+    <string name="WHAT_ARE_YOU_LOOKING_FOR">What are you looking for?</string>
+    <string name="MEDITATION">Meditation</string>
+    <string name="YOGA">Yoga</string>
+    <string name="EXERCISE">Exercise</string>
+    <string name="POWERED_BY_SMIT_FIT">Powered by Smit Fit</string>
+
+    <string name="CURATED_FOR_YOU">Curated for you</string>
+    <string name="ON_GOING">On Going</string>
+    <string name="JOIN_NOW">Join Now</string>
+    <string name="PLEASE_JOIN_THE_SESSION_ON">Please join the session on</string>
+
+    <string name="FINANCIAL_WELLNESS_CALCULATORS">Financial Wellness Calculators</string>
+    <string name="EDUCATION">Education</string>
+    <string name="MARRIAGE">Marriage</string>
+    <string name="WEALTH">Wealth</string>
+    <string name="RETIREMENT">Retirement</string>
+    <string name="HUMAN_VALUE">Human value</string>
+    <string name="POWERED_BY_NVEST">Powered by Nvest</string>
+
+    <string name="HYDRATION_TRACKER">Hydration Tracker</string>
+    <string name="HYDRATION_TRACKER_DESC">Log and Track your water intake</string>
+    <string name="VITAL_PARAMETERS">Vital Parameters</string>
+    <string name="VITAL_PARAMETERS_DESC">Log your most important health markers and trace progress over time.</string>
+    <string name="MEDICATION_TRACKER">Medication Tracker</string>
+    <string name="MEDICATION_DESCRIPTION">Never forget another medicine; with timely notifications and instruction, always stay on course for your treatment.</string>
+    <string name="MY_HEALTH_RECORDS">My Health Records</string>
+    <string name="HEALTH_RECORDS_DESC">Upload, Track &amp; Share your Health Records.</string>
+    <string name="TOOLS_AND_CALCULATORS">Tools &amp; Calculators</string>
+    <string name="TOOLS_AND_CALCULATORS_DESC">Get better insight to your health</string>
+    <string name="READ_LATEST_ARTICLES">Read Latest Health Articles</string>
+
+    <string name="TRACKER_HEART_AGE">Heart Age Calculator</string>
+    <string name="TRACKER_DIABETES">Diabetes Calculator</string>
+    <string name="TRACKER_HYPERTENSION">Hypertension Calculator</string>
+    <string name="TRACKER_STRESS_ANXIETY">Stress &amp; Anxiety Calculator</string>
+    <string name="TRACKER_SMART_PHONE">Smart Phone Addiction</string>
+    <string name="TRACKER_DUE_DATE">Due Date Calculator</string>
+
+    <string name="TRACKER_DESC_HEART_AGE">Is your Heart as young as you are?</string>
+    <string name="TRACKER_DESC_DIABETES">Know your diabetes risk</string>
+    <string name="TRACKER_DESC_HYPERTENSION">Know your blood pressure</string>
+    <string name="TRACKER_DESC_STRESS_ANXIETY">Are you feeling  stressed?</string>
+    <string name="TRACKER_DESC_SMART_PHONE">Addicted to smartphone?</string>
+    <string name="TRACKER_DESC_DUE_DATE">Know your \ndue date</string>
+
+    <string name="DELETE_ACCOUNT">Delete Account</string>
+    <string name="DELETE_ACCOUNT_TITLE">Are you sure you want to delete your Account?</string>
+    <string name="DELETE_ACCOUNT_CONFIRMATION">Please note that all your personal data and health data associated with this app will be permanently deleted.\nYour account will be deleted entirely from the system within 72 hours. You can still access the app meantime and you will be notified once your account deletion is completed.\nIf you wish to access the app features again in future, you can register yourself again.</string>
+    <string name="DELETE_ACCOUNT_SUCCESS">Your Account has been Deleted Successfully</string>
+
+    <string name="RE_LOGIN">Re-Login</string>
+    <string name="CHANGE_PASSWORD">Change Password</string>
+    <string name="CHANGE_PASSWORD_DESC">Your new password must be different \n from previously used password</string>
+    <string name="OLD_PASSWORD">Old Password</string>
+    <string name="NEW_PASSWORD">New Password</string>
+    <string name="CONFIRM_PASSWORD">Confirm Password</string>
+
+    <!--SUD Customer Service Strings-->
+    <string name="TITLE_POLICY_DASHBOARD">Policy View</string>
+    <string name="TITLE_POLICY_DETAILS">Policy Details</string>
+    <string name="TITLE_PREMIUM_RECEIPT">Premium Receipt</string>
+
+    <string name="PREMIUM_RECEIPT">Premium Receipt</string>
+    <string name="POLICY_DOCUMENT">Policy Document</string>
+    <string name="KNOW_YOUR_POLICY">Know your Policy</string>
+    <string name="PAY_YOUR_PREMIUM">Pay your Premium</string>
+    <string name="DOWNLOAD_RECEIPT">Download Receipt</string>
+    <string name="BUY_POLICY">Buy Policy</string>
+
+    <string name="POLICY_BANNER_CONSENT_MSG">I authorize SUD Life and its representatives to contact me through Call, Email, SMS or WhatsApp. This consent overrides my registration under DNC / NDNC.</string>
+    <string name="LINK_SUD_POLICY_WITH_NUMBER">Link your SUD life Policy with your\nMobile Number</string>
+    <string name="CUSTOMER_CARE">Customer Care :- </string>
+    <string name="CUSTOMER_CARE_NO">1800 266 8833</string>
+    <string name="EMAIL_ID">Email ID :- </string>
+    <string name="CUSTOMER_CARE_EMAIL">customercare@sudlife.in</string>
+    <string name="ERROR_WHATS_NOT_INSTALLED">Whats App not installed on your device</string>
+
+    <string name="POLICY_AUTHENTICATION_TITLE">Mobile Verification</string>
+    <string name="POLICY_AUTHENTICATION_DESC">To proceed further for accessing policy services, your mobile number will be verified which is linked to your SUD Life Policy.</string>
+    <string name="PMJJBY_TITLE">Pradhan Mantri Jeevan Jyoti Bima Yojana(PMJJBY)</string>
+    <string name="PMJJBY_DESC">Access your PMJJBY Policy linked to your registered mobile number</string>
+    <string name="GROUP_COI_TITLE">SUD Life Group Term Insurance</string>
+    <string name="GROUP_COI_DESC">Access your SUD Life Group Term Insurance Policy linked to your registered mobile number</string>
+    <string name="CREDIT_LIFE_TITLE">Credit Life Policy</string>
+    <string name="CREDIT_LIFE_DESC">Access your Credit Life Policy linked to your registered mobile number</string>
+    <string name="CREDIT_LIFE_DIALOG_TITLE">Please select any number from below\nand enter its value which is associated\nwith your Credit Life Policy</string>
+
+    <string name="LOAN_ACCOUNT_NUMBER">Loan Account Number</string>
+    <string name="MEMBERSHIP_NUMBER">Membership Number</string>
+    <string name="COI_NUMBER">COI Number</string>
+
+    <string name="POLICIES">Policies</string>
+    <string name="NEXT_RENEWAL">Next Renewal  :</string>
+    <string name="POLICY_HOLDER">Policy Holder  :</string>
+    <string name="POLICY_NO">Policy No  :</string>
+    <string name="RISK_COMMENCEMENT_DATE">Risk Commencement Date  :</string>
+    <string name="SUM_ASSURED">Sum Assured  :</string>
+    <string name="POLICY_TYPE">Policy Type  :</string>
+    <string name="POLICY_TERM">Policy Term  :</string>
+    <string name="PREMIUM_PAYING_TERM">Premium paying Term  :</string>
+    <string name="MATURITY_DATE">Maturity Date  :</string>
+    <string name="NEXT_PREMIUM_DUE_DATE">Next Due Date  :</string>
+    <string name="PREMIUM_FREQUENCY">Premium/Frequency :</string>
+    <string name="FREQUENCY_OF_PREMIUM">Frequency of Premium  :</string>
+    <string name="FUND_DETAILS">Fund Details</string>
+    <string name="TOTAL_FUND_VALUE">Total Fund Value  :</string>
+    <string name="FUND_VALUE">Fund Value  :</string>
+    <string name="UNITS_ALLOCATED">Units Allocated  :</string>
+    <string name="NAV">NAV  :</string>
+    <string name="NAV_DATE">NAV Date  :</string>
+
+    <string name="RECEIPT_ID">Receipt ID</string>
+    <string name="RECEIPT_DATE">Receipt Date</string>
+    <string name="BNFY_NAME">Bnfy Name</string>
+    <string name="PRODUCT_UIN_CODE">Product UIN Code</string>
+    <string name="APPLICATION_NUMBER">Application Number</string>
+    <string name="CURRENT_BILL_CHANNEL_DESCRIPTION">Current Bill Channel Description</string>
+    <string name="BASE_PREMIUM_CGST_AMOUNT">Base Premium CGST Amount</string>
+    <string name="BASE_PREMIUM_SGST_AMOUNT">Base Premium SGST Amount</string>
+    <string name="BASE_PREMIUM_IGST_AMOUNT">Base Premium IGST Amount</string>
+    <string name="COVR_SI">CovrSI</string>
+    <string name="TOTAL_PREMIUM">Total Premium</string>
+    <string name="CONTRACT_TYPE_DESCRIPTION">Contract Type Description</string>
+    <string name="CURRENT_BILL_FREQUENCY">Current Bill frequency</string>
+    <string name="COVER_PREMIUM_TERM">Cover Premium Term</string>
+    <string name="PMJJBY_PASSWORD_FORMAT1">Please note that policy purchased from</string>
+    <string name="PMJJBY_PASSWORD_FORMAT2">Bank Of India or Union Bank of India</string>
+    <string name="PMJJBY_PASSWORD_FORMAT3">can only be downloaded.</string>
+    <string name="PMJJBY_PASSWORD_FORMAT4">In addition to that the document is password protected and password to open the document is user\'s date of birth in ddmmyyyy format. i.e if your date of birth is 19th of May 2000 then password will be 19052000.</string>
+    <string name="PMJJBY_ERROR">There is no PMMJJBY policy found on your registered mobile number.Please visit your nearest bank branch for further assistance.</string>
+    <string name="GROUP_COI_ERROR">There is no SUD Life Group Term Insurance Policy found on your registered mobile number.Please visit your nearest bank branch for further assistance.</string>
+    <string name="KYP_PASSWORD_FORMAT">This document is password protected and password to open the document is user\'s date of birth in ddmmyyyy format. i.e if your date of birth is 19th of May 2000 then password will be 19052000.</string>
+
+    <string name="POLICY_MOBILE_NUMBER">Policy Mobile Number</string>
+    <string name="CHANGE_POLICY_MOBILE_NUMBER">Switch Policy Mobile Number</string>
+    <string name="CALL_CUSTOMER_CARE">Call Customer Care</string>
+    <string name="WHATSAPP_CHATBOT">WhatsApp Chatbot</string>
+    <!--SUD Customer Service Strings-->
+
+    <string name="TITLE_MY_PROFILE">My Profile</string>
+    <string name="TITLE_YOUR_PROFILE">Your Profile</string>
+    <string name="TITLE_EDIT_PROFILE">Edit Profile</string>
+    <string name="TITLE_FAMILY_MEMBERS">Family Members</string>
+    <string name="TITLE_EDIT_DETAILS">Edit Family Member</string>
+    <string name="TITLE_SELECT_RELATION">Select Relationship</string>
+    <string name="TITLE_ADD_FAMILY_MEMBER">Add Family Member</string>
+    <string name="FAMILY_MEMBERS">Family Members</string>
+    <string name="ADD_NEW_FAMILY_MEMBER">Add New Family Member</string>
+
+    <string name="DELETE_FAMILY_MEMBER">Delete Member</string>
+    <string name="REMOVE_PROFILE_PHOTO">Remove Profile Photo</string>
+    <string name="ADD_NEW_MEMBER">Add a new family member</string>
+    <string name="NO_RELATIVES">No Relatives found</string>
+    <string name="MEMBER_ADDED">Family Member Added Successfully</string>
+    <string name="MEMBER_DELETED">Profile deleted successfully</string>
+    <string name="PROFILE_UPDATED">Profile updated successfully</string>
+    <string name="PROFILE_PHOTO_UPDATED">Profile Photo Updated Successfully</string>
+    <string name="PROFILE_PHOTO_REMOVED">Profile Photo Removed Successfully</string>
+    <string name="ERROR_PROFILE_PHOTO">Unable to Remove Profile Photo</string>
+    <string name="MOBILE_UPDATED">Mobile Number Updated Successfully</string>
+    <string name="MSG_REMOVE_PROFILE_PHOTO_CONFORMATION">Are you sure that you want to Remove Profile Photo?</string>
+
+    <string name="MSG_DELETE_MEMBER_CONFIRMATION">Are you sure that you want to delete the selected family member from list?</string>
+    <string name="MSG_LOGOUT_CONFORMATION">Are you sure that you want to Logout from the app?</string>
+    <string name="MSG_SWITCH_PROFILE_CONFIRMATION1">You would like to view the health profile of</string>
+    <string name="MSG_SWITCH_PROFILE_CONFIRMATION2">Click confirm to proceed</string>
+    <string name="MSG_ALREADY_ADDED">You have already added</string>
+    <string name="ERROR_INVALID_OLD_PASSWORD">Invalid Old Password</string>
+    <string name="ERROR_PARENTS_AGE">Parent\'s age should be greater than your age</string>
+    <string name="ERROR_KIDS_AGE">Kid\'s age should be smaller than your age</string>
+    <string name="ERROR__GP_AGE">Grand Parent\'s age should be greater than your age</string>
+    <string name="ERROR_AGE_NOT_LESS_THAN_18">Age cannot be less than 18 years</string>
+    <string name="ERROR_SELECT_RELATION_FIRST">Please Select Relationship first</string>
+    <string name="ERROR_PLEASE_ENTER_FEEDBACK_TO_SUBMIT">Please Enter Feedback to Submit</string>
+    <string name="ERROR_DOB_UNAVAILABLE">Unable to save Profile information as Logged In user\'s age is unavailable</string>
+
+    <string name="SWITCH_FAMILY_MEMBER">Switch Family Member</string>
+    <string name="SELECT_FAMILY_MEMBER_AS_ACTIVE_USER">Select family member as active user:</string>
+    <string name="WHICH_FAMILY_MEMBER_YOU_WANT_TO_ADD">Which family member you want to add?</string>
+    <string name="SWITCH_TO">Switch to</string>
+
+    <string name="NAME_MANDATORY">* Name</string>
+    <string name="GENDER_MANDATORY">* Gender</string>
+    <string name="DATE_OF_BIRTH_MANDATORY">* Date of Birth</string>
+    <string name="NUMBER_MANDATORY">* Number</string>
+    <string name="EMAIL_ADDRESS_MANDATORY">* Email Address</string>
+
+    <!--Navigation Options-->
+    <string name="NAVIGATION_DRAWER_OPEN">Open navigation drawer</string>
+    <string name="NAVIGATION_DRAWER_CLOSE">Close navigation drawer</string>
+    <!--Navigation Options-->
+    <string name="EXIT_MES">Press one more time to exit from the app</string>
+
+    <string name="TUTORIAL_AKTIVO_SCORE">Aktivo Score</string>
+    <string name="TUTORIAL_AKTIVO_SCORE_DESC">Get your Physical activity score based on your daily Steps, Sleep, Exercise, Sedentary &amp; Light Activity</string>
+    <string name="TUTORIAL_MIND_SCORE">Mind Score</string>
+    <string name="TUTORIAL_MIND_SCORE_DESC">Get your mental wellness score by answering some simple questions related to your mental health.</string>
+    <string name="TUTORIAL_CHALLENGE">Challenge</string>
+    <string name="TUTORIAL_CHALLENGE_DESC">Participate in challenge and compete against other members on the leaderboard.</string>
+    <string name="TUTORIAL_CONSULT_THERAPIST">Consult with Mental Health Professional</string>
+    <string name="TUTORIAL_CONSULT_THERAPIST_DESC">Consult with our team of experts for any of your mental wellness related queries.</string>
+    <string name="TUTORIAL_HRA">Health Risk Assessment</string>
+    <string name="TUTORIAL_HRA_DESC">Get your wellness score, answer simple questions about your lifestyle and get a comprehensive wellness score.</string>
+    <string name="TUTORIAL_SALT_MPT">Money Personality Test</string>
+    <string name="TUTORIAL_SALT_MPT_DESC">Want to know more about your financial personality? Take this simple money personality test and check.</string>
+    <string name="TUTORIAL_SMIT_FIT">What are you looking for?</string>
+    <string name="TUTORIAL_SMIT_FIT_DESC">Get rich content related to Meditation, Yoga &amp; Exercise.</string>
+    <string name="TUTORIAL_LIVE_SESSIONS">Live Health Sessions</string>
+    <string name="TUTORIAL_LIVE_SESSIONS_DESC">Join our live health sessions related to Meditation, Yoga &amp; Exercise.</string>
+    <string name="TUTORIAL_INVESTOMETERS">Investometer</string>
+    <string name="TUTORIAL_INVESTOMETERS_DESC">- Check your risk tolerance level\n- Check your life &amp; health insurance gap\n- Check how far away you are from reaching your retirement income</string>
+    <string name="TUTORIAL_NVEST_CALCULATORS">@string/FINANCIAL_WELLNESS_CALCULATORS</string>
+    <string name="TUTORIAL_NVEST_CALCULATORS_DESC">Want to understand regarding your financial goals? Check out these utility calculators to know more.</string>
+    <string name="TUTORIAL_WELLFIE">Scan your vitals</string>
+    <string name="TUTORIAL_WELLFIE_DESC">Our advanced facial scan helps you to get quick overview of your current vital parameters like BP, SP02, Stress level and BMI.</string>
+
+    <string name="TUTORIAL_SETTINGS">@string/SETTINGS</string>
+    <string name="TUTORIAL_SETTINGS_DESC">- Switch Policy Mobile Number\n- Call Customer Care\n- WhatsApp Chatbot</string>
+    <string name="TUTORIAL_POLICIES">@string/POLICIES</string>
+    <string name="TUTORIAL_POLICIES_DESC">Get access to the policies attached to your registered mobile number &amp; their servicing features. You can also check policies for different mobile number by changing it from the settings options above.</string>
+    <string name="TUTORIAL_DOWNLOADS">@string/DOWNLOADS</string>
+    <!--    <string name="TUTORIAL_DOWNLOADS_DESC">- Download Pradhan Mantri Jeevan Jyoti Bima Yojana(PMJJBY) Policy linked to your registered mobile number</string>-->
+    <string name="TUTORIAL_DOWNLOADS_DESC">- Download Pradhan Mantri Jeevan Jyoti Bima Yojana(PMJJBY) Policy linked to your registered mobile number\n- Download SUD Life Group Term Insurance Policy linked to your registered mobile number</string>
+    <string name="SHARE_WITH_FRIENDS">Share with friends</string>
+    <string name="SHARE_MESSAGE_FOR_CENTURION_BANNER">Hey, Have you checked out this amazing new plan? SUD Life Centurion 🏏 Invest now for a secured tomorrow. 💰 One-time premium and get up to 7.2% returns* after 100 months. Check it out now! 🌟 </string>
+    <string name="SHARE_MESSAGE_FOR_SMART_HEALTH_PRODUCT_BANNER">Hey, Have you checked out this amazing new plan? SUD Life Smart Healthcare.\nA plan that provides health insurance protection against major &amp; minor conditions of critical illness.\nCheck it out now! 🌟</string>
+    <string name="SHARE_MESSAGE_FOR_BANNER_GENERAL">Hey, Have you checked out this amazing new plan? Check it out now! 🌟</string>
+    <string name="CLICK_HERE_TO_KNOW_MORE">Click Here To Know More</string>
+    <string name="FITNESS_TRACKER">Fitness Tracker</string>
+    <string name="DISCLAIMER_CENTURION_BANNER">By submitting my details, I override my NDNC registration and authorize Star Union Dai-ichi Life Insurance and its representatives to contact me through call, SMS, WhatsApp or E-mail.</string>
+    <string name="TRACK_FITNESS_DATA_STEPS_EXERCISE_SLEEP_OPTIMIZE_WELL_BEING_GOALS">Track fitness data: steps, exercise, sleep; optimize well-being goals.</string>
+    <!--End Home Module -->
+
+    <!--Start Hra Module -->
+    <string name="HRA">HRA</string>
+    <string name="TITLE_HRA">Health Risk Assessment</string>
+    <string name="I_DONT_REMEMBER">I don\'t know/remember</string>
+    <string name="RESTART_HRA">Restart HRA</string>
+    <string name="DOWNLOAD_REPORT">Download Report</string>
+    <string name="BEFORE_WE_BEGIN">Before We Begin</string>
+
+    <string name="WELCOME_TO_HRA">Welcome to Health Risk Assessment</string>
+    <string name="WELCOME_TO_HRA_desc">Holistic health status summary basis of your responses to the questionnaire.</string>
+    <string name="CHECKOUT_YOUR_WELLNESS">Checkout your wellness</string>
+    <string name="CHECKOUT_YOUR_WELLNESS_desc">Get your wellness score, Health Risk Summary and Recommended Lab Test Suggestion.</string>
+
+    <string name="YOUR_WELNESS_SCORE">Your Wellness Score</string>
+    <string name="WELLNESS_SCORE">Wellness Score</string>
+    <string name="RISK_SUMMARY">Risk Summary</string>
+    <string name="RECOMMENDED_LAB_TESTS">Recommended Lab Tests</string>
+    <string name="FREQUENCY">Frequency</string>
+    <string name="COMMON_TEST_CHECK_UPS">Common Test/Check-ups</string>
+    <string name="TEST_CHECK_UPS_SUGGESTED_BY_DOCTOR">Test/Check-ups Suggested By Doctor</string>
+
+    <string name="HRA_RANGE_HIGH_RISK">0 – 15</string>
+    <string name="HRA_RANGE_MODERATE_RISK">16 – 45</string>
+    <string name="HRA_RANGE_HEALTHY">46 – 85</string>
+    <string name="HRA_RANGE_OPTIMUM">86 – 100</string>
+
+    <string name="YOUR_BMI">Your BMI</string>
+    <string name="YOUR_BP_IS">Your Blood Pressure value is</string>
+    <string name="YOUR_BS_IS">Your Blood Sugar Level is</string>
+    <string name="YOUR_CL_IS">Your Cholesterol level is</string>
+
+    <string name="PLEASE_SELECT_ALL_THAT_APPLY">Please select all that apply to you</string>
+    <string name="SWITCH_PROFILE_DESC">To give HRA for a Family Member , your Profile will be Switched to that Respective Family Member</string>
+    <string name="START_HRA">Start Assessment</string>
+    <string name="TAKE_HRA">Take HRA</string>
+    <string name="SKIP_FOR_NOW">Skip for now</string>
+    <string name="ADD_FAMILY_MEMBER">Add Family Member</string>
+    <string name="VIEW_REPORT">View Report</string>
+
+    <string name="OTHERS">Others</string>
+
+    <string name="RANDOM_BLOOD_SUGAR">Random Blood Sugar</string>
+    <string name="FASTING_BLOOD_SUGAR">Fasting Blood Sugar</string>
+    <string name="POST_MEAL_BLOOD_SUGAR">Post Meal Blood Sugar</string>
+    <string name="HBA1C">HbA1c</string>
+
+    <string name="RANDOM_BS">Random Blood \n Sugar</string>
+    <string name="FASTING_BS">Fasting Blood \n Sugar</string>
+    <string name="POST_MEAL_BS">Post Meal Blood \n Sugar</string>
+
+    <string name="TOTAL_CHOL">Total \n Cholesterol</string>
+    <string name="TOTAL_CHOLESTEROL">Total Cholesterol</string>
+    <string name="HDL">HDL</string>
+    <string name="LDL">LDL</string>
+    <string name="TRIGLYCERIDES">Triglycerides</string>
+    <string name="VLDL">VLDL</string>
+
+    <string name="HIGH_BLOOD_PRESSURE">High Blood Pressure</string>
+    <string name="THYROID_IMBALANCE">Thyroid Imbalance</string>
+    <string name="HIGH_CHOLESTEROL">High Cholesterol</string>
+    <string name="DIABETES">Diabetes</string>
+    <string name="ASTHMA">Asthma</string>
+    <string name="ARTHRITIS">Arthritis</string>
+    <string name="MENTAL_ILLNESS">Mental Illness</string>
+    <string name="HEART_DISEASE">Heart Diseases</string>
+
+    <string name="WOMEN_PERIOD">Menstrual Irregularity</string>
+    <string name="WOMEN_PCOS">Polycystic Ovarian Syndrome (PCOS)</string>
+    <string name="WOMEN_DISCHARGE">Vaginal Discharge</string>
+    <string name="WOMEN_UTI">Urinary Tract Infection</string>
+    <string name="WOMEN_BRESTPAIN">Breast Tenderness</string>
+    <string name="WOMEN_FIB">Fibroid</string>
+
+    <string name="CAVITIES">Cavities</string>
+    <string name="BAD_BREATH">Bad Breath</string>
+    <string name="STAINING">Staining</string>
+    <string name="BLEEDING_GUM">Bleeding Gums</string>
+    <string name="BLURRED_VISION">Blurred Vision</string>
+    <string name="DRY_EYES">Dry Eyes</string>
+    <string name="NEAR_FAR_SIGHTEDNESS">Near / Far Sightedness</string>
+    <string name="DANDRUFF">Dandruff</string>
+    <string name="ACNE">Acne</string>
+    <string name="SKIN_DRYNESS">Skin Dryness</string>
+
+    <string name="OBESITY">Obesity</string>
+    <string name="HEART_PROBLEMS">Heart Problems</string>
+    <string name="BREAST_CANCER">Breast Cancer</string>
+    <string name="COLORECTAL_CANCER">Colorectal Cancer</string>
+    <string name="CERVICAL_CANCER">Cervical Cancer</string>
+
+    <string name="RB_ALWAYS">Always</string>
+    <string name="RB_SOMETIMES">Sometimes</string>
+    <string name="RB_RARELY">Rarely</string>
+    <string name="RB_NEVER">Never</string>
+    <string name="RB_USUALLY">Usually</string>
+
+    <string name="LESS_THAN_6HOURS">Less than 6 hrs</string>
+    <string name="SIXTO_EIGHT_HOURS">6 to 8 hrs</string>
+    <string name="MORE_THAN_8HOURS">More than 8 hrs</string>
+
+    <string name="RB_DONT_SMOKE">No, I don’t Smoke</string>
+    <string name="RB_12CIGAR">1 – 2 Cigarettes</string>
+    <string name="RB_34CIGAR">3 – 4 Cigarettes</string>
+    <string name="RB_MORETHAN_4CIGAR">More than 4 Cigarettes</string>
+
+    <string name="I_DONT_DRINK">No, I don\'t drink</string>
+    <string name="RB_1_2_PEGS">Up to 60 ml</string>
+    <string name="RB_3_4_PEGS">60 – 120 ml</string>
+    <string name="RB_4_PEGS">More than 120 ml</string>
+
+    <string name="RB_VERY_STRONG">Very strong</string>
+    <string name="RB_ABOVE_AVERAGE">Above average</string>
+    <string name="RB_BELOW_AVERAGE">Below average</string>
+    <string name="RB_NOT_SURE">Not sure</string>
+
+    <string name="COMPLETELY">Completely</string>
+    <string name="MOSTLY">Mostly</string>
+    <string name="PARTLY">Partly</string>
+    <string name="NOT_SATISFIED">Not Satisfied</string>
+
+    <string name="BRIGHT_LIGHT">Bright Light</string>
+    <string name="LOUD_NOISE">Loud Noise</string>
+    <string name="HAZARDOUS_GASES">Hazardous Gas</string>
+    <string name="TALKING_LONG">Talking For Long Hours</string>
+
+    <string name="DEATH_OF_RELATIVE">Death of relative/ Close one</string>
+    <string name="END_OF_RELATIONSHIP">End of relationship i.e. Divorce/ Breakup</string>
+    <string name="FEEL_DEMOTIVATED">Feel demotivated at work</string>
+    <string name="PHYSICAL_PROBLEM">Physical, Sexual or Emotional abuse</string>
+    <string name="ONGOING_MEDICATION">Ongoing Medication</string>
+    <string name="FINANCIAL_MATTER">Financial Issues/Lost Job</string>
+    <string name="HEALTH_CONCERNS">Health Concerns</string>
+
+    <string name="GESTATION_DIAB">Gestational diabetes</string>
+    <string name="WOMEN_CONCEIVE">Complication in conceiving</string>
+    <string name="WOMEN_PID">Pelvic Inflammatory Disease</string>
+
+    <string name="CHOLESTEROL_TEST">Cholesterol Test</string>
+    <string name="PAP_TEST">Pap Test</string>
+    <string name="THYROID_TEST">Thyroid Profile</string>
+    <string name="BASIC_HEALTH_CHECKUP">Basic Health Check</string>
+    <string name="SUGAR_PROFILE_TEST">Sugar Profile Test</string>
+    <string name="MAMMOGRAM">Mammogram</string>
+    <string name="PAP_SMEAR_TEST">Pap Smear Test</string>
+
+    <string name="PLEASE_SELECT_FAMILY_MEMBER">Please Select Family Member</string>
+    <string name="EXIT_ASSESSMENT">Exit Assessment?</string>
+    <string name="EXIT_ASSESSMENT_DESC">Are you sure that you want to exit? \n Your current assessment progress will be lost.</string>
+
+    <string name="PLEASE_ENTER_VALID_RANDOM_SUGAR_VALUE">Please Enter Valid Random Sugar value</string>
+    <string name="PLEASE_ENTER_VALID_FASTING_SUGAR_VALUE">Please Enter Valid Fasting Sugar value</string>
+    <string name="PLEASE_ENTER_VALID_POST_MEAL_BLOOD_SUGAR_VALUE">Please Enter Valid Post Meal Blood Sugar value</string>
+    <string name="PLEASE_ENTER_VALID_HBA1C_SUGAR_VALUE">Please Enter Valid HbA1c value</string>
+
+    <string name="RANDOM_SUGAR_VALUE_MUST_BE_BETWEEN">Random Sugar value must be between</string>
+    <string name="FASTING_SUGAR_VALUE_MUST_BE_BETWEEN">Fasting Sugar value must be between</string>
+    <string name="POST_MEAL_BLOOD_SUGAR_VALUE_MUST_BE_BETWEEN">Post Meal Blood Sugar value must be between</string>
+    <string name="HBA1C_VALUE_MUST_BE_BETWEEN">HbA1c value must be between</string>
+
+    <string name="PLEASE_SELECT_VALID_HEIGHT_BETWEEN">Please Select valid height between</string>
+    <string name="PLEASE_SELECT_VALID_INPUT_HEIGHT">Please provide valid input for Height.</string>
+    <string name="PLEASE_SELECT_VALID_INPUT_WEIGHT">Please provide valid input for Weight.</string>
+    <string name="PLEASE_SELECT_VALID_WEIGHT_BETWEEN">Please Select valid weight between</string>
+    <string name="PLEASE_ENTER_VALID_TOTAL_CHOLESTEROL_VALUE">Please Enter Valid Total Cholesterol value</string>
+    <string name="PLEASE_ENTER_VALID_HDL_VALUE">Please Enter Valid HDL value</string>
+    <string name="PLEASE_ENTER_VALID_LDL_VALUE">Please Enter Valid LDL value</string>
+    <string name="PLEASE_ENTER_VALID_TRIGLYCERIDES_VALUE">Please Enter Valid Triglycerides value</string>
+    <string name="PLEASE_ENTER_VALID_VLDL_VALUE">Please Enter Valid VLDL value</string>
+
+    <string name="TOTAL_CHOLESTEROL_VALUE_MUST_BE_BETWEEN">Total Cholesterol value must be between</string>
+    <string name="HDL_VALUE_MUST_BE_BETWEEN">HDL value must be between</string>
+    <string name="LDL_VALUE_MUST_BE_BETWEEN">LDL value must be between</string>
+    <string name="TRIGLYCERIDES_VALUE_MUST_BE_BETWEEN">Triglycerides value must be between</string>
+    <string name="VLDL_VALUE_MUST_BE_BETWEEN">VLDL value must be between</string>
+
+    <!--HRA Summary-->
+    <string name="YOUR_WELLNESS_SCORE_PLACES">Your wellness score \n places you in</string>
+    <string name="WELLNESS_DESC_CURRENT_HRA_HISTORY_ID">We were unable to compute your Health Score since you have not taken the complete HRA.Please Take the HRA to be able to see your Health Score</string>
+    <string name="WELLNESS_DESC_HRA_CUTOFF">We were not able to compute your Health Score since you have not answered some of the mandatory questions required to compute the Health Score. Please Complete the HRA to be able to see your Health Score</string>
+    <string name="WELLNESS_DESC_SCORE_ZERO_NEGATIVE">Your wellness score is 0 (out of 100), which places you in High Risk category</string>
+    <string name="CONGRATULATION_NO_RISK">Congratulations!! As per the information provided by you, it seems, at present,you have no risks.\nKeep up the good work, maintain a healthy lifestyle</string>
+    <string name="SUMMERY_SUBTITLE_TEXT">The highlighted risks are basis the responses provided by you and risk categories under personal health, family history and health parameters</string>
+    <string name="LAB_TESTS_SUBTITLE_TEXT">Test Recommendations provide you a schedule and frequency of vital tests to identify your health regularly, based on your wellness score &amp; Risk summary</string>
+    <!--HRA Summary-->
+
+    <string name="TEXT_START_ASSESSMENT"><![CDATA[Hi <b>%s.</b> in the next 10 minutes, you will need to answer some questions and gain insights to your holistic health. \nDuring this <b> Health risk assessment </b>, we will understand 3 key pillars of your well being - Vitals, Lifestyle & Occupational health.\n As a bonus, we will furnish you with a health score & complete summary & recommendations to reduce your health risks (if any).]]></string>
+    <string name="QUES_FAMILY_PROFILE"><![CDATA[Before we begin, please tell me <b>who</b> is taking this assessment?]]></string>
+    <string name="QUESTION_BMI"><![CDATA[Let\'s calculate your Body mass index (BMI); a simple way to gauge your weight: height ratio.Please enter your vital <b>health parameters.</b>]]></string>
+    <string name="QUESTION_BP"><![CDATA[What is your <b>blood pressure</b> value? \nKindly mention input in mmHg]]></string>
+    <string name="QUESTION_BLOOD_SUGAR"><![CDATA[Which of the following <b>Sugar report</b> you have recently done? ]]></string>
+    <string name="QUESTION_BLOOD_SUGAR_INPUT"><![CDATA[Please update your last <b>Blood Sugar</b> level readings]]></string>
+    <string name="QUESTION_CHOLESTEROL"><![CDATA[Which of the following <b>Cholesterol report</b> have you recently done? ]]></string>
+    <string name="QUESTION_CHOLESTEROL_INPUT"><![CDATA[Please update your last <b>Blood Cholesterol</b> level readings.]]></string>
+    <string name="QUESTION_HEALTH_CONDITION"><![CDATA[Do you have any of these <b> Health Conditions?</b>]]></string>
+    <string name="QUESTION_WOMEN"><![CDATA[Do you have history of any of these <b>Medical Illnesses?</b>]]></string>
+    <string name="QUESTION_EDS"><![CDATA[Which of the following <b> Skin/Dental/Eye disorder </b>are you suffering from?]]></string>
+    <string name="QUESTION_FAMILY_HISTORY"><![CDATA[Does anyone in your <b> blood relation </b> have any of these <b> health conditions? </b>]]></string>
+    <string name="QUESTION_SNACKS"><![CDATA[Do you <b>eat fruits & vegetables</b> 2 to 3 times a day?]]></string>
+    <string name="QUESTION_FAT"><![CDATA[Do you <b>eat fast food like red meat, cheese, fried foods</b> more than 3 times a week?]]></string>
+    <string name="QUESTION_EXERCISE"><![CDATA[Do you <b>exercise</b> more than 3 hours a week?]]></string>
+    <string name="QUESTION_SLEEP"><![CDATA[How many <b>hours do you sleep in a day?</b>]]></string>
+    <string name="QUESTION_SMOKE"><![CDATA[How many <b>cigarettes do you smoke</b> in a day?]]></string>
+    <string name="QUESTION_DRINK"><![CDATA[How much <b>alcohol do you consume</b> per week ?]]></string>
+    <string name="QUESTION_FAMILY_LIFE"><![CDATA[Do you feel that you have a good balance between your <b>work & family life?</b>]]></string>
+    <string name="QUESTION_SOCIAL"><![CDATA[How strong are your <b>social ties</b> with your <b>family & friends?</b>]]></string>
+    <string name="QUESTION_SATISFIED_LIFE"><![CDATA[How <b>satisfied</b> are you with <b>your life?</b>]]></string>
+    <string name="QUESTION_JOB_PAY"><![CDATA[Is your job offering <b>adequate amount of paid time off?</b>]]></string>
+    <string name="QUESTION_SHIFT"><![CDATA[Do you work <b>in shifts?</b>]]></string>
+    <string name="QUESTION_EXTENDED_TIME"><![CDATA[Do you spend <b>more than 8 hours</b> in front of <b>PC/Laptop?</b>]]></string>
+    <string name="QUESTION_EXPOSE"><![CDATA[Are you <b> exposed to</b>  any of the following <b>at your workplace</b>?]]></string>
+    <string name="QUESTION_STRESS"><![CDATA[Do you often <b>feel stressed?</b>]]></string>
+    <string name="QUESTION_PHY"><![CDATA[Which of the following <b> apply to you?</b>]]></string>
+    <string name="QUESTION_CHECKUP"><![CDATA[Which of the following <b> health check-ups </b> have you undergone with the past year? ]]></string>
+    <string name="QUESTION_LAST"><![CDATA[Thanks for sharing the details with us. Your <b>health risk assessment results</b> are on the way.]]></string>
+
+    <string name="QUESTION_BRIGHT_LIGHT"><![CDATA[Are you <b>exposed to</b> any of the following <b>at your workplace?</b>]]></string>
+    <!--End Hra Module -->
+
+    <!--Start Medication Module -->
+    <string name="TITLE_MEDICINE_TRACKER">Medicine Tracker</string>
+    <string name="TITLE_MY_MEDICATIONS">My Medications</string>
+    <string name="TITLE_ADD_MEDICATION">Add Medication</string>
+    <string name="TITLE_SCHEDULE_MEDICATION">Schedule Medicine</string>
+
+    <string name="ADD_MEDICATION">Add Medication</string>
+    <string name="MY_MEDICATIONS">My Medications</string>
+    <string name="UPDATE_STATUS">Update Status</string>
+    <string name="UPDATE_YOUR_MEDICINE_STATUS">Update your Medicine Status</string>
+    <string name="MEDICINE_NAME">Medicine Name</string>
+
+    <string name="ENABLE">Enable</string>
+    <string name="DISABLE">Disable</string>
+    <string name="START_DATE">Start date</string>
+    <string name="END_DATE">End date</string>
+    <string name="STATUS">Status</string>
+    <string name="DOSAGE">Dosage</string>
+    <string name="SCHEDULE">Schedule</string>
+
+    <string name="TAKEN">Taken</string>
+    <string name="SKIPPED">Skipped</string>
+    <string name="MISSED">Missed</string>
+
+    <string name="BEFORE_MEAL">Before Meal</string>
+    <string name="WITH_MEAL">With Meal</string>
+    <string name="AFTER_MEAL">After Meal</string>
+    <string name="ANYTIME">Anytime</string>
+
+    <string name="ONGOING">Ongoing</string>
+    <string name="COMPLETED">Completed</string>
+
+    <string name="TABLET">Tablet</string>
+    <string name="CAPSULE">Capsule</string>
+    <string name="SYRUP">Syrup</string>
+    <string name="DROPS">Drops</string>
+    <string name="INJECTION">Injection</string>
+    <string name="GEL">Gel</string>
+    <string name="TUBE">Tube</string>
+    <string name="SPRAY">Spray</string>
+    <string name="MOUTHWASH">Mouthwash</string>
+    <string name="MOUTH_WASH">Mouth \n wash</string>
+    <string name="SOLUTION">Solution</string>
+    <string name="OINTMENT">Ointment</string>
+
+    <string name="FOR_TODAY_ONLY">For Today Only</string>
+    <string name="STARTING_ON">Starting on</string>
+    <string name="STARTED">Started</string>
+
+    <string name="DAILY">Daily</string>
+    <string name="FOR_X_DAYS">For X Days</string>
+
+    <string name="NOTES">Notes</string>
+    <string name="NUMBER_OF_DAYS">Number of Days</string>
+    <string name="HOW_OFTEN_WILL_YOU_TAKE">How often will you take it?</string>
+    <string name="HOW_MANY_YOU_NEED_TO_TAKE_AT_ONE_TIME">How many you need to take at one time?</string>
+    <string name="HOW_MANY_TIME_DAILY">How many time daily?</string>
+    <string name="INTAKE_INSTRUCTIONS">Intake Instructions</string>
+    <string name="ENABLE_NOTIFICATION_ALERT">Enable Notification Alert?</string>
+    <string name="TYPE_YOUR_NOTES">Type your notes</string>
+    <string name="MAX_50_CHARACTERS">Max 50 Characters</string>
+
+    <string name="EDIT_ENTRY">Edit Entry</string>
+    <string name="CHOOSE_MEDICINE_TYPE">Choose Medicine Type</string>
+    <string name="TYPE_YOUR_MEDICINE_NAME">Type your medicine name</string>
+    <string name="WHAT_TIMES_OF_DAY">What times of day?</string>
+    <string name="YOU_HAVE_TAKEN">You have taken</string>
+    <string name="YOU_HAVE_SKIPPED">You have skipped</string>
+
+    <string name="DO_YOU_WANT_TO">Do you want to</string>
+    <string name="NOTIFICATION_ALERT">Notification Alert</string>
+    <string name="DELETE_MEDICINE">Delete Medication</string>
+    <string name="RESCHEDULE_MEDICINE">Reschedule Medicine</string>
+    <string name="UPDATE_MEDICINE_SCHEDULES">Update Medicine Schedules</string>
+    <string name="PAST_MEDICINES">Past Medicines</string>
+    <string name="NO_MEDICINES_AVAILABLE">No Medicines Available</string>
+    <string name="MEDICINE_DELETED">Medicine Deleted Successfully</string>
+    <string name="MEDICINE_ADDED">Medicine Added Successfully</string>
+    <string name="MEDICINE_UPDATED">Medicine Updated Successfully</string>
+    <string name="ALERT_ENABLED">Notification Enabled Successfully</string>
+    <string name="ALERT_DISABLED">Notification Disabled Successfully</string>
+    <string name="ERROR_SELECT_SCHEDULE_TIME">Please Select Schedule Time</string>
+    <string name="ERROR_ENTER_MEDICINE_TYPE">Please Select Medication Type</string>
+    <string name="ERROR_ENTER_MEDICINE_NAME">Please Enter Medication Name</string>
+    <string name="ERROR_SELECT_MEDICINE_STATUS">Please Select Medicine Status</string>
+    <string name="ALREADY_DELETED_MEMBER_RELATED_TO_NOTIFICATION">You have Already Deleted Family Member Related to this Notification</string>
+    <string name="YOU_ARE_ALREADY_TAKING">You are already taking</string>
+    <string name="YOU_HAVE_REMOVED_OR_RESCHEDULED_TIME">You have Removed or Rescheduled Time</string>
+    <string name="YOU_HAVE_ALREADY_DELETED">You have Already Deleted</string>
+
+    <string name="MSG_SCHEDULE_TIME_FOUND">We don\'t have Schedule Time for this Medicine.Do you want add Schedule Time?</string>
+    <string name="MSG_CONFIRMATION_DELETE_MEDICINE">Are you sure that you want to delete this medication?</string>
+    <string name="MSG_CONFIRMATION_RESCHEDULE_MEDICINE">Do you want to Reschedule</string>
+
+    <string name="ERROR_START_DATE_MUST_BE_LESS_THAN_OR_EQUAL_TO_END_DATE">Start Date must be less than or Equal to End Date</string>
+    <string name="ERROR_END_DATE_MUST_BE_GREATER_THAN_OR_EQUAL_TO_START_DATE">End Date must be Greater than or Equal to Start Date</string>
+    <string name="ERROR_SCHEDULE_TIME_NOT_FOUND_PLEASE_SELECT_TO_UPDATE_MEDICINE_DETAILS">Schedule Time not found,Please Select to Update Medicine Details</string>
+    <string name="ERROR_PLEASE_SELECT_VALID_SCHEDULE_TIME">Please Select Valid Schedule Time</string>
+    <string name="ERROR_PLEASE_ENTER_VALID_NUMBER_OF_DAYS">Please Enter Valid Number of Days</string>
+    <string name="ERROR_PLEASE_SELECT_INTAKE_INSTRUCTION">Please Select Intake Instruction</string>
+    <string name="ERROR_STATUS_FOR_FUTURE_SCHEDULE_TIMES_CAN_NOT_BE_UPDATED">Status for Future Schedule Times can\'t be Updated</string>
+    <!--End Medication Module-->
+
+    <!--Start Record Tracker Module -->
+    <string name="TITLE_MY_HEALTH_RECORDS">Health Records</string>
+    <string name="TITLE_ADD_RECORDS">Add Records</string>
+    <string name="REVERSE_CHRONOLOGICAL_ORDER">Present in reverse chronological order</string>
+
+    <string name="DOWNLOAD_RECORD">Download Record</string>
+    <string name="SHARE_RECORD">Share Record</string>
+    <string name="DELETE_RECORD">Delete Record</string>
+
+    <string name="NO_RECORD_AVAILABLE">No Records available</string>
+    <string name="SELECT_RECORD_TO_UPLOAD">Select a Record to Upload</string>
+    <string name="DATE_OF_CHECKUP">Date of Checkup</string>
+    <string name="TYPE_OF_DOCUMENT">Type of Document</string>
+    <string name="VALUE_MUST_BE_BETWEEN">Value must be in between</string>
+    <string name="SELECT_RECORDS_TO_PROCEED">Please Select Records to Proceed</string>
+    <string name="DOWNLOAD_DOCUMENT_TO_PROCEED">Please download the document to share</string>
+    <string name="DOCUMENT_BELONGS_TO">To whom these document belongs to</string>
+    <string name="HAVE_NOTES_TO_MENTION">Do you have some notes to mention?</string>
+    <string name="MSG_DELETE_CONFIRMATION">Are you sure that you want to delete the Selected Record from list?</string>
+
+    <string name="MSG_RECORD_SAVED">Record Saved Successfully</string>
+    <string name="MSG_RECORD_DELETED">Record deleted Successfully</string>
+    <string name="MSG_REOCRD_DOWNLOADED">Record Downloaded Successfully</string>
+
+    <string name="NO_RECORDS_FOUND">No Records Found</string>
+    <string name="NO_PATHOLOGY_REPORTS_UPLOADED">No Pathology Reports Uploaded</string>
+    <string name="NO_RECORDS_CLICK_FOR_UPLOADING">No reports uploaded \n Click on an option below \n to start uploading</string>
+    <string name="RECORDS_DISCLAIMER">Please select file from your Phone/Download directory or Google Drive</string>
+
+    <string name="PLEASE_SELECT_DOCUMENT_TYPE">Please select document type</string>
+    <string name="ERROR_SELECT_MEMBER_TO_PROCEED">Please Select Family member to whom these document belongs to</string>
+    <string name="ERROR_UNIT_NOT_SUPPORTED">Unit is not Supported</string>
+    <string name="ERROR_VALUE_NOT_CORRECT">Value is not Correct</string>
+    <string name="ERROR_UNIT_NOT_CORRECT">Unit is not Correct</string>
+    <string name="ERROR_ENTER_VALID_INPUT">Please Enter Valid Input</string>
+    <string name="ERROR_DOES_NOT_MATCHING_REQUIREMENTS"> does not match the requirements, kindly remove it to proceed</string>
+
+    <string name="PICK_UPLOAD_TYPE">Pick upload type</string>
+    <string name="UPLOAD_PHOTO">Upload \n Photo</string>
+    <string name="UPLOAD_FROM_GALLERY">Upload From \n Gallery</string>
+    <string name="UPLOAD_FILE">Upload \n File</string>
+
+    <string name="TYPE_PATHOLOGY_LAB_REPORT">Pathology \n Report</string>
+    <string name="TYPE_HOSPITAL_REPORT">Hospital \n Report</string>
+    <string name="TYPE_DOCTOR_PRESCRIPTION">Doctor \n Prescription</string>
+    <string name="TYPE_DIET_PLAN">Diet \n Plan</string>
+    <string name="TYPE_FITNESS_PLAN">Fitness \n Plan</string>
+    <string name="TYPE_OTHER_DOCUMENT">Other \n Document</string>
+    <string name="TYPE_HRA_REPORT">HRA \n Report</string>
+    <!--End Record Tracker Module -->
+
+    <!--Start Security Module-->
+    <string name="facebook_app_id" translatable="false">606675634437313</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb606675634437313</string>
+    <string name="facebook_client_token" translatable="false">d2337e3739f1bad138d911ae47dcd0bc</string>
+
+    <!--    <string name="facebook_app_id" translatable="false">397824020674947</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb397824020674947</string>-->
+    <string name="google_web_client_id" translatable="false">963831629628-s2bn21hirc0iiqpo8a04esucanvv6vhk.apps.googleusercontent.com</string>
+    <!--    <string name="google_web_client_id" translatable="false">131375685253-kgb90ksquontqa1gion390lql0fpanku.apps.googleusercontent.com</string>-->
+    <!--    <string name="google_web_client_id">694765538505-tg34ue2keb3ghfbkurjp2op8tehflek8.apps.googleusercontent.com</string>-->
+
+    <string name="SPLASH_DESC1">Awarded Innovation in Customer Engagement</string>
+    <!--    <string name="SPLASH_DESC2">Bharat Fintech Awards</string>-->
+    <string name="SPLASH_DESC2">BFSI Innovation confex &amp; awards</string>
+    <string name="YOUR_HOLISTIC_HEALTH_DESC">Your holistic Health management companion.</string>
+    <string name="FIND_AND_MONITOR_HEALTH">Find Out And Monitor Your Health Status</string>
+    <string name="GET_YOUR_HEALTH_SCORE_DESC">Get your health score, improve upon it by regular tracking of your vitals and activity. One stop solution for identifying, tracking and managing your health.</string>
+    <string name="A_VITAL_COMPANION_DESC">A Vital Companion for Your Health Needs</string>
+    <string name="AVAIL_DOCTOR_CONSULTATION_DESC">Avail doctor consultations, health records, prescriptions to medicine delivery all at your convenience.</string>
+    <string name="TAKE_ME_TO_APP">Take me into the App</string>
+
+    <string name="ARE_YOU_EMPLOYEE">Are you an Employee of ?</string>
+    <string name="BANK_OF_INDIA">Bank of India</string>
+    <string name="UNION_BANK_OF_INDIA">Union Bank of India</string>
+    <string name="SUD_LIFE_INSURANCE">SUD Life Insurance</string>
+    <string name="NONE_OF_ABOVE">None of above</string>
+
+    <string name="DONT_HAVE_ACCOUNT">Don\'t have an account?</string>
+    <string name="TERMS_CONCENT">I have read and agree to the</string>
+    <string name="USER_TERMS_CONDITIONS">User Terms and Conditions</string>
+    <string name="TERMS_OF_SERVICE_HEALTH_HDETAILS">I further acknowledge and confirm that health details uploaded by me may be collected and used by SUD Life and affiliated third parties for the purposes of this app.</string>
+
+    <string name="WARNING">Warning</string>
+    <string name="WARNING_DESC">This device appears to be rooted/jail broken. There are inherent security risks with jail broken devices hence for your data security this app will now quit.</string>
+
+    <string name="MSG_LOGIN_SUD">As you are SUD Life employee, request you to kindly access the app from your official HR app ‘Darwinbox’ for seamless experience.</string>
+
+    <string name="YOUR_DOB">Your Date Of Birth</string>
+    <string name="TERMS_CONDITIONS">Terms and Conditions</string>
+    <string name="ADDITIONAL_DETAILS">Additional Details</string>
+    <string name="ADDITIONAL_DETAILS_MISSING">Please tell us a little bit about yourself</string>
+    <string name="LOGIN_USING_FB">Log in using Facebook</string>
+    <string name="LOGIN_USING_GOOGLE">Log in using Google</string>
+    <string name="OR_LOGIN_WITH">OR Login with</string>
+    <string name="EMAIL_OR_PHONE">Email Or Phone</string>
+    <string name="OTP">OTP</string>
+    <string name="EMAIL_PHONE">Registered Email/Mobile Number</string>
+    <string name="REGISTERED_EMAIL">Registered Email Address</string>
+    <string name="REGISTERED_PHONE">Registered Mobile Number</string>
+    <string name="LOG_IN">Log In</string>
+    <string name="SIGN_IN">Sign In</string>
+    <string name="SIGN_UP">Sign Up</string>
+    <string name="LOG_IN_WITH_OTP">Login with OTP</string>
+    <string name="LOG_IN_WITH_OTP_DESC">Enter your registered mobile number and we will\nsend OTP to login into your account</string>
+    <string name="FORGOT_PASSWORD">Forgot Password?</string>
+    <string name="I_AM_DONE">I am done</string>
+    <string name="SIGN_IN_WITH_GOOGLE">Sign in with Google</string>
+    <string name="SIGN_IN_WITH_FACEBOOK">Sign in with Facebook</string>
+
+    <string name="NAME_COMPULSARY">Name*</string>
+    <string name="EMAIL_COMPULSARY">Email*</string>
+    <string name="DOB_COMPULSARY">Date of Birth*</string>
+    <string name="PASSWORD_COMPULSARY">Password*</string>
+    <string name="PHONE_COMPULSARY">Mobile Number*</string>
+
+    <string name="ENTER_NEW_PASSWORD">Enter your New Password</string>
+    <string name="RESET_PASSWORD">Reset Password</string>
+    <string name="FORGOT_PASSWORD_DESC">Enter your email and we will send you\nOTP to reset your password</string>
+    <string name="VERIFICATION_CODE">Verification Code</string>
+    <string name="OTP_SENT_DESC">Please enter the OTP sent to your\nRegistered Email/Mobile Number</string>
+    <string name="OTP_VARIFIED_SUCCESSFULLY">OTP verified successfully</string>
+
+    <string name="PLEASE_ACCEPT_TERMS">Please accept Terms and Conditions</string>
+    <string name="PLEASE_ACCEPT_TERMS_PRIVACY_POLICY">Please accept Terms &amp; Conditions and Privacy Policy</string>
+    <string name="GOOGLE_SIGN_IN_FAILED">Google sign in failed</string>
+    <string name="FB_SIGN_IN_FAILED">Facebook sign in failed</string>
+    <string name="ERROR_INVALID_EMAIL_PHONE">Please enter valid email address or phone</string>
+    <string name="ERROR_AGE_GREATER_THEN_18_YEARS">Age should be greater than 18 years</string>
+    <string name="ERROR_EMAIL_REGISTERED">This email is already Registered with us</string>
+    <string name="ERROR_EMAIL_NOT_REGISTERED">This Email is not Registered with us</string>
+    <string name="ERROR_PHONE_REGISTERED">This Mobile Number is Already Registered with us</string>
+    <string name="ERROR_PHONE_NOT_REGISTERED">This Mobile Number is not Registered with us</string>
+    <string name="ERROR_EMAIL_PHONE_NOT_REGISTERED">This Email or Mobile Number is not registered with us</string>
+    <string name="ERROR_INVALID_NAME">Please Enter Your Name</string>
+    <string name="ERROR_INVALID_PHONE">Please Enter Valid Mobile Number</string>
+    <string name="ERROR_INVALID_EMAIL">Please Enter Valid Email</string>
+    <string name="ERROR_INVALID_PASSWORD">Please Enter valid Password</string>
+    <string name="ERROR_INCORRECT_PASSWORD">This Password is incorrect</string>
+    <string name="ERROR_PASSWORD_DOESNOT_MATCH">Passwords do not match</string>
+    <string name="ERROR_PASSWORD_DOESNOT_MATCH_REQUIREMENTS">Password does not match the Requirements</string>
+    <string name="ERROR_PASSWORD_CONFIRM_DOESNOT_MATCH">Password and confirm password does not match</string>
+    <string name="ERROR_USERNAME_PASSWORD_SAME">Username should not be same as Password</string>
+    <string name="ERROR_FIELD_REQUIRED">This field is required</string>
+
+    <string name="ERROR_INVALID_USER_CREDENTIALS">Invalid user credentials</string>
+    <string name="ERROR_UNABLE_TO_RESET_PASSWORD">Unable to Reset Password</string>
+    <string name="ERROR_ENTER_VALID_OTP">Please Enter Valid OTP</string>
+    <string name="ERROR_UNABLE_LOGIN_WITH_USER">Unable to login with this user</string>
+
+    <string name="INTRO_SLIDE_1_TITLE">Workout &amp; yoga</string>
+    <string name="INTRO_SLIDE_2_TITLE">Mental Wellness Support</string>
+    <string name="INTRO_SLIDE_3_TITLE">Financial Wellbeing</string>
+    <string name="INTRO_SLIDE_4_TITLE">A Complete Fitness App</string>
+
+    <string name="INTRO_SLIDE_1_DESC">Exercise strength, yoga flexibility – blend for holistic mind-body wellness.</string>
+    <string name="INTRO_SLIDE_2_DESC">Calm mind, stress-free life – prioritizing mental wellness is self-care.</string>
+    <string name="INTRO_SLIDE_3_DESC">Budget wisely, save, invest – key to financial stability and wellbeing.</string>
+    <string name="INTRO_SLIDE_4_DESC">Track, train, progress – a holistic app for complete fitness journey.</string>
+
+    <string name="LOGIN_SIGN_UP">Login/Sign Up</string>
+    <string name="LOGIN_SIGN_UP_DESC">To dive into a world of Physical Fitness &amp; Mental \n Wellness, Please Login or Sign Up</string>
+
+    <string name="ENTER_OTP">Enter OTP</string>
+    <string name="PLEASE_ENTER_THE_OTP_SENT_TO">Please enter the OTP sent to</string>
+    <string name="DIDN_NOT_RECEIVE_OTP">Didn’t receive OTP?</string>
+    <string name="RESEND_OTP_IN">Resend OTP in</string>
+
+    <string name="IS_NOT_REGISTERED_WITH_US">is not registered with us.</string>
+    <string name="DO_YOU_WANT_REGISTER_IT_NOW">Do you want register it now?</string>
+
+    <string name="STEP_1_OF_4">Step 1 of 4</string>
+    <string name="STEP_2_OF_4">Step 2 of 4</string>
+    <string name="STEP_3_OF_4">Step 3 of 4</string>
+    <string name="STEP_4_OF_4">Step 4 of 4</string>
+
+    <string name="PERSONAL_DETAILS">Personal Details</string>
+    <string name="SIGN_UP_DESC">Please share your personal details for registration \n and better recommendations</string>
+
+    <string name="I_HAVE_READ_AGREE">I have read &amp; agree to</string>
+    <string name="I_AGREE_DATA_USES">I agree to the data usage</string>
+
+    <string name="EMAIL_MOBILE_COMPULSARY">Email or Mobile No. *</string>
+    <string name="HINT_EMAIL_MOBILE">Enter Email or mobile no.</string>
+    <string name="USERNAME_COMPULSARY">Name *</string>
+    <string name="HINT_USERNAME">Enter your name</string>
+    <string name="FIRST_NAME_COMPULSARY">First Name *</string>
+    <string name="HINT_FIRST_NAME">Enter your first name</string>
+    <string name="LAST_NAME_COMPULSARY">Last Name *</string>
+    <string name="HINT_LAST_NAME">Enter your last name</string>
+    <string name="MOBILE_NO_COMPULSARY">Mobile No. *</string>
+    <string name="HINT_MOBILE_NO">Enter your mobile no.</string>
+    <string name="EMAIL_COMPULSARY2">Email *</string>
+    <string name="HINT_EMAIL">Enter your email</string>
+
+    <string name="SELECT_YOUR_GENDER">Select your Gender</string>
+    <string name="SELECT_YOUR_DOB">Select your Date of birth</string>
+    <string name="SELECT_YOUR_RELEVANT_EMPLOYER">Select the relevant Employer</string>
+    <string name="I_VE_READ_AND_ACCEPTED_ALL_TERMS_AND_CONDITIONS">I\'ve read and accepted all Terms and Conditions and Privacy Policy. I authorize SUD Life Insurance to contact me via SMS/Email/Phone/WhatsApp/Facebook or any other modes overriding my \'DND\'.</string>
+    <string name="KINDLY_DISABLE_THE_DEVELOPER_MODE_ON_YOUR_DEVICE">Kindly disable the developer mode on your device.</string>
+    <string name="FOR_SECURITY_REASONS_YOU_CANNOT_USE_OUR_APPLICATION_IF_THE_DEVELOPER_MODE_IS_ENABLED_ON_YOUR_DEVICE">For security reasons, you cannot use our application if the developer mode is enabled on your device.</string>
+    <!--End Security Module-->
+
+    <!--Start Tool Calculator Module-->
+    <string name="TITLE_TOOLS_CALCULATORS">Tools and Calculators</string>
+
+    <string name="HEART_AGE_CALCULATOR">Heart Age Calculator</string>
+    <string name="DIABETES_CALCULATOR">Diabetes Calculator</string>
+    <string name="HYPERTENSION_CALCULATOR">Hypertension Calculator</string>
+    <string name="STRESS_ANXIETY_CALCULATOR">Stress And Anxiety Calculator</string>
+    <string name="SMART_PHONE_CALCULATOR">Smart Phone Addiction</string>
+    <string name="DUE_DATE_CALCULATOR">Due Date Calculator</string>
+
+    <string name="TRACKER_HEART_AGE2">Heart Age \n Calculator</string>
+    <string name="TRACKER_DIABETES2">Diabetes \n Calculator</string>
+    <string name="TRACKER_HYPERTENSION2">Hypertension \n Calculator</string>
+    <string name="TRACKER_STRESS_ANXIETY2">Stress &amp; Anxiety\nCalculator</string>
+    <string name="TRACKER_SMART_PHONE2">Smart Phone \n Addiction</string>
+    <string name="TRACKER_DUE_DATE2">Due Date \n Calculator</string>
+
+    <string name="TRACKER_DESC_HEART_AGE2">Is your Heart is as young as you are?</string>
+    <string name="TRACKER_DESC_DIABETES2">Know your\ndiabetes risk</string>
+    <string name="TRACKER_DESC_HYPERTENSION2">Know your blood pressure</string>
+    <string name="TRACKER_DESC_STRESS_ANXIETY2">Are you feeling\nstressed?</string>
+    <string name="TRACKER_DESC_SMART_PHONE2">Addicted to smartphone?</string>
+    <string name="TRACKER_DESC_DUE_DATE2">Know your due date</string>
+
+    <string name="DISCLAIMER_TITLE">References for Health Calculator Calculations and Suggestions</string>
+    <string name="DISCLAIMER_CARDIOVASCULAR">The risk for Cardiovascular conditions :</string>
+    <string name="DISCLAIMER_HEART_AGE">Heart Age Calculator &amp; Risk Score :</string>
+    <string name="DISCLAIMER_WOMEN_HEALTH">Period health and Women\'s Health Guidelines :</string>
+    <string name="DISCLAIMER_DASS">Depression Anxiety Stress Scales (DASS-21) :</string>
+    <string name="DISCLAIMER_DASS_DESC">Lovibond, S.H. &amp; Lovibond, P.F. (1995). Manual for the Depression Anxiety &amp; Stress Scales. (2nd Ed.)Sydney: Psychology Foundation.</string>
+    <string name="DISCLAIMER_WORKABILITY_INDEX">The Workability index :</string>
+    <string name="DISCLAIMER_WORKABILITY_INDEX_DESC">1. Ilmarinen J (ed.). The aging worker. Scand J Work Environ Health 1991;17(Suppl. 1): 1–141.\n2. Tuomi K (ed.). Eleven–year follow–up of aging workers. Scand J Work Environ Health 1997; 23(Suppl. 1): 1–71.\n3. Radkiewich P, Widerszal–Bazyl M. Psychometric Properties of Work Ability Index in the Light of Comparative Survey Study. International Congress Series 1280. The Netherlands: Elsevier, 2005; 304–309.</string>
+    <string name="DOWNLOAD_PDF_FROM">Download PDF From</string>
+    <string name="CLICK">Click</string>
+    <string name="HERE">here</string>
+
+    <string name="PROFILE_PARAMETERS">Profile Parameters</string>
+    <string name="MEASUREMENT_PARAMETERS">Measurement Parameters</string>
+    <string name="LIFESTYLE_CHANGES">Lifestyle Changes</string>
+    <string name="AGE_IN_YEARS">Age in years</string>
+    <string name="TODAY_VIA_MOBILE_ENTRY">Today via mobile entry</string>
+
+    <string name="LOW_RISK_1">Low Risk</string>
+    <string name="HIGH_RISK_1">High Risk</string>
+
+    <string name="SELECT_ALL_THAT_APPLIES_TO_YOU">Select all that applies to you</string>
+    <string name="HEALTH_CONDITION">Health Condition</string>
+    <string name="KIDNEY_DISEASE">Kidney disease</string>
+    <string name="STROKE">Stroke</string>
+    <string name="CORONARY_ARTERY">Coronary artery</string>
+    <string name="FAMILY_HISTORY_OF_HEART_DISEASE">Family history of heart disease</string>
+
+    <string name="UNDER_35_YEARS">Under 35 Years</string>
+    <string name="AGE_35_TO_44" translatable="false">35 – 44</string>
+    <string name="AGE_45_TO_54" translatable="false">45 – 54</string>
+    <string name="AGE_55_TO_64" translatable="false">55 – 64</string>
+    <string name="AGE_65_YRS_OR_OVER">65 yrs or Over</string>
+
+    <string name="RANGE_0_TO_4" translatable="false">0 – 4</string>
+    <string name="UPPER_LIMIT">Upper Limit</string>
+    <string name="LOWER_LIMIT">Lower Limit</string>
+
+    <string name="DEPRESSION">Depression</string>
+    <string name="ANXIETY">Anxiety</string>
+    <string name="STRESS">Stress</string>
+
+    <string name="DYSPHORIA">Dysphoria</string>
+    <string name="LACK_OF_INTEREST_INVOLVEMENT">Lack of interest / involvement</string>
+    <string name="HOPELESSNESS">Hopelessness</string>
+    <string name="ANHEDONIA">Anhedonia</string>
+    <string name="DEVALUATION_OF_LIFE">Devaluation of life</string>
+    <string name="INERTIA">Inertia</string>
+
+    <string name="AUTONOMIC_AROUSAL">Autonomic arousal</string>
+    <string name="SELF_DEPRECATION">Self-deprecation</string>
+    <string name="SKELETAL_MUSCLE_EFFECTS">Stress</string>
+    <string name="SUBJECTIVE_EXPERIENCE_OF_ANXIOUS_AFFECT">Subjective experience of anxious affect</string>
+    <string name="SITUATIONAL_ANXIETY">Situational anxiety</string>
+
+    <string name="DIFFICULTY_RELAXING">Difficulty relaxing</string>
+    <string name="NERVOUS_AROUSAL">Nervous arousal</string>
+    <string name="BEING_EASILY_UPSET_AGITATED_IRRITABLE_OVER_REACTIVE_AND_IMPATIENT">Being easily upset/agitated, irritable/over-reactive and impatient</string>
+
+    <string name="BASED_ON_YOUR_SCORE_YOU_HAVE">Based on your Score you have</string>
+    <string name="PROBABILITY_OF_GETTING_DIABETES">% Probability of getting diabetes</string>
+
+    <string name="HEART_AGE">Heart Age</string>
+    <string name="HEART_RISK">Heart Risk</string>
+    <string name="YOUR_AGE">Your Age</string>
+    <string name="YOU_ARE_UNDER">You are under</string>
+    <string name="HYPERTENSION_SUMMARY">Hypertension Summary</string>
+    <string name="OPTIMUM_RISK">Optimum Risk</string>
+    <string name="RISK_1">Your Risk</string>
+    <string name="RISK_2">Adjusted Risk</string>
+    <string name="YEAR_1">Year 1</string>
+    <string name="YEAR_2">Year 2</string>
+    <string name="YEAR_4">Year 4</string>
+
+    <string name="VIEW_DETAILED_REPORT">View Detailed Report</string>
+    <string name="RESTART_ASSESSMENT">Restart Assessment</string>
+
+    <string name="SYSTOLIC_BP">Systolic BP (mm Hg)</string>
+    <string name="DIASTOLIC_BP">Diastolic BP (mm Hg)</string>
+    <string name="SYSTOLIC_DIALOG_TITLE">Systolic &amp; Diastolic BP</string>
+    <string name="SYSTOLIC_DIALOG_MESSAGE">Enter your blood pressure details</string>
+
+    <string name="DIABETES_RANGE_LOW_RISK" translatable="false">0 – 5</string>
+    <string name="DIABETES_RANGE_MILD_RISK" translatable="false">6 – 11</string>
+    <string name="DIABETES_RANGE_MODERATE_RISK" translatable="false">12 – 19</string>
+    <string name="DIABETES_RANGE_HIGH_RISK" translatable="false">20 – 47</string>
+
+    <string name="NEVER">Never</string>
+    <string name="SOMETIMES">Sometimes</string>
+    <string name="OFTEN">Often</string>
+    <string name="ALWAYS">Always</string>
+    <string name="ALMOST_ALWAYS">Almost Always</string>
+
+    <string name="DEPRESSION_RISK_SCORE">Depression Risk Score</string>
+    <string name="ANXIETY_RISK_SCORE">Anxiety Risk Score</string>
+    <string name="STRESS_RISK_SCORE">Stress Risk Score</string>
+
+    <string name="RISK_NORMAL">Normal Risk</string>
+    <string name="RISK_MILD">Mild Risk</string>
+    <string name="RISK_MODERATE">Moderate Risk</string>
+    <string name="RISK_SEVERE">Severe Risk</string>
+    <string name="RISK_EXTREMELY_SEVERE">Extremely Severe Risk</string>
+
+    <string name="NORMAL">Normal</string>
+    <string name="MILD">Mild</string>
+    <string name="MODERATE">Moderate</string>
+    <string name="SEVERE">Severe</string>
+    <string name="EXTREMELY_SEVERE">Extremely \n Severe</string>
+
+    <string name="LOW_RISK">Low Risk</string>
+    <string name="MILD_RISK">Mild Risk</string>
+    <string name="SEVERE_RISK">Severe Risk</string>
+    <string name="NORMAL_RISK">Normal \n Risk</string>
+    <string name="EXTREMELY_SEVER_RISK">Extremely Severe Risk</string>
+
+    <string name="LAST_MENSTRUAL_PERIOD">Last Menstrual Period (LMP)</string>
+    <string name="YOUR_BABY_IS_DUE_ON_OR_AROUND">Your baby is due on or around</string>
+    <string name="DUE_DATE_OBSERVATION">This is an estimated date of when your baby is due. Babies rarely keep to an exact timetable, so your full-term pregnancy can be anywhere between <h2><b>37 and 42 weeks.</b></h2> </string>
+    <string name="LABEL_MENSTRUAL_PERIOD_LMP">Enter the date of the first day of your last menstrual period (LMP) :</string>
+    <string name="THE_DEPRESSION_SCALE_ASSESSES">The Depression scale assesses</string>
+    <string name="THE_ANXIETY_SCALE_ASSESSES">The Anxiety scale assesses</string>
+    <string name="THE_STRESS_SCALE_ASSESSES">The Stress scale assesses</string>
+    <string name="YOU_HAVE_FOLLOWING_NON_MODERATE_RISK">You have following Non Moderate Risk</string>
+
+    <string name="TO_MANAGE_YOUR_EMOTIONAL_HEALTH">To manage your emotional health</string>
+    <string name="HEALTH_CONDITION_CONTENT">if you have any of these risk factors ,your risk may be higher than what is shown in the tool</string>
+    <string name="HEALTH_CONDITION_QUESTION">Do you have any of these health conditions?</string>
+    <string name="HEALTH_CONDITION_RESULT">You have selected</string>
+    <string name="STRESS_SUMMERY_OBSERVATION">The DASS-21 should not be used to replace a face to face clinical interview. If you are experiencing significant emotional difficulties you should contact your doctor..The Depression, Anxiety and Stress Scale - 21 Items (DASS-21) is a set of three self-report scales designed to measure the emotional states of depression, anxiety and stress. Each of the three DASS-21 scales contains 7 items, divided into subscales with similar content.</string>
+    <string name="HYPERTENSION_SUMMARY_TEXT">The Hypertension calculator gives you an overall idea of the health and a general indication of how lifestyle-related factors may affect your Blood Pressure. The risk% has been calculated based on the parameters for your age group, gender.</string>
+    <string name="HEART_AGE_SUMMARY_TEXT">The Heart Age and Risk gives you a overall idea of the health of your heart and general indication of how lifestyle related factors may affect your heart health.</string>
+
+    <string name="ITS_TIME_TO_MAKE_SOME_CHANGES">Its time to make some changes !</string>
+    <string name="PLEASE_INPUT_VALUE_BETWEEN">Please input value between</string>
+    <string name="PLEASE_FILL">Please fill</string>
+    <string name="PLEASE_FILL_HEIGHT_DETAILS">Please fill height details</string>
+    <string name="PLEASE_FILL_WEIGHT_DETAILS">Please fill weight details</string>
+    <string name="ENTER_YOUR">Enter your</string>
+    <string name="PARAMETER_VALUE">parameter value</string>
+    <string name="SHOULD_BE_BETWEEN">should be between</string>
+    <string name="PLEASE_PROVIDE_AGE">Please provide age</string>
+    <string name="ENTER_AGE_BETWEEN_18_AND_74_YEARS">Enter Age between 18 and 74 years</string>
+
+    <string name="YOU_ARE_DOING_GOOD_IN">You are doing good in</string>
+    <string name="YOU_NEED_TO_IMPROVE_ON">You need to improve on</string>
+    <string name="YOU_HAVE_FOLLOWING_ON_MODIFIABLE_RISK">You have following Non Modifiable Risk</string>
+
+    <string name="NO_NOMOPHOBIC">No Nomophobic</string>
+    <string name="MILD_NOMOPHOBIC">Mild Nomophobic</string>
+    <string name="MODERATE_NOMOPHOBIC">Moderate Nomophobic</string>
+    <string name="SEVERE_NOMOPHOBIC">Severe Nomophobic</string>
+
+    <string name="NOT_AT_ALL_NOMOPHOBIC">Not at all Nomophobic</string>
+    <string name="MILD_NOMOPHOBIA">Mild Nomophobic</string>
+    <string name="MODERATE_NOMOPHOBIA">Moderate Nomophobic</string>
+    <string name="SEVERE_NOMOPHOBIA">Severe Nomophobic</string>
+
+    <string name="HAVE_NO_NOMOPHOBIA">No Nomophobia</string>
+    <string name="HAVE_MILD_NOMOPHOBIA">Mild Nomophobia</string>
+    <string name="HAVE_MODERATE_NOMOPHOBIA">Moderate Nomophobia</string>
+    <string name="HAVE_SEVERE_NOMOPHOBIA">Severe Nomophobia</string>
+
+    <string name="DESC_MILD_NOMOPHOBIC">You have mild nomophobia. You get a little antsy when you forget your phone at home for a day or get stuck somewhere without WiFi, but the anxiety isn\'t too overwhelming.</string>
+    <string name="DESC_MODERATE_NOMOPHOBIC">You have moderate nomophobia. You\'re pretty attached to your device. You often check for updates while you\'re walking down the street or talking to a friend, and you often feel anxious when you\'re disconnected. You are just on the edge of becoming addicted. However, it is good that you do not let your Smartphone come in the way. Sometimes, you avoid your phone and feel bad for it, but the rest part of being with family, children, etc, makes you happy. So, you just need to beware!.</string>
+    <string name="DESC_SEVERE_NOMOPHOBIC">You have severe nomophobia. You can barely go for 60 seconds without checking your phone. It\'s the first thing you check in the morning and the last at night, and dominates most of your activities in-between. You are definitely suffering from Nomophobia, and God help others if you forget your phone at home or lose it! You are so addicted to your phone that you sometimes wonder what if you could stick your phone to the hand!.</string>
+
+    <string name="SELECT_YOUR_AGE_GROUP">Select Your Age Group</string>
+    <string name="PLEASE_ENTER_WAIST_SIZE_BETWEEN">Please enter waist size between</string>
+
+    <!--Hypertension Questions-->
+    <string name="ARE_YOU_UNDER_MEDICATION_FOR_HIGH_BLOOD_PRESSURE">Are you under Medication for High Blood Pressure?</string>
+    <string name="MEDICATION_FOR_BP">Medication for BP</string>
+    <string name="HAVE_YOU_EVER_SMOKED">Have you ever smoked?</string>
+    <string name="ARE_YOU_DIABETIC">Are you Diabetic?</string>
+    <!--Hypertension Questions-->
+
+    <!--Diabetes Questions-->
+    <string name="QUES_DIABETES_1">Are you of Asian Origin?</string>
+    <string name="QUES_DIABETES_2">Have either of your parents or any of your siblings been diagnosed with Diabetes?</string>
+    <string name="QUES_DIABETES_3">Have you ever been found to have High Blood Sugar(during health checkup/an illness/pregnancy)?</string>
+    <string name="QUES_DIABETES_4">Are you currently taking medication for high Blood Pressure?</string>
+    <string name="QUES_DIABETES_5">Do you currently smoke cigarettes or any other tobacco products on a daily basis?</string>
+    <string name="QUES_DIABETES_6">Do you eat fruits and vegetables 2 to 3 times a day?</string>
+    <string name="QUES_DIABETES_7">On an average,do you exercise for more than 3 hours a week?</string>
+    <!--Diabetes Questions-->
+
+    <!--Stress & Anxiety Questions-->
+    <string name="QUES_STRESS_ANXIETY_1">I felt that life was meaningless.</string>
+    <string name="QUES_STRESS_ANXIETY_2">I felt I wasn’t worth much as a person.</string>
+    <string name="QUES_STRESS_ANXIETY_3">I was unable to become enthusiastic about anything.</string>
+    <string name="QUES_STRESS_ANXIETY_4">I felt down-hearted and blue.</string>
+    <string name="QUES_STRESS_ANXIETY_5">I felt that I had nothing to look forward to</string>
+    <string name="QUES_STRESS_ANXIETY_6">I found it difficult to work up the initiative to do things</string>
+    <string name="QUES_STRESS_ANXIETY_7">I couldn’t seem to experience any positive feeling at all</string>
+    <string name="QUES_STRESS_ANXIETY_8">I felt scared without any good reason</string>
+    <string name="QUES_STRESS_ANXIETY_9">I was aware of the action of my heart in the absence of physical exertion\n" (e.g. Sense of a heart rate increase, heart missing a beat)</string>
+    <string name="QUES_STRESS_ANXIETY_10">I felt I was close to panic</string>
+    <string name="QUES_STRESS_ANXIETY_11">I was worried about situations in which I might panic and make a fool of myself</string>
+    <string name="QUES_STRESS_ANXIETY_12">I experienced trembling in the hands</string>
+    <string name="QUES_STRESS_ANXIETY_13">I experienced breathing difficulty\n" (eg, excessively rapid breathing, breathlessness in the absence of physical exertion)</string>
+    <string name="QUES_STRESS_ANXIETY_14">I was aware of dryness of my mouth</string>
+    <string name="QUES_STRESS_ANXIETY_15">I felt that I was rather touchy</string>
+    <string name="QUES_STRESS_ANXIETY_16">I was intolerant of anything that kept me from getting on with what I was doing</string>
+    <string name="QUES_STRESS_ANXIETY_17">I found it difficult to relax</string>
+    <string name="QUES_STRESS_ANXIETY_18">I found myself getting agitated</string>
+    <string name="QUES_STRESS_ANXIETY_19">I felt that I was using a lot of nervous energy</string>
+    <string name="QUES_STRESS_ANXIETY_20">I tended to over-react to situations</string>
+    <string name="QUES_STRESS_ANXIETY_21">I found it hard to wind down</string>
+    <!--Stress & Anxiety Questions-->
+
+    <!--Smart Phone Addiction Questions-->
+    <string name="QUES_SMART_PHONE_ADDICTION_1">Do you often think that your smartphone is ringing/ vibrating when it is not?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_2">When your phone rings buzzes , do you feel an intense urge to check?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_3">Do you look at your phone after you get up in the morning or before going to bed?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_4">Do you sleep with your smartphone on or under your pillow or next to your bed?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_5">Do you text, e-mail / surfed the web while waiting at the traffic signal?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_6">Do you constantly check your phone if you did not have a data signal or Wi-Fi?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_7">Do you feel a great deal of anxiety if your phone not working/you accidentally left it?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_8">Do you find yourself Always passing time in searching on google/ E-commerce sites?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_9">Do you spend more time texting, tweeting/emailing than talking to real-time people?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_10">When you eat meals, is your cell phone always part of the table place setting?</string>
+    <string name="QUES_SMART_PHONE_ADDICTION_11">Do you feel lonely if your smartphone doesn\'t ring for several hours?</string>
+    <!--Smart Phone Addiction Questions-->
+
+    <string name="RISK">Risk</string>
+    <string name="SCALE_ASSETS">Scale Assets</string>
+    <string name="DEPRESSION_SCALE_ASSETS">Depression scale assets</string>
+    <string name="ANXIETY_SCALE_ASSETS">Anxiety scale assets</string>
+    <string name="STRESS_SCALE_ASSETS">Stress scale assets</string>
+    <string name="START_QUIZ">Start Quiz</string>
+    <string name="NOT_NOW">Not Now</string>
+
+    <string name="DIGITAL_EYE_STRAIN">Digital eye strain</string>
+    <string name="NECK_PROBLEMS">Neck problems</string>
+    <string name="INCREASED_ILLNESSES_DUE_TO_GERMS">Increased illnesses due to germs</string>
+    <string name="SLEEP_DISTURBANCES">Sleep disturbances</string>
+    <string name="OBSESSIVE_COMPULSIVE_DISORDER">Obsessive Compulsive Disorder</string>
+    <string name="RELATIONSHIP_PROBLEMS">Relationship problems</string>
+
+    <!--    <string name="PHYSICAL_EFFECTS_OF_ADDICTION">Physical Effects of Addiction</string>
+        <string name="PHYSICAL_EFFECTS_OF_ADDICTION_DESC">Over use of your cell phone or smartphone can result in a number of different physical problems that may cause permanent damage or be difficult to treat, including:</string>
+        <string name="PSYCHOLOGICAL_EFFECTS_OF_CELL_PHONE_ADDICTION">Psychological Effects of Cell Phone Addiction</string>
+
+        <string name="SUB_1_DIGITAL_EYE_STRAIN">Eyes begin to burn and itch.</string>
+        <string name="SUB_2_DIGITAL_EYE_STRAIN">Blurred vision.</string>
+        <string name="SUB_3_DIGITAL_EYE_STRAIN">Eye fatigue.</string>
+        <string name="SUB_4_DIGITAL_EYE_STRAIN">Digital Eye Strain can cause headaches.</string>
+        <string name="SUB_5_DIGITAL_EYE_STRAIN">The pain and discomfort associated with viewing a digital screen for over 2 hours.</string>
+
+        <string name="SUB_1_NECK_PROBLEMS">Also known as &quot;text neck,&quot; which refers to neck pain resulting from looking down at cell phone or tablet for too long.</string>
+        <string name="SUB_1_INCREASED_ILLNESSES_DUE_TO_GERMS">1 in 6 cell phones has fecal matter on it.</string>
+        <string name="SUB_2_INCREASED_ILLNESSES_DUE_TO_GERMS">E. coli bacteria, which can cause fever, vomiting, and diarrhea, is found on many phones.</string>
+        <string name="SUB_3_INCREASED_ILLNESSES_DUE_TO_GERMS">Phones have been found to be contaminated with MRSA.</string>
+        <string name="SUB_31_INCREASED_ILLNESSES_DUE_TO_GERMS">Causes painful abscesses.</string>
+        <string name="SUB_32_INCREASED_ILLNESSES_DUE_TO_GERMS">Life-threatening infections in bones, joints, surgical wounds, bloodstream, heart valves, and lungs.</string>
+        <string name="SUB_4_INCREASED_ILLNESSES_DUE_TO_GERMS">Car accidents.</string>
+        <string name="SUB_41_INCREASED_ILLNESSES_DUE_TO_GERMS">Many people believe that they can multitask and use their phones while driving, but this causes significant impairment and puts the driver and others on the road in danger.</string>
+        <string name="SUB_42_INCREASED_ILLNESSES_DUE_TO_GERMS">Research has revealed that texting and driving can be just as dangerous as drinking and driving.</string>
+        <string name="SUB_5_INCREASED_ILLNESSES_DUE_TO_GERMS">Male infertility.</string>
+        <string name="SUB_51_INCREASED_ILLNESSES_DUE_TO_GERMS">Preliminary studies have revealed that cell phone radiation may decrease sperm count, sperm motility and viability.</string>
+
+        <string name="SUB_1_SLEEP_DISTURBANCES">Cell phone addiction has been linked to an increase in sleep disorders and fatigue in users.</string>
+        <string name="SUB_2_SLEEP_DISTURBANCES">Using your cell phone before bed increases the likelihood of insomnia.</string>
+        <string name="SUB_21_SLEEP_DISTURBANCES">Bright light may decrease sleep quality.</string>
+        <string name="SUB_22_SLEEP_DISTURBANCES">Smartphone use could increase amount of time it takes to fall asleep.</string>
+        <string name="SUB_23_SLEEP_DISTURBANCES">Light emitted from the cell phone may activate the brain.</string>
+
+        <string name="SUB_1_RELATIONSHIP_PROBLEMS">Offline relationships may suffer as a result of neglect in favor of excessive cell phone and social media use.</string>
+
+        <string name="SUB_1_ANXIETY">Research has found that college students who use their cell phones the most are more likely to feel anxious during downtime.</string>-->
+    <!--End Tool Calculator Module-->
+
+    <!--Start Tracker Parameter Module -->
+    <string name="TITLE_TRACK_HEALTH_PARAMETERS">Track Vital Parameters</string>
+    <string name="TITLE_SELECT_PARAMETERS">Select Parameters</string>
+    <string name="TITLE_UPDATE_PARAMETERS">Update Parameters</string>
+    <string name="TITLE_PARAMETER_HISTORY">Parameter History</string>
+    <string name="TITLE_COMPLETE_HISTORY">Complete History</string>
+
+    <string name="TRACK_HEALTH_PARAMETERS">Track Health \n Parameters</string>
+    <string name="SELECT_PARAMETERS">Select Parameters</string>
+    <string name="UPDATE_PARAMETER">Update Parameter</string>
+
+    <string name="SELECT_PARAMETERS_DESC">Select key health parameters to track</string>
+    <string name="UPDATE_PARAMETER_DESC">Update parameters to see the trend</string>
+    <string name="DASHBOARD_DESC">Quick View of Your Health Data</string>
+    <string name="HISTORY_DESC">Check your existing data</string>
+
+    <string name="BLOOD_PRESSURE2">Blood\nPressure</string>
+    <string name="BLOOD_SUGAR_PROFILE">Blood Sugar Profile</string>
+    <string name="HEMOGRAM_PROFILE">Hemogram Profile</string>
+    <string name="KIDNEY_PROFILE">Kidney Profile</string>
+    <string name="LIPID_PROFILE">Lipid Profile</string>
+    <string name="LIVER_PROFILE">Liver Profile</string>
+    <string name="THYROID_PROFILE">Thyroid Profile</string>
+    <string name="URINE_PROFILE">Urine Profile</string>
+
+    <string name="WHR">WHR</string>
+    <string name="BLOOD_SUGAR">Blood Sugar</string>
+    <string name="CHOLESTEROL">Cholesterol</string>
+    <string name="HEMOGLOBIN">Hemoglobin</string>
+    <string name="CREATININE">Creatinine</string>
+    <string name="TOT_BILIRUBIN">Total Bilirubin</string>
+    <string name="TSH" translatable="false">TSH</string>
+    <string name="HEMOGRAM">Hemogram</string>
+    <string name="KIDNEY">Kidney</string>
+    <string name="LIPID">Lipid</string>
+    <string name="LIVER">Liver</string>
+    <string name="THYROID">Thyroid</string>
+    <string name="URINE">Urine</string>
+    <string name="PULSE">Pulse</string>
+
+    <string name="RECORD_DATE">Record Date</string>
+    <string name="ADD_EDIT">Add/Edit</string>
+    <string name="LAST_CHECKED_ON">Last Record Date</string>
+    <string name="SYSTOLIC_DIASTOLIC">Systolic/Diastolic</string>
+
+    <string name="MSG_SELECT_PARAM_TO_TRACK">Please Select at least one Parameter to Track</string>
+    <string name="MSG_SELECT_PROFILE_TO_PROCEED">Please Select a Profile to Proceed</string>
+    <string name="MSG_ENTER_AT_LEAST_ONE_VALUE_FOR">Please enter at least one value for</string>
+    <string name="MSG_PARAMETER_IS_UPDATED">Parameter is Updated Successfully</string>
+    <string name="PLEASE_ENTER_ALL_BMI_PROFILE_FIELDS">Please enter all BMI profile fields</string>
+    <string name="PLEASE_ENTER_ALL_WHR_PROFILE_FIELDS">Please enter all WHR profile fields</string>
+
+    <string name="CURRENT_VALUES">Current Values</string>
+    <string name="UPDATED">Updated</string>
+    <string name="YOUR_CURRENT_BMI_VALUE_IS">Your current BMI value is</string>
+    <string name="YOUR_CURRENT_WHR_VALUE_IS">Your current WHR value is</string>
+    <string name="PARAMETER_UPDATED">Parameter successfully updated</string>
+    <!--End Tracker Parameter Module -->
+
+    <!--Start Water Tracker Module -->
+    <string name="TITLE_WATER_TRACKER">Hydration Tracker</string>
+
+    <string name="TITLE_CALCULATE_INTAKE">Calculate Daily Water Target</string>
+    <string name="DESC_CALCULATE_INTAKE">Calculate or Edit your Daily Water Intake to set as your Daily Target</string>
+
+    <string name="TITLE_LOG_TODAY_INTAKE">Log Today\'s Water Intake</string>
+    <string name="DESC_LOG_TODAY_INTAKE">Log your Consumed quantity of water for different times of a day</string>
+
+    <string name="TITLE_TRACK_INTAKE">Track Water Intake</string>
+    <string name="DESC_TRACK_INTAKE">Track you current and past water intake with complete history details</string>
+
+    <string name="TODAYS_WATER_CONSUMPTION">Today\'s Water Consumption</string>
+    <string name="CALCULATE_EDIT_INTAKE_TARGET">Calculate/Edit Daily Water Intake Target</string>
+    <string name="TRACK_YOUR_WATER_INTAKE">Track your Water Intake</string>
+
+    <string name="WATER">Water</string>
+    <string name="COFFEE">Coffee</string>
+    <string name="TEA">Tea</string>
+    <string name="MILK">Milk</string>
+    <string name="JUICE">Juice</string>
+    <string name="ENERGY_DRINK">Energy Drink</string>
+
+    <string name="CURRENT_TARGET">Current Target</string>
+    <string name="DEFAULT_TARGET">Default Target</string>
+    <string name="CUSTOM_TARGET">Custom Target</string>
+    <string name="SELECT_YOUR_WEIGHT">Select your weight</string>
+    <string name="DO_YOU_EXERCISE">Do you exercise?</string>
+    <string name="ENTER_DURATION_OF_EXERCISE_IN_MINUTES">Enter Duration of Exercise in minutes</string>
+    <string name="ENABLE_NOTIFICATION">Enable Notification?</string>
+    <string name="YOUR_DAILY_WATER_INTAKE">Your Daily Water Intake</string>
+    <string name="SHOULD_BE">should be</string>
+    <string name="YOU_HAVE_SET_DAILY_WATER_INTAKE">You have set Daily Water Intake</string>
+    <string name="TARGET_TO">target to</string>
+    <string name="CUSTOM_WATER_INTAKE">Custom water intake</string>
+    <string name="ENTER_WATER_INTAKE_QUANTITY_SUGGESTED_BY_YOUR_PHYSICIAN">Enter water intake quantity suggested by your Physician</string>
+    <string name="SET_CUSTOM_TARGET">Set Custom Target</string>
+
+    <string name="LOG_YOUR_INTAKE">Log Your Intake</string>
+    <string name="ENTER_YOUR_WATER_INTAKE">Enter your Water Intake</string>
+
+    <string name="TARGET">Target</string>
+    <string name="ACHIEVED">Achieved</string>
+
+    <string name="WTD">Week till \n Date</string>
+    <string name="ACHIEVEMENT_THIS_WEEK">Achievement this week</string>
+    <string name="WITD">Water Intake till date</string>
+    <string name="MAX_STREAK">Max \n Streak</string>
+    <string name="CURRENT_STREAK">Current \n Streak</string>
+
+    <string name="WEEK_START_DAY">Week Start Day (Monday)</string>
+    <string name="WTD_DESC">This is the amount of water consumed this week until today vis-a-vis your weekly goal measured up until today</string>
+    <string name="ACHIEVEMENT_THIS_WEEK_DESC">This is the amount of water log achievement vs. the target for the 7 days of the current week</string>
+    <string name="WITD_DESC">Your total water intake logged in the app since you started logging your daily water consumption</string>
+    <string name="MAX_STREAK_DESC">This is the maximum number of consecutive days ( without a break) where you met your water intake goals and logged consistently in the app</string>
+    <string name="CURRENT_STREAK_DESC">This is the current consecutive streak of meeting the day`s water intake goal (not including today). The more consistently you log your water intake, the higher the streak</string>
+
+    <string name="PLEASE_SET_WATER_INTAKE_TARGET">Please Set daily Water Intake Target first</string>
+    <string name="PLEASE_ENTER_EXERCISE_DURATION">Please Enter Exercise Duration</string>
+    <string name="PLEASE_ENTER_VALID_DURATION_BETWEEN">Please Enter valid Duration between</string>
+    <string name="PLEASE_ENTER_WATER_INTAKE_QUANTITY">Please Enter Water Intake Quantity</string>
+    <string name="PLEASE_ENTER_VALID_WATER_INTAKE_QUANTITY_BETWEEN">Please Enter valid Water Intake Quantity between</string>
+    <string name="INTAKE_ADDED_SUCCESSFULLY">Intake Added Successfully</string>
+    <!--End Water Tracker Module -->
+    <string name="FOR_DETAILED_INFORMATION_ABOUT_YOUR_POLICY_PLEASE_CLICK_HERE">For any servicing or to know more about your SUD Life Policy, click below :</string>
+    <string name="CUSTOMER_PORTAL">Customer Portal</string>
+
+</resources>

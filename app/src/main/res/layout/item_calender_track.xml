@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_42sdp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/_5sdp">
+
+    <!--        <com.caressa.allizhealth.app.common.view.WaveView
+                android:id="@+id/water_wave_view"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_40sdp"
+                app:waveMax="101"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/water_wave_view"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/img_water_drop_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_date"
+        style="@style/VivantTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="--"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/water_wave_view"
+        app:layout_constraintEnd_toEndOf="@+id/water_wave_view"
+        app:layout_constraintStart_toStartOf="@+id/water_wave_view"
+        app:layout_constraintTop_toTopOf="@+id/water_wave_view" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_select"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_tick_green"
+        app:tint="@color/risk_normal" />
+
+    <View
+        android:id="@+id/view_left"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:background="@color/primary_blue"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/water_wave_view"
+        app:layout_constraintEnd_toStartOf="@+id/txt_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/water_wave_view" />
+
+    <View
+        android:id="@+id/view_right"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/primary_blue"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/water_wave_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_date"
+        app:layout_constraintTop_toTopOf="@+id/water_wave_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

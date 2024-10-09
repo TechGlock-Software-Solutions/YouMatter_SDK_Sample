@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/btn_border_disabled"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_close_input">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_close"
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:tint="@color/almost_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_close" />
+
+            <com.techglock.health.app.common.view.ArcTextView
+                android:id="@+id/txt_picker_title"
+                style="@style/VivantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:text=""
+                android:textSize="@dimen/_15sdp"
+                app:isTemplate="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_close" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_picker_description"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="@string/DESCRIPTION"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/txt_picker_title"
+                app:layout_constraintStart_toStartOf="@+id/txt_picker_title"
+                app:layout_constraintTop_toBottomOf="@id/txt_picker_title" />
+
+            <!--                <NumberPicker
+                                android:id="@+id/picker"
+                                style="@style/NumberPickerText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:descendantFocusability="blocksDescendants"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_marginEnd="@dimen/_20sdp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/txt_picker_description"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txt_picker_unit"
+                                style="@style/VivantDescription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/textViewColor"
+                                android:textSize="@dimen/_15sdp"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                app:layout_constraintBottom_toBottomOf="@+id/picker"
+                                app:layout_constraintStart_toEndOf="@+id/picker"
+                                app:layout_constraintTop_toTopOf="@+id/picker"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_edt_parameter"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_picker_title"
+                app:layout_constraintStart_toStartOf="@+id/txt_picker_title"
+                app:layout_constraintTop_toBottomOf="@+id/txt_picker_description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_parameter"
+                    style="@style/MyEditTextStyleNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:text="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_picker_unit"
+                style="@style/VivantDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:text=""
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/til_edt_parameter"
+                app:layout_constraintEnd_toEndOf="@+id/til_edt_parameter"
+                app:layout_constraintTop_toTopOf="@+id/til_edt_parameter" />
+
+            <com.techglock.health.app.common.view.ArcButton
+                android:id="@+id/btn_done_picker"
+                style="@style/CustomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:backgroundTint="@color/primary_blue"
+                android:gravity="center"
+                android:text="@string/DONE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/til_edt_parameter"
+                app:layout_constraintStart_toStartOf="@+id/til_edt_parameter"
+                app:layout_constraintTop_toBottomOf="@+id/til_edt_parameter" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

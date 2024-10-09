@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_graph_sud_life_policy">
+
+    <!--
+    app:startDestination="@id/sudLifePolicyDashboardFragment">
+
+    <fragment
+        android:id="@+id/sudLifePolicyDashboardFragment"
+        android:name="com.caressa.allizhealth.app.home.ui.sudLifePolicy.SudLifePolicyDashboardFragment"
+        tools:layout="@layout/fragment_sud_life_policy_dashboard">
+
+        <action
+            android:id="@+id/action_sudLifePolicyDashboardFragment_to_sudLifePolicyDetailsFragment"
+            app:destination="@id/sudLifePolicyDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sudLifePolicyDetailsFragment"
+        android:name="com.caressa.allizhealth.app.home.ui.sudLifePolicy.SudLifePolicyDetailsFragment"
+        tools:layout="@layout/fragment_sud_life_policy_details">
+
+        <action
+            android:id="@+id/action_sudLifePolicyDetailsFragment_to_viewReceiptFragment"
+            app:destination="@id/viewReceiptFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_sudLifePolicyDetailsFragment_to_sudLifePolicyDashboardFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/sudLifePolicyDashboardFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewReceiptFragment"
+        android:name="com.caressa.allizhealth.app.home.ui.sudLifePolicy.ViewReceiptFragment"
+        tools:layout="@layout/fragment_view_receipt">
+
+    </fragment>-->
+
+</navigation>

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_wave_water_tracker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/layout_detail_data"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_calender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/btn_border_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_monthly_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.techglock.health.app.common.view.ArcImageView
+                        android:id="@+id/img_edit"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:src="@drawable/ic_edit"
+                        android:tint="@color/primary_blue"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_month"
+                        app:layout_constraintStart_toEndOf="@+id/txt_month"
+                        app:layout_constraintTop_toTopOf="@+id/txt_month" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_month"
+                        style="@style/VivantTitle"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="---"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_back"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:tint="@color/primary_blue"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_month"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/txt_month"
+                        app:srcCompat="@drawable/ic_left" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_next"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:tint="@color/primary_blue"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_month"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/txt_month"
+                        app:srcCompat="@drawable/ic_right" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/light_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_monthly_year" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_week_days"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_monthly_year"
+                    app:layout_constraintStart_toStartOf="@+id/layout_monthly_year"
+                    app:layout_constraintTop_toBottomOf="@+id/view"
+                    app:spanCount="7"
+                    tools:itemCount="7"
+                    tools:listitem="@layout/item_week_day" />
+
+                <com.techglock.health.app.common.view.ExpandedHeightListView
+                    android:id="@+id/rv_calender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_14sdp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_monthly_year"
+                    app:layout_constraintStart_toStartOf="@+id/layout_monthly_year"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_week_days"
+                    app:spanCount="7"
+                    tools:itemCount="31"
+                    tools:listitem="@layout/item_calender_track" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_details_by_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/btn_fill_blue_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/layout_calender"
+                app:layout_constraintStart_toStartOf="@+id/layout_calender"
+                app:layout_constraintTop_toBottomOf="@+id/layout_calender">
+
+                <!--                <com.caressa.allizhealth.app.common.view.WaveView
+                                    android:id="@+id/water_view_selected_date"
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    app:waveMax="101"
+                                    android:layout_marginStart="@dimen/_8sdp"
+                                    android:layout_marginTop="@dimen/_7sdp"
+                                    android:layout_marginBottom="@dimen/_7sdp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"/>-->
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/water_view_selected_date"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_53sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:src="@drawable/img_water_drop_0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_percentage"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text=""
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/water_view_selected_date"
+                    app:layout_constraintEnd_toEndOf="@+id/water_view_selected_date"
+                    app:layout_constraintStart_toStartOf="@+id/water_view_selected_date"
+                    app:layout_constraintTop_toTopOf="@+id/water_view_selected_date" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_date"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="--"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/water_view_selected_date"
+                    app:layout_constraintTop_toTopOf="@+id/water_view_selected_date" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_goal"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:text="Target --- ml"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/water_view_selected_date"
+                    app:layout_constraintStart_toStartOf="@+id/txt_date" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:background="@color/dark_gray"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_goal"
+                    app:layout_constraintStart_toEndOf="@+id/txt_goal"
+                    app:layout_constraintTop_toTopOf="@+id/txt_goal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_achieved"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:text="Achieved --- ml"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_goal"
+                    app:layout_constraintStart_toEndOf="@+id/view3"
+                    app:layout_constraintTop_toTopOf="@+id/txt_goal" />
+
+                <com.techglock.health.app.common.view.ArcImageView
+                    android:id="@+id/img_drop_down"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_margin="@dimen/_7sdp"
+                    android:src="@drawable/ic_edit"
+                    android:tint="@color/colorPrimary"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_detail_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_50sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_wave_water_tracker">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_info"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/img_info"
+                    android:tint="@color/primary_blue"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_max_streak"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_week"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:gravity="center"
+                    android:text="@string/WTD"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/circle_week"
+                    app:layout_constraintEnd_toEndOf="@+id/circle_week"
+                    app:layout_constraintStart_toStartOf="@+id/circle_week"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_lifetime" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_total_week"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:gravity="center"
+                    android:text="@string/ACHIEVEMENT_THIS_WEEK"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/circle_week"
+                    app:layout_constraintStart_toStartOf="@+id/circle_week"
+                    app:layout_constraintTop_toBottomOf="@+id/circle_week" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_lifetime"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:gravity="center"
+                    android:text="@string/WITD"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/circle_lifetime"
+                    app:layout_constraintEnd_toEndOf="@+id/circle_lifetime"
+                    app:layout_constraintStart_toStartOf="@+id/circle_lifetime" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_max_streak"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:gravity="center"
+                    android:text="@string/MAX_STREAK"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/circle_streak"
+                    app:layout_constraintEnd_toEndOf="@+id/circle_streak"
+                    app:layout_constraintStart_toStartOf="@+id/circle_streak"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_lifetime" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_current_streak"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:gravity="center"
+                    android:text="@string/CURRENT_STREAK"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/circle_streak"
+                    app:layout_constraintStart_toStartOf="@+id/circle_streak"
+                    app:layout_constraintTop_toBottomOf="@+id/circle_streak" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/circle_week"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/circle_lifetime"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_week"
+                        android:layout_width="@dimen/_72sdp"
+                        android:layout_height="@dimen/_72sdp"
+                        android:background="@drawable/circle_bg"
+                        android:backgroundTint="@color/primary_blue"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_week_till_date"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+                        android:text="--"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_17sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_week"
+                        app:layout_constraintEnd_toEndOf="@+id/img_week"
+                        app:layout_constraintStart_toStartOf="@+id/img_week"
+                        app:layout_constraintTop_toTopOf="@+id/img_week" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_week_small"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/circle_bg"
+                        android:backgroundTint="@color/primary_blue_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_week_till_date" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_achievement_this_Week"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="--"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_week_small"
+                        app:layout_constraintEnd_toEndOf="@+id/img_week_small"
+                        app:layout_constraintStart_toStartOf="@+id/img_week_small"
+                        app:layout_constraintTop_toTopOf="@+id/img_week_small" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/circle_lifetime"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/circle_week"
+                    app:layout_constraintEnd_toStartOf="@+id/circle_streak"
+                    app:layout_constraintStart_toEndOf="@+id/circle_week"
+                    app:layout_constraintTop_toTopOf="@+id/circle_week">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_lifetime"
+                        android:layout_width="@dimen/_72sdp"
+                        android:layout_height="@dimen/_72sdp"
+                        android:background="@drawable/circle_bg"
+                        android:backgroundTint="@color/primary_blue"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/img_lifetime_intake"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textView42"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+                        android:text="50%"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_lifetime"
+                        app:layout_constraintEnd_toEndOf="@+id/img_lifetime"
+                        app:layout_constraintStart_toStartOf="@+id/img_lifetime"
+                        app:layout_constraintTop_toTopOf="@+id/img_lifetime" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_lifetime"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/btn_fill_blue"
+                        android:backgroundTint="@color/primary_blue_light"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_7sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_7sdp"
+                        android:text="---"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/circle_streak"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/circle_lifetime"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/circle_lifetime"
+                    app:layout_constraintTop_toTopOf="@+id/circle_lifetime">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_streak"
+                        android:layout_width="@dimen/_72sdp"
+                        android:layout_height="@dimen/_72sdp"
+                        android:background="@drawable/circle_bg"
+                        android:backgroundTint="@color/primary_blue"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_streak"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+                        android:text="--"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_streak"
+                        app:layout_constraintEnd_toEndOf="@+id/img_streak"
+                        app:layout_constraintStart_toStartOf="@+id/img_streak"
+                        app:layout_constraintTop_toTopOf="@+id/img_streak" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_streak_small"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/circle_bg"
+                        android:backgroundTint="@color/primary_blue_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_streak" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_current_streak"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="--"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_streak_small"
+                        app:layout_constraintEnd_toEndOf="@+id/img_streak_small"
+                        app:layout_constraintStart_toStartOf="@+id/img_streak_small"
+                        app:layout_constraintTop_toTopOf="@+id/img_streak_small" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

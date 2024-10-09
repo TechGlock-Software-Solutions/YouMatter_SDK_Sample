@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_recent_med"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_45sdp">
+
+    <com.techglock.health.app.common.view.ArcImageView
+        android:id="@+id/img_minus"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/btn_fill_normal"
+        android:backgroundTint="@color/primary_purple_light"
+        android:padding="@dimen/_5sdp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_remove" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_freq"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/btn_border_disabled"
+        app:layout_constraintBottom_toBottomOf="@+id/img_minus"
+        app:layout_constraintEnd_toStartOf="@+id/img_plus"
+        app:layout_constraintStart_toEndOf="@+id/img_minus"
+        app:layout_constraintTop_toTopOf="@+id/img_minus">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_value"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:editable="false"
+            android:gravity="center_vertical|end"
+            android:inputType="none"
+            android:text="1.0"
+            android:textSize="@dimen/_13sdp"
+            app:backgroundTint="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_unit"
+            app:layout_constraintEnd_toStartOf="@+id/txt_unit"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_unit" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_unit"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:gravity="center_vertical|start"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="@string/DOSE"
+            android:textSize="@dimen/_13sdp"
+            app:backgroundTint="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_value"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_value"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:editable="false"
+            android:gravity="end|center_vertical"
+            android:inputType="none"
+            android:text=""
+            android:textSize="@dimen/_13sdp"
+            app:backgroundTint="@color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_unit"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toEndOf="@+id/img_minus"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_unit"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:gravity="start|center_vertical"
+            android:text=""
+            android:textSize="@dimen/_13sdp"
+            app:backgroundTint="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_value"
+            app:layout_constraintEnd_toStartOf="@+id/img_plus"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_value"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.techglock.health.app.common.view.ArcImageView
+        android:id="@+id/img_plus"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/btn_fill_normal"
+        android:backgroundTint="@color/primary_purple_light"
+        android:padding="@dimen/_5sdp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add" />
+
+    <!--    <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/vivantInactive"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/img_minus"
+            app:layout_constraintEnd_toEndOf="@+id/img_plus"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

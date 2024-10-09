@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_80sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_date"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingStart="@dimen/_50sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_50sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/AS_ON"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_life_insurance_score"
+                style="@style/VivantTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/YOUR_LIFE_INSURANCE_SCORE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_date" />
+
+            <com.techglock.health.app.common.speedview.SpeedView
+                android:id="@+id/speed_view_life_insurance"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_life_insurance_score"
+                app:sv_centerCircleColor="@color/highlight_blue"
+                app:sv_centerCircleRadius="@dimen/_6sdp"
+                app:sv_endDegree="360"
+                app:sv_indicator="KiteIndicator"
+                app:sv_indicatorColor="@color/black"
+                app:sv_indicatorWidth="@dimen/_5sdp"
+                app:sv_markColor="@color/transparent"
+                app:sv_maxSpeed="100"
+                app:sv_minSpeed="0"
+                app:sv_noOfSections="4"
+                app:sv_reverseSections="true"
+                app:sv_speedTextColor="@color/white"
+                app:sv_speedTextPosition="CENTER"
+                app:sv_startDegree="180"
+                app:sv_textColor="@color/textViewColor"
+                app:sv_textSize="@dimen/_12sdp"
+                app:sv_unitTextColor="@color/white"
+                app:sv_unitUnderSpeedText="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_score_life_insurance"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/speed_view_life_insurance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_risk_meter_life_insurance"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="---"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_score_life_insurance" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_current_life_insurance_cover"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="start"
+                android:text="@string/CURRENT_LIFE_INSURANCE_COVER"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_current_life_insurance_cover_value"
+                app:layout_constraintHorizontal_weight="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_risk_meter_life_insurance" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_current_life_insurance_cover_value"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:gravity="start"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_current_life_insurance_cover"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.45"
+                app:layout_constraintStart_toEndOf="@+id/txt_current_life_insurance_cover"
+                app:layout_constraintTop_toTopOf="@+id/txt_current_life_insurance_cover" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_additional_life_insurance"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:gravity="start"
+                android:text="@string/ADDITIONAL_LIFE_INSURANCE_NEEDED"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_additional_life_insurance_value"
+                app:layout_constraintHorizontal_weight="0.55"
+                app:layout_constraintStart_toStartOf="@+id/txt_current_life_insurance_cover"
+                app:layout_constraintTop_toBottomOf="@+id/txt_current_life_insurance_cover" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_additional_life_insurance_value"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:gravity="start"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_additional_life_insurance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.45"
+                app:layout_constraintStart_toEndOf="@+id/txt_additional_life_insurance"
+                app:layout_constraintTop_toTopOf="@+id/txt_additional_life_insurance" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_health_insurance_score"
+                style="@style/VivantTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/YOUR_HEALTH_INSURANCE_SCORE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_additional_life_insurance" />
+
+            <com.techglock.health.app.common.speedview.SpeedView
+                android:id="@+id/speed_view_health_insurance"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_health_insurance_score"
+                app:sv_centerCircleColor="@color/highlight_blue"
+                app:sv_centerCircleRadius="@dimen/_6sdp"
+                app:sv_endDegree="360"
+                app:sv_indicator="KiteIndicator"
+                app:sv_indicatorColor="@color/black"
+                app:sv_indicatorWidth="@dimen/_5sdp"
+                app:sv_markColor="@color/transparent"
+                app:sv_maxSpeed="100"
+                app:sv_minSpeed="0"
+                app:sv_noOfSections="4"
+                app:sv_reverseSections="true"
+                app:sv_speedTextColor="@color/white"
+                app:sv_speedTextPosition="CENTER"
+                app:sv_startDegree="180"
+                app:sv_textColor="@color/textViewColor"
+                app:sv_textSize="@dimen/_13sdp"
+                app:sv_unitTextColor="@color/white"
+                app:sv_unitUnderSpeedText="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_score_health_insurance"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/speed_view_health_insurance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_risk_meter_health_insurance"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="---"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_score_health_insurance" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_current_health_insurance_cover"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="@string/CURRENT_HEALTH_INSURANCE_COVER"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_current_health_insurance_cover_value"
+                app:layout_constraintHorizontal_weight="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_risk_meter_health_insurance" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_current_health_insurance_cover_value"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_current_health_insurance_cover"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.45"
+                app:layout_constraintStart_toEndOf="@+id/txt_current_health_insurance_cover"
+                app:layout_constraintTop_toTopOf="@+id/txt_current_health_insurance_cover" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_additional_health_insurance"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="@string/ADDITIONAL_HEALTH_INSURANCE_NEEDED"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_additional_health_insurance_value"
+                app:layout_constraintHorizontal_weight="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_current_health_insurance_cover" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_additional_health_insurance_value"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_additional_health_insurance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.45"
+                app:layout_constraintStart_toEndOf="@+id/txt_additional_health_insurance"
+                app:layout_constraintTop_toTopOf="@+id/txt_additional_health_insurance" />
+
+            <!--            <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_restart"
+                            style="@style/CustomButton"
+                            android:layout_width="match_parent"
+                            android:text="Restart"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_30sdp"
+                            app:layout_constraintTop_toBottomOf="@+id/txt_additional_health_insurance"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_restart"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="Restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

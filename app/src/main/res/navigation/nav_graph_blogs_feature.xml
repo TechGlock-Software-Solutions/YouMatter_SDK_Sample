@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_blogs_feature"
+    app:startDestination="@id/blogsDashboardFragment">
+
+    <fragment
+        android:id="@+id/blogsDashboardFragment"
+        android:name="com.techglock.health.app.blogs.ui.BlogDashboardFragment"
+        tools:layout="@layout/fragment_blogs_dashboard">
+
+        <argument
+            android:name="screen"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="tab"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_blogsDashboardFragment_to_blogDetailFragment"
+            app:destination="@id/blogDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/blogDetailFragment"
+        android:name="com.techglock.health.app.blogs.ui.BlogDetailFragment"
+        tools:layout="@layout/fragment_blog_detail">
+
+        <argument
+            android:name="tab"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <argument
+            android:name="Title"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="Description"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="body"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="Link"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="CategoryId"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_blogsDetailsFragment_to_blogDetailFragment"
+            app:destination="@id/blogDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_blogDetailFragment_to_blogsDashboardFragment"
+            app:destination="@+id/blogsDashboardFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_in_left"
+            app:popUpTo="@+id/blogsDashboardFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <activity
+        android:id="@+id/home_activity"
+        android:name="com.techglock.health.app.home.ui.HomeMainActivity" />
+
+</navigation>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--            <RadioGroup
+                        android:id="@+id/rgPrevious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:gravity="end"
+                        app:layout_constraintBottom_toTopOf="@+id/img_ques"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:rgPreviousList="@{viewModel.prevAnsList}" />-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_ques"
+            style="@style/HRAImageView"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.techglock.health.app.hra.views.HTMLTextView
+            android:id="@+id/txt_ques"
+            style="@style/HRAQuestion"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_ques" />
+
+        <LinearLayout
+            android:id="@+id/layout_input_fields"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:clipToPadding="false"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/view_margin_gra"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_ques"
+            app:layout_constraintStart_toStartOf="@+id/txt_ques"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ques">
+
+            <com.techglock.health.app.common.view.CustomEditTextHra
+                android:id="@+id/lay_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.techglock.health.app.common.view.CustomEditTextHra
+                android:id="@+id/lay_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_observation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_info"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/img_info"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_observation"
+                    app:tint="@color/transparent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_observation"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:text=""
+                    android:textColor="@color/state_success"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_info"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <!--            <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_next"
+                        style="@style/HRACustomButton"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="@dimen/_20sdp"
+                        android:background="@drawable/btn_round_disabled_hra"
+                        android:enabled="false"
+                        android:text="@string/NEXT"
+                        android:textColor="@color/vivant_charcoal_grey_55"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />-->
+
+        <com.techglock.health.app.common.view.ArcButton
+            android:id="@+id/btn_next"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/NEXT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/layout_input_fields"
+            app:layout_constraintStart_toStartOf="@+id/layout_input_fields" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

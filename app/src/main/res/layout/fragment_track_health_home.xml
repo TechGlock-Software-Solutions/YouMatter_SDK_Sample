@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--                <androidx.cardview.widget.CardView
+                                android:id="@+id/card_steps"
+                                android:visibility="visible"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintHorizontal_weight="0.5"
+                                app:cardCornerRadius="@dimen/card_corner_radius"
+                                app:cardElevation="@dimen/card_elevation"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_15sdp"
+                                android:layout_marginEnd="@dimen/_6sdp"
+                                app:layout_constraintEnd_toStartOf="@+id/card_calories"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/layout_steps"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:foreground="?android:attr/selectableItemBackground">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/img_steps_arrow"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_18sdp"
+                                        android:visibility="invisible"
+                                        android:src="@drawable/ic_forward"
+                                        android:tint="@color/colorPrimary"
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"/>
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/img_steps"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:src="@drawable/img_dash_steps"
+                                        android:padding="@dimen/_1sdp"
+                                        android:layout_margin="@dimen/_10sdp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"/>
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/lbl_steps"
+                                        style="@style/VivantDescription"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/STEPS"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        app:layout_constraintStart_toEndOf="@+id/img_steps"
+                                        app:layout_constraintTop_toTopOf="@+id/img_steps"
+                                        app:layout_constraintBottom_toBottomOf="@+id/img_steps"/>
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txt_step_count"
+                                        style="@style/VivantTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-&#45;&#45;"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        app:layout_constraintTop_toBottomOf="@+id/lbl_steps"
+                                        app:layout_constraintStart_toStartOf="@+id/lbl_steps" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txt_step_goal"
+                                        style="@style/VivantDescription"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/dark_gray"
+                                        android:text=" / -&#45;&#45;"
+                                        android:textSize="@dimen/_10sdp"
+                                        app:layout_constraintBottom_toBottomOf="@+id/txt_step_count"
+                                        app:layout_constraintStart_toEndOf="@+id/txt_step_count" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_calories"
+                                android:visibility="visible"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                app:layout_constraintHorizontal_weight="0.5"
+                                app:cardCornerRadius="@dimen/card_corner_radius"
+                                app:cardElevation="@dimen/card_elevation"
+                                android:layout_marginStart="@dimen/_6sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/card_steps"
+                                app:layout_constraintTop_toTopOf="@+id/card_steps"
+                                app:layout_constraintBottom_toBottomOf="@+id/card_steps">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/layout_calories"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:foreground="?android:attr/selectableItemBackground">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/img_calories_arrow"
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_18sdp"
+                                        android:visibility="invisible"
+                                        android:src="@drawable/ic_forward"
+                                        android:tint="@color/colorPrimary"
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"/>
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/img_calories"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:src="@drawable/img_dash_calories"
+                                        android:padding="@dimen/_1sdp"
+                                        android:layout_margin="@dimen/_10sdp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"/>
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/lbl_calories"
+                                        style="@style/VivantDescription"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/CALORIES"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        app:layout_constraintStart_toEndOf="@+id/img_calories"
+                                        app:layout_constraintTop_toTopOf="@+id/img_calories"
+                                        app:layout_constraintBottom_toBottomOf="@+id/img_calories"/>
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txt_calories_count"
+                                        style="@style/VivantTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-&#45;&#45;"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        app:layout_constraintTop_toBottomOf="@+id/lbl_calories"
+                                        app:layout_constraintStart_toStartOf="@+id/lbl_calories" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txt_calories_goal"
+                                        style="@style/VivantDescription"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/dark_gray"
+                                        android:text=" / -&#45;&#45;"
+                                        android:textSize="@dimen/_10sdp"
+                                        app:layout_constraintBottom_toBottomOf="@+id/txt_calories_count"
+                                        app:layout_constraintStart_toEndOf="@+id/txt_calories_count" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </androidx.cardview.widget.CardView>-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_water_tracker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutWaterTracker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_water_tracker_arrow"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:src="@drawable/ic_forward"
+                        android:tint="@color/colorPrimary"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_water_tracker"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:src="@drawable/img_water_drop_0"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtWaterConsumed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/lbl_water_tracker" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_intake_percent"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:text="0 %"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_water_tracker"
+                        app:layout_constraintEnd_toEndOf="@+id/img_water_tracker"
+                        app:layout_constraintStart_toStartOf="@+id/img_water_tracker" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_water_tracker"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/HYDRATION_TRACKER"
+                        app:layout_constraintStart_toEndOf="@+id/img_water_tracker"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_water_tracker_desc"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:text="@string/HYDRATION_TRACKER_DESC"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_water_tracker"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_water_tracker" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtWaterConsumed"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="--"
+                        android:textSize="@dimen/_14sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_water_tracker_desc"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_water_tracker_desc" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtWaterGoal"
+                        style="@style/VivantDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" / -- ml"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtWaterConsumed"
+                        app:layout_constraintStart_toEndOf="@+id/txtWaterConsumed" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fitnessCV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_water_tracker">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_9sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/poweredByAktivoTV"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="@string/POWERED_BY_AKTIVO"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@id/fitnessTrackerLblTV"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/fitnessTrackerLblTV" />
+
+                    <com.techglock.health.app.common.view.ArcImageView
+                        android:id="@+id/fitnessIV"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:tint="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/fitness_tracker" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/fitnessTrackerLblTV"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:text="@string/FITNESS_TRACKER"
+                        app:layout_constraintStart_toEndOf="@id/fitnessIV"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/fitnessTrackerDesTV"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:text="@string/TRACK_FITNESS_DATA_STEPS_EXERCISE_SLEEP_OPTIMIZE_WELL_BEING_GOALS"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/fitnessTrackTV"
+                        app:layout_constraintStart_toStartOf="@+id/fitnessTrackerLblTV"
+                        app:layout_constraintTop_toBottomOf="@+id/fitnessTrackerLblTV" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/fitnessTrackTV"
+                        style="@style/VivantDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:background="@drawable/btn_fill_round"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/TRACK"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_track_param1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fitnessCV">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card_track_param"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/_7sdp">
+
+                    <com.techglock.health.app.common.view.ArcImageView
+                        android:id="@+id/icon"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:tint="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/img_vital_paramtrs" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textView19"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:text="@string/VITAL_PARAMETERS"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/icon"
+                        app:layout_constraintTop_toTopOf="@+id/icon" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textView20"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:text="@string/VITAL_PARAMETERS_DESC"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtTrackParam"
+                        app:layout_constraintStart_toStartOf="@+id/textView19"
+                        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTrackParam"
+                        style="@style/VivantDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_fill_round"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/TRACK"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView20" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_medication1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_track_param1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card_medication"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/_7sdp">
+
+                    <com.techglock.health.app.common.view.ArcImageView
+                        android:id="@+id/icon_med"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:tint="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/img_medication_tracker" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textView22"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:text="@string/MEDICATION_TRACKER"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/icon_med"
+                        app:layout_constraintTop_toTopOf="@+id/icon_med" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textView23"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:text="@string/MEDICATION_DESCRIPTION"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtTrackParam_med"
+                        app:layout_constraintStart_toStartOf="@+id/textView22"
+                        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTrackParam_med"
+                        style="@style/VivantDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_fill_round"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/TRACK"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        <androidx.cardview.widget.CardView
+                        android:id="@+id/cardSteps1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:cardCornerRadius="@dimen/card_corner_radius"
+                        app:cardElevation="@dimen/card_elevation"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/card_medication1">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cardSteps"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:padding="@dimen/_8sdp">
+
+                            <com.caressa.allizhealth.app.common.view.ArcImageView
+                                android:id="@+id/iconSteps"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/img_physical_act_track" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/textView33"
+                                style="@style/VivantTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:text="@string/PHYSICAL_ACTIVITY_TRACKER"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/iconSteps"
+                                app:layout_constraintTop_toTopOf="@+id/iconSteps" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/textView34"
+                                style="@style/VivantDescription"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ACTIVITY_TRACKER_DESC"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_7sdp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/txtSteps"
+                                app:layout_constraintStart_toStartOf="@+id/textView33"
+                                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtSteps"
+                                style="@style/VivantDescription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/TRACK"
+                                android:textSize="@dimen/_9sdp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/btn_fill_round"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:paddingStart="@dimen/_15sdp"
+                                android:paddingEnd="@dimen/_15sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/textView34"
+                                app:layout_constraintBottom_toBottomOf="@+id/textView34" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHealthRecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_medication1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/_7sdp">
+
+                    <com.techglock.health.app.common.view.ArcImageView
+                        android:id="@+id/iconHealthRecords"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:background="@drawable/btn_fill_normal"
+                        android:backgroundTint="@color/primary_purple_light"
+                        android:padding="@dimen/_8sdp"
+                        android:tint="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/img_other" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textView38"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:text="@string/MY_HEALTH_RECORDS"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iconHealthRecords"
+                        app:layout_constraintTop_toTopOf="@+id/iconHealthRecords" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textView39"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:text="@string/HEALTH_RECORDS_DESC"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtHealthRecords"
+                        app:layout_constraintStart_toStartOf="@+id/textView38"
+                        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtHealthRecords"
+                        style="@style/VivantDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_fill_round"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/TRACK"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView39" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutToolsCalculators"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardHealthRecords">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_tools_calculators"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:text="@string/TOOLS_AND_CALCULATORS"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView24"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/TOOLS_AND_CALCULATORS_DESC"
+                    app:layout_constraintEnd_toStartOf="@+id/imgCalculatorsArrow"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_tools_calculators"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_tools_calculators" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCalculatorsArrow"
+                    style="@style/CustomArrowNavigation"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_tools_calculators" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_tools_calculators"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView24"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24"
+                    tools:listitem="@layout/item_calculators" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

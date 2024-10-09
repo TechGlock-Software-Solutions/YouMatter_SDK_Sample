@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_80sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_date"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingStart="@dimen/_50sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_50sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/AS_ON"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_retiro_meter_score"
+                style="@style/VivantTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/YOUR_RETIRO_METER_SCORE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_date" />
+
+            <com.techglock.health.app.common.speedview.SpeedView
+                android:id="@+id/speedView"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_retiro_meter_score"
+                app:sv_centerCircleColor="@color/highlight_blue"
+                app:sv_centerCircleRadius="@dimen/_6sdp"
+                app:sv_endDegree="360"
+                app:sv_indicator="KiteIndicator"
+                app:sv_indicatorColor="@color/black"
+                app:sv_indicatorWidth="@dimen/_5sdp"
+                app:sv_markColor="@color/transparent"
+                app:sv_maxSpeed="100"
+                app:sv_minSpeed="0"
+                app:sv_noOfSections="4"
+                app:sv_reverseSections="true"
+                app:sv_speedTextColor="@color/white"
+                app:sv_speedTextPosition="CENTER"
+                app:sv_startDegree="180"
+                app:sv_textColor="@color/textViewColor"
+                app:sv_textSize="@dimen/_12sdp"
+                app:sv_unitTextColor="@color/white"
+                app:sv_unitUnderSpeedText="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_score"
+                style="@style/VivantTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/speedView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_risk_meter"
+                style="@style/VivantTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_score" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_risk_text"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_risk_meter" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_desired_monthly_income"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="start"
+                android:text="@string/DESIRED_MONTHLY_RETIREMENT_INCOME2"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_desired_monthly_income_value"
+                app:layout_constraintHorizontal_weight="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_risk_text" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_desired_monthly_income_value"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_desired_monthly_income"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.4"
+                app:layout_constraintStart_toEndOf="@+id/txt_desired_monthly_income"
+                app:layout_constraintTop_toTopOf="@+id/txt_desired_monthly_income" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_projected_monthly_income"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="@string/PROJECTED_MONTHLY_RETIREMENT_INCOME"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_projected_monthly_income_value"
+                app:layout_constraintHorizontal_weight="0.6"
+                app:layout_constraintStart_toStartOf="@+id/txt_desired_monthly_income"
+                app:layout_constraintTop_toBottomOf="@+id/txt_desired_monthly_income" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_projected_monthly_income_value"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_projected_monthly_income"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.4"
+                app:layout_constraintStart_toEndOf="@+id/txt_projected_monthly_income"
+                app:layout_constraintTop_toTopOf="@+id/txt_projected_monthly_income" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_monthly_retirement_savings"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="@string/REQUIRED_MONTHLY_RETIREMENT_SAVINGS"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_monthly_retirement_savings_value"
+                app:layout_constraintHorizontal_weight="0.6"
+                app:layout_constraintStart_toStartOf="@+id/txt_desired_monthly_income"
+                app:layout_constraintTop_toBottomOf="@+id/txt_projected_monthly_income" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_monthly_retirement_savings_value"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_monthly_retirement_savings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.4"
+                app:layout_constraintStart_toEndOf="@+id/txt_monthly_retirement_savings"
+                app:layout_constraintTop_toTopOf="@+id/txt_monthly_retirement_savings" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_deposit_schemes"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="@string/DEPOSIT_SCHEMES"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_deposit_schemes_value"
+                app:layout_constraintHorizontal_weight="0.6"
+                app:layout_constraintStart_toStartOf="@+id/txt_desired_monthly_income"
+                app:layout_constraintTop_toBottomOf="@+id/txt_monthly_retirement_savings" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_deposit_schemes_value"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_deposit_schemes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.4"
+                app:layout_constraintStart_toEndOf="@+id/txt_deposit_schemes"
+                app:layout_constraintTop_toTopOf="@+id/txt_deposit_schemes" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_national_pension_schemes"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="@string/NATIONAL_PENSION_SCHEME"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_national_pension_schemes_value"
+                app:layout_constraintHorizontal_weight="0.6"
+                app:layout_constraintStart_toStartOf="@+id/txt_desired_monthly_income"
+                app:layout_constraintTop_toBottomOf="@+id/txt_deposit_schemes" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_national_pension_schemes_value"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_national_pension_schemes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.4"
+                app:layout_constraintStart_toEndOf="@+id/txt_national_pension_schemes"
+                app:layout_constraintTop_toTopOf="@+id/txt_national_pension_schemes" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_equity_mutual_funds_pension_insurance"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="@string/EQUITY_MUTUAL_FUNDS_PENSION_INSURANCE"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@+id/txt_equity_mutual_funds_pension_insurance_value"
+                app:layout_constraintHorizontal_weight="0.6"
+                app:layout_constraintStart_toStartOf="@+id/txt_desired_monthly_income"
+                app:layout_constraintTop_toBottomOf="@+id/txt_national_pension_schemes" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_equity_mutual_funds_pension_insurance_value"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_equity_mutual_funds_pension_insurance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.4"
+                app:layout_constraintStart_toEndOf="@+id/txt_equity_mutual_funds_pension_insurance"
+                app:layout_constraintTop_toTopOf="@+id/txt_equity_mutual_funds_pension_insurance" />
+
+            <!--            <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_restart"
+                            style="@style/CustomButton"
+                            android:layout_width="match_parent"
+                            android:text="Restart"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_50sdp"
+                            app:layout_constraintTop_toBottomOf="@+id/txt_equity_mutual_funds_pension_insurance"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_restart"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:text="Restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

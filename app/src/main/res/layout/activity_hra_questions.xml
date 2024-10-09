@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolBarView"
+        layout="@layout/toolbar_layout_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_progress"
+        style="@style/VivantTitle"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:text="--%"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toStartOf="@+id/lbl_completed"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_completed"
+        style="@style/VivantTitle"
+        android:layout_width="0dp"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:text="@string/COMPLETED"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_progress" />
+
+    <ProgressBar
+        android:id="@+id/indicator_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/steps_bg_progress"
+        android:scaleY="0.35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_progress" />
+
+    <!--    <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/indicator_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:max="100"
+            android:progressDrawable="@drawable/seekbar_drawable_progress"
+            android:progressTint="@color/colorPrimary"
+            android:progressBackgroundTint="@color/white"
+            android:thumb="@color/background_color"
+            android:thumbTint="@color/transparent"
+            android:maxHeight="@dimen/_2sdp"
+            android:scaleY="3"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_progress"/>-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_progress"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:text="-&#45;&#45;"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_23sdp"
+            android:layout_marginEnd="@dimen/_23sdp"
+            app:layout_constraintTop_toBottomOf="@+id/indicator_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>-->
+
+    <com.techglock.health.app.hra.views.VerticalViewPager
+        android:id="@+id/viewPagerQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicator_progress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

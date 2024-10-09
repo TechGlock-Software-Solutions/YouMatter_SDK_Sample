@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6sdp"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingBottom="@dimen/_8sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_policy_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--            <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_next"
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:src="@drawable/ic_next_arrow"
+                            android:tint="@color/colorPrimary"
+                            android:layout_margin="@dimen/_5sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_sud_logo"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:src="@drawable/circle_bg_shimmer"
+                android:tint="@color/shimmerColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--            <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_sud_logo"
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@color/shimmerColor"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"/>-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_policy_name"
+                style="@style/VivantTitle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/shimmerColor"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_sud_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_sud_logo"
+                app:layout_constraintTop_toTopOf="@+id/img_sud_logo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_policy_holder_name"
+            style="@style/VivantDescription"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/shimmerColor"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_policy_header" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_policy_holder_name"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/shimmerColor"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbl_policy_holder_name"
+            app:layout_constraintTop_toTopOf="@+id/lbl_policy_holder_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_policy_number"
+            style="@style/VivantDescription"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/shimmerColor"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintStart_toStartOf="@+id/lbl_policy_holder_name"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_policy_holder_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_policy_number"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/shimmerColor"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_policy_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbl_policy_number"
+            app:layout_constraintTop_toTopOf="@+id/lbl_policy_number" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_next_renewal"
+            style="@style/VivantDescription"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/shimmerColor"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/lbl_policy_number"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_policy_number" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_next_renewal"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/shimmerColor"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_next_renewal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbl_next_renewal"
+            app:layout_constraintTop_toTopOf="@+id/lbl_next_renewal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

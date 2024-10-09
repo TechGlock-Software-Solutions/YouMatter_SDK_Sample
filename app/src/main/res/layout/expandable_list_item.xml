@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/border_button_white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_suggestion_no"
+        style="@style/VivantTitle"
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="@dimen/_43sdp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.techglock.health.app.common.view.ArcTextView
+        android:id="@+id/txt_suggestion"
+        style="@style/VivantTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:text=""
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_suggestion_no"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/txt_suggestion_no"
+        app:layout_constraintTop_toTopOf="@+id/txt_suggestion_no" />
+
+    <com.techglock.health.app.common.view.ArcImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_suggestion_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_suggestion_no"
+        app:srcCompat="@drawable/add" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="0.7dp"
+        android:background="@color/vivantInactive"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/txt_suggestion"
+        app:layout_constraintTop_toBottomOf="@+id/txt_suggestion_no" />
+
+    <com.techglock.health.app.tools_calculators.views.ExpandableLinearLayout
+        android:id="@+id/expandableView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:expandDuration="500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <LinearLayout
+            android:id="@+id/lay_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_8sdp">
+
+        </LinearLayout>
+
+    </com.techglock.health.app.tools_calculators.views.ExpandableLinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

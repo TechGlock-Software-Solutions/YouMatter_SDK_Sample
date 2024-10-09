@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_select_record"
+        style="@style/VivantTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:gravity="center"
+        android:text="@string/PLEASE_SELECT_DOCUMENT_TYPE"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_doc_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_select_record"
+        tools:listitem="@layout/item_doc_type" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!--            <com.caressa.allizhealth.app.common.view.ArcButton
+                        android:id="@+id/btn_back_doc_type"
+                        style="@style/CustomButtonLeft"
+                        android:text="@string/BACK"
+                        app:isLeftButton="true"
+                        app:isTemplate="true" />
+
+                    <com.caressa.allizhealth.app.common.view.ArcButton
+                        android:id="@+id/btn_next_doc_type"
+                        style="@style/CustomButtonRight"
+                        android:text="@string/NEXT"
+                        app:isTemplate="true" />-->
+
+        <com.techglock.health.app.common.view.ArcButton
+            android:id="@+id/btn_next_doc_type"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/NEXT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/card_alert"
+            app:layout_constraintStart_toStartOf="@+id/card_alert"
+            app:layout_constraintTop_toBottomOf="@+id/card_alert" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

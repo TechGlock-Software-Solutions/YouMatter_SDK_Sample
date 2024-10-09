@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/_5sdp"
+    android:paddingEnd="@dimen/_5sdp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/btn_fill_dialog"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_close_input">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_close_input"
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:tint="@color/almost_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_close" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_input"
+                style="@style/VivantTitle"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/SYSTOLIC_DIALOG_TITLE"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_close_input" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/description_input"
+                style="@style/VivantDescription"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/SYSTOLIC_DIALOG_MESSAGE"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/title_input"
+                app:layout_constraintTop_toBottomOf="@id/title_input" />
+
+            <!--                <com.google.android.material.tabs.TabLayout
+                                android:id="@+id/layout_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:tabInlineLabel="true"
+                                app:tabMode="fixed"
+                                app:tabBackground="@color/white"
+                                app:tabTextAppearance="@style/TabLayout"
+                                app:tabTextColor="@color/mid_gray"
+                                app:tabSelectedTextColor="@color/brown_gold"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                app:tabIndicatorColor="@color/brown_gold"
+                                app:tabIndicatorHeight="@dimen/_2sdp"
+                                android:layout_marginStart="@dimen/_15sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/description_input">-->
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/layout_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_input"
+                app:tabBackground="@drawable/tab_bg_selector"
+                app:tabIndicatorColor="@color/transparent"
+                app:tabIndicatorGravity="bottom"
+                app:tabInlineLabel="true"
+                app:tabMode="fixed"
+                app:tabRippleColor="@null"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/TabLayout"
+                app:tabTextColor="@color/tab_text">
+
+                <com.google.android.material.tabs.TabItem
+                    style="@style/VivantTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SYSTOLIC_BP" />
+
+                <com.google.android.material.tabs.TabItem
+                    style="@style/VivantTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DIASTOLIC_BP" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/transparent"
+                app:layout_constraintEnd_toEndOf="@+id/layout_tab"
+                app:layout_constraintStart_toStartOf="@+id/layout_tab"
+                app:layout_constraintTop_toBottomOf="@+id/layout_tab" />
+
+            <LinearLayout
+                android:id="@+id/lltInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_tab">
+
+                <RelativeLayout
+                    android:id="@+id/systolicBpLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editBox1"
+                        style="@style/CustomEdittextDialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:focusable="true"
+                        android:hint="10 - 350"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:text="" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/ToolsQuestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_23sdp"
+                        android:text="@string/UPPER_LIMIT" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/diastolicBpLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editBox2"
+                        style="@style/CustomEdittextDialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:focusable="true"
+                        android:hint="0 - 150"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:text="" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/ToolsQuestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_23sdp"
+                        android:text="@string/LOWER_LIMIT" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.techglock.health.app.common.view.ArcButton
+                android:id="@+id/btn_save_input"
+                style="@style/CustomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="@string/SAVE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/lltInput"
+                app:layout_constraintStart_toStartOf="@+id/lltInput"
+                app:layout_constraintTop_toBottomOf="@+id/lltInput" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <!--        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_close_input"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/circle_drawable"
+                android:backgroundTint="@color/white"
+                android:elevation="@dimen/_3sdp"
+                android:padding="@dimen/_4sdp"
+                android:tint="@color/vivant_charcoal_grey_55"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_close" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

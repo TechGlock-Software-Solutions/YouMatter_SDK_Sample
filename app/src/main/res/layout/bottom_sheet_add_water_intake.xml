@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@color/light_gray"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/_21sdp"
+            android:layout_height="@dimen/_21sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:tint="@color/almost_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title"
+            style="@style/VivantTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center_horizontal"
+            android:text="@string/LOG_YOUR_INTAKE"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:background="@drawable/btn_fill_blue_light"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_title"
+            app:layout_constraintStart_toStartOf="@+id/txt_title"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_intake_date"
+                style="@style/VivantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/primary_blue"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintEnd_toStartOf="@+id/img_dropdown"
+                app:layout_constraintStart_toEndOf="@+id/img_calender"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_calender"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:src="@drawable/img_calender_new"
+                android:tint="@color/primary_blue"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_intake_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_intake_date" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_dropdown"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/img_down"
+                android:tint="@color/primary_blue"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_intake_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_intake_date" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_drink_type"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:paddingStart="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_date"
+            tools:listitem="@layout/item_drink_type" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_edit"
+            android:layout_width="@dimen/_33sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:background="@drawable/btn_fill_selected"
+            android:backgroundTint="@color/primary_blue"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_edit"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_drink_quantity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rv_drink_quantity" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_drink_quantity"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:paddingStart="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_3sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_edit"
+            app:layout_constraintTop_toBottomOf="@+id/rv_drink_type"
+            tools:listitem="@layout/item_drink_quantity" />
+
+        <com.techglock.health.app.common.view.ArcButton
+            android:id="@+id/btn_done_intake"
+            style="@style/CustomButton"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:backgroundTint="@color/primary_blue"
+            android:text="@string/DONE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/rv_drink_quantity"
+            app:layout_constraintStart_toStartOf="@+id/rv_drink_quantity"
+            app:layout_constraintTop_toBottomOf="@+id/rv_drink_quantity" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_banner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_4sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    android:background="@drawable/rounded_square"
+    android:backgroundTint="@color/shimmerColor"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:layout_constraintBottom_toTopOf="@+id/slider_dots"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/slidingViewPagerShimmer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/policy_banner_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/disclaimerCBrShimmer"
+            style="@style/VivantDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:checked="true"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slidingViewPagerShimmer" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/disclaimerTVShimmer"
+            style="@style/VivantDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="@string/DISCLAIMER_CENTURION_BANNER"
+            android:textColor="@color/shimmerColor"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/disclaimerCBrShimmer"
+            app:layout_constraintTop_toTopOf="@id/disclaimerCBrShimmer" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_bottom_square"
+            android:backgroundTint="@color/shimmerColor"
+            app:layout_constraintBottom_toBottomOf="@id/clickHereToKnowTVShimmer"
+            app:layout_constraintTop_toTopOf="@id/clickHereToKnowTVShimmer" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/clickHereToKnowTVShimmer"
+            style="@style/VivantTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:padding="@dimen/_9sdp"
+            android:text=""
+            android:textColor="@color/shimmerColor"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/disclaimerTVShimmer" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/shareBannerShimmer"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_svg_share_white"
+            android:tint="@color/shimmerColor"
+            app:layout_constraintBottom_toBottomOf="@id/clickHereToKnowTVShimmer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/clickHereToKnowTVShimmer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,321 @@
+apply plugin: 'com.android.library'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'maven-publish'
+
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+def apikeyProperties = new Properties()
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+android {
+    compileSdkVersion Versions.compileSdk
+
+
+    signingConfigs {
+        config {
+            keyAlias 'youmatter'
+            keyPassword 'youmatter'
+            storeFile file('key/you_matter.jks')
+            storePassword 'youmatter'
+            enableV3Signing = true
+            enableV4Signing = true
+        }
+    }
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+        versionCode Releases.versionCode
+        versionName Releases.versionName
+        vectorDrawables.useSupportLibrary = true
+        buildConfigField("String", "SECURITY_KEY", apikeyProperties['SECURITY_KEY'])
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            //useProguard false
+            shrinkResources false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+        release {
+            debuggable false
+            minifyEnabled false
+            //useProguard true
+            shrinkResources false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [crashlyticsCollectionEnabled: "true"]
+        }
+    }
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+        buildConfig true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+    dexOptions {
+        //incremental true
+        javaMaxHeapSize "4g"
+    }
+    packagingOptions {
+        exclude "META-INF/MANIFEST.MF"
+        exclude "META-INF/LICENSE.txt"
+        exclude "META-INF/NOTICE.txt"
+    }
+
+
+    packagingOptions {
+        pickFirst 'lib/arm64-v8a/libopencv_java4.so'
+        pickFirst 'lib/x86_64/libopencv_java4.so'
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+        pickFirst 'lib/armeabi-v7a/libopencv_java4.so'
+        pickFirst 'lib/x86/libopencv_java4.so'
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+        pickFirst 'lib/x86/libc++_shared.so'
+        pickFirst 'lib/x86_64/libc++_shared.so'
+    }
+    namespace 'com.techglock.health.app'
+
+    publishing {
+        singleVariant('release')  {
+            withSourcesJar()
+            withJavadocJar()
+//            allVariants()
+        }
+    }
+
+}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.getByName('release')
+
+                groupId = 'github.com.techglock'
+                artifactId = 'youmatter'
+                version = '1.1.0'
+
+                 pom {
+                     name = 'Youmatter healthcare'
+                     description = 'Youmatter healthcare'
+                     url = 'https://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample'
+
+                     licenses {
+                         license {
+                             name = 'The Apache License, Version 2.0'
+                             url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                         }
+                     }
+
+                     developers {
+                         developer {
+                             id = 'akhajuria92'
+                             name = 'Akshay Khajuria'
+                             email = 'akshaykhajuria92@gmail.com'
+                         }
+                     }
+
+                     scm {
+                         connection = 'scm:git:git://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample.git'
+                         developerConnection = 'scm:git:ssh://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample.git'
+                         url = 'https://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample'
+                     }
+                 }
+            }
+
+        }
+        repositories {
+            mavenLocal()
+            mavenCentral()
+            maven {
+                url = uri('https://jitpack.io')
+            }
+        }
+    }
+}
+
+dependencies {
+
+
+    api Libraries.scalableSdp
+    api Libraries.timber
+
+
+    implementation 'com.clevertap.android:clevertap-android-sdk:5.0.0'
+    //Mandatory for CleverTap Android SDK v3.6.4 and above add the following -
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+
+    implementation 'com.appsflyer:af-android-sdk:6.12.2'
+
+    //Threeten Android Backport
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.2'
+
+    // Multidex
+    implementation Libraries.multidex
+
+    // ANDROID
+    api AndroidLibraries.constraintLayout
+    implementation AndroidLibraries.appCompat
+    implementation AndroidLibraries.appDesign
+    implementation AndroidLibraries.navigation
+    implementation AndroidLibraries.navigationFrag
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+
+
+    implementation "com.google.dagger:hilt-android:2.48.1"
+    kapt "com.google.dagger:hilt-compiler:2.48.1"
+    androidTestImplementation "com.google.dagger:hilt-android-testing:2.31.2-alpha"
+    kaptAndroidTest "com.google.dagger:hilt-android-compiler:2.38"
+
+    api AndroidLibraries.googleMaterialDesign
+    api AndroidLibraries.recyclerView
+    api Libraries.datetimepicker
+    api Libraries.shimmer
+    implementation Libraries.facebook
+    api Libraries.glide
+    api Libraries.picasso
+    api Libraries.dexter
+    api Libraries.documentFile
+    api Libraries.photoView
+    api Libraries.lottie
+//    api Libraries.tooltip
+    api Libraries.gsmFitness
+    api Libraries.gsmAuth
+    implementation AndroidLibraries.androidxLegacySupport
+    //for OTP Auto read from SMS
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+    // ROOM
+    kapt Libraries.sqlite // Only for computer with M1 & M2 CPU
+    kapt Libraries.roomCompiler
+    implementation Libraries.roomRunTime
+    implementation Libraries.roomKtx
+
+    implementation AndroidLibraries.lifecycleExtensions
+    // Sqlcipher
+    implementation Libraries.sqlcipher
+
+    androidTestImplementation TestLibraries.androidTestRunner
+    androidTestImplementation TestLibraries.junit
+    androidTestImplementation TestLibraries.archCoreTest
+    implementation KotlinLibraries.kotlin
+    implementation Libraries.gson
+    api Libraries.retrofitCoroutineAdapter
+    api Libraries.retrofit
+    api Libraries.retrofitGsonConverter
+    api Libraries.httpLoggingInterceptor
+    api Libraries.scalarsConverter
+
+    testImplementation TestLibraries.mockWebServer
+    implementation KotlinLibraries.kotlinCoroutineCore
+    implementation AndroidLibraries.kotlinCoroutineAndroid
+    testImplementation TestLibraries.mockk
+    testImplementation TestLibraries.coroutine
+    api Libraries.jSoup
+    implementation Libraries.circularProgress
+    implementation Libraries.chartLib
+    implementation Libraries.evernote
+    implementation fileTree(dir: "libs", include: ["*.aar"])
+
+    //Smit-Fit
+//    implementation "fit.smit.media.lib:smitfit-media-sdk:0.0.7"
+    api Libraries.otpView
+    api Libraries.circleImageview
+    implementation Libraries.ucrop
+    implementation Libraries.imageCropper
+    implementation Libraries.firebaseMessaging
+
+    implementation Libraries.blurry
+
+    implementation Libraries.advancedWebView
+    // camerax
+    def camerax_version = '1.2.0-alpha03'
+    def camerax_view_version = '1.2.0-alpha03'
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+    implementation "androidx.camera:camera-view:${camerax_view_version}"
+
+    //mlkit
+    def mlkit_version = '16.0.3'
+    implementation "com.google.mlkit:face-detection:${mlkit_version}"
+
+    //socket
+    implementation "com.neovisionaries:nv-websocket-client:2.4"
+
+    //opencv
+    def opencv_version = '4.3.0'
+    implementation "com.github.iamareebjamal:opencv-android:${opencv_version}"
+
+/*    //Aktivo-elk
+    implementation group: 'com.aktivolabs.aktivoelk', name: 'aktivoelk', version: '1.0.0', ext: 'aar', classifier: 'release'
+
+    //Aktivocore
+    implementation group: 'com.aktivolabs.aktivocore', name: 'aktivocore', version: '3.4.3', ext: 'aar', classifier: 'release'*/
+
+    implementation 'joda-time:joda-time:2.10.14'
+
+    // worker
+    implementation 'androidx.work:work-runtime:2.8.1'
+    implementation 'androidx.work:work-testing:2.8.1'
+
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.12'
+    implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+
+    //*******************************************************************
+    //Nvest
+    implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.ui:ui-graphics'
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation 'androidx.compose.material3:material3'
+    //PROD
+    implementation('org.nvest:bi-tool:1.0.2-production01') {
+        transitive true
+    }
+
+    //UAT
+/*    implementation('org.nvest:bi-tool:1.0.2-uat02') {
+        transitive true
+    }*/
+    implementation Libraries.stepbar
+    api Libraries.pdfViewer
+    implementation "androidx.biometric:biometric:1.1.0"
+    implementation Libraries.pinview
+    implementation Libraries.conscrypt
+    api Libraries.rootbeer
+    api Libraries.indicatorseekbar
+    implementation Libraries.colorSeekBar
+    implementation Libraries.materialDesignLib
+    api AndroidLibraries.coreKtx
+    api AndroidLibraries.lifecycleViewModel
+    androidTestImplementation TestLibraries.mockkAndroid
+    androidTestImplementation TestLibraries.fragmentNav
+    androidTestImplementation TestLibraries.espresso
+    androidTestImplementation TestLibraries.espressoContrib
+    kaptAndroidTest TestLibraries.databinding
+
+}

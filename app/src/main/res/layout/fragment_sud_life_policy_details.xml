@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_policy_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                app:layout_constraintBottom_toTopOf="@+id/card_fund_details"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:paddingBottom="@dimen/_12sdp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_policy_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#E2EEE2"
+                        android:paddingTop="@dimen/_7sdp"
+                        android:paddingBottom="@dimen/_7sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_sud_logo"
+                            android:layout_width="@dimen/_32sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:src="@drawable/ic_sud_logo"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_policy_name"
+                            style="@style/VivantTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:text="@string/DASH_3"
+                            android:textSize="@dimen/_13sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/img_sud_logo"
+                            app:layout_constraintTop_toTopOf="@+id/img_sud_logo" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_policy_status"
+                            style="@style/VivantDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/DASH_3"
+                            android:textSize="@dimen/_10sdp"
+                            app:layout_constraintEnd_toEndOf="@+id/txt_policy_name"
+                            app:layout_constraintStart_toStartOf="@+id/txt_policy_name"
+                            app:layout_constraintTop_toBottomOf="@+id/txt_policy_name" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_policy_number"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="@string/POLICY_NO"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/layout_policy_header" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_policy_number"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_policy_number"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_policy_number" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_policy_holder_name"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/POLICY_HOLDER"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toEndOf="@+id/guideline2"
+                        app:layout_constraintTop_toTopOf="@+id/lbl_policy_number" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_policy_holder_name"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_policy_holder_name"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_policy_holder_name" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_risk_commencement_date"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Start Date :"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_policy_number"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_policy_number" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_risk_commencement_date"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_risk_commencement_date"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_risk_commencement_date" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_policy_maturity_date"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/MATURITY_DATE"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toEndOf="@+id/guideline2"
+                        app:layout_constraintTop_toTopOf="@+id/lbl_risk_commencement_date" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_policy_maturity_date"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_policy_maturity_date"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_policy_maturity_date" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="0dp"
+                        android:layout_height="0.8dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:background="@color/vivantInactive"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_risk_commencement_date" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_next_premium_due_date"
+                        style="@style/VivantDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:text="Next Due Date"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="@+id/view2"
+                        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_next_premium_due_date"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_next_premium_due_date"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_next_premium_due_date" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_premium_frequency"
+                        style="@style/VivantDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Premium/Frequency"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toEndOf="@+id/guideline2"
+                        app:layout_constraintTop_toTopOf="@+id/lbl_next_premium_due_date" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_premium_frequency"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_premium_frequency"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_premium_frequency" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_policy_term"
+                        style="@style/VivantDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/POLICY_TERM"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="@+id/view2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_next_premium_due_date" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_policy_term"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_policy_term"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_policy_term" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_policy_premium_payment_term"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/PREMIUM_PAYING_TERM"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toEndOf="@+id/guideline2"
+                        app:layout_constraintTop_toTopOf="@+id/lbl_policy_term" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_policy_premium_payment_term"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_policy_premium_payment_term"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_policy_premium_payment_term" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_sum_assured"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/SUM_ASSURED"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toStartOf="@+id/view2"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_policy_term" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_sum_assured"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_sum_assured"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_sum_assured" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_total_fund_value"
+                        style="@style/VivantDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TOTAL_FUND_VALUE"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintStart_toEndOf="@+id/guideline2"
+                        app:layout_constraintTop_toTopOf="@+id/lbl_sum_assured" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_total_fund_value"
+                        style="@style/VivantTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="@string/DASH_3"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintStart_toStartOf="@+id/lbl_total_fund_value"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_total_fund_value" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_fund_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_70sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_policy_details">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_fund_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_fund_details"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/FUND_DETAILS"
+                        android:textSize="@dimen/_13sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_drop_down"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:src="@drawable/ic_up_arrow"
+                        android:tint="@color/colorPrimary"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_fund_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_fund_header"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_fund_details" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--        <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_pay_premium"
+                        android:layout_width="0dp"
+                        app:layout_constraintHorizontal_weight="0.75"
+                        style="@style/CustomButton"
+                        android:text="Pay  your Premium"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        app:layout_constraintTop_toBottomOf="@+id/card_fund_details"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/img_options"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_options"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintHorizontal_weight="0.25"
+                        android:src="@drawable/img_download"
+                        android:tint="@color/colorPrimary"
+                        android:background="@drawable/btn_oval_selected"
+                        android:padding="@dimen/_9sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_pay_premium"
+                        app:layout_constraintTop_toTopOf="@+id/btn_pay_premium"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btn_pay_premium"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pay_premium"
+        style="@style/CustomButton"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/PAY_YOUR_PREMIUM"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_options"
+        app:layout_constraintHorizontal_weight="0.75"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_options"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/btn_oval_selected"
+        android:padding="@dimen/_9sdp"
+        android:src="@drawable/img_download"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_pay_premium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.25"
+        app:layout_constraintStart_toEndOf="@+id/btn_pay_premium"
+        app:layout_constraintTop_toTopOf="@+id/btn_pay_premium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

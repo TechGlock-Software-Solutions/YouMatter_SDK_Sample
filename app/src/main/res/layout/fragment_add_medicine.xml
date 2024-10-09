@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_choose_type"
+        style="@style/VivantTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:text="@string/CHOOSE_MEDICINE_TYPE"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_medicine_type"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:paddingStart="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_choose_type"
+        tools:listitem="@layout/item_medicine_type" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lbl_medication_name"
+        style="@style/VivantTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:text="@string/MEDICINE_NAME"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="@+id/rv_medicine_type"
+        app:layout_constraintStart_toEndOf="@+id/rv_medicine_type"
+        app:layout_constraintTop_toBottomOf="@+id/rv_medicine_type" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_edt_medicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_medication_name"
+        app:layout_constraintStart_toStartOf="@+id/lbl_medication_name"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_medication_name">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_medicine_name"
+            style="@style/VivantTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:passwordToggleEnabled="false">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/edt_medicine_name"
+                style="@style/VivantEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="01234567890 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ .,"
+                android:dropDownHeight="@dimen/_130sdp"
+                android:hint="@string/TYPE_YOUR_MEDICINE_NAME"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:paddingEnd="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:textSize="@dimen/_13sdp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_search"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:tint="@color/vivant_edit_textcolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/til_medicine_name"
+            app:srcCompat="@drawable/img_search"
+            tools:ignore="VectorDrawableCompat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_recently_added_medicines"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/card_search_medicine"
+                app:layout_constraintStart_toStartOf="@+id/card_search_medicine"
+                app:layout_constraintTop_toBottomOf="@+id/card_search_medicine">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_recently_added_medicines"
+                    style="@style/VivantTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="bold"
+                    android:text="@string/PAST_MEDICINES"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_recently_added_medicines"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_recently_added_medicines"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_recently_added_medicines">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.caressa.allizhealth.app.common.view.FlowLayout
+                            android:id="@+id/flow_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/_70sdp"
+                            app:flChildSpacing="@dimen/_6sdp"
+                            app:flRowSpacing="@dimen/_6sdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <com.techglock.health.app.common.view.ArcButton
+        android:id="@+id/btn_add_schedule"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

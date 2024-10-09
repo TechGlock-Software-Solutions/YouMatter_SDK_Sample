@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SeekArc="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_sync_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_online"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="@color/vivant_nasty_green"
+                android:padding="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_sync_account"
+                app:layout_constraintEnd_toStartOf="@id/txt_sync_account"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txt_sync_account" />
+
+            <com.techglock.health.app.common.view.ArcTextView
+                android:id="@+id/txt_sync_account"
+                style="@style/VivantTitle"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:ellipsize="end"
+                android:text="---"
+                android:textSize="@dimen/_13sdp"
+                app:isTemplate="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_online"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_sync_account">
+
+            <com.techglock.health.app.common.view.SeekArc
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_20sdp"
+                SeekArc:progress="50"
+                SeekArc:rotation="180"
+                SeekArc:startAngle="30"
+                SeekArc:sweepAngle="300"
+                app:arcColor="@color/vivantInactiveLight"
+                app:arcWidth="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:max="100"
+                app:progressWidth="@dimen/_7sdp"
+                app:touchInside="false" />
+
+            <com.techglock.health.app.common.view.ArcImageView
+                android:id="@+id/img_dotted_circle"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="@dimen/_135sdp"
+                app:isTemplate="true"
+                app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
+                app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+                app:layout_constraintStart_toStartOf="@+id/progress_bar"
+                app:layout_constraintTop_toTopOf="@+id/progress_bar"
+                app:srcCompat="@drawable/dotted_circle" />
+
+            <com.techglock.health.app.common.view.ArcImageView
+                android:id="@+id/img_step"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:tint="@color/colorPrimary"
+                app:isTemplate="true"
+                app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+                app:layout_constraintStart_toStartOf="@+id/progress_bar"
+                app:layout_constraintTop_toTopOf="@+id/progress_bar"
+                app:srcCompat="@drawable/img_step" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_step_count"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:gravity="center"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:text="---"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="@+id/img_step"
+                app:layout_constraintStart_toStartOf="@+id/img_step"
+                app:layout_constraintTop_toBottomOf="@+id/img_step" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView5"
+                style="@style/VivantTitle"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/STEPS"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_step_count"
+                app:layout_constraintStart_toStartOf="@+id/txt_step_count"
+                app:layout_constraintTop_toBottomOf="@+id/txt_step_count" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtGoal"
+            style="@style/CustomTextview"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/selector_border_button"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:paddingStart="@dimen/_7sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingEnd="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:text="---"
+            android:textColor="@color/textViewColor"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="@+id/viewContainer"
+            app:layout_constraintStart_toStartOf="@+id/viewContainer"
+            app:layout_constraintTop_toBottomOf="@+id/viewContainer" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_my_goal"
+            style="@style/VivantTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="@string/MY_GOAL"
+            android:textColor="@color/textViewColor"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="@+id/txtGoal"
+            app:layout_constraintStart_toStartOf="@+id/txtGoal"
+            app:layout_constraintTop_toBottomOf="@+id/txtGoal" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_extra_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_my_goal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30sdp"
+                app:layout_constraintEnd_toStartOf="@+id/layout_distance"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_calories"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/secondary_yellow"
+                    android:padding="@dimen/_12sdp"
+                    android:tint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img_calories" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_today_calories"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_calories" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/layout_calories">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_distance"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:padding="@dimen/_10sdp"
+                    android:tint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img_distance" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_today_distance"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_distance" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_active_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layout_distance"
+                app:layout_constraintTop_toTopOf="@+id/layout_calories">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_active_time"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/vivant_watermelon"
+                    android:padding="@dimen/_10sdp"
+                    android:tint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img_active_time" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_today_active_time"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_active_time" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_goal_reached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_extra_data">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lbl_goal_reached"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GOAL_REACHED"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.techglock.health.app.common.view.ArcTextView
+                android:id="@+id/txt_goal_reached"
+                style="@style/VivantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="--"
+                android:textSize="@dimen/_18sdp"
+                app:isPrimary="true"
+                app:isTemplate="true"
+                app:layout_constraintBottom_toBottomOf="@+id/lbl_goal_reached"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lbl_goal_reached"
+                app:layout_constraintTop_toTopOf="@+id/lbl_goal_reached" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

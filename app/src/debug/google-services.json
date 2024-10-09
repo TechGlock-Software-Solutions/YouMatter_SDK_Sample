@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "963831629628",
+    "project_id": "you-matter-6a467",
+    "storage_bucket": "you-matter-6a467.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963831629628:android:2fc2598e532a8efda6c039",
+        "android_client_info": {
+          "package_name": "com.sudlife.youmatter.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963831629628-o4rigggkaracjc64verggiv8h2ijf57b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sudlife.youmatter.app",
+            "certificate_hash": "4b8b89a5f0707875644aa6fd00be1252ad2b71e3"
+          }
+        },
+        {
+          "client_id": "963831629628-rqn4r5t71jj031b09terevuv5j3q0otp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sudlife.youmatter.app",
+            "certificate_hash": "b509ceae9ca14dc379819fefdf8fb171a83bd215"
+          }
+        },
+        {
+          "client_id": "963831629628-a97amko2ud14665f1c6cnsbtl12ms7ql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPJESwKkFh0lSNW0NqZHOgCiGEhobl85E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963831629628-a97amko2ud14665f1c6cnsbtl12ms7ql.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "963831629628-5o85stuvjvkft6o8nqqlj7a69pgc317h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sudlife.youmatter.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963831629628:android:211a0d56224847b1a6c039",
+        "android_client_info": {
+          "package_name": "com.sudlife.youmatter.app.uat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963831629628-a97amko2ud14665f1c6cnsbtl12ms7ql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPJESwKkFh0lSNW0NqZHOgCiGEhobl85E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963831629628-a97amko2ud14665f1c6cnsbtl12ms7ql.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "963831629628-5o85stuvjvkft6o8nqqlj7a69pgc317h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sudlife.youmatter.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

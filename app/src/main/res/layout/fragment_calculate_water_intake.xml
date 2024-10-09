@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_water_intake"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_115sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_current_target"
+            app:layout_constraintHorizontal_weight="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_calculate_intake_new" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_current_target"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="bottom"
+            android:text="@string/CURRENT_TARGET"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_current_target"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.6"
+            app:layout_constraintStart_toEndOf="@+id/img_water_intake"
+            app:layout_constraintTop_toTopOf="@+id/img_water_intake" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_current_target"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="start"
+            android:text="--  ml"
+            android:textColor="@color/primary_blue"
+            android:textSize="@dimen/_17sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_water_intake"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_current_target"
+            app:layout_constraintStart_toStartOf="@+id/lbl_current_target"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_current_target" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_water_intake"
+            android:background="@color/transparent"
+            app:tabBackground="@drawable/tab_bg_selector_blue"
+            app:tabIndicatorColor="@color/transparent"
+            app:tabIndicatorGravity="bottom"
+            app:tabInlineLabel="true"
+            app:tabMode="fixed"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/TabLayout"
+            app:tabTextColor="@color/tab_text">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DEFAULT_TARGET" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/CUSTOM_TARGET" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_target_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/tab_layout"
+            app:layout_constraintStart_toStartOf="@+id/tab_layout"
+            app:layout_constraintTop_toBottomOf="@+id/tab_layout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_default_target"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_ques_weight"
+                    style="@style/VivantTitle"
+                    android:layout_width="match_parent"
+                    android:text="@string/SELECT_YOUR_WEIGHT"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/btn_fill_blue_light"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_ques_weight"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_ques_weight"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_ques_weight">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_weight"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_11sdp"
+                        android:layout_marginBottom="@dimen/_11sdp"
+                        android:text="@string/SELECT"
+                        android:textColor="@color/primary_blue"
+                        android:textSize="@dimen/_14sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.techglock.health.app.common.view.ArcImageView
+                        android:id="@+id/img_calender2"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_down_arrow"
+                        android:tint="@color/primary_blue"
+                        app:layout_constraintBottom_toBottomOf="@+id/txt_weight"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/txt_weight" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_ques_excercise"
+                    style="@style/VivantTitle"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:text="@string/DO_YOU_EXERCISE"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_weight"
+                    app:layout_constraintStart_toStartOf="@+id/layout_weight"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_weight" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_checked_excercise"
+                    style="@style/VivantTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:tag="No"
+                    android:text="@string/NO"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/sw_excercise"
+                    app:layout_constraintEnd_toStartOf="@+id/sw_excercise"
+                    app:layout_constraintTop_toTopOf="@+id/sw_excercise" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sw_excercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:checked="false"
+                    android:thumb="@drawable/thumb_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/lbl_ques_excercise"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_weight"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_ques_excercise"
+                    app:track="@drawable/track_selector_blue" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_excercise_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_ques_excercise"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_ques_excercise"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_ques_excercise">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/lbl_ques_excercise_duration"
+                        style="@style/VivantTitle"
+                        android:layout_width="0dp"
+                        android:text="@string/ENTER_DURATION_OF_EXERCISE_IN_MINUTES"
+                        android:textSize="@dimen/_14sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_edt_duration"
+                        style="@style/MyTextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl_ques_excercise_duration">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_duration"
+                            style="@style/MyEditTextStyleNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="10 - 120"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:text="" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txt_duration_unit"
+                        style="@style/VivantDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:text="@string/MIN"
+                        android:textColor="@color/textViewColor"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/til_edt_duration"
+                        app:layout_constraintEnd_toEndOf="@+id/til_edt_duration"
+                        app:layout_constraintTop_toTopOf="@+id/til_edt_duration" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_custom_target"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_custom_water_intake"
+                    style="@style/VivantTitle"
+                    android:layout_width="match_parent"
+                    android:text="@string/CUSTOM_WATER_INTAKE"
+                    android:textSize="@dimen/_15sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lbl_select_water_intake"
+                    style="@style/VivantDescription"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/ENTER_WATER_INTAKE_QUANTITY_SUGGESTED_BY_YOUR_PHYSICIAN"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/lbl_custom_water_intake"
+                    app:layout_constraintStart_toStartOf="@+id/lbl_custom_water_intake"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_custom_water_intake" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_edt_target"
+                    style="@style/MyTextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_select_water_intake">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_target"
+                        style="@style/MyEditTextStyleNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="1000 - 10000"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:text="" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_target_unit"
+                    style="@style/VivantDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:text="@string/ML"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/_15sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/til_edt_target"
+                    app:layout_constraintEnd_toEndOf="@+id/til_edt_target"
+                    app:layout_constraintTop_toTopOf="@+id/til_edt_target" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lbl_ques_notification"
+            style="@style/VivantTitle"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/ENABLE_NOTIFICATION"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_target_details"
+            app:layout_constraintStart_toStartOf="@+id/layout_target_details"
+            app:layout_constraintTop_toBottomOf="@+id/layout_target_details" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_checked_notification"
+            style="@style/VivantTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:tag="YES"
+            android:text="@string/YES"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/sw_notification"
+            app:layout_constraintEnd_toStartOf="@+id/sw_notification"
+            app:layout_constraintTop_toTopOf="@+id/sw_notification" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sw_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:checked="true"
+            android:thumb="@drawable/thumb_selector"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_ques_notification"
+            app:layout_constraintEnd_toEndOf="@+id/layout_target_details"
+            app:layout_constraintTop_toTopOf="@+id/lbl_ques_notification"
+            app:track="@drawable/track_selector_blue" />
+
+        <com.techglock.health.app.common.view.ArcButton
+            android:id="@+id/btn_calculate_intake"
+            style="@style/CustomButton"
+            android:layout_width="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="0dp"
+            android:backgroundTint="@color/primary_blue"
+            android:text="@string/CALCULATE"
+            app:layout_constraintEnd_toEndOf="@+id/sw_notification"
+            app:layout_constraintStart_toStartOf="@+id/lbl_ques_notification"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_ques_notification" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_water_intake_target"
+            style="@style/VivantTitle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/YOUR_DAILY_WATER_INTAKE"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_calculate_intake"
+            app:layout_constraintStart_toStartOf="@+id/btn_calculate_intake"
+            app:layout_constraintTop_toBottomOf="@+id/btn_calculate_intake" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

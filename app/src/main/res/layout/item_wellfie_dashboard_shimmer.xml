@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_wellfie_shimmer4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_parameter"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:padding="@dimen/_1sdp"
+        android:src="@drawable/circle_bg_shimmer"
+        android:tint="@color/shimmerColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_parameter"
+        style="@style/VivantDescription"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/shimmerColor"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/img_parameter"
+        app:layout_constraintTop_toTopOf="@+id/img_parameter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_parameter_value"
+        style="@style/VivantTitle"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/shimmerColor"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@+id/txt_parameter"
+        app:layout_constraintTop_toBottomOf="@+id/txt_parameter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

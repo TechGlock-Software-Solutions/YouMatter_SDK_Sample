@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_nimeya"
+    app:startDestination="@id/nimeyaHomeFragment">
+
+    <fragment
+        android:id="@+id/nimeyaHomeFragment"
+        android:name="com.techglock.health.app.home.ui.nimeya.NimeyaHomeFragment"
+        tools:layout="@layout/fragment_nimeya_home">
+
+        <action
+            android:id="@+id/action_nimeyaHomeFragment_to_riskoMeterInputFragment"
+            app:destination="@id/riskoMeterInputFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_nimeyaHomeFragment_to_riskoMeterResultFragment"
+            app:destination="@id/riskoMeterResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_nimeyaHomeFragment_to_protectoMeterInputFragment"
+            app:destination="@id/protectoMeterInputFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_nimeyaHomeFragment_to_protectoMeterResultFragment"
+            app:destination="@id/protectoMeterResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_nimeyaHomeFragment_to_retiroMeterInputFragment"
+            app:destination="@id/retiroMeterInputFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_nimeyaHomeFragment_to_retiroMeterResultFragment"
+            app:destination="@id/retiroMeterResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/riskoMeterInputFragment"
+        android:name="com.techglock.health.app.home.ui.nimeya.RiskoMeterInputFragment"
+        tools:layout="@layout/fragment_risko_meter_input">
+
+        <action
+            android:id="@+id/action_riskoMeterInputFragment_to_riskoMeterResultFragment"
+            app:destination="@id/riskoMeterResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/riskoMeterResultFragment"
+        android:name="com.techglock.health.app.home.ui.nimeya.RiskoMeterResultFragment"
+        tools:layout="@layout/fragment_risko_meter_result">
+
+        <action
+            android:id="@+id/action_riskoMeterResultFragment_to_riskoMeterInputFragment"
+            app:destination="@id/riskoMeterInputFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/protectoMeterInputFragment"
+        android:name="com.techglock.health.app.home.ui.nimeya.ProtectoMeterInputFragment"
+        tools:layout="@layout/fragment_protecto_meter_input">
+
+        <action
+            android:id="@+id/action_protectoMeterInputFragment_to_protectoMeterResultFragment"
+            app:destination="@id/protectoMeterResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/protectoMeterResultFragment"
+        android:name="com.techglock.health.app.home.ui.nimeya.ProtectoMeterResultFragment"
+        tools:layout="@layout/fragment_protecto_meter_result">
+
+        <action
+            android:id="@+id/action_protectoMeterResultFragment_to_protectoMeterInputFragment"
+            app:destination="@id/protectoMeterInputFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/retiroMeterInputFragment"
+        android:name="com.techglock.health.app.home.ui.nimeya.RetiroMeterInputFragment"
+        tools:layout="@layout/fragment_retiro_meter_input">
+
+        <action
+            android:id="@+id/action_retiroMeterInputFragment_to_retiroMeterResultFragment"
+            app:destination="@id/retiroMeterResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/retiroMeterResultFragment"
+        android:name="com.techglock.health.app.home.ui.nimeya.RetiroMeterResultFragment"
+        tools:layout="@layout/fragment_retiro_meter_result">
+
+        <action
+            android:id="@+id/action_retiroMeterResultFragment_to_retiroMeterInputFragment"
+            app:destination="@id/retiroMeterInputFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+</navigation>

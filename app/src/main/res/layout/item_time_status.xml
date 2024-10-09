@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_recent_med"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_med_time"
+        style="@style/VivantTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:text="---"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_med_time_status"
+        app:layout_constraintEnd_toStartOf="@+id/rv_med_time_status"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_med_time_status" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_med_time_status"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.7"
+        app:layout_constraintStart_toEndOf="@+id/txt_med_time"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_status" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/vivant_light_grey"
+        app:layout_constraintEnd_toEndOf="@+id/rv_med_time_status"
+        app:layout_constraintStart_toStartOf="@+id/txt_med_time"
+        app:layout_constraintTop_toBottomOf="@+id/rv_med_time_status" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

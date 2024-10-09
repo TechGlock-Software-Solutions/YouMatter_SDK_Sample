@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_force_sync"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:iconTint="@color/textViewColor"
+        android:title="@string/SWITCH_ACCOUNT"
+        app:showAsAction="always"
+        tools:targetApi="o" />
+
+</menu>
