@@ -530,7 +530,7 @@ class HomeMainActivity : BaseActivity(), DefaultNotificationDialog.OnDialogValue
 
     //Required to set New Intent from Medicine Notification
     @SuppressLint("MissingSuperCall")
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         setIntent(intent)
     }
@@ -758,7 +758,7 @@ class HomeMainActivity : BaseActivity(), DefaultNotificationDialog.OnDialogValue
 
     @RequiresApi(Build.VERSION_CODES.Q)
     override fun onRequestPermissionsResult(
-        requestCode: Int, permissions: Array<String?>, grantResults: IntArray
+        requestCode: Int, permissions: Array<String>, grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         Utilities.printLogError("onRequestPermissionsResult from Home Main Activity")

@@ -18,6 +18,9 @@ import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import com.canhub.cropper.CropImageContract
+import com.canhub.cropper.CropImageContractOptions
+import com.canhub.cropper.CropImageOptions
 import com.techglock.health.app.R
 import com.techglock.health.app.common.base.BaseActivity
 import com.techglock.health.app.common.base.BaseViewModel
@@ -67,6 +70,48 @@ class EditProfileActivity : BaseActivity(), EditProfileBottomSheet.OnOptionClick
 
     //private var profPicBitmap : Bitmap? = null
 //    private var aktivoManager: AktivoManager? = null
+
+    private val cropImage = registerForActivityResult(CropImageContract()) { result ->
+        if(result.isSuccessful){
+            val imageUri = Uri.parse(result.getUriFilePath(this@EditProfileActivity, true))
+            val imagePath = fileUtils.getFilePath(this, imageUri!!)!!
+            val fileSize = fileUtils.calculateFileSize(imagePath, "MB")
+            if (fileSize <= 5.0) {
+                val extension = fileUtils.getFileExt(imagePath)
+                if (Utilities.isAcceptableDocumentType(extension)) {
+                    val fileName = fileUtils.generateUniqueFileName(
+                        Configuration.strAppIdentifier + "_PROFPIC",
+                        imagePath
+                    )
+                    Utilities.printLogError("File Path---> $imagePath")
+                    val saveImage = fileUtils.saveRecordToExternalStorage(
+                        this,
+                        imagePath,
+                        imageUri,
+                        fileName
+                    )
+                    if (saveImage != null) {
+                        Utilities.deleteFileFromLocalSystem(imagePath)
+                        viewModel.callUploadProfileImageApi(this, fileName, saveImage)
+                    }
+                } else {
+                    Utilities.toastMessageLong(
+                        this,
+                        extension + " " + resources.getString(R.string.ERROR_FILES_NOT_ACCEPTED)
+                    )
+                }
+            } else {
+                Utilities.toastMessageLong(
+                    this,
+                    resources.getString(R.string.ERROR_FILE_SIZE_LESS_THEN_5MB)
+                )
+            }
+        }else{
+            val error = result.error
+            Utilities.printLogError("ImageCropperError--->$error")
+        }
+
+    }
 
     override fun getViewModel(): BaseViewModel = viewModel
     private val onBackPressedCallBack = object : OnBackPressedCallback(true) {
@@ -394,8 +439,13 @@ class EditProfileActivity : BaseActivity(), EditProfileBottomSheet.OnOptionClick
     }
 
     private fun showImageCropper(uriImage: Uri) {
-        CropImage.activity(uriImage)
-            .start(this)
+        /*CropImage.activity(uriImage)
+            .start(this)*/
+        val cropImageOptions = CropImageOptions();
+        cropImageOptions.imageSourceIncludeGallery = false;
+        cropImageOptions.imageSourceIncludeCamera = true;
+        val cropImageContractOptions =  CropImageContractOptions(uriImage, cropImageOptions);
+        cropImage.launch(cropImageContractOptions);
     }
 
     private fun showImageChooser() {
@@ -603,7 +653,7 @@ class EditProfileActivity : BaseActivity(), EditProfileBottomSheet.OnOptionClick
                 }
             }
 
-            if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+            /*if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
                 val result = CropImage.getActivityResult(data)
                 if (resultCode == RESULT_OK) {
                     val imageUri = result.uri
@@ -643,7 +693,7 @@ class EditProfileActivity : BaseActivity(), EditProfileBottomSheet.OnOptionClick
                     val error = result.error
                     Utilities.printLogError("ImageCropperError--->$error")
                 }
-            }
+            }*/
 
             /*            if ( requestCode == Constants.CAMERA_SELECT_CODE && resultCode == Activity.RESULT_OK ) {
                 Utilities.printLogError("********onCameraPhotoClicked********")

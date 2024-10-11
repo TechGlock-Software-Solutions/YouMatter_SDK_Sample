@@ -12,6 +12,13 @@ def apikeyPropertiesFile = rootProject.file("apikey.properties")
 def apikeyProperties = new Properties()
 apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 android {
+
+    /* //buildToolsVersion '30.0.3'
+     defaultConfig {
+
+         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+     }*/
+//    buildToolsVersion '30.0.3'
     compileSdkVersion Versions.compileSdk
 
 
@@ -26,17 +33,15 @@ android {
         }
     }
     defaultConfig {
+//        applicationId "com.sudlife.youmatter.app.uat"
         multiDexEnabled true
         minSdkVersion Versions.minSdk
         targetSdkVersion Versions.targetSdk
-        versionCode Releases.versionCode
-        versionName Releases.versionName
         vectorDrawables.useSupportLibrary = true
         buildConfigField("String", "SECURITY_KEY", apikeyProperties['SECURITY_KEY'])
     }
     buildTypes {
         debug {
-            debuggable true
             minifyEnabled false
             //useProguard false
             shrinkResources false
@@ -45,7 +50,6 @@ android {
 
         }
         release {
-            debuggable false
             minifyEnabled false
             //useProguard true
             shrinkResources false
@@ -59,6 +63,7 @@ android {
         viewBinding true
         buildConfig true
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
@@ -71,78 +76,85 @@ android {
         javaMaxHeapSize "4g"
     }
     packagingOptions {
-        exclude "META-INF/MANIFEST.MF"
-        exclude "META-INF/LICENSE.txt"
-        exclude "META-INF/NOTICE.txt"
+        jniLibs {
+            pickFirsts += ['lib/arm64-v8a/libopencv_java4.so', 'lib/x86_64/libopencv_java4.so', 'lib/arm64-v8a/libc++_shared.so', 'lib/armeabi-v7a/libopencv_java4.so', 'lib/x86/libopencv_java4.so', 'lib/armeabi-v7a/libc++_shared.so', 'lib/x86/libc++_shared.so', 'lib/x86_64/libc++_shared.so']
+        }
+        resources {
+            excludes += ['META-INF/MANIFEST.MF', 'META-INF/LICENSE.txt', 'META-INF/NOTICE.txt']
+        }
     }
 
 
-    packagingOptions {
-        pickFirst 'lib/arm64-v8a/libopencv_java4.so'
-        pickFirst 'lib/x86_64/libopencv_java4.so'
-        pickFirst 'lib/arm64-v8a/libc++_shared.so'
-        pickFirst 'lib/armeabi-v7a/libopencv_java4.so'
-        pickFirst 'lib/x86/libopencv_java4.so'
-        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
-        pickFirst 'lib/x86/libc++_shared.so'
-        pickFirst 'lib/x86_64/libc++_shared.so'
-    }
-    namespace 'com.techglock.health.app'
+    /*bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            // You can specify `false` to turn off
+            // generating configuration APKs for language resources.
+            // These resources are instead packaged with each base and
+            // feature APK.
+            enableSplit = false
+        }
+    }*/
+
+
+
 
     publishing {
-        singleVariant('release')  {
+        singleVariant("release") {
             withSourcesJar()
             withJavadocJar()
-//            allVariants()
         }
     }
 
+    namespace 'com.techglock.health.app'
 }
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.getByName('release')
 
+publishing {
+    publications {
+        release(MavenPublication) {
+            afterEvaluate {
+                from components.release
                 groupId = 'github.com.techglock'
-                artifactId = 'youmatter'
-                version = '1.1.0'
+                artifactId = 'health_demo'
+                version = '1.0.0'
 
-                 pom {
-                     name = 'Youmatter healthcare'
-                     description = 'Youmatter healthcare'
-                     url = 'https://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample'
+                pom {
+                    name = 'BMI Calculator'
+                    description = 'A library to calculate Body Mass Index (BMI)'
+                    url = 'https://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample.git'
 
-                     licenses {
-                         license {
-                             name = 'The Apache License, Version 2.0'
-                             url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                         }
-                     }
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
 
-                     developers {
-                         developer {
-                             id = 'akhajuria92'
-                             name = 'Akshay Khajuria'
-                             email = 'akshaykhajuria92@gmail.com'
-                         }
-                     }
+                    developers {
+                        developer {
+                            id = 'akhajuria92'
+                            name = 'Akshay Khajuria'
+                            email = 'akshaykhajuria92@gmail.com'
+                        }
+                    }
 
-                     scm {
-                         connection = 'scm:git:git://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample.git'
-                         developerConnection = 'scm:git:ssh://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample.git'
-                         url = 'https://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample'
-                     }
-                 }
+                    scm {
+                        connection = 'scm:git:git://github.com/akhajuria92/bmi_demo.git'
+                        developerConnection = 'scm:git:ssh://github.com/akhajuria92/bmi_demo.git'
+                        url = 'https://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample.git'
+                    }
+                }
             }
-
         }
-        repositories {
-            mavenLocal()
-            mavenCentral()
-            maven {
-                url = uri('https://jitpack.io')
-            }
+    }
+
+    repositories {
+        mavenLocal()
+        maven {
+            url = 'https://jitpack.io'
         }
     }
 }
@@ -230,7 +242,7 @@ dependencies {
     testImplementation TestLibraries.mockWebServer
     implementation KotlinLibraries.kotlinCoroutineCore
     implementation AndroidLibraries.kotlinCoroutineAndroid
-    testImplementation TestLibraries.mockk
+//    testImplementation TestLibraries.mockk
     testImplementation TestLibraries.coroutine
     api Libraries.jSoup
     implementation Libraries.circularProgress
@@ -243,7 +255,8 @@ dependencies {
     api Libraries.otpView
     api Libraries.circleImageview
     implementation Libraries.ucrop
-    implementation Libraries.imageCropper
+//    api Libraries.imageCropper
+    implementation("com.vanniktech:android-image-cropper:4.6.0")
     implementation Libraries.firebaseMessaging
 
     implementation Libraries.blurry
@@ -302,17 +315,18 @@ dependencies {
         transitive true
     }*/
     implementation Libraries.stepbar
-    api Libraries.pdfViewer
+//    api Libraries.pdfViewer
     implementation "androidx.biometric:biometric:1.1.0"
-    implementation Libraries.pinview
+//    implementation Libraries.pinview
+//    implementation "io.github.chaosleung:pinview:1.4.4"
     implementation Libraries.conscrypt
     api Libraries.rootbeer
-    api Libraries.indicatorseekbar
+//    api Libraries.indicatorseekbar
     implementation Libraries.colorSeekBar
     implementation Libraries.materialDesignLib
     api AndroidLibraries.coreKtx
     api AndroidLibraries.lifecycleViewModel
-    androidTestImplementation TestLibraries.mockkAndroid
+//    androidTestImplementation TestLibraries.mockkAndroid
     androidTestImplementation TestLibraries.fragmentNav
     androidTestImplementation TestLibraries.espresso
     androidTestImplementation TestLibraries.espressoContrib

@@ -358,5 +358,5 @@
 -dontwarn org.joda.convert.FromString
 -dontwarn org.joda.convert.ToString
 -dontwarn org.jtransforms.fft.DoubleFFT_1D
--keep class androidx.appcompat.widget.** { *; }
+
 

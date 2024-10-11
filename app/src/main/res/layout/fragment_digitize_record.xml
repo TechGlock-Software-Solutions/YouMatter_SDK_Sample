@@ -174,7 +174,7 @@
 
             </WebView>
 
-            <com.github.barteksc.pdfviewer.PDFView
+            <com.techglock.health.app.common.pdfviewer.PDFView
                 android:id="@+id/pdf_view"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"

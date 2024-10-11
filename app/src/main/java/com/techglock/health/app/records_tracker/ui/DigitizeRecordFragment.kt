@@ -15,6 +15,8 @@ import com.techglock.health.app.R
 import com.techglock.health.app.common.base.BaseFragment
 import com.techglock.health.app.common.base.BaseViewModel
 import com.techglock.health.app.common.constants.Constants
+import com.techglock.health.app.common.pdfviewer.listener.OnPageChangeListener
+import com.techglock.health.app.common.pdfviewer.scroll.DefaultScrollHandle
 import com.techglock.health.app.common.utils.AppColorHelper
 import com.techglock.health.app.common.utils.DateHelper
 import com.techglock.health.app.databinding.FragmentDigitizeRecordBinding
@@ -23,7 +25,6 @@ import com.techglock.health.app.model.shr.HealthDataParameter
 import com.techglock.health.app.records_tracker.adapter.DigitizeRecordParametersAdapter
 import com.techglock.health.app.records_tracker.common.RecordSingleton
 import com.techglock.health.app.records_tracker.viewmodel.HealthRecordsViewModel
-import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog
 import dagger.hilt.android.AndroidEntryPoint
 import java.io.File
@@ -32,8 +33,7 @@ import java.util.*
 
 @AndroidEntryPoint
 class DigitizeRecordFragment : BaseFragment(),
-    com.github.barteksc.pdfviewer.listener.OnPageChangeListener,
-    DatePickerDialog.OnDateSetListener {
+    DatePickerDialog.OnDateSetListener, OnPageChangeListener {
 
     private val viewModel: HealthRecordsViewModel by lazy {
         ViewModelProvider(this)[HealthRecordsViewModel::class.java]

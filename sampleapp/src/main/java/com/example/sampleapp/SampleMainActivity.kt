@@ -19,7 +19,7 @@ class SampleMainActivity : AppCompatActivity() {
         binding!!.layoutMain.setOnClickListener {
             val sdk = YoumatterSDK.getInstance(this)
             sdk.launchSdk(getSsoDetails())
-//            sdk.launchSdkDirectly()
+            //sdk.launchSdkDirectly()
         }
 
     }

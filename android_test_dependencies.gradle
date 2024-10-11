@@ -8,5 +8,5 @@ dependencies {
     androidTestImplementation TestLibraries.archCoreTest
     androidTestImplementation TestLibraries.junit
     // MOCK
-    androidTestImplementation TestLibraries.mockk
+//    androidTestImplementation TestLibraries.mockk
 }

@@ -255,8 +255,8 @@ object TestLibraries {
     val mockWebServer = "com.squareup.okhttp:mockwebserver:${Versions.mockwebserver}"
 
     // MOCK
-    val mockkAndroid = "io.mockk:mockk-android:${Versions.mockk}"
-    val mockk = "io.mockk:mockk:${Versions.mockk}"
+//    val mockkAndroid = "io.mockk:mockk-android:${Versions.mockk}"
+//    val mockk = "io.mockk:mockk:${Versions.mockk}"
 
     // COROUTINE
     val coroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"

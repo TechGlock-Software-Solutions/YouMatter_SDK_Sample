@@ -8,7 +8,7 @@ import com.techglock.health.app.common.utils.Utilities
 import com.techglock.health.app.fitness_tracker.common.StepsDataSingleton
 import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
+
 class FitnessBroadcastReceiver : BroadcastReceiver() {
 
     private val stepsDataSingleton = StepsDataSingleton.instance!!

@@ -276,11 +276,11 @@ class MedicineTrackerViewModel @Inject constructor(
                     if (it.status == Resource.Status.SUCCESS) {
                         _progressBar.value = Event(Event.HIDE_PROGRESS)
                         try {
-                            val medicineListByDay = it.data!!.medications.toMutableList()
-                            Utilities.printLogError("medicineListByDay---> ${medicineListByDay.size}")
-                            it?.data.let {
+                            val medicineListByDay = it.data?.medications?.toMutableList()
+                            Utilities.printLogError("medicineListByDay---> ${medicineListByDay?.size?:0}")
+                            it?.data?.let {
                                 if (it.medications.isNotEmpty()) {
-                                    medicineListByDay.sortByDescending { med -> med.notification!!.setAlert }
+                                    medicineListByDay!!.sortByDescending { med -> med.notification!!.setAlert }
                                     MedicationSingleton.getInstance()!!
                                         .setMedicineListByDay(medicineListByDay)
                                 }

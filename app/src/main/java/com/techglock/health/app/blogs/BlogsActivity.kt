@@ -10,7 +10,6 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.techglock.health.app.R
-import com.techglock.health.app.databinding.ActivityBlogsBinding
 import com.techglock.health.app.blogs.viewmodel.BlogViewModel
 import com.techglock.health.app.blogs.views.BlogsBinding.setHtmlTxt
 import com.techglock.health.app.common.base.BaseActivity
@@ -19,6 +18,7 @@ import com.techglock.health.app.common.constants.Constants
 import com.techglock.health.app.common.constants.NavigationConstants
 import com.techglock.health.app.common.extension.openAnotherActivity
 import com.techglock.health.app.common.utils.AppColorHelper
+import com.techglock.health.app.databinding.ActivityBlogsBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

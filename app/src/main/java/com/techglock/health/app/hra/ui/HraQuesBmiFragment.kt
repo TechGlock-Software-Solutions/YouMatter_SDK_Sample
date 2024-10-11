@@ -24,7 +24,6 @@ import com.techglock.health.app.hra.viewmodel.HraViewModel
 import com.techglock.health.app.model.hra.Option
 import com.techglock.health.app.model.hra.Question
 import dagger.hilt.android.AndroidEntryPoint
-import java.util.*
 
 @AndroidEntryPoint
 class HraQuesBmiFragment(val qCode: String) : BaseFragment(),

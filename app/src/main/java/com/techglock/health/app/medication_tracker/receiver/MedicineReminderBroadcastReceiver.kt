@@ -27,7 +27,6 @@ import java.util.Locale
 import javax.inject.Inject
 import kotlin.coroutines.CoroutineContext
 
-@AndroidEntryPoint
 class MedicineReminderBroadcastReceiver : BroadcastReceiver(), LifecycleOwner, CoroutineScope {
 
     private var lifeCycleRegistry: LifecycleRegistry = LifecycleRegistry(this)
