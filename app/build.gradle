@@ -142,8 +142,8 @@ publishing {
                     }
 
                     scm {
-                        connection = 'scm:git:git://github.com/akhajuria92/bmi_demo.git'
-                        developerConnection = 'scm:git:ssh://github.com/akhajuria92/bmi_demo.git'
+                        connection = 'scm:git:git://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample.gitt'
+                        developerConnection = 'scm:git:ssh://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample.gitt'
                         url = 'https://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample.git'
                     }
                 }
