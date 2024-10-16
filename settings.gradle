@@ -1,4 +1,2 @@
 include ':youmattersdk', ':sampleapp'/*, ':common', ':data:remote', ':data:model', ':data:local', ':data:repository',  ':features:home', ':navigation', ':features:security', ':features:hra', ':features:medication_tracker', ':features:fitness_tracker', ':features:records_tracker', ':features:track_parameter', ':features:blogs' , ':features:tools_calculators' , ':features:water_tracker'*/
 
-include ':nvest-bi-tool'
-project(':nvest-bi-tool').projectDir = new File('path/to/nvest-bi-tool')
