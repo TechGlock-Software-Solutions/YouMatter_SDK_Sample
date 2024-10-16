@@ -119,7 +119,7 @@ publishing {
                 from components.release
                 groupId = 'github.com.techglock'
                 artifactId = 'YouMatter_SDK_Sample'
-                version = '1.0.0'
+                version = '1.0.4'
 
                 pom {
                     name = 'YouMatter SDK'
