@@ -122,8 +122,8 @@ publishing {
                 version = '1.0.0'
 
                 pom {
-                    name = 'BMI Calculator'
-                    description = 'A library to calculate Body Mass Index (BMI)'
+                    name = 'YouMatter SDK'
+                    description = 'YouMatter_SDK_Sample'
                     url = 'https://github.com/TechGlock-Software-Solutions/YouMatter_SDK_Sample.git'
 
                     licenses {
