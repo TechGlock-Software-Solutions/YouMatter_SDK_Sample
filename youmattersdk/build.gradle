@@ -309,6 +309,10 @@ dependencies {
     implementation('org.nvest:bi-tool:1.0.2-production01') {
         transitive true
     }
+    dependencies {
+        implementation project(':nvest-bi-tool')
+    }
+
 
     //UAT
 /*    implementation('org.nvest:bi-tool:1.0.2-uat02') {
