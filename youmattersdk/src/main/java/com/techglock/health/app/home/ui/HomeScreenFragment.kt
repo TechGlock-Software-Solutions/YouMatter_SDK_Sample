@@ -79,7 +79,7 @@ import com.techglock.health.app.track_parameter.ParameterHomeActivity
 import com.techglock.health.app.water_tracker.WaterTrackerActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
-import nvest.com.nvestlibrary.NvestSud
+//import nvest.com.nvestlibrary.NvestSud
 import java.util.Timer
 import java.util.TimerTask
 
@@ -1978,7 +1978,7 @@ class HomeScreenFragment : BaseFragment(), ScoreListener, SmitFitAdapter.OnSmitF
             Constants.RETIREMENT -> CleverTapHelper.pushEvent(requireContext(), CleverTapConstants.RETIREMENT)
             Constants.HUMAN_VALUE -> CleverTapHelper.pushEvent(requireContext(), CleverTapConstants.HUMAN_VALUE)
         }
-        NvestSud.startNvestActivity(requireContext(),calculatorCode)
+        //NvestSud.startNvestActivity(requireContext(),calculatorCode)
     }
 
     override fun onNimeyaCalculatorClick(item: FinancialCalculatorModel) {

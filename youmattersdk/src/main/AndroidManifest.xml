@@ -6,7 +6,6 @@
         android:name="android.hardware.camera"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
     <uses-permission
         android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"
         tools:ignore="ProtectedPermissions" />
@@ -472,17 +471,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
-        <service
-            android:name="com.techglock.health.app.common.syncadapter.SyncService"
-            android:exported="true"
-            android:process=":sync">
-            <intent-filter>
-                <action android:name="android.content.SyncAdapter" />
-            </intent-filter>
-            <meta-data
-                android:name="android.content.SyncAdapter"
-                android:resource="@xml/syncadapter" />
-        </service>
         <!--end Security Module-->
 
 

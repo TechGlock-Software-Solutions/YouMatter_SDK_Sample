@@ -41,6 +41,7 @@ allprojects {
     apply from: "$rootDir/detekt.gradle"
 
     repositories {
+
         maven { url 'https://maven.google.com/' }
         maven { url "https://jitpack.io" }
         //maven { url 'https://maven.fabric.io/public' }
@@ -49,10 +50,13 @@ allprojects {
         jcenter()
         mavenCentral()
 
-        maven {
+        /*maven {
             url "$rootProject.rootDir/nvest-bi-tool"
-        }
+//            url "YouMatter_SDK_Sample\\nvest-bi-tool"
+
+        }*/
     }
+
 }
 
 task clean(type: Delete) {
