@@ -78,6 +78,7 @@ import com.techglock.health.app.tools_calculators.ToolsCalculatorsHomeActivity
 import com.techglock.health.app.track_parameter.ParameterHomeActivity
 import com.techglock.health.app.water_tracker.WaterTrackerActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.smitfit.media.lib.ui.feature.main.ui.MainActivity
 import dagger.hilt.android.AndroidEntryPoint
 //import nvest.com.nvestlibrary.NvestSud
 import java.util.Timer
@@ -1940,15 +1941,15 @@ class HomeScreenFragment : BaseFragment(), ScoreListener, SmitFitAdapter.OnSmitF
             when (featureCode) {
                 Constants.MEDITATION -> {
                     CleverTapHelper.pushEventWithProperties(requireContext(), CleverTapConstants.MEDITATION, data)
-                    //startActivity(MainActivity.getMeditationIntent(requireContext()))
+                    startActivity(MainActivity.getMeditationIntent(requireContext()))
                 }
                 Constants.YOGA -> {
                     CleverTapHelper.pushEventWithProperties(requireContext(), CleverTapConstants.YOGA, data)
-                    //startActivity(MainActivity.getYogaIntent(requireContext()))
+                    startActivity(MainActivity.getYogaIntent(requireContext()))
                 }
                 Constants.EXERCISE -> {
                     CleverTapHelper.pushEventWithProperties(requireContext(), CleverTapConstants.EXERCISE, data)
-                    //startActivity(MainActivity.getExerciseIntent(requireContext()))
+                    startActivity(MainActivity.getExerciseIntent(requireContext()))
                 }
             }
         } catch (e: Exception) {
@@ -2194,7 +2195,7 @@ class HomeScreenFragment : BaseFragment(), ScoreListener, SmitFitAdapter.OnSmitF
         }
         list.add(TutorialModel(50,resources.getString(R.string.LEADERSHIP_EXPERIENCES),"",binding.cardLeadershipExperinces))*/
         list.add(TutorialModel(50, resources.getString(R.string.TUTORIAL_HRA), resources.getString(R.string.TUTORIAL_HRA_DESC), binding.cardHra))
-        //list.add(TutorialModel(90,resources.getString(R.string.TUTORIAL_SMIT_FIT),resources.getString(R.string.TUTORIAL_SMIT_FIT_DESC),binding.rvSmitFit))
+        list.add(TutorialModel(90,resources.getString(R.string.TUTORIAL_SMIT_FIT),resources.getString(R.string.TUTORIAL_SMIT_FIT_DESC),binding.rvSmitFit))
         if (binding.layoutLiveSessions.visibility == View.VISIBLE) {
             list.add(TutorialModel(70,resources.getString(R.string.TUTORIAL_LIVE_SESSIONS),resources.getString(R.string.TUTORIAL_LIVE_SESSIONS_DESC),binding.lblLiveSessions))
         }
@@ -2215,7 +2216,7 @@ class HomeScreenFragment : BaseFragment(), ScoreListener, SmitFitAdapter.OnSmitF
             list.add(TutorialModel(120, resources.getString(R.string.CHALLENGES), "", binding.layoutChallenges))
         }*/
         list.add(TutorialModel(50, resources.getString(R.string.TUTORIAL_HRA), resources.getString(R.string.TUTORIAL_HRA_DESC), binding.cardHra))
-        //list.add(TutorialModel(90,resources.getString(R.string.TUTORIAL_SMIT_FIT),resources.getString(R.string.TUTORIAL_SMIT_FIT_DESC),binding.rvSmitFit))
+        list.add(TutorialModel(90,resources.getString(R.string.TUTORIAL_SMIT_FIT),resources.getString(R.string.TUTORIAL_SMIT_FIT_DESC),binding.rvSmitFit))
         if (binding.layoutLiveSessions.visibility == View.VISIBLE) {
             list.add(TutorialModel(70,resources.getString(R.string.TUTORIAL_LIVE_SESSIONS),resources.getString(R.string.TUTORIAL_LIVE_SESSIONS_DESC),binding.lblLiveSessions))
         }

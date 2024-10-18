@@ -3,18 +3,18 @@ package com.example.sampleapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import com.example.sampleapp.databinding.ActivitySampleMainBinding
 import com.techglock.health.app.YoumatterSDK
-import com.example.sampleapp.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import org.json.JSONObject
 
 @AndroidEntryPoint
 class SampleMainActivity : AppCompatActivity() {
-    var binding: ActivityMainBinding?=null
+    var binding: ActivitySampleMainBinding?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding= DataBindingUtil.setContentView(this, R.layout.activity_sample_main)
 
         binding!!.layoutMain.setOnClickListener {
             val sdk = YoumatterSDK.getInstance(this)

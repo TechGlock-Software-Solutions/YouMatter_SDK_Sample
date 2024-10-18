@@ -90,7 +90,7 @@ class HomeMainActivity : BaseActivity(), DefaultNotificationDialog.OnDialogValue
 
 
                 fragment is HomeScreenFragment || fragment is SudLifePolicyDashboardFragment || fragment is FragmentSudPolicyAuthentication || fragment is FragmentTrackHealth -> {
-                    backAction()
+                    this@HomeMainActivity.finish()
                 }
 
                 fragment is FragmentProfile -> {

@@ -119,7 +119,7 @@ publishing {
                 from components.release
                 groupId = 'github.com.techglock'
                 artifactId = 'YouMatter_SDK_Sample'
-                version = '1.0.6'
+                version = '1.0.8'
 
                 pom {
                     name = 'YouMatter SDK'
@@ -251,7 +251,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.aar"])
 
     //Smit-Fit
-//    implementation "fit.smit.media.lib:smitfit-media-sdk:0.0.7"
+    implementation "fit.smit.media.lib:smitfit-media-sdk:0.0.9"
     api Libraries.otpView
     api Libraries.circleImageview
     implementation Libraries.ucrop
@@ -309,8 +309,6 @@ dependencies {
   /*  implementation('org.nvest:bi-tool:1.0.2-production01') {
         transitive true
     }*/
-
-
 
     //UAT
 /*    implementation('org.nvest:bi-tool:1.0.2-uat02') {

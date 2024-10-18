@@ -49,7 +49,9 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
-
+        maven {
+            url "https://app-sdk.smit.fit/releases"
+        }
         /*maven {
             url "$rootProject.rootDir/nvest-bi-tool"
 //            url "YouMatter_SDK_Sample\\nvest-bi-tool"
